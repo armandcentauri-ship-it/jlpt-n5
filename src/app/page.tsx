@@ -87,7 +87,7 @@ export default function Home() {
               <div>
                 <p className="font-jp-serif text-lg font-bold leading-tight">日本語 N5</p>
                 <p className="text-[11px] leading-tight text-muted-foreground">
-                  Kanji N4 · Vocabulaire · Révision SRS
+                  Kanji N5 + N4 · Vocabulaire par thème · Révision SRS
                 </p>
               </div>
             </div>

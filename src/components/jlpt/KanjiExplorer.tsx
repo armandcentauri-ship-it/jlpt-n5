@@ -53,10 +53,14 @@ export function KanjiExplorer() {
     <div className="mx-auto w-full max-w-3xl space-y-4 px-4 pb-10 pt-6">
       <div className="flex items-baseline justify-between">
         <h2 className="font-jp-serif text-2xl font-bold">
-          漢字 <span className="text-lg text-muted-foreground">· Kanji N4 (+ N5)</span>
+          漢字 <span className="text-lg text-muted-foreground">· Kanji N5 + N4</span>
         </h2>
         <span className="text-xs text-muted-foreground">{filtered.length} kanji</span>
       </div>
+      <p className="-mt-2 text-xs text-muted-foreground">
+        Ordre pédagogique : les kanji <span className="font-medium text-foreground">N5 d&apos;abord</span>, du plus simple
+        (1ʳᵉ année d&apos;école primaire) au plus complexe, puis les kanji N4.
+      </p>
 
       <div className="flex flex-col gap-3">
         <div className="relative">
@@ -128,6 +132,9 @@ export function KanjiExplorer() {
                     <LevelBadge level={selected.level} className="w-fit" />
                     <span className="text-xs font-normal text-muted-foreground">
                       {selected.strokes} traits
+                      {selected.grade >= 1 && selected.grade <= 6
+                        ? ` · ${selected.grade}${selected.grade === 1 ? "ʳᵉ" : "ᵉ"} année d\u2019école`
+                        : ""}
                     </span>
                   </div>
                 </DialogTitle>

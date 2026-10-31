@@ -82,8 +82,8 @@ export function Dashboard({ go }: { go: (tab: TabId) => void }) {
           日本語を学ぼう <span className="text-primary">·</span> JLPT N5
         </h1>
         <p className="relative mx-auto mt-2 max-w-md text-sm text-muted-foreground">
-          251 kanji (N5 + N4), 1054 mots de vocabulaire, flashcards à répétition espacée et
-          exercices de traduction dans les deux sens.
+          251 kanji (N5 + N4), 1054 mots de vocabulaire organisés par thèmes, flashcards à répétition
+          espacée et exercices de traduction dans les deux sens.
         </p>
         <div className="relative mt-5 flex flex-wrap items-center justify-center gap-3">
           <Button onClick={() => go("flashcards")} className="h-11 rounded-full px-6 font-medium shadow-sm">

@@ -25,6 +25,8 @@ for (const k of kanji) {
     data: {
       character: k.character,
       level: k.level,
+      grade: k.grade || 0,
+      orderIdx: k.orderIdx || 0,
       onyomi: (k.onyomi || []).join('、'),
       kunyomi: (k.kunyomi || []).join('、'),
       strokes: k.strokes || 0,
@@ -46,11 +48,14 @@ for (const w of words) {
       pos: JSON.stringify(w.pos || []),
       meaningFr: dedupeList((w.meaningFr || '').split(';').map((s) => s.trim())).join('; '),
       meaningEn: w.meaningEn || '',
+      theme: w.theme || '',
+      orderIdx: w.orderIdx || 0,
       exJa: w.exJa || '',
       exKana: w.exKana || '',
       exFurigana: w.exFurigana || '',
       exFr: w.exFr || '',
       exDif: w.exDif || 'avance',
+      exTier: w.exTier || 2,
     },
   });
 }

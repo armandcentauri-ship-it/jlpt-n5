@@ -214,6 +214,11 @@ export function Flashcards({ go }: { go: (tab: TabId) => void }) {
               </div>
             )}
 
+            <p className="text-xs text-muted-foreground">
+              Ordre des nouvelles cartes : vocabulaire par thèmes (du plus général au plus spécial),
+              kanji N5 d&apos;abord puis N4, du plus simple au plus complexe.
+            </p>
+
             <div className="flex flex-col gap-2 sm:flex-row">
               <Button
                 onClick={() => buildQueue("normal")}

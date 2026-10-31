@@ -12,6 +12,8 @@ model Kanji {
   id         String   @id @default(cuid())
   character  String   @unique
   level      String // "N5" | "N4"
+  grade      Int      @default(0) // année d'école primaire (KANJIDIC2, 9 = hors programme)
+  orderIdx   Int      @default(0) // ordre pédagogique global (N5 d'abord, puis grade, traits)
   onyomi     String   @default("") // séparés par "、"
   kunyomi    String   @default("")
   strokes    Int      @default(0)
@@ -32,11 +34,14 @@ model Word {
   pos        String   @default("[]") // JSON array
   meaningFr  String
   meaningEn  String   @default("")
+  theme      String   @default("") // clé de thème (ordre pédagogique)
+  orderIdx   Int      @default(0) // ordre pédagogique global (thème → fundamentalité)
   exJa       String   @default("")
   exKana     String   @default("")
   exFurigana String   @default("") // notation {kanji|kana}
   exFr       String   @default("")
   exDif      String   @default("avance") // "simple" | "avance"
+  exTier     Int      @default(2) // 1 = phrase très facile, 2 = plus riche
   createdAt  DateTime @default(now())
 }
 

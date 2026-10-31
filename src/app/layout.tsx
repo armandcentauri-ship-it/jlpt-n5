@@ -18,7 +18,7 @@ const notoSerifJp = Noto_Serif_JP({
 });
 
 export const metadata: Metadata = {
-  title: "日本語 N5 — Kanji N4, vocabulaire & révision",
+  title: "日本語 N5 — Kanji N5 + N4, vocabulaire & révision",
   description:
     "Application d'apprentissage du japonais niveau JLPT N5 : 251 kanji (N5 + N4), 1054 mots de vocabulaire, flashcards SRS type Anki et exercices de traduction JP⇄FR.",
   icons: {

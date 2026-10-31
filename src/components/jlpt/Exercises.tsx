@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
-import { ArrowRight, CheckCircle2, Eye, Send, XCircle } from "lucide-react";
+import { ArrowRight, CheckCircle2, Eye, Lock, Send, XCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { progressKey, useAppState, useReview } from "./state";
@@ -24,6 +24,8 @@ interface ExItem {
 }
 
 const WEEK = 7 * 24 * 3600 * 1000;
+const MASTERED_DAYS = 21; // cohérent avec le tableau de bord / vocabulaire
+const UNLOCK_PCT = 0.2; // niveau 2 débloqué à 20 % de vocabulaire maîtrisé
 
 export function Exercises() {
   const { words, progressMap } = useAppState();
@@ -33,39 +35,59 @@ export function Exercises() {
   const [phase, setPhase] = useState<Phase>("setup");
   const [size, setSize] = useState(10);
   const [scope, setScope] = useState<"recent" | "all">("recent");
+  const [tier, setTier] = useState<1 | 2>(1);
   const [queue, setQueue] = useState<ExItem[]>([]);
   const [index, setIndex] = useState(0);
   const [input, setInput] = useState("");
   const [status, setStatus] = useState<Status>("answering");
   const [tally, setTally] = useState({ correct: 0, total: 0 });
 
+  /* maîtrise du vocabulaire → déblocage du niveau 2 */
+  const mastery = useMemo(() => {
+    let mastered = 0;
+    for (const w of words) {
+      const p = progressMap.get(progressKey("word", w.id));
+      if (p && p.intervalDays >= MASTERED_DAYS) mastered++;
+    }
+    const pct = words.length ? mastered / words.length : 0;
+    return { mastered, pct, unlocked: pct >= UNLOCK_PCT };
+  }, [words, progressMap]);
+
   const pools = useMemo(() => {
     const now = Date.now();
     const weekAgo = now - WEEK;
     const recentlyStudied: WordItem[] = [];
     const others: WordItem[] = [];
-    const isSimple = (w: WordItem) => w.exJa && w.exFr && w.exKana && w.exDif === "simple";
+    const isEligible = (w: WordItem) =>
+      w.exJa && w.exFr && w.exKana && w.exDif === "simple" && w.exTier === tier;
     for (const w of words) {
       const p = progressMap.get(progressKey("word", w.id));
       if (p?.lastReviewedAt && new Date(p.lastReviewedAt).getTime() >= weekAgo) {
-        if (isSimple(w)) recentlyStudied.push(w);
-      } else if (isSimple(w)) {
+        if (isEligible(w)) recentlyStudied.push(w);
+      } else if (isEligible(w)) {
         others.push(w);
       }
     }
     return { recentlyStudied, others };
-  }, [words, progressMap]);
+  }, [words, progressMap, tier]);
+
+  const tierCounts = useMemo(() => {
+    const eligible = (w: WordItem) => w.exJa && w.exFr && w.exKana && w.exDif === "simple";
+    const c = { 1: 0, 2: 0 };
+    for (const w of words) if (eligible(w)) c[(w.exTier || 2) as 1 | 2]++;
+    return c;
+  }, [words]);
 
   const buildQueue = () => {
     const eligible = (pool: WordItem[]) =>
-      pool.filter((w) => w.exJa && w.exFr && w.exKana && w.exDif === "simple");
+      pool.filter((w) => w.exJa && w.exFr && w.exKana && w.exDif === "simple" && w.exTier === tier);
     let picked: WordItem[] = [];
     if (scope === "recent") {
       const recent = eligible(pools.recentlyStudied);
       picked = recent.slice(0, size);
       if (picked.length < size) {
         const rest = eligible(pools.others).filter((w) => !picked.includes(w));
-        // d'abord les jamais étudiés (ordre du livre), puis le reste
+        // d'abord les jamais étudiés (ordre pédagogique), puis le reste
         const fresh = rest.filter((w) => !progressMap.get(progressKey("word", w.id)));
         const seen = rest.filter((w) => progressMap.get(progressKey("word", w.id)));
         picked = [...picked, ...fresh.slice(0, size - picked.length)];
@@ -94,7 +116,10 @@ export function Exercises() {
     if (!entries.length) {
       toast({
         title: "Pas encore de phrases disponibles",
-        description: "Aucune phrase simple ne correspond à ce filtre pour le moment.",
+        description:
+          tier === 1
+            ? "Aucune phrase facile ne correspond à ce filtre pour le moment."
+            : "Aucune phrase de ce niveau ne correspond à ce filtre pour le moment.",
       });
     }
   };
@@ -129,7 +154,9 @@ export function Exercises() {
 
   /* ---------------- Configuration ---------------- */
   if (phase === "setup") {
-    const nRecent = pools.recentlyStudied.filter((w) => w.exJa && w.exFr && w.exKana).length;
+    const nRecent = pools.recentlyStudied.length;
+    const pctDisplay = Math.round(mastery.pct * 100);
+    const needed = Math.max(0, Math.ceil(UNLOCK_PCT * words.length) - mastery.mastered);
     return (
       <div className="mx-auto w-full max-w-2xl space-y-6 px-4 pb-10 pt-6">
         <SectionTitle kanji="翻訳">Exercices de traduction</SectionTitle>
@@ -146,6 +173,72 @@ export function Exercises() {
             </div>
 
             <div>
+              <p className="mb-2 text-sm font-medium">Difficulté des phrases</p>
+              <div className="grid gap-2">
+                <button
+                  type="button"
+                  onClick={() => setTier(1)}
+                  aria-pressed={tier === 1}
+                  className={cn(
+                    "rounded-xl border p-4 text-left transition-all",
+                    tier === 1
+                      ? "border-primary bg-primary/5 ring-2 ring-primary/20"
+                      : "bg-card hover:border-primary/40"
+                  )}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold">Phrases faciles</span>
+                    <span className="text-xs text-muted-foreground">{tierCounts[1]} disponibles</span>
+                  </div>
+                  <p className="mt-1 text-xs text-muted-foreground">
+                    Courtes, grammaire N5 de base — idéales pour démarrer.
+                  </p>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => mastery.unlocked && setTier(2)}
+                  aria-pressed={tier === 2}
+                  aria-disabled={!mastery.unlocked}
+                  className={cn(
+                    "rounded-xl border p-4 text-left transition-all",
+                    tier === 2 && mastery.unlocked
+                      ? "border-primary bg-primary/5 ring-2 ring-primary/20"
+                      : "bg-card",
+                    mastery.unlocked ? "hover:border-primary/40" : "cursor-not-allowed opacity-70"
+                  )}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="flex items-center gap-2 font-semibold">
+                      Phrases plus riches
+                      {!mastery.unlocked && <Lock className="h-3.5 w-3.5 text-gold" aria-hidden />}
+                    </span>
+                    <span className="text-xs text-muted-foreground">{tierCounts[2]} disponibles</span>
+                  </div>
+                  {mastery.unlocked ? (
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      Vocabulaire et tournures un peu plus variés, toujours au programme N5.
+                    </p>
+                  ) : (
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      Débloquées quand {Math.round(UNLOCK_PCT * 100)} % du vocabulaire est maîtrisé
+                      (intervalle de révision ≥ {MASTERED_DAYS} j) — actuellement {pctDisplay} %
+                      {needed > 0 && <> · encore {needed} mot{needed > 1 ? "s" : ""}</>}.
+                    </p>
+                  )}
+                  {!mastery.unlocked && (
+                    <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-border">
+                      <div
+                        className="h-full rounded-full bg-gold transition-all duration-500"
+                        style={{ width: `${Math.min(100, (mastery.pct / UNLOCK_PCT) * 100)}%` }}
+                      />
+                    </div>
+                  )}
+                </button>
+              </div>
+            </div>
+
+            <div>
               <p className="mb-2 text-sm font-medium">Vocabulaire visé</p>
               <div className="flex flex-wrap gap-2">
                 <FilterChip active={scope === "recent"} onClick={() => setScope("recent")}>
@@ -158,7 +251,7 @@ export function Exercises() {
               {scope === "recent" && nRecent === 0 && (
                 <p className="mt-2 text-xs text-muted-foreground">
                   Aucun mot étudié récemment — les premières sessions piocheront dans les nouveaux mots
-                  (ordre du livre).
+                  (ordre pédagogique).
                 </p>
               )}
             </div>
@@ -266,7 +359,17 @@ export function Exercises() {
             >
               {item.direction === "j2f" ? "日本語 → Français" : "Français → 日本語"}
             </span>
-            <span className="text-xs text-muted-foreground">{w.level}</span>
+            <span className="flex items-center gap-2">
+              <span
+                className={cn(
+                  "rounded-full px-2 py-0.5 text-[10px] font-semibold",
+                  w.exTier === 1 ? "bg-matcha/15 text-matcha" : "bg-gold/15 text-[#8a6d1d]"
+                )}
+              >
+                {w.exTier === 1 ? "Niveau 1" : "Niveau 2"}
+              </span>
+              <span className="text-xs text-muted-foreground">{w.level}</span>
+            </span>
           </div>
 
           {item.direction === "j2f" ? (

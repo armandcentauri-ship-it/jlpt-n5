@@ -9,8 +9,8 @@ export const dynamic = "force-dynamic";
 export async function GET() {
   try {
     const [words, kanji, progress, logs] = await Promise.all([
-      db.word.findMany({ orderBy: { wid: "asc" } }),
-      db.kanji.findMany({ orderBy: { level: "desc" } }),
+      db.word.findMany({ orderBy: { orderIdx: "asc" } }),
+      db.kanji.findMany({ orderBy: { orderIdx: "asc" } }),
       db.progress.findMany(),
       db.reviewLog.findMany({ select: { grade: true, createdAt: true, mode: true } }),
     ]);

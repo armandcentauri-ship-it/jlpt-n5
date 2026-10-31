@@ -9,6 +9,7 @@ import { AudioButton } from "./AudioButton";
 import { Ruby } from "./Ruby";
 import { splitMeanings } from "@/lib/format";
 import { normalizeFr } from "@/lib/grade";
+import { themeLabel, THEMES } from "@/lib/themes";
 import { dueLabel } from "@/lib/srs";
 import { cn } from "@/lib/utils";
 
@@ -20,6 +21,7 @@ export function VocabExplorer() {
   const { words, progressMap } = useAppState();
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<StatusFilter>("all");
+  const [theme, setTheme] = useState<string>("all");
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
 
   const toggle = (id: string) =>
@@ -39,9 +41,16 @@ export function VocabExplorer() {
     [progressMap]
   );
 
+  const themeCounts = useMemo(() => {
+    const c = new Map<string, number>();
+    for (const w of words) c.set(w.theme, (c.get(w.theme) ?? 0) + 1);
+    return c;
+  }, [words]);
+
   const filtered = useMemo(() => {
     const q = normalizeFr(query.trim().toLowerCase());
     return words.filter((w) => {
+      if (theme !== "all" && w.theme !== theme) return false;
       const st = statusOf(w.id);
       if (filter === "new" && st !== "new") return false;
       if (filter === "learning" && st !== "learning") return false;
@@ -54,10 +63,25 @@ export function VocabExplorer() {
         w.romaji.toLowerCase().includes(q) ||
         normalizeFr(w.meaningFr).includes(q) ||
         w.meaningEn.toLowerCase().includes(q) ||
-        normalizeFr(w.exFr).includes(q)
+        normalizeFr(w.exFr).includes(q) ||
+        themeLabel(w.theme).toLowerCase().includes(q)
       );
     });
-  }, [words, filter, query, statusOf]);
+  }, [words, filter, theme, query, statusOf]);
+
+  /* liste avec en-têtes de thème (les mots sont déjà dans l'ordre pédagogique) */
+  const grouped = useMemo(() => {
+    const out: ({ type: "header"; label: string; count: number; key: string } | { type: "word"; word: (typeof words)[number] })[] = [];
+    let last = "";
+    for (const w of filtered) {
+      if (w.theme !== last) {
+        last = w.theme;
+        out.push({ type: "header", label: themeLabel(w.theme), count: themeCounts.get(w.theme) ?? 0, key: w.theme });
+      }
+      out.push({ type: "word", word: w });
+    }
+    return out;
+  }, [filtered, themeCounts]);
 
   const counts = useMemo(() => {
     let n = 0, l = 0, m = 0;
@@ -74,7 +98,7 @@ export function VocabExplorer() {
     <div className="mx-auto w-full max-w-3xl space-y-4 px-4 pb-10 pt-6">
       <div className="flex items-baseline justify-between">
         <h2 className="font-jp-serif text-2xl font-bold">
-          単語 <span className="text-lg text-muted-foreground">· Vocabulaire</span>
+          単語 <span className="text-lg text-muted-foreground">· Vocabulaire par thème</span>
         </h2>
         <span className="text-xs text-muted-foreground">{filtered.length} mot(s)</span>
       </div>
@@ -90,7 +114,7 @@ export function VocabExplorer() {
             aria-label="Rechercher un mot"
           />
         </div>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <FilterChip active={filter === "all"} onClick={() => setFilter("all")}>
             Tous ({words.length})
           </FilterChip>
@@ -110,10 +134,40 @@ export function VocabExplorer() {
             Maîtrisés ({counts.mastered})
           </FilterChip>
         </div>
+        <div>
+          <label htmlFor="theme-select" className="sr-only">
+            Filtrer par thème
+          </label>
+          <select
+            id="theme-select"
+            value={theme}
+            onChange={(e) => setTheme(e.target.value)}
+            className="h-9 w-full max-w-xs rounded-md border border-input bg-card px-2 text-sm shadow-sm outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          >
+            <option value="all">Tous les thèmes (ordre pédagogique)</option>
+            {THEMES.map((t) => (
+              <option key={t.key} value={t.key}>
+                {t.label} ({themeCounts.get(t.key) ?? 0})
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
 
       <div className="custom-scroll max-h-[65vh] space-y-2 overflow-y-auto pr-1">
-        {filtered.map((w) => {
+        {grouped.map((g) => {
+          if (g.type === "header") {
+            return (
+              <div key={`h-${g.key}`} className="mt-5 flex items-center gap-2 first:mt-1">
+                <span className="whitespace-nowrap text-[11px] font-semibold uppercase tracking-wide text-primary">
+                  {g.label}
+                </span>
+                <span className="h-px flex-1 bg-border" aria-hidden />
+                <span className="text-[10px] text-muted-foreground">{g.count}</span>
+              </div>
+            );
+          }
+          const w = g.word;
           const st = statusOf(w.id);
           const isOpen = expanded.has(w.id);
           const p = progressMap.get(progressKey("word", w.id));
@@ -161,14 +215,14 @@ export function VocabExplorer() {
                 <div className="anim-fade-up space-y-3 border-t px-4 py-3">
                   <div className="flex items-start justify-between gap-2">
                     <div>
-                      <p className="font-medium">
-                        {meanings.join(" ; ")}
-                      </p>
+                      <p className="font-medium">{meanings.join(" ; ")}</p>
                       {w.meaningFr && w.meaningEn && (
                         <p className="mt-0.5 text-xs text-muted-foreground">EN : {w.meaningEn}</p>
                       )}
                       <p className="mt-1 text-xs text-muted-foreground">
                         {w.romaji && <span className="italic">{w.romaji} · </span>}
+                        <span className="font-medium text-primary/80">{themeLabel(w.theme)}</span>
+                        {" · "}
                         {w.level === "N5" ? "Vocabulaire N5" : "Complément N4 (type Tango N5)"}
                       </p>
                     </div>
@@ -184,7 +238,7 @@ export function VocabExplorer() {
                           ) : (
                             <p className="font-jp text-base">{w.exJa}</p>
                           )}
-                          {w.exFr && <p className="mt-1 text-sm italic text-muted-foreground">{w.exFr}</p>}
+                          {w.exFr && <p className="mt-1.5 text-sm italic text-muted-foreground">{w.exFr}</p>}
                         </div>
                         <AudioButton text={w.exJa} />
                       </div>
