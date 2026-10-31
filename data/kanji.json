@@ -1,0 +1,12131 @@
+[
+ {
+  "character": "不",
+  "level": "N4",
+  "onyomi": [
+   "フ",
+   "ブ"
+  ],
+  "kunyomi": [],
+  "strokes": 4,
+  "meaningsFr": [
+   "négatif"
+  ],
+  "meaningsEn": [
+   "negative",
+   "non-",
+   "bad",
+   "ugly",
+   "clumsy",
+   "négation",
+   "non",
+   "mauvais",
+   "laid",
+   "maladroit",
+   "prefijo negativo: in-",
+   "des-",
+   "Prefixo negativo",
+   "negativa",
+   "não",
+   "feia",
+   "ruim",
+   "deselegante"
+  ],
+  "examples": [
+   {
+    "word": "不便",
+    "reading": "ふべん",
+    "fr": "incommodité; inconvénient; peu pratique",
+    "en": "inconvenience"
+   }
+  ]
+ },
+ {
+  "character": "世",
+  "level": "N4",
+  "onyomi": [
+   "セイ",
+   "セ",
+   "ソウ"
+  ],
+  "kunyomi": [
+   "よ"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "génération"
+  ],
+  "meaningsEn": [
+   "generation",
+   "world",
+   "society",
+   "public",
+   "génération",
+   "monde",
+   "société",
+   "public",
+   "generación",
+   "mundo",
+   "edad",
+   "geração",
+   "mundo",
+   "sociedade",
+   "pública"
+  ],
+  "examples": [
+   {
+    "word": "世界",
+    "reading": "せかい",
+    "fr": "l'univers; le monde",
+    "en": "the world"
+   },
+   {
+    "word": "世話",
+    "reading": "せわ",
+    "fr": "aide; assistance",
+    "en": "to look after"
+   }
+  ]
+ },
+ {
+  "character": "主",
+  "level": "N4",
+  "onyomi": [
+   "シュ",
+   "ス",
+   "シュウ"
+  ],
+  "kunyomi": [
+   "ぬし",
+   "おも",
+   "あるじ"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "seigneur"
+  ],
+  "meaningsEn": [
+   "lord",
+   "chief",
+   "master",
+   "main thing",
+   "principal",
+   "maître",
+   "seigneur",
+   "chef",
+   "principal",
+   "propriétaire",
+   "mari",
+   "señor",
+   "jefe",
+   "dueño",
+   "patrón",
+   "senhor",
+   "chefe",
+   "mestre",
+   "coisa principal",
+   "principal"
+  ],
+  "examples": []
+ },
+ {
+  "character": "事",
+  "level": "N4",
+  "onyomi": [
+   "ジ",
+   "ズ"
+  ],
+  "kunyomi": [
+   "こと",
+   "つか.う",
+   "つか.える"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "matière"
+  ],
+  "meaningsEn": [
+   "matter",
+   "thing",
+   "fact",
+   "business",
+   "reason",
+   "possibly",
+   "fait",
+   "chose",
+   "matière",
+   "affaire",
+   "raison",
+   "peut-être",
+   "cosa",
+   "hecho",
+   "asunto",
+   "acción",
+   "matéria",
+   "coisa",
+   "fato",
+   "negócios",
+   "razão",
+   "possivelmente"
+  ],
+  "examples": [
+   {
+    "word": "仕事",
+    "reading": "しごと",
+    "fr": "emploi; occupation; travail",
+    "en": "job"
+   },
+   {
+    "word": "火事",
+    "reading": "かじ",
+    "fr": "incendie",
+    "en": "fire"
+   },
+   {
+    "word": "事故",
+    "reading": "じこ",
+    "fr": "accident; incident",
+    "en": "accident"
+   },
+   {
+    "word": "食事",
+    "reading": "しょくじ",
+    "fr": "repas",
+    "en": "to have a meal"
+   },
+   {
+    "word": "大事",
+    "reading": "だいじ",
+    "fr": "important; précieux",
+    "en": "important; valuable; serious matter"
+   },
+   {
+    "word": "返事",
+    "reading": "へんじ",
+    "fr": "réponse",
+    "en": "reply"
+   }
+  ]
+ },
+ {
+  "character": "京",
+  "level": "N4",
+  "onyomi": [
+   "キョウ",
+   "ケイ",
+   "キン"
+  ],
+  "kunyomi": [
+   "みやこ"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "capitale"
+  ],
+  "meaningsEn": [
+   "capital",
+   "10**16",
+   "capitale",
+   "10**16",
+   "capital",
+   "capital",
+   "10 elevado a 16"
+  ],
+  "examples": []
+ },
+ {
+  "character": "仕",
+  "level": "N4",
+  "onyomi": [
+   "シ",
+   "ジ"
+  ],
+  "kunyomi": [
+   "つか.える"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "attendre"
+  ],
+  "meaningsEn": [
+   "attend",
+   "doing",
+   "official",
+   "serve",
+   "servir",
+   "faire",
+   "officiel",
+   "trabajo",
+   "servir",
+   "asistir",
+   "atender",
+   "ação",
+   "oficial",
+   "servir"
+  ],
+  "examples": [
+   {
+    "word": "仕事",
+    "reading": "しごと",
+    "fr": "emploi; occupation; travail",
+    "en": "job"
+   },
+   {
+    "word": "仕方",
+    "reading": "しかた",
+    "fr": "méthode; manière; moyen",
+    "en": "method"
+   }
+  ]
+ },
+ {
+  "character": "代",
+  "level": "N4",
+  "onyomi": [
+   "ダイ",
+   "タイ"
+  ],
+  "kunyomi": [
+   "か.わる",
+   "かわ.る",
+   "かわ.り",
+   "か.わり",
+   "-がわ.り",
+   "-が.わり",
+   "か.える",
+   "よ",
+   "しろ"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "substitut"
+  ],
+  "meaningsEn": [
+   "substitute",
+   "change",
+   "convert",
+   "replace",
+   "period",
+   "age",
+   "counter for decades of ages, eras, etc.",
+   "generation",
+   "charge",
+   "rate",
+   "fee",
+   "substituer",
+   "changer",
+   "convertir",
+   "remplacer",
+   "période",
+   "âge",
+   "ère",
+   "génération",
+   "montant d'argent",
+   "taux",
+   "prix",
+   "redevance",
+   "generación",
+   "reinado",
+   "sustituir",
+   "reemplazar",
+   "relevar",
+   "substituto",
+   "mudança",
+   "convertido",
+   "repor",
+   "período",
+   "idade",
+   "geração",
+   "carga",
+   "valor",
+   "taxa"
+  ],
+  "examples": [
+   {
+    "word": "時代",
+    "reading": "じだい",
+    "fr": "âge; ère; époque",
+    "en": "era"
+   }
+  ]
+ },
+ {
+  "character": "以",
+  "level": "N4",
+  "onyomi": [
+   "イ"
+  ],
+  "kunyomi": [
+   "もっ.て"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "au moyen de"
+  ],
+  "meaningsEn": [
+   "by means of",
+   "because",
+   "in view of",
+   "compared with",
+   "au moyen de",
+   "parce que",
+   "en vue de",
+   "comparé à",
+   "además de",
+   "más que",
+   "Por meios de",
+   "porque",
+   "em visão de",
+   "comparada com"
+  ],
+  "examples": [
+   {
+    "word": "以下",
+    "reading": "いか",
+    "fr": "jusqu'à; moins que; sous",
+    "en": "less than"
+   },
+   {
+    "word": "以外",
+    "reading": "いがい",
+    "fr": "à l'exception de; sauf",
+    "en": "with the exception of"
+   },
+   {
+    "word": "以上",
+    "reading": "いじょう",
+    "fr": "ci-dessus; davantage; plus que",
+    "en": "more than; this is all"
+   },
+   {
+    "word": "以内",
+    "reading": "いない",
+    "fr": "avant de; moins de",
+    "en": "within"
+   }
+  ]
+ },
+ {
+  "character": "会",
+  "level": "N5",
+  "onyomi": [
+   "カイ",
+   "エ"
+  ],
+  "kunyomi": [
+   "あ.う",
+   "あ.わせる",
+   "あつ.まる"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "réunion"
+  ],
+  "meaningsEn": [
+   "meeting",
+   "meet",
+   "party",
+   "association",
+   "interview",
+   "join",
+   "réunion",
+   "rencontre",
+   "meeting",
+   "parti",
+   "association",
+   "entrevue",
+   "rejoindre",
+   "asociación",
+   "reunión",
+   "encontrarse con",
+   "reunirse",
+   "encontro",
+   "reunião",
+   "festa",
+   "associação",
+   "entrevista",
+   "une"
+  ],
+  "examples": [
+   {
+    "word": "会う",
+    "reading": "あう",
+    "fr": "rencontrer; rencontrer; se rencontrer",
+    "en": "to meet"
+   },
+   {
+    "word": "会社",
+    "reading": "かいしゃ",
+    "fr": "compagnie; entreprise; société",
+    "en": "company"
+   },
+   {
+    "word": "会議",
+    "reading": "かいぎ",
+    "fr": "assemblée; conférence; congrès",
+    "en": "meeting"
+   },
+   {
+    "word": "会場",
+    "reading": "かいじょう",
+    "fr": "lieu ou se tient une réunion",
+    "en": "assembly hall or meeting place"
+   },
+   {
+    "word": "会話",
+    "reading": "かいわ",
+    "fr": "conversation; dialogue; discussion",
+    "en": "conversation"
+   },
+   {
+    "word": "機会",
+    "reading": "きかい",
+    "fr": "chance; opportunité",
+    "en": "opportunity"
+   }
+  ]
+ },
+ {
+  "character": "住",
+  "level": "N4",
+  "onyomi": [
+   "ジュウ",
+   "ヂュウ",
+   "チュウ"
+  ],
+  "kunyomi": [
+   "す.む",
+   "す.まう",
+   "-ず.まい"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "habiter"
+  ],
+  "meaningsEn": [
+   "dwell",
+   "reside",
+   "live",
+   "inhabit",
+   "résider",
+   "vivre",
+   "habiter",
+   "residir",
+   "vivir",
+   "habitar",
+   "residencia",
+   "reside",
+   "vida",
+   "habita"
+  ],
+  "examples": [
+   {
+    "word": "住む",
+    "reading": "すむ",
+    "fr": "habiter; résider; vivre(à)",
+    "en": "to live in"
+   },
+   {
+    "word": "住所",
+    "reading": "じゅうしょ",
+    "fr": "adresse; domicile",
+    "en": "an address; a residence"
+   }
+  ]
+ },
+ {
+  "character": "体",
+  "level": "N4",
+  "onyomi": [
+   "タイ",
+   "テイ"
+  ],
+  "kunyomi": [
+   "からだ",
+   "かたち"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "corps"
+  ],
+  "meaningsEn": [
+   "body",
+   "substance",
+   "object",
+   "reality",
+   "counter for images",
+   "corps",
+   "substance",
+   "objet",
+   "réalité",
+   "compteur d'images",
+   "cuerpo",
+   "forma",
+   "corpo",
+   "substância",
+   "objeto",
+   "realidade",
+   "sufixo para contagem de para imagens"
+  ],
+  "examples": [
+   {
+    "word": "体",
+    "reading": "からだ",
+    "fr": "corps (physique); santé; corps (physique)",
+    "en": "body"
+   },
+   {
+    "word": "大体",
+    "reading": "だいたい",
+    "fr": "dans l'ensemble; général; point essentiel",
+    "en": "generally"
+   }
+  ]
+ },
+ {
+  "character": "作",
+  "level": "N4",
+  "onyomi": [
+   "サク",
+   "サ"
+  ],
+  "kunyomi": [
+   "つく.る",
+   "つく.り",
+   "-づく.り"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "faire"
+  ],
+  "meaningsEn": [
+   "make",
+   "production",
+   "prepare",
+   "build",
+   "fabriquer",
+   "produire",
+   "construire",
+   "préparer",
+   "hacer",
+   "construir",
+   "fabricar",
+   "conducta",
+   "comportamiento",
+   "crear",
+   "fazer",
+   "produção",
+   "preparar",
+   "construção"
+  ],
+  "examples": [
+   {
+    "word": "作文",
+    "reading": "さくぶん",
+    "fr": "écriture; composition",
+    "en": "composition; writing"
+   },
+   {
+    "word": "作る",
+    "reading": "つくる",
+    "fr": "élaborer; établir; ajuster",
+    "en": "to make"
+   }
+  ]
+ },
+ {
+  "character": "使",
+  "level": "N4",
+  "onyomi": [
+   "シ"
+  ],
+  "kunyomi": [
+   "つか.う",
+   "つか.い",
+   "-つか.い",
+   "-づか.い"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "utiliser"
+  ],
+  "meaningsEn": [
+   "use",
+   "send on a mission",
+   "order",
+   "messenger",
+   "envoy",
+   "ambassador",
+   "cause",
+   "utiliser",
+   "usar",
+   "manejar",
+   "emplear",
+   "Uso",
+   "usar"
+  ],
+  "examples": [
+   {
+    "word": "大使館",
+    "reading": "たいしかん",
+    "fr": "ambassade",
+    "en": "embassy"
+   },
+   {
+    "word": "使う",
+    "reading": "つかう",
+    "fr": "consommer; employer; manier",
+    "en": "to use"
+   }
+  ]
+ },
+ {
+  "character": "借",
+  "level": "N4",
+  "onyomi": [
+   "シャク"
+  ],
+  "kunyomi": [
+   "か.りる"
+  ],
+  "strokes": 10,
+  "meaningsFr": [
+   "emprunter"
+  ],
+  "meaningsEn": [
+   "borrow",
+   "rent",
+   "emprunter",
+   "louer",
+   "deuda",
+   "pedir prestado",
+   "alquilar",
+   "pedir emprestado",
+   "aluguel"
+  ],
+  "examples": [
+   {
+    "word": "借りる",
+    "reading": "かりる",
+    "fr": "emprunter; louer",
+    "en": "to borrow"
+   }
+  ]
+ },
+ {
+  "character": "元",
+  "level": "N4",
+  "onyomi": [
+   "ゲン",
+   "ガン"
+  ],
+  "kunyomi": [
+   "もと"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "début"
+  ],
+  "meaningsEn": [
+   "beginning",
+   "former time",
+   "origin",
+   "commencement",
+   "origine",
+   "ancien temps",
+   "comienzo",
+   "principio",
+   "origen",
+   "jefe",
+   "começo",
+   "tempo anterior",
+   "origem"
+  ],
+  "examples": [
+   {
+    "word": "元気",
+    "reading": "げんき",
+    "fr": "énergie; bonne santé; santé",
+    "en": "health; vitality"
+   }
+  ]
+ },
+ {
+  "character": "兄",
+  "level": "N4",
+  "onyomi": [
+   "ケイ",
+   "キョウ"
+  ],
+  "kunyomi": [
+   "あに"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "frère aîné"
+  ],
+  "meaningsEn": [
+   "elder brother",
+   "big brother",
+   "frère aîné",
+   "grand frère",
+   "hermano mayor",
+   "irmão mais velho",
+   "irmão maior"
+  ],
+  "examples": [
+   {
+    "word": "兄",
+    "reading": "あに",
+    "fr": "frère ainé",
+    "en": "(humble) older brother"
+   },
+   {
+    "word": "お兄さん",
+    "reading": "おにいさん",
+    "fr": "frère aîné",
+    "en": "(honorable) older brother"
+   },
+   {
+    "word": "兄弟",
+    "reading": "きょうだい",
+    "fr": "frère; frères et sœurs; fratrie",
+    "en": "(humble) siblings"
+   }
+  ]
+ },
+ {
+  "character": "公",
+  "level": "N4",
+  "onyomi": [
+   "コウ",
+   "ク"
+  ],
+  "kunyomi": [
+   "おおやけ"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "public"
+  ],
+  "meaningsEn": [
+   "public",
+   "prince",
+   "official",
+   "governmental",
+   "public",
+   "prince",
+   "officiel",
+   "gouvernemental",
+   "público",
+   "imparcial",
+   "oficial",
+   "público",
+   "príncipe",
+   "oficial",
+   "governamental"
+  ],
+  "examples": [
+   {
+    "word": "公園",
+    "reading": "こうえん",
+    "fr": "jardin public; parc",
+    "en": "park"
+   }
+  ]
+ },
+ {
+  "character": "写",
+  "level": "N4",
+  "onyomi": [
+   "シャ",
+   "ジャ"
+  ],
+  "kunyomi": [
+   "うつ.す",
+   "うつ.る",
+   "うつ-",
+   "うつ.し"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "copier"
+  ],
+  "meaningsEn": [
+   "copy",
+   "be photographed",
+   "describe",
+   "copie",
+   "être photographié",
+   "décrire",
+   "copiar",
+   "imitar",
+   "fotografiar",
+   "cópia",
+   "foto",
+   "descrever"
+  ],
+  "examples": [
+   {
+    "word": "写真",
+    "reading": "しゃしん",
+    "fr": "photographie",
+    "en": "photograph"
+   },
+   {
+    "word": "写す",
+    "reading": "うつす",
+    "fr": "copier; décrire; dupliquer",
+    "en": "to copy or photograph"
+   }
+  ]
+ },
+ {
+  "character": "冬",
+  "level": "N4",
+  "onyomi": [
+   "トウ"
+  ],
+  "kunyomi": [
+   "ふゆ"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "hiver"
+  ],
+  "meaningsEn": [
+   "winter",
+   "hiver",
+   "invierno",
+   "Inverno"
+  ],
+  "examples": [
+   {
+    "word": "冬",
+    "reading": "ふゆ",
+    "fr": "hiver",
+    "en": "winter"
+   }
+  ]
+ },
+ {
+  "character": "切",
+  "level": "N4",
+  "onyomi": [
+   "セツ",
+   "サイ"
+  ],
+  "kunyomi": [
+   "き.る",
+   "-き.る",
+   "き.り",
+   "-き.り",
+   "-ぎ.り",
+   "き.れる",
+   "-き.れる",
+   "き.れ",
+   "-き.れ",
+   "-ぎ.れ"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "couper"
+  ],
+  "meaningsEn": [
+   "cut",
+   "cutoff",
+   "be sharp",
+   "couper",
+   "trancher",
+   "tranchant",
+   "passionné",
+   "sérieux",
+   "cortar",
+   "urgente",
+   "apremiante",
+   "completo",
+   "cortar bien",
+   "agotarse",
+   "corte",
+   "talho",
+   "afiar"
+  ],
+  "examples": [
+   {
+    "word": "切手",
+    "reading": "きって",
+    "fr": "timbre (poste)",
+    "en": "postage stamp"
+   },
+   {
+    "word": "切符",
+    "reading": "きっぷ",
+    "fr": "billet; ticket",
+    "en": "ticket"
+   },
+   {
+    "word": "切る",
+    "reading": "きる",
+    "fr": "égoutter; émincer; éteindre",
+    "en": "to cut"
+   },
+   {
+    "word": "大切",
+    "reading": "たいせつ",
+    "fr": "important",
+    "en": "important"
+   },
+   {
+    "word": "親切",
+    "reading": "しんせつ",
+    "fr": "gentillesse",
+    "en": "kindness"
+   }
+  ]
+ },
+ {
+  "character": "別",
+  "level": "N4",
+  "onyomi": [
+   "ベツ"
+  ],
+  "kunyomi": [
+   "わか.れる",
+   "わ.ける"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "séparer"
+  ],
+  "meaningsEn": [
+   "separate",
+   "branch off",
+   "diverge",
+   "fork",
+   "another",
+   "extra",
+   "specially",
+   "séparer",
+   "spécialement",
+   "diverger",
+   "extra",
+   "un autre",
+   "separar",
+   "aparte",
+   "distinto",
+   "dividirse",
+   "separar",
+   "ramo desligado",
+   "divergir",
+   "garfo",
+   "outro",
+   "extra",
+   "especialmente"
+  ],
+  "examples": [
+   {
+    "word": "別",
+    "reading": "べつ",
+    "fr": "autre; difference; distinction",
+    "en": "different"
+   },
+   {
+    "word": "特別",
+    "reading": "とくべつ",
+    "fr": "spécial",
+    "en": "special"
+   }
+  ]
+ },
+ {
+  "character": "力",
+  "level": "N4",
+  "onyomi": [
+   "リョク",
+   "リキ",
+   "リイ"
+  ],
+  "kunyomi": [
+   "ちから"
+  ],
+  "strokes": 2,
+  "meaningsFr": [
+   "pouvoir"
+  ],
+  "meaningsEn": [
+   "power",
+   "strength",
+   "strong",
+   "strain",
+   "bear up",
+   "exert",
+   "force",
+   "fort",
+   "puissance",
+   "tension",
+   "tenir le coup",
+   "s'efforcer",
+   "employer (force)",
+   "potencia",
+   "poder",
+   "fuerza",
+   "energía",
+   "vigor",
+   "énfasis",
+   "força",
+   "forte",
+   "esforço",
+   "suportar",
+   "exercer"
+  ],
+  "examples": [
+   {
+    "word": "力",
+    "reading": "ちから",
+    "fr": "énergie; force; vigueur",
+    "en": "strength; power"
+   }
+  ]
+ },
+ {
+  "character": "勉",
+  "level": "N4",
+  "onyomi": [
+   "ベン"
+  ],
+  "kunyomi": [
+   "つと.める"
+  ],
+  "strokes": 10,
+  "meaningsFr": [
+   "effort"
+  ],
+  "meaningsEn": [
+   "exertion",
+   "endeavour",
+   "encourage",
+   "strive",
+   "make effort",
+   "diligent",
+   "exercice",
+   "esforzarse",
+   "ejercitarse",
+   "esforço"
+  ],
+  "examples": [
+   {
+    "word": "勉強",
+    "reading": "べんきょう",
+    "fr": "études; rabais",
+    "en": "to study"
+   }
+  ]
+ },
+ {
+  "character": "動",
+  "level": "N4",
+  "onyomi": [
+   "ドウ"
+  ],
+  "kunyomi": [
+   "うご.く",
+   "うご.かす"
+  ],
+  "strokes": 11,
+  "meaningsFr": [
+   "déplacer"
+  ],
+  "meaningsEn": [
+   "move",
+   "motion",
+   "change",
+   "confusion",
+   "shift",
+   "shake",
+   "bouger",
+   "mouvement",
+   "changement",
+   "confusion",
+   "secouer",
+   "mover",
+   "movimiento",
+   "moverse",
+   "trasladar",
+   "mover",
+   "movimento",
+   "mudança",
+   "jáfusão",
+   "trocar",
+   "agitar"
+  ],
+  "examples": [
+   {
+    "word": "自動車",
+    "reading": "じどうしゃ",
+    "fr": "automobile; voiture",
+    "en": "automobile"
+   },
+   {
+    "word": "動物",
+    "reading": "どうぶつ",
+    "fr": "animal",
+    "en": "animal"
+   },
+   {
+    "word": "動く",
+    "reading": "うごく",
+    "fr": "bouger; changer; fluctuer",
+    "en": "to move"
+   },
+   {
+    "word": "運動",
+    "reading": "うんどう",
+    "fr": "activité; exercice; mouvement",
+    "en": "to exercise"
+   }
+  ]
+ },
+ {
+  "character": "医",
+  "level": "N4",
+  "onyomi": [
+   "イ"
+  ],
+  "kunyomi": [
+   "い.やす",
+   "い.する",
+   "くすし"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "docteur"
+  ],
+  "meaningsEn": [
+   "doctor",
+   "medicine",
+   "médecin",
+   "docteur",
+   "doctor",
+   "médico",
+   "medicina",
+   "curar",
+   "doutor",
+   "remédio"
+  ],
+  "examples": [
+   {
+    "word": "医者",
+    "reading": "いしゃ",
+    "fr": "médecin",
+    "en": "medical doctor"
+   },
+   {
+    "word": "医学",
+    "reading": "いがく",
+    "fr": "médecine",
+    "en": "medical science"
+   }
+  ]
+ },
+ {
+  "character": "去",
+  "level": "N4",
+  "onyomi": [
+   "キョ",
+   "コ"
+  ],
+  "kunyomi": [
+   "さ.る",
+   "-さ.る"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "partir"
+  ],
+  "meaningsEn": [
+   "gone",
+   "past",
+   "quit",
+   "leave",
+   "elapse",
+   "eliminate",
+   "divorce",
+   "parti",
+   "passé",
+   "quitter",
+   "s'écouler",
+   "éliminer",
+   "divorce",
+   "pasado",
+   "ido",
+   "dejar",
+   "abandonar",
+   "partir",
+   "foi",
+   "passado",
+   "deixar",
+   "passar",
+   "eliminar",
+   "divórcio"
+  ],
+  "examples": [
+   {
+    "word": "去年",
+    "reading": "きょねん",
+    "fr": "l'année dernière",
+    "en": "last year"
+   }
+  ]
+ },
+ {
+  "character": "口",
+  "level": "N5",
+  "onyomi": [
+   "コウ",
+   "ク"
+  ],
+  "kunyomi": [
+   "くち"
+  ],
+  "strokes": 3,
+  "meaningsFr": [
+   "bouche"
+  ],
+  "meaningsEn": [
+   "mouth",
+   "bouche",
+   "boca",
+   "orificio",
+   "apertura",
+   "boca"
+  ],
+  "examples": [
+   {
+    "word": "入口",
+    "reading": "いりぐち",
+    "fr": "bouche (métro); entrée; porte",
+    "en": "entrance"
+   },
+   {
+    "word": "口",
+    "reading": "くち",
+    "fr": "bouche; orifice; ouverture",
+    "en": "mouth; opening"
+   },
+   {
+    "word": "出口",
+    "reading": "でぐち",
+    "fr": "fuite; orifice; passerelle",
+    "en": "exit"
+   },
+   {
+    "word": "人口",
+    "reading": "じんこう",
+    "fr": "population; \"on-dit\"; ragots",
+    "en": "population"
+   }
+  ]
+ },
+ {
+  "character": "古",
+  "level": "N5",
+  "onyomi": [
+   "コ"
+  ],
+  "kunyomi": [
+   "ふる.い",
+   "ふる-",
+   "-ふる.す"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "vieux"
+  ],
+  "meaningsEn": [
+   "old",
+   "vieux",
+   "viejo",
+   "antiguo",
+   "desgastar",
+   "velho"
+  ],
+  "examples": [
+   {
+    "word": "古い",
+    "reading": "ふるい",
+    "fr": "ancien; antique; caduque",
+    "en": "old (not used for people)"
+   }
+  ]
+ },
+ {
+  "character": "可",
+  "level": "N4",
+  "onyomi": [
+   "カ",
+   "コク"
+  ],
+  "kunyomi": [
+   "-べ.き",
+   "-べ.し"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "pouvoir"
+  ],
+  "meaningsEn": [
+   "can",
+   "passable",
+   "approval",
+   "possible",
+   "acceptable",
+   "ne doit pas",
+   "ne pas, négatif",
+   "bueno",
+   "aprobación",
+   "posible",
+   "poder hacer",
+   "aceitável",
+   "não deve não",
+   "faz"
+  ],
+  "examples": []
+ },
+ {
+  "character": "台",
+  "level": "N4",
+  "onyomi": [
+   "ダイ",
+   "タイ"
+  ],
+  "kunyomi": [
+   "うてな",
+   "われ",
+   "つかさ"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "piédestal"
+  ],
+  "meaningsEn": [
+   "pedestal",
+   "a stand",
+   "counter for machines and vehicles",
+   "piédestal",
+   "socle",
+   "compteur de voitures ou machines",
+   "estante",
+   "banco",
+   "tribuna",
+   "pedestal",
+   "contador para maquinas y vehículos",
+   "pedestal",
+   "stand",
+   "sufixo para contagem de para máquinas e veículos"
+  ],
+  "examples": [
+   {
+    "word": "台所",
+    "reading": "だいどころ",
+    "fr": "cuisine",
+    "en": "kitchen"
+   },
+   {
+    "word": "台風",
+    "reading": "たいふう",
+    "fr": "typhon",
+    "en": "typhoon"
+   }
+  ]
+ },
+ {
+  "character": "同",
+  "level": "N4",
+  "onyomi": [
+   "ドウ"
+  ],
+  "kunyomi": [
+   "おな.じ"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "même"
+  ],
+  "meaningsEn": [
+   "same",
+   "agree",
+   "equal",
+   "identique",
+   "similaire",
+   "égal",
+   "mismo",
+   "igual",
+   "compañero",
+   "idéntico",
+   "similar",
+   "mesmo",
+   "concorda",
+   "igual"
+  ],
+  "examples": [
+   {
+    "word": "同じ",
+    "reading": "おなじ",
+    "fr": "\"la même chose\"; égal; équivalent",
+    "en": "same"
+   }
+  ]
+ },
+ {
+  "character": "味",
+  "level": "N4",
+  "onyomi": [
+   "ミ"
+  ],
+  "kunyomi": [
+   "あじ",
+   "あじ.わう"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "saveur"
+  ],
+  "meaningsEn": [
+   "flavor",
+   "taste",
+   "goût",
+   "saveur",
+   "sabor",
+   "gusto",
+   "experiencia",
+   "sabor",
+   "gosto"
+  ],
+  "examples": [
+   {
+    "word": "意味",
+    "reading": "いみ",
+    "fr": "sens; signification",
+    "en": "meaning"
+   },
+   {
+    "word": "味",
+    "reading": "あじ",
+    "fr": "goût",
+    "en": "flavour"
+   },
+   {
+    "word": "興味",
+    "reading": "きょうみ",
+    "fr": "intérêt (à quelque chose)",
+    "en": "an interest"
+   },
+   {
+    "word": "趣味",
+    "reading": "しゅみ",
+    "fr": "goûts; intérêt; passe-temps",
+    "en": "hobby"
+   },
+   {
+    "word": "味噌",
+    "reading": "みそ",
+    "fr": "idée principale; miso; pâte à base de soje",
+    "en": "bean paste"
+   }
+  ]
+ },
+ {
+  "character": "品",
+  "level": "N4",
+  "onyomi": [
+   "ヒン",
+   "ホン"
+  ],
+  "kunyomi": [
+   "しな"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "biens"
+  ],
+  "meaningsEn": [
+   "goods",
+   "refinement",
+   "dignity",
+   "article",
+   "counter for meal courses",
+   "marchandise",
+   "dignité",
+   "raffinement",
+   "article",
+   "compteur de plats",
+   "producto",
+   "artículo",
+   "bienes",
+   "bens",
+   "refinamento",
+   "dignidade",
+   "artigo",
+   "sufixo para contagem de para pratos de refeição"
+  ],
+  "examples": [
+   {
+    "word": "品物",
+    "reading": "しなもの",
+    "fr": "marchandise; objet; produit",
+    "en": "goods"
+   }
+  ]
+ },
+ {
+  "character": "員",
+  "level": "N4",
+  "onyomi": [
+   "イン"
+  ],
+  "kunyomi": [],
+  "strokes": 10,
+  "meaningsFr": [
+   "employé"
+  ],
+  "meaningsEn": [
+   "employee",
+   "member",
+   "number",
+   "the one in charge",
+   "employé",
+   "membre",
+   "nombre (de personnes)",
+   "personne en charge",
+   "empleado",
+   "miembro",
+   "personal",
+   "empregado",
+   "membro",
+   "número",
+   "encarregado"
+  ],
+  "examples": [
+   {
+    "word": "店員",
+    "reading": "てんいん",
+    "fr": "employé de magasin; vendeur",
+    "en": "shop assistant"
+   }
+  ]
+ },
+ {
+  "character": "問",
+  "level": "N4",
+  "onyomi": [
+   "モン"
+  ],
+  "kunyomi": [
+   "と.う",
+   "と.い",
+   "とん"
+  ],
+  "strokes": 11,
+  "meaningsFr": [
+   "question"
+  ],
+  "meaningsEn": [
+   "question",
+   "ask",
+   "problem",
+   "question",
+   "demander",
+   "problème",
+   "duda",
+   "pregunta",
+   "problema",
+   "preguntar",
+   "acusar",
+   "perguntar",
+   "pergunta",
+   "problema"
+  ],
+  "examples": [
+   {
+    "word": "質問",
+    "reading": "しつもん",
+    "fr": "demande; question; requête",
+    "en": "question"
+   },
+   {
+    "word": "問題",
+    "reading": "もんだい",
+    "fr": "problème; question",
+    "en": "problem"
+   }
+  ]
+ },
+ {
+  "character": "図",
+  "level": "N4",
+  "onyomi": [
+   "ズ",
+   "ト"
+  ],
+  "kunyomi": [
+   "え",
+   "はか.る"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "carte"
+  ],
+  "meaningsEn": [
+   "map",
+   "drawing",
+   "plan",
+   "extraordinary",
+   "audacious",
+   "carte",
+   "dessin",
+   "plan",
+   "inattendu",
+   "accidentellement",
+   "dibujo",
+   "ilustración",
+   "consulta",
+   "estrategia",
+   "planear",
+   "diseñar",
+   "mapa",
+   "desenho",
+   "plano",
+   "inesperado",
+   "acidentalmente"
+  ],
+  "examples": [
+   {
+    "word": "地図",
+    "reading": "ちず",
+    "fr": "carte; plan",
+    "en": "map"
+   },
+   {
+    "word": "図書館",
+    "reading": "としょかん",
+    "fr": "bibliothèque",
+    "en": "library"
+   }
+  ]
+ },
+ {
+  "character": "地",
+  "level": "N4",
+  "onyomi": [
+   "チ",
+   "ジ"
+  ],
+  "kunyomi": [],
+  "strokes": 6,
+  "meaningsFr": [
+   "sol"
+  ],
+  "meaningsEn": [
+   "ground",
+   "earth",
+   "sol",
+   "terre",
+   "suelo",
+   "tierra",
+   "terreno",
+   "posición",
+   "terra",
+   "chão"
+  ],
+  "examples": [
+   {
+    "word": "地下鉄",
+    "reading": "ちかてつ",
+    "fr": "métro; métropolitain",
+    "en": "underground train"
+   },
+   {
+    "word": "地図",
+    "reading": "ちず",
+    "fr": "carte; plan",
+    "en": "map"
+   },
+   {
+    "word": "地震",
+    "reading": "じしん",
+    "fr": "séisme; secousse tellurique; tremblement de terre",
+    "en": "earthquake"
+   },
+   {
+    "word": "地理",
+    "reading": "ちり",
+    "fr": "géographie",
+    "en": "geography"
+   }
+  ]
+ },
+ {
+  "character": "堂",
+  "level": "N4",
+  "onyomi": [
+   "ドウ"
+  ],
+  "kunyomi": [],
+  "strokes": 11,
+  "meaningsFr": [
+   "salle"
+  ],
+  "meaningsEn": [
+   "public chamber",
+   "hall",
+   "édifice public",
+   "temple",
+   "salle",
+   "hall",
+   "grandiose (bâtiment)",
+   "templo",
+   "salón",
+   "vestíbulo",
+   "câmara pública",
+   "corredor"
+  ],
+  "examples": [
+   {
+    "word": "食堂",
+    "reading": "しょくどう",
+    "fr": "cafétéria; restaurant; salle à manger",
+    "en": "dining hall"
+   },
+   {
+    "word": "講堂",
+    "reading": "こうどう",
+    "fr": "auditorium",
+    "en": "auditorium"
+   }
+  ]
+ },
+ {
+  "character": "場",
+  "level": "N4",
+  "onyomi": [
+   "ジョウ",
+   "チョウ"
+  ],
+  "kunyomi": [
+   "ば"
+  ],
+  "strokes": 12,
+  "meaningsFr": [
+   "emplacement"
+  ],
+  "meaningsEn": [
+   "location",
+   "place",
+   "lieu",
+   "place",
+   "aire",
+   "champ (magnétique)",
+   "lugar",
+   "situación",
+   "momento",
+   "localização",
+   "lugar"
+  ],
+  "examples": [
+   {
+    "word": "会場",
+    "reading": "かいじょう",
+    "fr": "lieu ou se tient une réunion",
+    "en": "assembly hall or meeting place"
+   },
+   {
+    "word": "工場",
+    "reading": "こうじょう",
+    "fr": "centrale; moulin; usine",
+    "en": "factory"
+   },
+   {
+    "word": "場合",
+    "reading": "ばあい",
+    "fr": "cas; circonstance; occasion",
+    "en": "situation"
+   },
+   {
+    "word": "場所",
+    "reading": "ばしょ",
+    "fr": "emplacement; endroit; espace",
+    "en": "location"
+   }
+  ]
+ },
+ {
+  "character": "売",
+  "level": "N4",
+  "onyomi": [
+   "バイ"
+  ],
+  "kunyomi": [
+   "う.る",
+   "う.れる"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "vendre"
+  ],
+  "meaningsEn": [
+   "sell",
+   "vendre",
+   "vender",
+   "ensanchar",
+   "propagar",
+   "ser vendido",
+   "Vender"
+  ],
+  "examples": [
+   {
+    "word": "売る",
+    "reading": "うる",
+    "fr": "vendre",
+    "en": "to sell"
+   }
+  ]
+ },
+ {
+  "character": "夏",
+  "level": "N4",
+  "onyomi": [
+   "カ",
+   "ガ",
+   "ゲ"
+  ],
+  "kunyomi": [
+   "なつ"
+  ],
+  "strokes": 10,
+  "meaningsFr": [
+   "été"
+  ],
+  "meaningsEn": [
+   "summer",
+   "été",
+   "verano",
+   "verão"
+  ],
+  "examples": [
+   {
+    "word": "夏",
+    "reading": "なつ",
+    "fr": "été",
+    "en": "summer"
+   },
+   {
+    "word": "夏休み",
+    "reading": "なつやすみ",
+    "fr": "vacances d'été",
+    "en": "summer holiday"
+   }
+  ]
+ },
+ {
+  "character": "夕",
+  "level": "N4",
+  "onyomi": [
+   "セキ"
+  ],
+  "kunyomi": [
+   "ゆう"
+  ],
+  "strokes": 3,
+  "meaningsFr": [
+   "soir"
+  ],
+  "meaningsEn": [
+   "evening",
+   "soirée",
+   "tarde",
+   "noche",
+   "Noite"
+  ],
+  "examples": [
+   {
+    "word": "夕方",
+    "reading": "ゆうがた",
+    "fr": "soir",
+    "en": "evening"
+   },
+   {
+    "word": "夕飯",
+    "reading": "ゆうはん",
+    "fr": "souper (dîner en France)",
+    "en": "dinner"
+   }
+  ]
+ },
+ {
+  "character": "多",
+  "level": "N5",
+  "onyomi": [
+   "タ"
+  ],
+  "kunyomi": [
+   "おお.い",
+   "まさ.に",
+   "まさ.る"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "beaucoup"
+  ],
+  "meaningsEn": [
+   "many",
+   "frequent",
+   "much",
+   "beaucoup",
+   "nombreux",
+   "fréquent",
+   "abundante",
+   "mucho",
+   "muitos",
+   "frequentar",
+   "muito"
+  ],
+  "examples": [
+   {
+    "word": "多い",
+    "reading": "おおい",
+    "fr": "beaucoup; nombreux",
+    "en": "many"
+   }
+  ]
+ },
+ {
+  "character": "夜",
+  "level": "N4",
+  "onyomi": [
+   "ヤ"
+  ],
+  "kunyomi": [
+   "よ",
+   "よる"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "nuit"
+  ],
+  "meaningsEn": [
+   "night",
+   "evening",
+   "nuit",
+   "soirée",
+   "noche",
+   "tarde",
+   "noite",
+   "à noite"
+  ],
+  "examples": [
+   {
+    "word": "昨夜",
+    "reading": "ゆうべ",
+    "fr": "soir",
+    "en": "last night"
+   },
+   {
+    "word": "夜",
+    "reading": "よる",
+    "fr": "nuit; soir",
+    "en": "evening; night"
+   },
+   {
+    "word": "今夜",
+    "reading": "こんや",
+    "fr": "ce soir; cette nuit",
+    "en": "tonight"
+   }
+  ]
+ },
+ {
+  "character": "妹",
+  "level": "N4",
+  "onyomi": [
+   "マイ"
+  ],
+  "kunyomi": [
+   "いもうと"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "sœur cadette"
+  ],
+  "meaningsEn": [
+   "younger sister",
+   "soeur cadette",
+   "hermana menor",
+   "irmã mais jovem"
+  ],
+  "examples": [
+   {
+    "word": "妹",
+    "reading": "いもうと",
+    "fr": "(ma) sœur cadette",
+    "en": "(humble) younger sister"
+   }
+  ]
+ },
+ {
+  "character": "姉",
+  "level": "N4",
+  "onyomi": [
+   "シ"
+  ],
+  "kunyomi": [
+   "あね",
+   "はは"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "sœur aînée"
+  ],
+  "meaningsEn": [
+   "elder sister",
+   "soeur aînée",
+   "hermana mayor",
+   "irmã mais velha"
+  ],
+  "examples": [
+   {
+    "word": "姉",
+    "reading": "あね",
+    "fr": "sœur aînée",
+    "en": "(humble) older sister"
+   },
+   {
+    "word": "お姉さん",
+    "reading": "おねえさん",
+    "fr": "sœur aînée",
+    "en": "(honorable) older sister"
+   }
+  ]
+ },
+ {
+  "character": "始",
+  "level": "N4",
+  "onyomi": [
+   "シ"
+  ],
+  "kunyomi": [
+   "はじ.める",
+   "-はじ.める",
+   "はじ.まる"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "commencer"
+  ],
+  "meaningsEn": [
+   "commence",
+   "begin",
+   "commencer",
+   "débuter",
+   "comenzar",
+   "empezar",
+   "empezar (trans.)",
+   "empezar (intrans.)",
+   "iniciar",
+   "começar"
+  ],
+  "examples": [
+   {
+    "word": "始まる",
+    "reading": "はじまる",
+    "fr": "commencer",
+    "en": "to begin"
+   }
+  ]
+ },
+ {
+  "character": "字",
+  "level": "N4",
+  "onyomi": [
+   "ジ"
+  ],
+  "kunyomi": [
+   "あざ",
+   "あざな",
+   "-な"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "caractère"
+  ],
+  "meaningsEn": [
+   "character",
+   "letter",
+   "word",
+   "section of village",
+   "caractère",
+   "lettre",
+   "mot",
+   "hameau",
+   "carácter",
+   "letra",
+   "palabra",
+   "caracter",
+   "letra",
+   "palavra",
+   "seção de aldeia"
+  ],
+  "examples": [
+   {
+    "word": "漢字",
+    "reading": "かんじ",
+    "fr": "caractères sino-japonais",
+    "en": "Chinese character"
+   },
+   {
+    "word": "字引",
+    "reading": "じびき",
+    "fr": "dictionnaire",
+    "en": "dictionary"
+   },
+   {
+    "word": "字",
+    "reading": "じ",
+    "fr": "écriture; caractère; lettre",
+    "en": "character"
+   }
+  ]
+ },
+ {
+  "character": "安",
+  "level": "N5",
+  "onyomi": [
+   "アン"
+  ],
+  "kunyomi": [
+   "やす.い",
+   "やす.まる",
+   "やす",
+   "やす.らか"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "détendre"
+  ],
+  "meaningsEn": [
+   "relax",
+   "cheap",
+   "low",
+   "quiet",
+   "rested",
+   "contented",
+   "peaceful",
+   "paisible",
+   "calme",
+   "tranquille",
+   "pas cher",
+   "reposant",
+   "satisfait",
+   "barato",
+   "tranquilo",
+   "pacífico",
+   "relaxar",
+   "calmo",
+   "baixo",
+   "barato",
+   "descansado",
+   "pacífico",
+   "satisfeito"
+  ],
+  "examples": [
+   {
+    "word": "安い",
+    "reading": "やすい",
+    "fr": "économique; bon marché; pas cher",
+    "en": "cheap"
+   },
+   {
+    "word": "安心",
+    "reading": "あんしん",
+    "fr": "soulagement; tranquillité d'esprit",
+    "en": "relief"
+   },
+   {
+    "word": "安全",
+    "reading": "あんぜん",
+    "fr": "sécurité",
+    "en": "safety"
+   }
+  ]
+ },
+ {
+  "character": "室",
+  "level": "N4",
+  "onyomi": [
+   "シツ"
+  ],
+  "kunyomi": [
+   "むろ"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "chambre"
+  ],
+  "meaningsEn": [
+   "room",
+   "apartment",
+   "chamber",
+   "greenhouse",
+   "cellar",
+   "pièce",
+   "appartement",
+   "chambre",
+   "serre",
+   "cave",
+   "habitación",
+   "cuarto",
+   "caverna",
+   "guarida",
+   "gruta",
+   "quarto",
+   "apartamento",
+   "câmara",
+   "estufa",
+   "porão"
+  ],
+  "examples": [
+   {
+    "word": "教室",
+    "reading": "きょうしつ",
+    "fr": "salle de classe",
+    "en": "classroom"
+   }
+  ]
+ },
+ {
+  "character": "家",
+  "level": "N4",
+  "onyomi": [
+   "カ",
+   "ケ"
+  ],
+  "kunyomi": [
+   "いえ",
+   "や",
+   "うち"
+  ],
+  "strokes": 10,
+  "meaningsFr": [
+   "maison"
+  ],
+  "meaningsEn": [
+   "house",
+   "home",
+   "family",
+   "professional",
+   "expert",
+   "performer",
+   "maison",
+   "casa",
+   "hogar",
+   "especialista",
+   "casa",
+   "lar"
+  ],
+  "examples": [
+   {
+    "word": "家",
+    "reading": "いえ",
+    "fr": "maison",
+    "en": "house"
+   },
+   {
+    "word": "家族",
+    "reading": "かぞく",
+    "fr": "famille; membre de la famille",
+    "en": "family"
+   },
+   {
+    "word": "家庭",
+    "reading": "かてい",
+    "fr": "(sa) famille; (sa) maison",
+    "en": "household"
+   },
+   {
+    "word": "家内",
+    "reading": "かない",
+    "fr": "ma femme",
+    "en": "housewife"
+   }
+  ]
+ },
+ {
+  "character": "少",
+  "level": "N5",
+  "onyomi": [
+   "ショウ"
+  ],
+  "kunyomi": [
+   "すく.ない",
+   "すこ.し"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "peu"
+  ],
+  "meaningsEn": [
+   "few",
+   "little",
+   "un petit peu",
+   "un peu",
+   "poco",
+   "pequeño",
+   "un poco",
+   "apenas",
+   "poucos",
+   "pequenos"
+  ],
+  "examples": [
+   {
+    "word": "少ない",
+    "reading": "すくない",
+    "fr": "insuffisant; rare; un petit nombre",
+    "en": "a few"
+   },
+   {
+    "word": "少し",
+    "reading": "すこし",
+    "fr": "un peu; une petite quantité; un instant",
+    "en": "few"
+   }
+  ]
+ },
+ {
+  "character": "屋",
+  "level": "N4",
+  "onyomi": [
+   "オク"
+  ],
+  "kunyomi": [
+   "や"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "toit"
+  ],
+  "meaningsEn": [
+   "roof",
+   "house",
+   "shop",
+   "dealer",
+   "seller",
+   "toit",
+   "maison",
+   "échoppe",
+   "négociant",
+   "vendeur",
+   "casa",
+   "tejado",
+   "tienda",
+   "teto",
+   "casa",
+   "loja",
+   "negociante",
+   "vendedor"
+  ],
+  "examples": [
+   {
+    "word": "部屋",
+    "reading": "へや",
+    "fr": "chambre; pièce; salle",
+    "en": "room"
+   },
+   {
+    "word": "八百屋",
+    "reading": "やおや",
+    "fr": "marchand de légumes",
+    "en": "greengrocer"
+   },
+   {
+    "word": "屋上",
+    "reading": "おくじょう",
+    "fr": "dessus le toit; sur le toit",
+    "en": "rooftop"
+   }
+  ]
+ },
+ {
+  "character": "工",
+  "level": "N4",
+  "onyomi": [
+   "コウ",
+   "ク",
+   "グ"
+  ],
+  "kunyomi": [],
+  "strokes": 3,
+  "meaningsFr": [
+   "artisanat"
+  ],
+  "meaningsEn": [
+   "craft",
+   "construction",
+   "katakana e radical (no. 48)",
+   "ingénierie",
+   "industrie",
+   "construction",
+   "radical katakana E (no. 48)",
+   "construcción",
+   "fabricación",
+   "obrero",
+   "ofício",
+   "construção"
+  ],
+  "examples": [
+   {
+    "word": "工業",
+    "reading": "こうぎょう",
+    "fr": "industrie",
+    "en": "the manufacturing industry"
+   },
+   {
+    "word": "工場",
+    "reading": "こうじょう",
+    "fr": "centrale; moulin; usine",
+    "en": "factory"
+   }
+  ]
+ },
+ {
+  "character": "帰",
+  "level": "N4",
+  "onyomi": [
+   "キ"
+  ],
+  "kunyomi": [
+   "かえ.る",
+   "かえ.す",
+   "おく.る",
+   "とつ.ぐ"
+  ],
+  "strokes": 10,
+  "meaningsFr": [
+   "retour à la maison"
+  ],
+  "meaningsEn": [
+   "homecoming",
+   "arrive at",
+   "lead to",
+   "result in",
+   "retour à la maison",
+   "arriver à",
+   "mener à",
+   "aboutir à",
+   "renvoyer",
+   "regreso",
+   "vuelta",
+   "retorno",
+   "regresar",
+   "volver",
+   "Retôrno a casa",
+   "chegar em",
+   "conduzir-se",
+   "resultar"
+  ],
+  "examples": [
+   {
+    "word": "帰る",
+    "reading": "かえる",
+    "fr": "rentrer; retourner",
+    "en": "to go back"
+   },
+   {
+    "word": "帰り",
+    "reading": "かえり",
+    "fr": "retour",
+    "en": "return"
+   }
+  ]
+ },
+ {
+  "character": "広",
+  "level": "N4",
+  "onyomi": [
+   "コウ"
+  ],
+  "kunyomi": [
+   "ひろ.い",
+   "ひろ.まる",
+   "ひろ.める",
+   "ひろ.がる",
+   "ひろ.げる"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "large"
+  ],
+  "meaningsEn": [
+   "wide",
+   "broad",
+   "spacious",
+   "vaste",
+   "large",
+   "spacieux",
+   "amplio",
+   "ancho",
+   "espacioso",
+   "ensancharse",
+   "ensanchar",
+   "extenderse",
+   "extender",
+   "largo",
+   "vasto",
+   "espaçoso"
+  ],
+  "examples": [
+   {
+    "word": "背広",
+    "reading": "せびろ",
+    "fr": "costume (pour homme)",
+    "en": "business suit"
+   },
+   {
+    "word": "広い",
+    "reading": "ひろい",
+    "fr": "ample; large; spacieux",
+    "en": "spacious; wide"
+   }
+  ]
+ },
+ {
+  "character": "店",
+  "level": "N5",
+  "onyomi": [
+   "テン"
+  ],
+  "kunyomi": [
+   "みせ",
+   "たな"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "magasin"
+  ],
+  "meaningsEn": [
+   "store",
+   "shop",
+   "magasin",
+   "échoppe",
+   "tienda",
+   "establecimiento",
+   "loja",
+   "comércio"
+  ],
+  "examples": [
+   {
+    "word": "喫茶店",
+    "reading": "きっさてん",
+    "fr": "café (lieu); salon de thé",
+    "en": "coffee lounge"
+   },
+   {
+    "word": "店",
+    "reading": "みせ",
+    "fr": "échoppe; boutique; magasin",
+    "en": "shop"
+   },
+   {
+    "word": "店員",
+    "reading": "てんいん",
+    "fr": "employé de magasin; vendeur",
+    "en": "shop assistant"
+   }
+  ]
+ },
+ {
+  "character": "度",
+  "level": "N4",
+  "onyomi": [
+   "ド",
+   "ト",
+   "タク"
+  ],
+  "kunyomi": [
+   "たび",
+   "-た.い"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "degrés"
+  ],
+  "meaningsEn": [
+   "degrees",
+   "occurrence",
+   "time",
+   "counter for occurrences",
+   "consider",
+   "attitude",
+   "degré",
+   "occurrence",
+   "fois",
+   "compteur d'occurrences",
+   "grado",
+   "vez",
+   "veces",
+   "graus",
+   "ocorrência",
+   "tempo",
+   "sufixo para contagem de para ocorrências"
+  ],
+  "examples": [
+   {
+    "word": "もう一度",
+    "reading": "もういちど",
+    "fr": "à nouveau; encore une fois",
+    "en": "again"
+   },
+   {
+    "word": "一度",
+    "reading": "いちど",
+    "fr": "une fois",
+    "en": "once"
+   },
+   {
+    "word": "今度",
+    "reading": "こんど",
+    "fr": "cette fois-ci; la prochaine fois; une autre fois",
+    "en": "now; next time"
+   },
+   {
+    "word": "支度",
+    "reading": "したく",
+    "fr": "préparation",
+    "en": "to prepare"
+   }
+  ]
+ },
+ {
+  "character": "建",
+  "level": "N4",
+  "onyomi": [
+   "ケン",
+   "コン"
+  ],
+  "kunyomi": [
+   "た.てる",
+   "た.て",
+   "-だ.て",
+   "た.つ"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "construire"
+  ],
+  "meaningsEn": [
+   "build",
+   "construire",
+   "construir",
+   "edificar",
+   "levantarse",
+   "ser construido",
+   "Construção"
+  ],
+  "examples": [
+   {
+    "word": "建物",
+    "reading": "たてもの",
+    "fr": "immeuble",
+    "en": "building"
+   }
+  ]
+ },
+ {
+  "character": "弟",
+  "level": "N4",
+  "onyomi": [
+   "テイ",
+   "ダイ",
+   "デ"
+  ],
+  "kunyomi": [
+   "おとうと"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "frère cadet"
+  ],
+  "meaningsEn": [
+   "younger brother",
+   "faithful service to elders",
+   "frère cadet",
+   "apprenti",
+   "disciple",
+   "service déférent aux ainés",
+   "hermano menor",
+   "irmão mais jovem"
+  ],
+  "examples": [
+   {
+    "word": "弟",
+    "reading": "おとうと",
+    "fr": "petit frère",
+    "en": "younger brother"
+   },
+   {
+    "word": "兄弟",
+    "reading": "きょうだい",
+    "fr": "frère; frères et sœurs; fratrie",
+    "en": "(humble) siblings"
+   }
+  ]
+ },
+ {
+  "character": "強",
+  "level": "N4",
+  "onyomi": [
+   "キョウ",
+   "ゴウ"
+  ],
+  "kunyomi": [
+   "つよ.い",
+   "つよ.まる",
+   "つよ.める",
+   "し.いる",
+   "こわ.い"
+  ],
+  "strokes": 11,
+  "meaningsFr": [
+   "fort"
+  ],
+  "meaningsEn": [
+   "strong",
+   "fort",
+   "fuerte",
+   "coacción",
+   "poderoso",
+   "obligar",
+   "forzar",
+   "coaccionar",
+   "Forte",
+   "poderoso",
+   "forçar"
+  ],
+  "examples": [
+   {
+    "word": "強い",
+    "reading": "つよい",
+    "fr": "fort; puissant",
+    "en": "powerful"
+   },
+   {
+    "word": "勉強",
+    "reading": "べんきょう",
+    "fr": "études; rabais",
+    "en": "to study"
+   }
+  ]
+ },
+ {
+  "character": "待",
+  "level": "N4",
+  "onyomi": [
+   "タイ"
+  ],
+  "kunyomi": [
+   "ま.つ",
+   "-ま.ち"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "attendre"
+  ],
+  "meaningsEn": [
+   "wait",
+   "depend on",
+   "attendre",
+   "compter sur",
+   "esperar",
+   "aguardar",
+   "esperar",
+   "contar com"
+  ],
+  "examples": [
+   {
+    "word": "待つ",
+    "reading": "まつ",
+    "fr": "attendre; mettre ses espérances dans quelque chose",
+    "en": "to wait"
+   },
+   {
+    "word": "招待",
+    "reading": "しょうたい",
+    "fr": "invitation",
+    "en": "to invite"
+   }
+  ]
+ },
+ {
+  "character": "心",
+  "level": "N4",
+  "onyomi": [
+   "シン"
+  ],
+  "kunyomi": [
+   "こころ",
+   "-ごころ"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "cœur"
+  ],
+  "meaningsEn": [
+   "heart",
+   "mind",
+   "spirit",
+   "heart radical (no. 61)",
+   "coeur",
+   "esprit",
+   "radical coeur (no. 61)",
+   "corazón",
+   "centro",
+   "coração",
+   "mente",
+   "espírito"
+  ],
+  "examples": [
+   {
+    "word": "心",
+    "reading": "こころ",
+    "fr": "âme; cœur; esprit",
+    "en": "core; heart"
+   },
+   {
+    "word": "安心",
+    "reading": "あんしん",
+    "fr": "soulagement; tranquillité d'esprit",
+    "en": "relief"
+   },
+   {
+    "word": "心配",
+    "reading": "しんぱい",
+    "fr": "angoisse; anxiété; souci",
+    "en": "to worry"
+   }
+  ]
+ },
+ {
+  "character": "思",
+  "level": "N4",
+  "onyomi": [
+   "シ"
+  ],
+  "kunyomi": [
+   "おも.う",
+   "おもえら.く",
+   "おぼ.す"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "penser"
+  ],
+  "meaningsEn": [
+   "think",
+   "penser",
+   "pensar",
+   "considerar",
+   "pensar"
+  ],
+  "examples": [
+   {
+    "word": "思う",
+    "reading": "おもう",
+    "fr": "croire; penser",
+    "en": "to think; to feel"
+   }
+  ]
+ },
+ {
+  "character": "急",
+  "level": "N4",
+  "onyomi": [
+   "キュウ"
+  ],
+  "kunyomi": [
+   "いそ.ぐ",
+   "いそ.ぎ",
+   "せ.く"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "se dépêcher"
+  ],
+  "meaningsEn": [
+   "hurry",
+   "emergency",
+   "sudden",
+   "steep",
+   "urgence",
+   "se dépêcher",
+   "soudain",
+   "raide",
+   "abrupt",
+   "aigu",
+   "prisa",
+   "urgencia",
+   "apresurarse",
+   "darse prisa",
+   "apressar",
+   "emergência",
+   "repentina"
+  ],
+  "examples": [
+   {
+    "word": "急",
+    "reading": "きゅう",
+    "fr": "soudain; urgent; escarpé",
+    "en": "urgent; steep"
+   },
+   {
+    "word": "急ぐ",
+    "reading": "いそぐ",
+    "fr": "se dépêcher; se précipiter; se ruer",
+    "en": "to hurry"
+   },
+   {
+    "word": "急行",
+    "reading": "きゅうこう",
+    "fr": "train express",
+    "en": "speedy; express"
+   },
+   {
+    "word": "特急",
+    "reading": "とっきゅう",
+    "fr": "express; rapide",
+    "en": "limited express train (faster than an express train)"
+   }
+  ]
+ },
+ {
+  "character": "悪",
+  "level": "N4",
+  "onyomi": [
+   "アク",
+   "オ"
+  ],
+  "kunyomi": [
+   "わる.い",
+   "わる-",
+   "あ.し",
+   "にく.い",
+   "-にく.い",
+   "ああ",
+   "いずくに",
+   "いずくんぞ",
+   "にく.む"
+  ],
+  "strokes": 11,
+  "meaningsFr": [
+   "mauvais"
+  ],
+  "meaningsEn": [
+   "bad",
+   "vice",
+   "rascal",
+   "false",
+   "evil",
+   "wrong",
+   "mauvais",
+   "vice",
+   "vaurien",
+   "faux",
+   "mal",
+   "malo",
+   "incorrecto",
+   "equivocado",
+   "odio",
+   "mal",
+   "mal",
+   "ruim",
+   "falso",
+   "mau",
+   "errado"
+  ],
+  "examples": [
+   {
+    "word": "悪い",
+    "reading": "わるい",
+    "fr": "grave; méchant; mauvais",
+    "en": "bad"
+   }
+  ]
+ },
+ {
+  "character": "意",
+  "level": "N4",
+  "onyomi": [
+   "イ"
+  ],
+  "kunyomi": [],
+  "strokes": 13,
+  "meaningsFr": [
+   "idée"
+  ],
+  "meaningsEn": [
+   "idea",
+   "mind",
+   "heart",
+   "taste",
+   "thought",
+   "desire",
+   "care",
+   "liking",
+   "idée",
+   "esprit",
+   "coeur",
+   "pensée",
+   "attention",
+   "goût",
+   "désir",
+   "idea",
+   "sentimiento",
+   "razón",
+   "intención",
+   "idéia",
+   "mente",
+   "coração",
+   "gosto",
+   "pensamento",
+   "desejo",
+   "atenção"
+  ],
+  "examples": [
+   {
+    "word": "意味",
+    "reading": "いみ",
+    "fr": "sens; signification",
+    "en": "meaning"
+   },
+   {
+    "word": "意見",
+    "reading": "いけん",
+    "fr": "avis; opinion",
+    "en": "opinion"
+   },
+   {
+    "word": "注意",
+    "reading": "ちゅうい",
+    "fr": "attention (faire attention); avertissement; prudence",
+    "en": "caution"
+   },
+   {
+    "word": "用意",
+    "reading": "ようい",
+    "fr": "préparation",
+    "en": "preparation"
+   }
+  ]
+ },
+ {
+  "character": "手",
+  "level": "N5",
+  "onyomi": [
+   "シュ",
+   "ズ"
+  ],
+  "kunyomi": [
+   "て",
+   "て-",
+   "-て",
+   "た-"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "main"
+  ],
+  "meaningsEn": [
+   "hand",
+   "main",
+   "mano",
+   "mão"
+  ],
+  "examples": [
+   {
+    "word": "お手洗い",
+    "reading": "おてあらい",
+    "fr": "WC publics; toilettes",
+    "en": "bathroom"
+   },
+   {
+    "word": "切手",
+    "reading": "きって",
+    "fr": "timbre (poste)",
+    "en": "postage stamp"
+   },
+   {
+    "word": "上手",
+    "reading": "じょうず",
+    "fr": "adroit; bon; doué",
+    "en": "skillful"
+   },
+   {
+    "word": "手",
+    "reading": "て",
+    "fr": "main",
+    "en": "hand"
+   },
+   {
+    "word": "手紙",
+    "reading": "てがみ",
+    "fr": "lettre",
+    "en": "letter"
+   },
+   {
+    "word": "下手",
+    "reading": "へた",
+    "fr": "être mauvais en; maladroit; pas doué",
+    "en": "unskillful"
+   }
+  ]
+ },
+ {
+  "character": "持",
+  "level": "N4",
+  "onyomi": [
+   "ジ"
+  ],
+  "kunyomi": [
+   "も.つ",
+   "-も.ち",
+   "も.てる"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "tenir"
+  ],
+  "meaningsEn": [
+   "hold",
+   "have",
+   "avoir",
+   "tenir",
+   "duración",
+   "propiedad",
+   "cargo",
+   "sostener",
+   "mantener",
+   "segurar",
+   "ter"
+  ],
+  "examples": [
+   {
+    "word": "持つ",
+    "reading": "もつ",
+    "fr": "porter; tenir; posséder",
+    "en": "to hold"
+   }
+  ]
+ },
+ {
+  "character": "教",
+  "level": "N4",
+  "onyomi": [
+   "キョウ"
+  ],
+  "kunyomi": [
+   "おし.える",
+   "おそ.わる"
+  ],
+  "strokes": 11,
+  "meaningsFr": [
+   "enseigner"
+  ],
+  "meaningsEn": [
+   "teach",
+   "faith",
+   "doctrine",
+   "enseigner",
+   "foi",
+   "doctrine",
+   "educación",
+   "enseñanza",
+   "enseñar",
+   "instruir",
+   "ser enseñado",
+   "ensinar",
+   "fé",
+   "doutrina"
+  ],
+  "examples": [
+   {
+    "word": "教える",
+    "reading": "おしえる",
+    "fr": "enseigner; indiquer; informer",
+    "en": "to teach; to tell"
+   },
+   {
+    "word": "教室",
+    "reading": "きょうしつ",
+    "fr": "salle de classe",
+    "en": "classroom"
+   },
+   {
+    "word": "教育",
+    "reading": "きょういく",
+    "fr": "éducation; formation; instruction",
+    "en": "education"
+   },
+   {
+    "word": "教会",
+    "reading": "きょうかい",
+    "fr": "église",
+    "en": "church"
+   }
+  ]
+ },
+ {
+  "character": "文",
+  "level": "N4",
+  "onyomi": [
+   "ブン",
+   "モン"
+  ],
+  "kunyomi": [
+   "ふみ",
+   "あや"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "phrase"
+  ],
+  "meaningsEn": [
+   "sentence",
+   "literature",
+   "style",
+   "art",
+   "decoration",
+   "figures",
+   "plan",
+   "literary radical (no. 67)",
+   "phrase",
+   "littérature",
+   "style",
+   "art",
+   "décoration",
+   "figure (de style)",
+   "plan",
+   "radical littéraire (no. 67)",
+   "letras",
+   "literatura",
+   "sentença",
+   "literatura",
+   "estilo",
+   "arte",
+   "decoração",
+   "figuras",
+   "plano"
+  ],
+  "examples": [
+   {
+    "word": "作文",
+    "reading": "さくぶん",
+    "fr": "écriture; composition",
+    "en": "composition; writing"
+   },
+   {
+    "word": "文章",
+    "reading": "ぶんしょう",
+    "fr": "phrase; style littéraire; texte",
+    "en": "sentence; text"
+   },
+   {
+    "word": "文化",
+    "reading": "ぶんか",
+    "fr": "civilisation; culture",
+    "en": "culture"
+   },
+   {
+    "word": "文学",
+    "reading": "ぶんがく",
+    "fr": "littérature",
+    "en": "literature"
+   },
+   {
+    "word": "文法",
+    "reading": "ぶんぽう",
+    "fr": "grammaire",
+    "en": "grammar"
+   }
+  ]
+ },
+ {
+  "character": "料",
+  "level": "N4",
+  "onyomi": [
+   "リョウ"
+  ],
+  "kunyomi": [],
+  "strokes": 10,
+  "meaningsFr": [
+   "frais"
+  ],
+  "meaningsEn": [
+   "fee",
+   "materials",
+   "redevance",
+   "recette",
+   "frais",
+   "prix",
+   "matériau",
+   "material",
+   "precio",
+   "taxa",
+   "materiais"
+  ],
+  "examples": [
+   {
+    "word": "料理",
+    "reading": "りょうり",
+    "fr": "cuisine; cuisiner",
+    "en": "cuisine"
+   }
+  ]
+ },
+ {
+  "character": "新",
+  "level": "N5",
+  "onyomi": [
+   "シン"
+  ],
+  "kunyomi": [
+   "あたら.しい",
+   "あら.た",
+   "あら-",
+   "にい-"
+  ],
+  "strokes": 13,
+  "meaningsFr": [
+   "nouveau"
+  ],
+  "meaningsEn": [
+   "new",
+   "nouveau",
+   "nuevo",
+   "fresco",
+   "novo"
+  ],
+  "examples": [
+   {
+    "word": "新しい",
+    "reading": "あたらしい",
+    "fr": "neuf; nouveau",
+    "en": "new"
+   },
+   {
+    "word": "新聞",
+    "reading": "しんぶん",
+    "fr": "journal",
+    "en": "newspaper"
+   }
+  ]
+ },
+ {
+  "character": "方",
+  "level": "N4",
+  "onyomi": [
+   "ホウ"
+  ],
+  "kunyomi": [
+   "かた",
+   "-かた",
+   "-がた"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "direction"
+  ],
+  "meaningsEn": [
+   "direction",
+   "person",
+   "alternative",
+   "direction",
+   "personne",
+   "alternative",
+   "dirección",
+   "lado",
+   "cuadrado",
+   "método",
+   "manera",
+   "persona",
+   "forma de hacer",
+   "direção",
+   "pessoa",
+   "alternativa"
+  ],
+  "examples": [
+   {
+    "word": "方",
+    "reading": "かた",
+    "fr": "direction; sens; personne",
+    "en": "person; way of doing"
+   },
+   {
+    "word": "夕方",
+    "reading": "ゆうがた",
+    "fr": "soir",
+    "en": "evening"
+   },
+   {
+    "word": "仕方",
+    "reading": "しかた",
+    "fr": "méthode; manière; moyen",
+    "en": "method"
+   },
+   {
+    "word": "両方",
+    "reading": "りょうほう",
+    "fr": "les deux cotés; les deux partis",
+    "en": "both sides"
+   }
+  ]
+ },
+ {
+  "character": "旅",
+  "level": "N4",
+  "onyomi": [
+   "リョ"
+  ],
+  "kunyomi": [
+   "たび"
+  ],
+  "strokes": 10,
+  "meaningsFr": [
+   "voyage"
+  ],
+  "meaningsEn": [
+   "trip",
+   "travel",
+   "voyage",
+   "viaje",
+   "trayecto",
+   "excursión",
+   "viagem",
+   "jornada"
+  ],
+  "examples": [
+   {
+    "word": "旅行",
+    "reading": "りょこう",
+    "fr": "voyage",
+    "en": "travel"
+   },
+   {
+    "word": "旅館",
+    "reading": "りょかん",
+    "fr": "auberge de style japonais; hôtel",
+    "en": "Japanese hotel"
+   }
+  ]
+ },
+ {
+  "character": "族",
+  "level": "N4",
+  "onyomi": [
+   "ゾク"
+  ],
+  "kunyomi": [],
+  "strokes": 11,
+  "meaningsFr": [
+   "tribu"
+  ],
+  "meaningsEn": [
+   "tribe",
+   "family",
+   "tribu",
+   "famille",
+   "tribu",
+   "familia",
+   "tribo",
+   "família"
+  ],
+  "examples": [
+   {
+    "word": "家族",
+    "reading": "かぞく",
+    "fr": "famille; membre de la famille",
+    "en": "family"
+   }
+  ]
+ },
+ {
+  "character": "早",
+  "level": "N4",
+  "onyomi": [
+   "ソウ",
+   "サッ"
+  ],
+  "kunyomi": [
+   "はや.い",
+   "はや",
+   "はや-",
+   "はや.まる",
+   "はや.める",
+   "さ-"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "tôt"
+  ],
+  "meaningsEn": [
+   "early",
+   "fast",
+   "tôt",
+   "rapide",
+   "temprano",
+   "rápido",
+   "pronto",
+   "apresurarse",
+   "precipitarse",
+   "acelerar",
+   "cedo",
+   "rápido"
+  ],
+  "examples": [
+   {
+    "word": "早い",
+    "reading": "はやい",
+    "fr": "rapide; tôt; prompt",
+    "en": "early"
+   }
+  ]
+ },
+ {
+  "character": "明",
+  "level": "N4",
+  "onyomi": [
+   "メイ",
+   "ミョウ",
+   "ミン"
+  ],
+  "kunyomi": [
+   "あ.かり",
+   "あか.るい",
+   "あか.るむ",
+   "あか.らむ",
+   "あき.らか",
+   "あ.ける",
+   "-あ.け",
+   "あ.く",
+   "あ.くる",
+   "あ.かす"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "brillant"
+  ],
+  "meaningsEn": [
+   "bright",
+   "light",
+   "clair",
+   "lumière",
+   "luz",
+   "brillo",
+   "claridad",
+   "listo",
+   "inteligente",
+   "claro",
+   "luminoso",
+   "iluminar",
+   "aclarar",
+   "brilhante",
+   "luz"
+  ],
+  "examples": [
+   {
+    "word": "明るい",
+    "reading": "あかるい",
+    "fr": "clair; gai; radieux",
+    "en": "bright"
+   },
+   {
+    "word": "明日",
+    "reading": "あした",
+    "fr": "demain",
+    "en": "tomorrow"
+   },
+   {
+    "word": "説明",
+    "reading": "せつめい",
+    "fr": "éclaircissements; explication; présentation",
+    "en": "explanation"
+   }
+  ]
+ },
+ {
+  "character": "映",
+  "level": "N4",
+  "onyomi": [
+   "エイ"
+  ],
+  "kunyomi": [
+   "うつ.る",
+   "うつ.す",
+   "は.える",
+   "-ば.え"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "refléter"
+  ],
+  "meaningsEn": [
+   "reflect",
+   "reflection",
+   "projection",
+   "projection",
+   "refléter",
+   "réflexion",
+   "reflejo",
+   "reflexión",
+   "reflejar",
+   "reflejarse",
+   "proyectarse",
+   "proyectar",
+   "reflitir",
+   "reflexão",
+   "projeção"
+  ],
+  "examples": [
+   {
+    "word": "映画",
+    "reading": "えいが",
+    "fr": "film",
+    "en": "movie"
+   },
+   {
+    "word": "映画館",
+    "reading": "えいがかん",
+    "fr": "cinéma (batiment)",
+    "en": "cinema"
+   }
+  ]
+ },
+ {
+  "character": "春",
+  "level": "N4",
+  "onyomi": [
+   "シュン"
+  ],
+  "kunyomi": [
+   "はる"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "printemps"
+  ],
+  "meaningsEn": [
+   "springtime",
+   "spring (season)",
+   "printemps",
+   "primavera",
+   "comienzo del año",
+   "tiempos de juventud",
+   "primaveril",
+   "primavera (estação)"
+  ],
+  "examples": [
+   {
+    "word": "春",
+    "reading": "はる",
+    "fr": "printemps",
+    "en": "spring"
+   }
+  ]
+ },
+ {
+  "character": "昼",
+  "level": "N4",
+  "onyomi": [
+   "チュウ"
+  ],
+  "kunyomi": [
+   "ひる"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "journée"
+  ],
+  "meaningsEn": [
+   "daytime",
+   "noon",
+   "journée",
+   "midi",
+   "día",
+   "mediodía",
+   "dia",
+   "meio-dia"
+  ],
+  "examples": [
+   {
+    "word": "昼",
+    "reading": "ひる",
+    "fr": "jour; journée; midi",
+    "en": "noon; daytime"
+   },
+   {
+    "word": "昼御飯",
+    "reading": "ひるごはん",
+    "fr": "déjeuner; repas de midi",
+    "en": "midday meal"
+   },
+   {
+    "word": "昼間",
+    "reading": "ひるま",
+    "fr": "jour; journée",
+    "en": "daytime; during the day"
+   }
+  ]
+ },
+ {
+  "character": "曜",
+  "level": "N4",
+  "onyomi": [
+   "ヨウ"
+  ],
+  "kunyomi": [],
+  "strokes": 18,
+  "meaningsFr": [
+   "jour de la semaine"
+  ],
+  "meaningsEn": [
+   "weekday",
+   "jour de la semaine",
+   "día de la semana",
+   "brillar",
+   "resplandecer",
+   "dia útil"
+  ],
+  "examples": [
+   {
+    "word": "火曜日",
+    "reading": "かようび",
+    "fr": "Mardi",
+    "en": "Tuesday"
+   },
+   {
+    "word": "金曜日",
+    "reading": "きんようび",
+    "fr": "vendredi",
+    "en": "Friday"
+   },
+   {
+    "word": "月曜日",
+    "reading": "げつようび",
+    "fr": "Lundi",
+    "en": "Monday"
+   },
+   {
+    "word": "水曜日",
+    "reading": "すいようび",
+    "fr": "mercredi",
+    "en": "Wednesday"
+   },
+   {
+    "word": "土曜日",
+    "reading": "どようび",
+    "fr": "samedi",
+    "en": "Saturday"
+   },
+   {
+    "word": "日曜日",
+    "reading": "にちようび",
+    "fr": "dimanche",
+    "en": "Sunday"
+   }
+  ]
+ },
+ {
+  "character": "有",
+  "level": "N4",
+  "onyomi": [
+   "ユウ",
+   "ウ"
+  ],
+  "kunyomi": [
+   "あ.る"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "posséder"
+  ],
+  "meaningsEn": [
+   "possess",
+   "have",
+   "exist",
+   "happen",
+   "occur",
+   "approx",
+   "posséder",
+   "avoir",
+   "être",
+   "arriver (se passer)",
+   "existir",
+   "poseer",
+   "tener",
+   "ser",
+   "possuir",
+   "ter",
+   "existir",
+   "acontecer",
+   "ocorrer",
+   "aproximadamente",
+   "haver"
+  ],
+  "examples": [
+   {
+    "word": "有名",
+    "reading": "ゆうめい",
+    "fr": "célébrité",
+    "en": "famous"
+   }
+  ]
+ },
+ {
+  "character": "服",
+  "level": "N4",
+  "onyomi": [
+   "フク"
+  ],
+  "kunyomi": [],
+  "strokes": 8,
+  "meaningsFr": [
+   "vêtements"
+  ],
+  "meaningsEn": [
+   "clothing",
+   "admit",
+   "obey",
+   "discharge",
+   "habillement",
+   "admettre",
+   "obéir",
+   "libérer (renvoi)",
+   "avaler (médicament)",
+   "ropa",
+   "admitir",
+   "obedecer",
+   "vestuário",
+   "permitir",
+   "obedecer",
+   "descarregar"
+  ],
+  "examples": [
+   {
+    "word": "服",
+    "reading": "ふく",
+    "fr": "vêtement",
+    "en": "clothes"
+   },
+   {
+    "word": "洋服",
+    "reading": "ようふく",
+    "fr": "vêtements occidentaux",
+    "en": "western-style clothes"
+   }
+  ]
+ },
+ {
+  "character": "朝",
+  "level": "N4",
+  "onyomi": [
+   "チョウ"
+  ],
+  "kunyomi": [
+   "あさ"
+  ],
+  "strokes": 12,
+  "meaningsFr": [
+   "matin"
+  ],
+  "meaningsEn": [
+   "morning",
+   "dynasty",
+   "regime",
+   "epoch",
+   "period",
+   "(North) Korea",
+   "matin",
+   "dynastie",
+   "régime",
+   "période",
+   "époque",
+   "Corée (Nord)",
+   "mañana",
+   "amanecer",
+   "corte imperial",
+   "manhã",
+   "disnastia",
+   "regime",
+   "época",
+   "período",
+   "Coréia do Norte"
+  ],
+  "examples": [
+   {
+    "word": "朝",
+    "reading": "あさ",
+    "fr": "matin; matinée",
+    "en": "morning"
+   },
+   {
+    "word": "朝ごはん",
+    "reading": "あさごはん",
+    "fr": "petit déjeuner",
+    "en": "breakfast"
+   },
+   {
+    "word": "今朝",
+    "reading": "けさ",
+    "fr": "ce matin",
+    "en": "this morning"
+   },
+   {
+    "word": "毎朝",
+    "reading": "まいあさ",
+    "fr": "chaque matin; tous les matins",
+    "en": "every morning"
+   }
+  ]
+ },
+ {
+  "character": "業",
+  "level": "N4",
+  "onyomi": [
+   "ギョウ",
+   "ゴウ"
+  ],
+  "kunyomi": [
+   "わざ"
+  ],
+  "strokes": 13,
+  "meaningsFr": [
+   "entreprise"
+  ],
+  "meaningsEn": [
+   "business",
+   "vocation",
+   "arts",
+   "performance",
+   "activité",
+   "vocation",
+   "arts",
+   "représentation",
+   "karma",
+   "negocio",
+   "industria",
+   "trabajo",
+   "negócios",
+   "vocação",
+   "artes",
+   "performance"
+  ],
+  "examples": [
+   {
+    "word": "授業",
+    "reading": "じゅぎょう",
+    "fr": "cours; leçon",
+    "en": "lesson; class work"
+   },
+   {
+    "word": "工業",
+    "reading": "こうぎょう",
+    "fr": "industrie",
+    "en": "the manufacturing industry"
+   },
+   {
+    "word": "産業",
+    "reading": "さんぎょう",
+    "fr": "industrie",
+    "en": "industry"
+   },
+   {
+    "word": "卒業",
+    "reading": "そつぎょう",
+    "fr": "être diplomé; fin d'études",
+    "en": "graduation"
+   }
+  ]
+ },
+ {
+  "character": "楽",
+  "level": "N4",
+  "onyomi": [
+   "ガク",
+   "ラク",
+   "ゴウ"
+  ],
+  "kunyomi": [
+   "たの.しい",
+   "たの.しむ",
+   "この.む"
+  ],
+  "strokes": 13,
+  "meaningsFr": [
+   "musique"
+  ],
+  "meaningsEn": [
+   "music",
+   "comfort",
+   "ease",
+   "musique",
+   "agréable",
+   "confort",
+   "música",
+   "divertido",
+   "fácil",
+   "agradable",
+   "disfrutar",
+   "divertirse",
+   "música",
+   "conforto",
+   "facilidade"
+  ],
+  "examples": [
+   {
+    "word": "音楽",
+    "reading": "おんがく",
+    "fr": "musique",
+    "en": "music"
+   },
+   {
+    "word": "楽しい",
+    "reading": "たのしい",
+    "fr": "agréable; heureux; joyeux",
+    "en": "enjoyable"
+   }
+  ]
+ },
+ {
+  "character": "歌",
+  "level": "N4",
+  "onyomi": [
+   "カ"
+  ],
+  "kunyomi": [
+   "うた",
+   "うた.う"
+  ],
+  "strokes": 14,
+  "meaningsFr": [
+   "chanson"
+  ],
+  "meaningsEn": [
+   "song",
+   "sing",
+   "chanson",
+   "chanter",
+   "canción",
+   "cantar",
+   "canção",
+   "cantar"
+  ],
+  "examples": [
+   {
+    "word": "歌",
+    "reading": "うた",
+    "fr": "chanson; poème",
+    "en": "song"
+   },
+   {
+    "word": "歌う",
+    "reading": "うたう",
+    "fr": "chanter",
+    "en": "to sing"
+   }
+  ]
+ },
+ {
+  "character": "止",
+  "level": "N4",
+  "onyomi": [
+   "シ"
+  ],
+  "kunyomi": [
+   "と.まる",
+   "-ど.まり",
+   "と.める",
+   "-と.める",
+   "-ど.め",
+   "とど.める",
+   "とど.め",
+   "とど.まる",
+   "や.める",
+   "や.む",
+   "-や.む",
+   "よ.す",
+   "-さ.す",
+   "-さ.し"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "arrêter"
+  ],
+  "meaningsEn": [
+   "stop",
+   "halt",
+   "arrêter",
+   "cesser",
+   "parar",
+   "cesar",
+   "dejar de hacer",
+   "detenerse",
+   "pararse",
+   "detener",
+   "parada"
+  ],
+  "examples": [
+   {
+    "word": "止まる",
+    "reading": "とまる",
+    "fr": "être limité à; demeurer; faire halte",
+    "en": "to come to a halt"
+   },
+   {
+    "word": "止む",
+    "reading": "やむ",
+    "fr": "être terminé; cesser; stopper",
+    "en": "to stop"
+   }
+  ]
+ },
+ {
+  "character": "正",
+  "level": "N4",
+  "onyomi": [
+   "セイ",
+   "ショウ"
+  ],
+  "kunyomi": [
+   "ただ.しい",
+   "ただ.す",
+   "まさ",
+   "まさ.に"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "correct"
+  ],
+  "meaningsEn": [
+   "correct",
+   "justice",
+   "righteous",
+   "10**40",
+   "correct",
+   "positif",
+   "juste",
+   "droit",
+   "10**40",
+   "correcto",
+   "justo",
+   "arreglar",
+   "enderezar",
+   "corrigir",
+   "justiça",
+   "correto",
+   "direito",
+   "10 elevado a 40"
+  ],
+  "examples": []
+ },
+ {
+  "character": "歩",
+  "level": "N4",
+  "onyomi": [
+   "ホ",
+   "ブ",
+   "フ"
+  ],
+  "kunyomi": [
+   "ある.く",
+   "あゆ.む"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "marcher"
+  ],
+  "meaningsEn": [
+   "walk",
+   "counter for steps",
+   "marcher",
+   "compteur de pas",
+   "camino",
+   "caminar",
+   "razón",
+   "proporción",
+   "ir a pie",
+   "passeio"
+  ],
+  "examples": [
+   {
+    "word": "歩く",
+    "reading": "あるく",
+    "fr": "marcher",
+    "en": "to walk"
+   },
+   {
+    "word": "散歩",
+    "reading": "さんぽ",
+    "fr": "promenade",
+    "en": "to stroll"
+   }
+  ]
+ },
+ {
+  "character": "死",
+  "level": "N4",
+  "onyomi": [
+   "シ"
+  ],
+  "kunyomi": [
+   "し.ぬ",
+   "し.に-"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "mort"
+  ],
+  "meaningsEn": [
+   "death",
+   "die",
+   "mort",
+   "mourir",
+   "muerte",
+   "morir",
+   "morte",
+   "dados"
+  ],
+  "examples": [
+   {
+    "word": "死ぬ",
+    "reading": "しぬ",
+    "fr": "mourir",
+    "en": "to die"
+   }
+  ]
+ },
+ {
+  "character": "注",
+  "level": "N4",
+  "onyomi": [
+   "チュウ"
+  ],
+  "kunyomi": [
+   "そそ.ぐ",
+   "さ.す",
+   "つ.ぐ"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "verser"
+  ],
+  "meaningsEn": [
+   "pour",
+   "irrigate",
+   "shed (tears)",
+   "flow into",
+   "concentrate on",
+   "notes",
+   "comment",
+   "annotate",
+   "verser",
+   "se jeter dans",
+   "arroser",
+   "servir (boisson)",
+   "note",
+   "remarque",
+   "annotation",
+   "commentaire",
+   "derramar",
+   "verter",
+   "regar",
+   "concentrarse",
+   "derramar",
+   "irrigar",
+   "verter (lágrimas)",
+   "desaguar",
+   "colocar em(copos)",
+   "notas",
+   "comentário",
+   "anotar"
+  ],
+  "examples": [
+   {
+    "word": "注意",
+    "reading": "ちゅうい",
+    "fr": "attention (faire attention); avertissement; prudence",
+    "en": "caution"
+   },
+   {
+    "word": "注射",
+    "reading": "ちゅうしゃ",
+    "fr": "injection; piqûre",
+    "en": "injection"
+   }
+  ]
+ },
+ {
+  "character": "洋",
+  "level": "N4",
+  "onyomi": [
+   "ヨウ"
+  ],
+  "kunyomi": [],
+  "strokes": 9,
+  "meaningsFr": [
+   "océan"
+  ],
+  "meaningsEn": [
+   "ocean",
+   "sea",
+   "foreign",
+   "Western style",
+   "océan",
+   "style occidental",
+   "océano",
+   "de estilo occidental",
+   "cada una de las dos mitades del mundo",
+   "oceano",
+   "estilo ocidental"
+  ],
+  "examples": [
+   {
+    "word": "洋服",
+    "reading": "ようふく",
+    "fr": "vêtements occidentaux",
+    "en": "western-style clothes"
+   },
+   {
+    "word": "西洋",
+    "reading": "せいよう",
+    "fr": "L'Ouest; l'Occident; les pays occidentaux",
+    "en": "western countries"
+   }
+  ]
+ },
+ {
+  "character": "海",
+  "level": "N4",
+  "onyomi": [
+   "カイ"
+  ],
+  "kunyomi": [
+   "うみ"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "mer"
+  ],
+  "meaningsEn": [
+   "sea",
+   "ocean",
+   "mer",
+   "océan",
+   "mar",
+   "océano",
+   "playa",
+   "oceano",
+   "mar"
+  ],
+  "examples": [
+   {
+    "word": "海",
+    "reading": "うみ",
+    "fr": "mer",
+    "en": "sea"
+   },
+   {
+    "word": "海岸",
+    "reading": "かいがん",
+    "fr": "bord de mer; côte",
+    "en": "coast"
+   }
+  ]
+ },
+ {
+  "character": "漢",
+  "level": "N4",
+  "onyomi": [
+   "カン"
+  ],
+  "kunyomi": [],
+  "strokes": 13,
+  "meaningsFr": [
+   "chinois"
+  ],
+  "meaningsEn": [
+   "Sino-",
+   "China",
+   "sino-",
+   "Chine",
+   "antigua región de China",
+   "China",
+   "hombre",
+   "Sino-",
+   "China"
+  ],
+  "examples": [
+   {
+    "word": "漢字",
+    "reading": "かんじ",
+    "fr": "caractères sino-japonais",
+    "en": "Chinese character"
+   }
+  ]
+ },
+ {
+  "character": "無",
+  "level": "N4",
+  "onyomi": [
+   "ム",
+   "ブ"
+  ],
+  "kunyomi": [
+   "な.い"
+  ],
+  "strokes": 12,
+  "meaningsFr": [
+   "néant"
+  ],
+  "meaningsEn": [
+   "nothingness",
+   "none",
+   "ain't",
+   "nothing",
+   "nil",
+   "not",
+   "néant",
+   "rien",
+   "ne pas",
+   "non",
+   "in-",
+   "négatif",
+   "nada",
+   "inexistente",
+   "prefijo negativo",
+   "no hay",
+   "Sem valor",
+   "nada",
+   "não sou/ estou",
+   "nihil",
+   "não"
+  ],
+  "examples": [
+   {
+    "word": "無くす",
+    "reading": "なくす",
+    "fr": "égarer; perdre quelqu'un pere, mère,amie ...",
+    "en": "to lose something"
+   },
+   {
+    "word": "無理",
+    "reading": "むり",
+    "fr": "déraisonnable; impossible",
+    "en": "impossible"
+   }
+  ]
+ },
+ {
+  "character": "牛",
+  "level": "N4",
+  "onyomi": [
+   "ギュウ"
+  ],
+  "kunyomi": [
+   "うし"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "vache"
+  ],
+  "meaningsEn": [
+   "cow",
+   "vache",
+   "vaca",
+   "ganado",
+   "Vaca"
+  ],
+  "examples": [
+   {
+    "word": "牛肉",
+    "reading": "ぎゅうにく",
+    "fr": "viande de bœuf",
+    "en": "beef"
+   },
+   {
+    "word": "牛乳",
+    "reading": "ぎゅうにゅう",
+    "fr": "lait de vache",
+    "en": "milk"
+   }
+  ]
+ },
+ {
+  "character": "物",
+  "level": "N4",
+  "onyomi": [
+   "ブツ",
+   "モツ"
+  ],
+  "kunyomi": [
+   "もの",
+   "もの-"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "chose"
+  ],
+  "meaningsEn": [
+   "thing",
+   "object",
+   "matter",
+   "objet",
+   "chose",
+   "matière",
+   "cosa",
+   "objeto",
+   "materia",
+   "coisa",
+   "objeto",
+   "matéria"
+  ],
+  "examples": [
+   {
+    "word": "買い物",
+    "reading": "かいもの",
+    "fr": "achats; shopping",
+    "en": "shopping"
+   },
+   {
+    "word": "果物",
+    "reading": "くだもの",
+    "fr": "fruit",
+    "en": "fruit"
+   },
+   {
+    "word": "建物",
+    "reading": "たてもの",
+    "fr": "immeuble",
+    "en": "building"
+   },
+   {
+    "word": "食べ物",
+    "reading": "たべもの",
+    "fr": "nourriture",
+    "en": "food"
+   },
+   {
+    "word": "動物",
+    "reading": "どうぶつ",
+    "fr": "animal",
+    "en": "animal"
+   },
+   {
+    "word": "荷物",
+    "reading": "にもつ",
+    "fr": "bagages",
+    "en": "luggage"
+   }
+  ]
+ },
+ {
+  "character": "特",
+  "level": "N4",
+  "onyomi": [
+   "トク"
+  ],
+  "kunyomi": [],
+  "strokes": 10,
+  "meaningsFr": [
+   "spécial"
+  ],
+  "meaningsEn": [
+   "special",
+   "spécial",
+   "especial",
+   "Especial"
+  ],
+  "examples": [
+   {
+    "word": "特に",
+    "reading": "とくに",
+    "fr": "particulièrement; spécialement",
+    "en": "particularly; especially"
+   },
+   {
+    "word": "特別",
+    "reading": "とくべつ",
+    "fr": "spécial",
+    "en": "special"
+   },
+   {
+    "word": "特急",
+    "reading": "とっきゅう",
+    "fr": "express; rapide",
+    "en": "limited express train (faster than an express train)"
+   }
+  ]
+ },
+ {
+  "character": "犬",
+  "level": "N4",
+  "onyomi": [
+   "ケン"
+  ],
+  "kunyomi": [
+   "いぬ",
+   "いぬ-"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "chien"
+  ],
+  "meaningsEn": [
+   "dog",
+   "chien",
+   "perro",
+   "Cão"
+  ],
+  "examples": [
+   {
+    "word": "犬",
+    "reading": "いぬ",
+    "fr": "chien",
+    "en": "dog"
+   }
+  ]
+ },
+ {
+  "character": "理",
+  "level": "N4",
+  "onyomi": [
+   "リ"
+  ],
+  "kunyomi": [
+   "ことわり"
+  ],
+  "strokes": 11,
+  "meaningsFr": [
+   "logique"
+  ],
+  "meaningsEn": [
+   "logic",
+   "arrangement",
+   "reason",
+   "justice",
+   "truth",
+   "logique",
+   "principe",
+   "raison",
+   "justice",
+   "vérité",
+   "lógica",
+   "razón",
+   "preparar",
+   "lógica",
+   "arranjo",
+   "razão",
+   "justiça",
+   "verdade"
+  ],
+  "examples": [
+   {
+    "word": "料理",
+    "reading": "りょうり",
+    "fr": "cuisine; cuisiner",
+    "en": "cuisine"
+   },
+   {
+    "word": "地理",
+    "reading": "ちり",
+    "fr": "géographie",
+    "en": "geography"
+   },
+   {
+    "word": "無理",
+    "reading": "むり",
+    "fr": "déraisonnable; impossible",
+    "en": "impossible"
+   },
+   {
+    "word": "理由",
+    "reading": "りゆう",
+    "fr": "cause; motif; prétexte",
+    "en": "reason"
+   }
+  ]
+ },
+ {
+  "character": "用",
+  "level": "N4",
+  "onyomi": [
+   "ヨウ"
+  ],
+  "kunyomi": [
+   "もち.いる"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "utiliser"
+  ],
+  "meaningsEn": [
+   "utilize",
+   "business",
+   "service",
+   "use",
+   "employ",
+   "se servir de",
+   "affaires",
+   "service",
+   "utiliser",
+   "employer",
+   "uso",
+   "empleo",
+   "trabajo",
+   "usar",
+   "hacer uso de",
+   "utilizar",
+   "negócios",
+   "serviço",
+   "usar",
+   "empregar"
+  ],
+  "examples": [
+   {
+    "word": "用",
+    "reading": "よう",
+    "fr": "affaire; tâche; utilisation",
+    "en": "use"
+   },
+   {
+    "word": "用意",
+    "reading": "ようい",
+    "fr": "préparation",
+    "en": "preparation"
+   },
+   {
+    "word": "用事",
+    "reading": "ようじ",
+    "fr": "choses à faire; tâches",
+    "en": "things to do"
+   },
+   {
+    "word": "利用",
+    "reading": "りよう",
+    "fr": "emploi; usage; utilisation",
+    "en": "utilization"
+   }
+  ]
+ },
+ {
+  "character": "田",
+  "level": "N4",
+  "onyomi": [
+   "デン"
+  ],
+  "kunyomi": [
+   "た"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "rizière"
+  ],
+  "meaningsEn": [
+   "rice field",
+   "rice paddy",
+   "rizière",
+   "campo de arroz",
+   "arrozal",
+   "campo de arroz",
+   "arroz sem beneficiar"
+  ],
+  "examples": [
+   {
+    "word": "田舎",
+    "reading": "いなか",
+    "fr": "campagne; province; rural",
+    "en": "countryside"
+   }
+  ]
+ },
+ {
+  "character": "町",
+  "level": "N4",
+  "onyomi": [
+   "チョウ"
+  ],
+  "kunyomi": [
+   "まち"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "ville"
+  ],
+  "meaningsEn": [
+   "town",
+   "village",
+   "block",
+   "street",
+   "quartier",
+   "ville",
+   "village",
+   "rue",
+   "pueblo",
+   "ciudad",
+   "bloque",
+   "calle",
+   "aldeia",
+   "cidade",
+   "bloco",
+   "rua"
+  ],
+  "examples": [
+   {
+    "word": "町",
+    "reading": "まち",
+    "fr": "quartier; ville; rue",
+    "en": "town; city"
+   }
+  ]
+ },
+ {
+  "character": "画",
+  "level": "N4",
+  "onyomi": [
+   "ガ",
+   "カク",
+   "エ",
+   "カイ"
+  ],
+  "kunyomi": [
+   "えが.く",
+   "かく.する",
+   "かぎ.る",
+   "はかりごと",
+   "はか.る"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "coup de pinceau"
+  ],
+  "meaningsEn": [
+   "brush-stroke",
+   "picture",
+   "trait de plume",
+   "dessin",
+   "écran",
+   "compteur de traits de kanji",
+   "dibujo",
+   "trazo",
+   "puntuar",
+   "interrumpir",
+   "gravura"
+  ],
+  "examples": [
+   {
+    "word": "映画",
+    "reading": "えいが",
+    "fr": "film",
+    "en": "movie"
+   },
+   {
+    "word": "映画館",
+    "reading": "えいがかん",
+    "fr": "cinéma (batiment)",
+    "en": "cinema"
+   },
+   {
+    "word": "計画",
+    "reading": "けいかく",
+    "fr": "plan; planning; programme",
+    "en": "to plan"
+   },
+   {
+    "word": "漫画",
+    "reading": "まんが",
+    "fr": "bande déssinées; manga",
+    "en": "comic"
+   }
+  ]
+ },
+ {
+  "character": "界",
+  "level": "N4",
+  "onyomi": [
+   "カイ"
+  ],
+  "kunyomi": [],
+  "strokes": 9,
+  "meaningsFr": [
+   "monde"
+  ],
+  "meaningsEn": [
+   "world",
+   "boundary",
+   "monde",
+   "borde",
+   "frontera",
+   "extensión",
+   "ámbito",
+   "mundo"
+  ],
+  "examples": [
+   {
+    "word": "世界",
+    "reading": "せかい",
+    "fr": "l'univers; le monde",
+    "en": "the world"
+   }
+  ]
+ },
+ {
+  "character": "病",
+  "level": "N4",
+  "onyomi": [
+   "ビョウ",
+   "ヘイ"
+  ],
+  "kunyomi": [
+   "や.む",
+   "-や.み",
+   "やまい"
+  ],
+  "strokes": 10,
+  "meaningsFr": [
+   "maladie"
+  ],
+  "meaningsEn": [
+   "ill",
+   "sick",
+   "malade",
+   "enfermedad",
+   "caer enfermo",
+   "mal",
+   "doente"
+  ],
+  "examples": [
+   {
+    "word": "病院",
+    "reading": "びょういん",
+    "fr": "hôpital",
+    "en": "hospital"
+   },
+   {
+    "word": "病気",
+    "reading": "びょうき",
+    "fr": "maladie; manie",
+    "en": "illness"
+   }
+  ]
+ },
+ {
+  "character": "発",
+  "level": "N4",
+  "onyomi": [
+   "ハツ",
+   "ホツ"
+  ],
+  "kunyomi": [
+   "た.つ",
+   "あば.く",
+   "おこ.る",
+   "つか.わす",
+   "はな.つ"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "départ"
+  ],
+  "meaningsEn": [
+   "departure",
+   "discharge",
+   "publish",
+   "emit",
+   "start from",
+   "disclose",
+   "counter for gunshots",
+   "départ",
+   "décharge",
+   "dégagement",
+   "publier",
+   "émettre",
+   "partir de",
+   "divulguer",
+   "compteur de coups de feu",
+   "abrir",
+   "exponer",
+   "suceder",
+   "liberar",
+   "partida",
+   "publicar",
+   "emitir",
+   "a partir de",
+   "revelar"
+  ],
+  "examples": [
+   {
+    "word": "出発",
+    "reading": "しゅっぱつ",
+    "fr": "départ",
+    "en": "to depart"
+   },
+   {
+    "word": "発音",
+    "reading": "はつおん",
+    "fr": "prononciation",
+    "en": "pronunciation"
+   }
+  ]
+ },
+ {
+  "character": "的",
+  "level": "N4",
+  "onyomi": [
+   "テキ"
+  ],
+  "kunyomi": [
+   "まと"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "dans le mille"
+  ],
+  "meaningsEn": [
+   "bull's eye",
+   "mark",
+   "target",
+   "object",
+   "adjective ending",
+   "cible",
+   "but",
+   "objectif",
+   "terminaison d'adjectif",
+   "objetivo",
+   "propósito",
+   "sufijo para formar adjetivos",
+   "Centro do alvo",
+   "marca",
+   "alvo",
+   "objeto"
+  ],
+  "examples": []
+ },
+ {
+  "character": "目",
+  "level": "N5",
+  "onyomi": [
+   "モク",
+   "ボク"
+  ],
+  "kunyomi": [
+   "め",
+   "-め",
+   "ま-"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "œil"
+  ],
+  "meaningsEn": [
+   "eye",
+   "class",
+   "look",
+   "insight",
+   "experience",
+   "care",
+   "favor",
+   "oeil",
+   "regard",
+   "aperçu",
+   "numérateur ordinal",
+   "expérience",
+   "classe",
+   "faveur",
+   "pièce (Go)",
+   "ojo",
+   "mirada",
+   "percepción",
+   "olho",
+   "classe",
+   "olhar",
+   "visão",
+   "experiência",
+   "atenção",
+   "favor"
+  ],
+  "examples": [
+   {
+    "word": "目",
+    "reading": "め",
+    "fr": "œil; globe oculaire; (cpt) numérateur des numéros d'ordre",
+    "en": "eye"
+   }
+  ]
+ },
+ {
+  "character": "真",
+  "level": "N4",
+  "onyomi": [
+   "シン"
+  ],
+  "kunyomi": [
+   "ま",
+   "ま-",
+   "まこと"
+  ],
+  "strokes": 10,
+  "meaningsFr": [
+   "vrai"
+  ],
+  "meaningsEn": [
+   "true",
+   "reality",
+   "Buddhist sect",
+   "exact",
+   "vrai",
+   "réalité",
+   "secte bouddhiste",
+   "verdad",
+   "realidad",
+   "puro",
+   "genuino",
+   "verdadero",
+   "verdadeiro",
+   "realidade",
+   "seita do Budismo"
+  ],
+  "examples": [
+   {
+    "word": "写真",
+    "reading": "しゃしん",
+    "fr": "photographie",
+    "en": "photograph"
+   }
+  ]
+ },
+ {
+  "character": "着",
+  "level": "N4",
+  "onyomi": [
+   "チャク",
+   "ジャク"
+  ],
+  "kunyomi": [
+   "き.る",
+   "き.せる",
+   "つ.く",
+   "つ.ける"
+  ],
+  "strokes": 12,
+  "meaningsFr": [
+   "don"
+  ],
+  "meaningsEn": [
+   "don",
+   "arrive",
+   "wear",
+   "counter for suits of clothing",
+   "enfiler",
+   "porter (vêtement)",
+   "arriver",
+   "compteur de vêtements",
+   "usar",
+   "llevar puesto",
+   "vestir",
+   "llegar",
+   "alcanzar",
+   "vestir",
+   "chegar",
+   "usar",
+   "sufixo para contagem de vestuário"
+  ],
+  "examples": [
+   {
+    "word": "上着",
+    "reading": "うわぎ",
+    "fr": "manteau; tunique; vêtement de dessus",
+    "en": "jacket"
+   },
+   {
+    "word": "着る",
+    "reading": "きる",
+    "fr": "être habillé de; enfiler; mettre ses habits",
+    "en": "to put on from the shoulders down"
+   },
+   {
+    "word": "着く",
+    "reading": "つく",
+    "fr": "arriver à; atteindre; parvenir à",
+    "en": "to arrive at"
+   },
+   {
+    "word": "着物",
+    "reading": "きもの",
+    "fr": "kimono",
+    "en": "kimono"
+   },
+   {
+    "word": "下着",
+    "reading": "したぎ",
+    "fr": "sous-vêtements",
+    "en": "underwear"
+   }
+  ]
+ },
+ {
+  "character": "知",
+  "level": "N4",
+  "onyomi": [
+   "チ"
+  ],
+  "kunyomi": [
+   "し.る",
+   "し.らせる"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "savoir"
+  ],
+  "meaningsEn": [
+   "know",
+   "wisdom",
+   "savoir",
+   "sagesse",
+   "conocer",
+   "saber",
+   "entender",
+   "saber",
+   "sabedoria"
+  ],
+  "examples": [
+   {
+    "word": "知る",
+    "reading": "しる",
+    "fr": "connaître; savoir",
+    "en": "to know"
+   },
+   {
+    "word": "承知",
+    "reading": "しょうち",
+    "fr": "acceptation; acquiescement; approbation",
+    "en": "to consent"
+   }
+  ]
+ },
+ {
+  "character": "研",
+  "level": "N4",
+  "onyomi": [
+   "ケン"
+  ],
+  "kunyomi": [
+   "と.ぐ"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "polir"
+  ],
+  "meaningsEn": [
+   "polish",
+   "study of",
+   "sharpen",
+   "polir",
+   "étudier",
+   "aiguiser",
+   "estudio",
+   "afilar",
+   "pulir",
+   "polir",
+   "estudar",
+   "afiar"
+  ],
+  "examples": [
+   {
+    "word": "研究",
+    "reading": "けんきゅう",
+    "fr": "étude; investigation; recherche",
+    "en": "research"
+   }
+  ]
+ },
+ {
+  "character": "社",
+  "level": "N5",
+  "onyomi": [
+   "シャ"
+  ],
+  "kunyomi": [
+   "やしろ"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "entreprise"
+  ],
+  "meaningsEn": [
+   "company",
+   "firm",
+   "office",
+   "association",
+   "shrine",
+   "temple shinto",
+   "compagnie",
+   "firme",
+   "bureau",
+   "association",
+   "compañía",
+   "asociación",
+   "sociedad",
+   "santuario shintoísta",
+   "companhia",
+   "firme",
+   "escritório",
+   "associação",
+   "templo"
+  ],
+  "examples": [
+   {
+    "word": "会社",
+    "reading": "かいしゃ",
+    "fr": "compagnie; entreprise; société",
+    "en": "company"
+   },
+   {
+    "word": "社会",
+    "reading": "しゃかい",
+    "fr": "public(?); société",
+    "en": "society; public"
+   },
+   {
+    "word": "社長",
+    "reading": "しゃちょう",
+    "fr": "directeur; président",
+    "en": "company president"
+   },
+   {
+    "word": "神社",
+    "reading": "じんじゃ",
+    "fr": "Temple Shinto",
+    "en": "Shinto shrine"
+   }
+  ]
+ },
+ {
+  "character": "私",
+  "level": "N4",
+  "onyomi": [
+   "シ"
+  ],
+  "kunyomi": [
+   "わたくし",
+   "わたし"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "privé"
+  ],
+  "meaningsEn": [
+   "private",
+   "I",
+   "me",
+   "privé",
+   "je",
+   "moi",
+   "yo",
+   "privado",
+   "secreto",
+   "particular",
+   "Eu",
+   "me"
+  ],
+  "examples": [
+   {
+    "word": "私",
+    "reading": "わたくし",
+    "fr": "",
+    "en": "(humble) I; myself"
+   }
+  ]
+ },
+ {
+  "character": "秋",
+  "level": "N4",
+  "onyomi": [
+   "シュウ"
+  ],
+  "kunyomi": [
+   "あき",
+   "とき"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "automne"
+  ],
+  "meaningsEn": [
+   "autumn",
+   "automne",
+   "otoño",
+   "outono"
+  ],
+  "examples": [
+   {
+    "word": "秋",
+    "reading": "あき",
+    "fr": "automne",
+    "en": "autumn"
+   }
+  ]
+ },
+ {
+  "character": "究",
+  "level": "N4",
+  "onyomi": [
+   "キュウ",
+   "ク"
+  ],
+  "kunyomi": [
+   "きわ.める"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "recherche"
+  ],
+  "meaningsEn": [
+   "research",
+   "study",
+   "recherche",
+   "étudier",
+   "estudio",
+   "investigación",
+   "profundización",
+   "último",
+   "final",
+   "dominar",
+   "profundizar en el estudio de",
+   "pesquisa",
+   "estudo"
+  ],
+  "examples": [
+   {
+    "word": "研究",
+    "reading": "けんきゅう",
+    "fr": "étude; investigation; recherche",
+    "en": "research"
+   }
+  ]
+ },
+ {
+  "character": "空",
+  "level": "N5",
+  "onyomi": [
+   "クウ"
+  ],
+  "kunyomi": [
+   "そら",
+   "あ.く",
+   "あ.き",
+   "あ.ける",
+   "から",
+   "す.く",
+   "す.かす",
+   "むな.しい"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "vide"
+  ],
+  "meaningsEn": [
+   "empty",
+   "sky",
+   "void",
+   "vacant",
+   "vacuum",
+   "vide",
+   "ciel",
+   "vacant",
+   "creux",
+   "cielo",
+   "atmósfera",
+   "vacío",
+   "vacante",
+   "quedarse vacío",
+   "vaciar",
+   "esvaziar",
+   "ceú",
+   "desocupado",
+   "vazio",
+   "vácuo"
+  ],
+  "examples": [
+   {
+    "word": "空",
+    "reading": "そら",
+    "fr": "ciel",
+    "en": "sky"
+   },
+   {
+    "word": "空気",
+    "reading": "くうき",
+    "fr": "air; atmosphère",
+    "en": "air; atmosphere"
+   },
+   {
+    "word": "空港",
+    "reading": "くうこう",
+    "fr": "aéroport",
+    "en": "airport"
+   }
+  ]
+ },
+ {
+  "character": "立",
+  "level": "N5",
+  "onyomi": [
+   "リツ",
+   "リュウ",
+   "リットル"
+  ],
+  "kunyomi": [
+   "た.つ",
+   "-た.つ",
+   "た.ち-",
+   "た.てる",
+   "-た.てる",
+   "た.て-",
+   "たて-",
+   "-た.て",
+   "-だ.て",
+   "-だ.てる"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "se lever"
+  ],
+  "meaningsEn": [
+   "stand up",
+   "rise",
+   "set up",
+   "erect",
+   "debout",
+   "levantarse",
+   "alzarse",
+   "ponerse en pie",
+   "levantar",
+   "erigir",
+   "estar en pie",
+   "Ficar de pé",
+   "levantar-se"
+  ],
+  "examples": [
+   {
+    "word": "立つ",
+    "reading": "たつ",
+    "fr": "être érigé; être dressé; être levé",
+    "en": "to stand"
+   }
+  ]
+ },
+ {
+  "character": "答",
+  "level": "N4",
+  "onyomi": [
+   "トウ"
+  ],
+  "kunyomi": [
+   "こた.える",
+   "こた.え"
+  ],
+  "strokes": 12,
+  "meaningsFr": [
+   "solution"
+  ],
+  "meaningsEn": [
+   "solution",
+   "answer",
+   "solution",
+   "réponse",
+   "solución",
+   "respuesta",
+   "contestar",
+   "responder",
+   "solução",
+   "resposta"
+  ],
+  "examples": [
+   {
+    "word": "答える",
+    "reading": "こたえる",
+    "fr": "répondre",
+    "en": "to answer"
+   },
+   {
+    "word": "答",
+    "reading": "こたえ",
+    "fr": "réponse",
+    "en": "response"
+   }
+  ]
+ },
+ {
+  "character": "紙",
+  "level": "N4",
+  "onyomi": [
+   "シ"
+  ],
+  "kunyomi": [
+   "かみ"
+  ],
+  "strokes": 10,
+  "meaningsFr": [
+   "papier"
+  ],
+  "meaningsEn": [
+   "paper",
+   "papier",
+   "papel",
+   "periódico",
+   "Papel"
+  ],
+  "examples": [
+   {
+    "word": "紙",
+    "reading": "かみ",
+    "fr": "papier",
+    "en": "paper"
+   },
+   {
+    "word": "手紙",
+    "reading": "てがみ",
+    "fr": "lettre",
+    "en": "letter"
+   }
+  ]
+ },
+ {
+  "character": "終",
+  "level": "N4",
+  "onyomi": [
+   "シュウ"
+  ],
+  "kunyomi": [
+   "お.わる",
+   "-お.わる",
+   "おわ.る",
+   "お.える",
+   "つい",
+   "つい.に"
+  ],
+  "strokes": 11,
+  "meaningsFr": [
+   "fin"
+  ],
+  "meaningsEn": [
+   "end",
+   "finish",
+   "finir",
+   "fin",
+   "fin",
+   "final",
+   "terminar",
+   "acabar",
+   "finalizar",
+   "fim",
+   "terminar"
+  ],
+  "examples": [
+   {
+    "word": "終る",
+    "reading": "おわる",
+    "fr": "finir",
+    "en": "to finish"
+   }
+  ]
+ },
+ {
+  "character": "習",
+  "level": "N4",
+  "onyomi": [
+   "シュウ",
+   "ジュ"
+  ],
+  "kunyomi": [
+   "なら.う",
+   "なら.い"
+  ],
+  "strokes": 11,
+  "meaningsFr": [
+   "apprendre"
+  ],
+  "meaningsEn": [
+   "learn",
+   "apprendre",
+   "aprender",
+   "estudiar",
+   "aprender"
+  ],
+  "examples": [
+   {
+    "word": "習う",
+    "reading": "ならう",
+    "fr": "étudier; apprendre",
+    "en": "to learn"
+   },
+   {
+    "word": "練習",
+    "reading": "れんしゅう",
+    "fr": "s'entraîner; s'exercer",
+    "en": "to practice"
+   },
+   {
+    "word": "習慣",
+    "reading": "しゅうかん",
+    "fr": "coutumes; habitudes; manières",
+    "en": "custom; manners"
+   },
+   {
+    "word": "復習",
+    "reading": "ふくしゅう",
+    "fr": "révision",
+    "en": "revision"
+   },
+   {
+    "word": "予習",
+    "reading": "よしゅう",
+    "fr": "préparation pour un cours",
+    "en": "preparation for a lesson"
+   }
+  ]
+ },
+ {
+  "character": "考",
+  "level": "N4",
+  "onyomi": [
+   "コウ"
+  ],
+  "kunyomi": [
+   "かんが.える",
+   "かんが.え"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "considérer"
+  ],
+  "meaningsEn": [
+   "consider",
+   "think over",
+   "réfléchir",
+   "considérer",
+   "idea",
+   "pensar",
+   "investigar",
+   "considerar",
+   "considerar",
+   "refletir"
+  ],
+  "examples": []
+ },
+ {
+  "character": "者",
+  "level": "N4",
+  "onyomi": [
+   "シャ"
+  ],
+  "kunyomi": [
+   "もの"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "quelqu'un"
+  ],
+  "meaningsEn": [
+   "someone",
+   "person",
+   "personne",
+   "quelqu'un",
+   "persona",
+   "alguém",
+   "pessoa"
+  ],
+  "examples": [
+   {
+    "word": "医者",
+    "reading": "いしゃ",
+    "fr": "médecin",
+    "en": "medical doctor"
+   }
+  ]
+ },
+ {
+  "character": "肉",
+  "level": "N4",
+  "onyomi": [
+   "ニク"
+  ],
+  "kunyomi": [
+   "しし"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "viande"
+  ],
+  "meaningsEn": [
+   "meat",
+   "chair",
+   "viande",
+   "carne",
+   "carne"
+  ],
+  "examples": [
+   {
+    "word": "牛肉",
+    "reading": "ぎゅうにく",
+    "fr": "viande de bœuf",
+    "en": "beef"
+   },
+   {
+    "word": "鶏肉",
+    "reading": "とりにく",
+    "fr": "viande de poulet",
+    "en": "chicken meat"
+   },
+   {
+    "word": "肉",
+    "reading": "にく",
+    "fr": "viande",
+    "en": "meat"
+   },
+   {
+    "word": "豚肉",
+    "reading": "ぶたにく",
+    "fr": "viande de porc",
+    "en": "pork"
+   }
+  ]
+ },
+ {
+  "character": "自",
+  "level": "N4",
+  "onyomi": [
+   "ジ",
+   "シ"
+  ],
+  "kunyomi": [
+   "みずか.ら",
+   "おの.ずから",
+   "おの.ずと"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "soi-même"
+  ],
+  "meaningsEn": [
+   "oneself",
+   "soi-même",
+   "uno mismo",
+   "por sí mismo",
+   "auto-",
+   "a si próprio"
+  ],
+  "examples": [
+   {
+    "word": "自転車",
+    "reading": "じてんしゃ",
+    "fr": "bicyclette; vélo",
+    "en": "bicycle"
+   },
+   {
+    "word": "自動車",
+    "reading": "じどうしゃ",
+    "fr": "automobile; voiture",
+    "en": "automobile"
+   },
+   {
+    "word": "自分",
+    "reading": "じぶん",
+    "fr": "moi-même; soi-même",
+    "en": "oneself"
+   },
+   {
+    "word": "自由",
+    "reading": "じゆう",
+    "fr": "comme il vous plaît; liberté",
+    "en": "freedom"
+   }
+  ]
+ },
+ {
+  "character": "色",
+  "level": "N4",
+  "onyomi": [
+   "ショク",
+   "シキ"
+  ],
+  "kunyomi": [
+   "いろ"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "couleur"
+  ],
+  "meaningsEn": [
+   "color",
+   "couleur",
+   "color",
+   "aspecto",
+   "cor"
+  ],
+  "examples": [
+   {
+    "word": "色",
+    "reading": "いろ",
+    "fr": "couleur; teinte; amour",
+    "en": "colour"
+   },
+   {
+    "word": "黄色",
+    "reading": "きいろ",
+    "fr": "jaune",
+    "en": "yellow"
+   },
+   {
+    "word": "黄色い",
+    "reading": "きいろい",
+    "fr": "jaune",
+    "en": "yellow"
+   },
+   {
+    "word": "茶色",
+    "reading": "ちゃいろ",
+    "fr": "brun; marron",
+    "en": "brown"
+   },
+   {
+    "word": "景色",
+    "reading": "けしき",
+    "fr": "panorama; paysage; site",
+    "en": "scene; landscape"
+   }
+  ]
+ },
+ {
+  "character": "花",
+  "level": "N5",
+  "onyomi": [
+   "カ",
+   "ケ"
+  ],
+  "kunyomi": [
+   "はな"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "fleur"
+  ],
+  "meaningsEn": [
+   "flower",
+   "fleur",
+   "flor",
+   "flor"
+  ],
+  "examples": [
+   {
+    "word": "花瓶",
+    "reading": "かびん",
+    "fr": "vase (à fleurs)",
+    "en": "a vase"
+   },
+   {
+    "word": "花",
+    "reading": "はな",
+    "fr": "fleurs; pétale; fleurs",
+    "en": "flower"
+   },
+   {
+    "word": "花見",
+    "reading": "はなみ",
+    "fr": "sortie, excursion pour admirer la floraison des cerisiers",
+    "en": "cherry-blossom viewing"
+   }
+  ]
+ },
+ {
+  "character": "英",
+  "level": "N4",
+  "onyomi": [
+   "エイ"
+  ],
+  "kunyomi": [
+   "はなぶさ"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "Angleterre"
+  ],
+  "meaningsEn": [
+   "England",
+   "English",
+   "hero",
+   "outstanding",
+   "calyx",
+   "Angleterre",
+   "anglais",
+   "fleur éclose",
+   "brillant",
+   "Inglaterra",
+   "excelente",
+   "Inglaterra",
+   "Inglês"
+  ],
+  "examples": [
+   {
+    "word": "英語",
+    "reading": "えいご",
+    "fr": "la langue anglaise",
+    "en": "English language"
+   }
+  ]
+ },
+ {
+  "character": "茶",
+  "level": "N4",
+  "onyomi": [
+   "チャ",
+   "サ"
+  ],
+  "kunyomi": [],
+  "strokes": 9,
+  "meaningsFr": [
+   "thé"
+  ],
+  "meaningsEn": [
+   "tea",
+   "thé",
+   "hoja de té",
+   "té",
+   "chá"
+  ],
+  "examples": [
+   {
+    "word": "お茶",
+    "reading": "おちゃ",
+    "fr": "thé (vert)",
+    "en": "green tea"
+   },
+   {
+    "word": "喫茶店",
+    "reading": "きっさてん",
+    "fr": "café (lieu); salon de thé",
+    "en": "coffee lounge"
+   },
+   {
+    "word": "紅茶",
+    "reading": "こうちゃ",
+    "fr": "thé noir",
+    "en": "black tea"
+   },
+   {
+    "word": "茶色",
+    "reading": "ちゃいろ",
+    "fr": "brun; marron",
+    "en": "brown"
+   }
+  ]
+ },
+ {
+  "character": "親",
+  "level": "N4",
+  "onyomi": [
+   "シン"
+  ],
+  "kunyomi": [
+   "おや",
+   "おや-",
+   "した.しい",
+   "した.しむ"
+  ],
+  "strokes": 16,
+  "meaningsFr": [
+   "parent"
+  ],
+  "meaningsEn": [
+   "parent",
+   "intimacy",
+   "relative",
+   "familiarity",
+   "dealer (cards)",
+   "parent",
+   "parenté",
+   "intimité",
+   "familiarité",
+   "donneur (cartes)",
+   "padre",
+   "madre",
+   "familiares",
+   "íntimo",
+   "personalmente",
+   "padres",
+   "hacerse amigo",
+   "intimar",
+   "pai",
+   "intimidade",
+   "parente",
+   "familiaridade",
+   "crupiê"
+  ],
+  "examples": [
+   {
+    "word": "両親",
+    "reading": "りょうしん",
+    "fr": "les deux parents; parents",
+    "en": "both parents"
+   },
+   {
+    "word": "親",
+    "reading": "おや",
+    "fr": "parents",
+    "en": "parents"
+   },
+   {
+    "word": "親切",
+    "reading": "しんせつ",
+    "fr": "gentillesse",
+    "en": "kindness"
+   }
+  ]
+ },
+ {
+  "character": "言",
+  "level": "N5",
+  "onyomi": [
+   "ゲン",
+   "ゴン"
+  ],
+  "kunyomi": [
+   "い.う",
+   "こと"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "dire"
+  ],
+  "meaningsEn": [
+   "say",
+   "word",
+   "dire",
+   "palabras",
+   "decir",
+   "Dizer",
+   "palavras"
+  ],
+  "examples": [
+   {
+    "word": "言う",
+    "reading": "いう",
+    "fr": "dire",
+    "en": "to say"
+   },
+   {
+    "word": "言葉",
+    "reading": "ことば",
+    "fr": "langage; mot(s); parole",
+    "en": "word; language"
+   }
+  ]
+ },
+ {
+  "character": "計",
+  "level": "N4",
+  "onyomi": [
+   "ケイ"
+  ],
+  "kunyomi": [
+   "はか.る",
+   "はか.らう"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "complot"
+  ],
+  "meaningsEn": [
+   "plot",
+   "plan",
+   "scheme",
+   "measure",
+   "planifier",
+   "projeter",
+   "calcul",
+   "mesure",
+   "medida",
+   "cuenta",
+   "contar",
+   "pensar",
+   "medir",
+   "pesar",
+   "desenho",
+   "plano",
+   "esquema",
+   "medida"
+  ],
+  "examples": [
+   {
+    "word": "時計",
+    "reading": "とけい",
+    "fr": "horloge; montre",
+    "en": "watch; clock"
+   },
+   {
+    "word": "計画",
+    "reading": "けいかく",
+    "fr": "plan; planning; programme",
+    "en": "to plan"
+   }
+  ]
+ },
+ {
+  "character": "試",
+  "level": "N4",
+  "onyomi": [
+   "シ"
+  ],
+  "kunyomi": [
+   "こころ.みる",
+   "ため.す"
+  ],
+  "strokes": 13,
+  "meaningsFr": [
+   "test"
+  ],
+  "meaningsEn": [
+   "test",
+   "try",
+   "attempt",
+   "experiment",
+   "ordeal",
+   "test",
+   "essai",
+   "tentative",
+   "expérience",
+   "épreuve",
+   "prueba",
+   "ensayo",
+   "experimento",
+   "probar",
+   "experimentar",
+   "intentar",
+   "teste",
+   "tentativa",
+   "testar",
+   "experimento",
+   "prova"
+  ],
+  "examples": [
+   {
+    "word": "試合",
+    "reading": "しあい",
+    "fr": "compétition; match",
+    "en": "match; game"
+   },
+   {
+    "word": "試験",
+    "reading": "しけん",
+    "fr": "épreuve; examen; test",
+    "en": "examination"
+   }
+  ]
+ },
+ {
+  "character": "買",
+  "level": "N5",
+  "onyomi": [
+   "バイ"
+  ],
+  "kunyomi": [
+   "か.う"
+  ],
+  "strokes": 12,
+  "meaningsFr": [
+   "acheter"
+  ],
+  "meaningsEn": [
+   "buy",
+   "acheter",
+   "comprar",
+   "comprar"
+  ],
+  "examples": [
+   {
+    "word": "買い物",
+    "reading": "かいもの",
+    "fr": "achats; shopping",
+    "en": "shopping"
+   },
+   {
+    "word": "買う",
+    "reading": "かう",
+    "fr": "acheter",
+    "en": "to buy"
+   }
+  ]
+ },
+ {
+  "character": "貸",
+  "level": "N4",
+  "onyomi": [
+   "タイ"
+  ],
+  "kunyomi": [
+   "か.す",
+   "か.し-",
+   "かし-"
+  ],
+  "strokes": 12,
+  "meaningsFr": [
+   "prêter"
+  ],
+  "meaningsEn": [
+   "lend",
+   "prêter",
+   "louer",
+   "préstamo",
+   "prestar",
+   "alquilar",
+   "Emprestar"
+  ],
+  "examples": [
+   {
+    "word": "貸す",
+    "reading": "かす",
+    "fr": "faire crédit à quelqu'un; louer; prêter",
+    "en": "to lend"
+   }
+  ]
+ },
+ {
+  "character": "質",
+  "level": "N4",
+  "onyomi": [
+   "シツ",
+   "シチ",
+   "チ"
+  ],
+  "kunyomi": [
+   "たち",
+   "ただ.す",
+   "もと",
+   "わりふ"
+  ],
+  "strokes": 15,
+  "meaningsFr": [
+   "substance"
+  ],
+  "meaningsEn": [
+   "substance",
+   "quality",
+   "matter",
+   "temperament",
+   "substance",
+   "matière",
+   "qualité",
+   "tempérament",
+   "substancia",
+   "contenido",
+   "simplicidad",
+   "calidad",
+   "depósito",
+   "custodia",
+   "substância",
+   "qualidade",
+   "matéria",
+   "temperamento"
+  ],
+  "examples": [
+   {
+    "word": "質問",
+    "reading": "しつもん",
+    "fr": "demande; question; requête",
+    "en": "question"
+   }
+  ]
+ },
+ {
+  "character": "赤",
+  "level": "N4",
+  "onyomi": [
+   "セキ",
+   "シャク"
+  ],
+  "kunyomi": [
+   "あか",
+   "あか-",
+   "あか.い",
+   "あか.らむ",
+   "あか.らめる"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "rouge"
+  ],
+  "meaningsEn": [
+   "red",
+   "rouge",
+   "rojo",
+   "enrojecer",
+   "enrojecerse",
+   "sonrojarse",
+   "vermelho"
+  ],
+  "examples": [
+   {
+    "word": "赤",
+    "reading": "あか",
+    "fr": "rouge; pourpre; écarlate",
+    "en": "red"
+   },
+   {
+    "word": "赤い",
+    "reading": "あかい",
+    "fr": "rouge",
+    "en": "red"
+   },
+   {
+    "word": "赤ん坊",
+    "reading": "あかんぼう",
+    "fr": "bébé; nourrisson",
+    "en": "baby"
+   }
+  ]
+ },
+ {
+  "character": "走",
+  "level": "N4",
+  "onyomi": [
+   "ソウ"
+  ],
+  "kunyomi": [
+   "はし.る"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "courir"
+  ],
+  "meaningsEn": [
+   "run",
+   "courir",
+   "correr",
+   "escapar",
+   "huir",
+   "Correr",
+   "corrida"
+  ],
+  "examples": [
+   {
+    "word": "走る",
+    "reading": "はしる",
+    "fr": "courir",
+    "en": "to run"
+   }
+  ]
+ },
+ {
+  "character": "起",
+  "level": "N4",
+  "onyomi": [
+   "キ"
+  ],
+  "kunyomi": [
+   "お.きる",
+   "お.こる",
+   "お.こす",
+   "おこ.す",
+   "た.つ"
+  ],
+  "strokes": 10,
+  "meaningsFr": [
+   "réveiller"
+  ],
+  "meaningsEn": [
+   "rouse",
+   "wake up",
+   "get up",
+   "se lever",
+   "se réveiller",
+   "début",
+   "se produire",
+   "provoquer",
+   "despertar",
+   "levantarse",
+   "comenzar",
+   "comienzo",
+   "despertar a alguien",
+   "despertar",
+   "acordar",
+   "levantar"
+  ],
+  "examples": [
+   {
+    "word": "起きる",
+    "reading": "おきる",
+    "fr": "se lever",
+    "en": "to get up"
+   },
+   {
+    "word": "起す",
+    "reading": "おこす",
+    "fr": "dresser; réveiller; relever",
+    "en": "to wake"
+   }
+  ]
+ },
+ {
+  "character": "足",
+  "level": "N5",
+  "onyomi": [
+   "ソク"
+  ],
+  "kunyomi": [
+   "あし",
+   "た.りる",
+   "た.る",
+   "た.す"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "jambe"
+  ],
+  "meaningsEn": [
+   "leg",
+   "foot",
+   "be sufficient",
+   "counter for pairs of footwear",
+   "jambe",
+   "pied",
+   "suffire",
+   "ajouter",
+   "compteur de paires de chaussures",
+   "pierna",
+   "pie",
+   "ser suficiente",
+   "pata",
+   "bastar",
+   "perna",
+   "pé",
+   "ser suficiente"
+  ],
+  "examples": [
+   {
+    "word": "足",
+    "reading": "あし",
+    "fr": "allure (de la marche); demarche; jambe",
+    "en": "foot; leg"
+   },
+   {
+    "word": "足す",
+    "reading": "たす",
+    "fr": "achever; ajouter; completer",
+    "en": "to add a number"
+   }
+  ]
+ },
+ {
+  "character": "身",
+  "level": "N4",
+  "onyomi": [
+   "シン"
+  ],
+  "kunyomi": [
+   "み"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "corps"
+  ],
+  "meaningsEn": [
+   "somebody",
+   "person",
+   "one's station in life",
+   "individu",
+   "personne",
+   "situation sociale",
+   "cuerpo",
+   "uno mismo",
+   "posición",
+   "alguém",
+   "pessoa",
+   "fase da vida"
+  ],
+  "examples": []
+ },
+ {
+  "character": "転",
+  "level": "N4",
+  "onyomi": [
+   "テン"
+  ],
+  "kunyomi": [
+   "ころ.がる",
+   "ころ.げる",
+   "ころ.がす",
+   "ころ.ぶ",
+   "まろ.ぶ",
+   "うたた",
+   "うつ.る",
+   "くる.めく"
+  ],
+  "strokes": 11,
+  "meaningsFr": [
+   "tourner"
+  ],
+  "meaningsEn": [
+   "revolve",
+   "turn around",
+   "change",
+   "rouler",
+   "tourner",
+   "changer",
+   "cambiar",
+   "girar",
+   "rodar",
+   "caerse",
+   "tropezar",
+   "dar vueltas",
+   "volcarse",
+   "caer",
+   "revolver",
+   "voltar a ser",
+   "mudança"
+  ],
+  "examples": [
+   {
+    "word": "自転車",
+    "reading": "じてんしゃ",
+    "fr": "bicyclette; vélo",
+    "en": "bicycle"
+   },
+   {
+    "word": "運転",
+    "reading": "うんてん",
+    "fr": "conduite; motion; opération",
+    "en": "to drive"
+   }
+  ]
+ },
+ {
+  "character": "近",
+  "level": "N4",
+  "onyomi": [
+   "キン",
+   "コン"
+  ],
+  "kunyomi": [
+   "ちか.い"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "près"
+  ],
+  "meaningsEn": [
+   "near",
+   "early",
+   "akin",
+   "tantamount",
+   "près",
+   "tôt",
+   "proche",
+   "équivalent à",
+   "cerca",
+   "cercano",
+   "perto",
+   "cedo",
+   "consangüíneo",
+   "equivalente"
+  ],
+  "examples": [
+   {
+    "word": "近い",
+    "reading": "ちかい",
+    "fr": "près; près de",
+    "en": "near"
+   },
+   {
+    "word": "近く",
+    "reading": "ちかく",
+    "fr": "alentours; voisinage",
+    "en": "near"
+   },
+   {
+    "word": "近所",
+    "reading": "きんじょ",
+    "fr": "proximité; voisinage",
+    "en": "neighbourhood"
+   },
+   {
+    "word": "最近",
+    "reading": "さいきん",
+    "fr": "ces jours-ci; récemment",
+    "en": "latest; nowadays"
+   }
+  ]
+ },
+ {
+  "character": "送",
+  "level": "N4",
+  "onyomi": [
+   "ソウ"
+  ],
+  "kunyomi": [
+   "おく.る"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "escorte"
+  ],
+  "meaningsEn": [
+   "escort",
+   "send",
+   "escorter",
+   "envoyer",
+   "enviar",
+   "remitir",
+   "expedir",
+   "acompanhante",
+   "enviar"
+  ],
+  "examples": [
+   {
+    "word": "送る",
+    "reading": "おくる",
+    "fr": "envoyer",
+    "en": "to send"
+   },
+   {
+    "word": "放送",
+    "reading": "ほうそう",
+    "fr": "émission",
+    "en": "to broadcast"
+   }
+  ]
+ },
+ {
+  "character": "通",
+  "level": "N4",
+  "onyomi": [
+   "ツウ",
+   "ツ"
+  ],
+  "kunyomi": [
+   "とお.る",
+   "とお.り",
+   "-とお.り",
+   "-どお.り",
+   "とお.す",
+   "とお.し",
+   "-どお.し",
+   "かよ.う"
+  ],
+  "strokes": 10,
+  "meaningsFr": [
+   "trafic"
+  ],
+  "meaningsEn": [
+   "traffic",
+   "pass through",
+   "avenue",
+   "commute",
+   "counter for letters, notes, documents, etc.",
+   "circulation",
+   "passer par",
+   "avenue",
+   "trajet (travail)",
+   "compteur de lettres, notes, ...",
+   "atravesar",
+   "traspasar",
+   "hacer saber",
+   "pasar",
+   "ir y venir",
+   "tráfego",
+   "passar através de",
+   "avenida",
+   "comutar",
+   "sufixo para contagem de letras"
+  ],
+  "examples": [
+   {
+    "word": "通う",
+    "reading": "かよう",
+    "fr": "se rendre au lieu de travail (et retour)",
+    "en": "to commute"
+   },
+   {
+    "word": "交通",
+    "reading": "こうつう",
+    "fr": "(moyen de) transport; circulation (routière); communication",
+    "en": "traffic; transportation"
+   },
+   {
+    "word": "通る",
+    "reading": "とおる",
+    "fr": "passer à travers",
+    "en": "to go through"
+   },
+   {
+    "word": "普通",
+    "reading": "ふつう",
+    "fr": "habituel; normal; ordinaire",
+    "en": "usually; normally; ordinary; local train (stopping at every station)"
+   }
+  ]
+ },
+ {
+  "character": "週",
+  "level": "N5",
+  "onyomi": [
+   "シュウ"
+  ],
+  "kunyomi": [],
+  "strokes": 11,
+  "meaningsFr": [
+   "semaine"
+  ],
+  "meaningsEn": [
+   "week",
+   "semaine",
+   "semana",
+   "semana"
+  ],
+  "examples": [
+   {
+    "word": "今週",
+    "reading": "こんしゅう",
+    "fr": "cette semaine",
+    "en": "this week"
+   },
+   {
+    "word": "先週",
+    "reading": "せんしゅう",
+    "fr": "la semaine passée",
+    "en": "last week"
+   },
+   {
+    "word": "毎週",
+    "reading": "まいしゅう",
+    "fr": "chaque semaine; toutes les semaines",
+    "en": "every week"
+   },
+   {
+    "word": "来週",
+    "reading": "らいしゅう",
+    "fr": "semaine prochaine",
+    "en": "next week"
+   }
+  ]
+ },
+ {
+  "character": "運",
+  "level": "N4",
+  "onyomi": [
+   "ウン"
+  ],
+  "kunyomi": [
+   "はこ.ぶ"
+  ],
+  "strokes": 12,
+  "meaningsFr": [
+   "porter"
+  ],
+  "meaningsEn": [
+   "carry",
+   "luck",
+   "destiny",
+   "fate",
+   "lot",
+   "transport",
+   "progress",
+   "advance",
+   "porter",
+   "chance",
+   "destin",
+   "destinée",
+   "sort",
+   "progrès",
+   "suerte",
+   "destino",
+   "transportar",
+   "carregar",
+   "sorte",
+   "destino",
+   "objetivo",
+   "transportar",
+   "progresso",
+   "avanço"
+  ],
+  "examples": [
+   {
+    "word": "運転",
+    "reading": "うんてん",
+    "fr": "conduite; motion; opération",
+    "en": "to drive"
+   },
+   {
+    "word": "運動",
+    "reading": "うんどう",
+    "fr": "activité; exercice; mouvement",
+    "en": "to exercise"
+   },
+   {
+    "word": "運ぶ",
+    "reading": "はこぶ",
+    "fr": "déplacer; faire avancer; transporter",
+    "en": "to transport"
+   }
+  ]
+ },
+ {
+  "character": "道",
+  "level": "N5",
+  "onyomi": [
+   "ドウ",
+   "トウ"
+  ],
+  "kunyomi": [
+   "みち",
+   "いう"
+  ],
+  "strokes": 12,
+  "meaningsFr": [
+   "chaussée"
+  ],
+  "meaningsEn": [
+   "road-way",
+   "street",
+   "district",
+   "journey",
+   "course",
+   "moral",
+   "teachings",
+   "voie",
+   "route",
+   "rue",
+   "région",
+   "voyage",
+   "morale",
+   "enseignements",
+   "camino",
+   "razón",
+   "modo",
+   "decir",
+   "senda",
+   "método",
+   "Caminho",
+   "estrada",
+   "rua",
+   "distrito",
+   "viagem",
+   "curso",
+   "moral",
+   "ensinamentos",
+   "filosofia"
+  ],
+  "examples": [
+   {
+    "word": "道",
+    "reading": "みち",
+    "fr": "chemin; route",
+    "en": "street"
+   },
+   {
+    "word": "柔道",
+    "reading": "じゅうどう",
+    "fr": "judo",
+    "en": "judo"
+   },
+   {
+    "word": "水道",
+    "reading": "すいどう",
+    "fr": "approvisionnement d'eau; conduite d'eau; distribution d'eau",
+    "en": "water supply"
+   },
+   {
+    "word": "道具",
+    "reading": "どうぐ",
+    "fr": "instrument; outil",
+    "en": "tool; means"
+   }
+  ]
+ },
+ {
+  "character": "重",
+  "level": "N4",
+  "onyomi": [
+   "ジュウ",
+   "チョウ"
+  ],
+  "kunyomi": [
+   "え",
+   "おも.い",
+   "おも.り",
+   "おも.なう",
+   "かさ.ねる",
+   "かさ.なる",
+   "おも"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "lourd"
+  ],
+  "meaningsEn": [
+   "heavy",
+   "important",
+   "esteem",
+   "respect",
+   "heap up",
+   "pile up",
+   "nest of boxes",
+   "-fold",
+   "lourd",
+   "empiler",
+   "entasser",
+   "s'emboîter",
+   "- couches",
+   "pesado",
+   "importante",
+   "apilar",
+   "amontonar",
+   "pesado",
+   "empilhar",
+   "pilha de caixas",
+   "-dobrar"
+  ],
+  "examples": [
+   {
+    "word": "重い",
+    "reading": "おもい",
+    "fr": "lourd; grave; important",
+    "en": "heavy"
+   }
+  ]
+ },
+ {
+  "character": "野",
+  "level": "N4",
+  "onyomi": [
+   "ヤ",
+   "ショ"
+  ],
+  "kunyomi": [
+   "の",
+   "の-"
+  ],
+  "strokes": 11,
+  "meaningsFr": [
+   "plaines"
+  ],
+  "meaningsEn": [
+   "plains",
+   "field",
+   "rustic",
+   "civilian life",
+   "sauvage",
+   "champ",
+   "rustique",
+   "vie civile",
+   "campo",
+   "llano",
+   "extensión",
+   "rango",
+   "natural",
+   "civil",
+   "no oficial",
+   "planícies",
+   "campo",
+   "rústico",
+   "vida de civil"
+  ],
+  "examples": [
+   {
+    "word": "野菜",
+    "reading": "やさい",
+    "fr": "légume",
+    "en": "vegetable"
+   }
+  ]
+ },
+ {
+  "character": "銀",
+  "level": "N4",
+  "onyomi": [
+   "ギン"
+  ],
+  "kunyomi": [
+   "しろがね"
+  ],
+  "strokes": 14,
+  "meaningsFr": [
+   "argent"
+  ],
+  "meaningsEn": [
+   "silver",
+   "argent",
+   "plata",
+   "prata"
+  ],
+  "examples": [
+   {
+    "word": "銀行",
+    "reading": "ぎんこう",
+    "fr": "banque",
+    "en": "bank"
+   }
+  ]
+ },
+ {
+  "character": "開",
+  "level": "N4",
+  "onyomi": [
+   "カイ"
+  ],
+  "kunyomi": [
+   "ひら.く",
+   "ひら.き",
+   "-びら.き",
+   "ひら.ける",
+   "あ.く",
+   "あ.ける"
+  ],
+  "strokes": 12,
+  "meaningsFr": [
+   "ouvrir"
+  ],
+  "meaningsEn": [
+   "open",
+   "unfold",
+   "unseal",
+   "ouvrir",
+   "s'ouvrir",
+   "briser le sceau",
+   "abrir",
+   "desdoblar",
+   "dar comienzo",
+   "abrirse",
+   "estar abierto",
+   "abrir",
+   "desdobrar",
+   "deslacrar"
+  ],
+  "examples": [
+   {
+    "word": "開く",
+    "reading": "あく",
+    "fr": "être ouvert; se vider; être moins encombré",
+    "en": "to open; to become open"
+   },
+   {
+    "word": "開ける",
+    "reading": "あける",
+    "fr": "ouvrir; vider;  vider",
+    "en": "to open"
+   },
+   {
+    "word": "開く",
+    "reading": "ひらく",
+    "fr": "ouvrir; s'ouvrir",
+    "en": "to open an event"
+   }
+  ]
+ },
+ {
+  "character": "院",
+  "level": "N4",
+  "onyomi": [
+   "イン"
+  ],
+  "kunyomi": [],
+  "strokes": 10,
+  "meaningsFr": [
+   "institution"
+  ],
+  "meaningsEn": [
+   "Inst.",
+   "institution",
+   "temple",
+   "mansion",
+   "school",
+   "temple",
+   "institution",
+   "résidence",
+   "école",
+   "hôpital",
+   "institución",
+   "templo",
+   "hospital",
+   "instituição",
+   "templo",
+   "mansão",
+   "escola"
+  ],
+  "examples": [
+   {
+    "word": "病院",
+    "reading": "びょういん",
+    "fr": "hôpital",
+    "en": "hospital"
+   },
+   {
+    "word": "退院",
+    "reading": "たいいん",
+    "fr": "sortir de l'hopital",
+    "en": "to leave hospital"
+   },
+   {
+    "word": "入院",
+    "reading": "にゅういん",
+    "fr": "hospitalisation",
+    "en": "to hospitalise"
+   }
+  ]
+ },
+ {
+  "character": "集",
+  "level": "N4",
+  "onyomi": [
+   "シュウ"
+  ],
+  "kunyomi": [
+   "あつ.まる",
+   "あつ.める",
+   "つど.う"
+  ],
+  "strokes": 12,
+  "meaningsFr": [
+   "rassembler"
+  ],
+  "meaningsEn": [
+   "gather",
+   "meet",
+   "congregate",
+   "swarm",
+   "flock",
+   "rassembler",
+   "réunir",
+   "collection",
+   "grouiller",
+   "attroupement",
+   "reunir",
+   "coleccionar",
+   "reunirse",
+   "juntar",
+   "reunião",
+   "congregar",
+   "enxame",
+   "bando"
+  ],
+  "examples": [
+   {
+    "word": "集まる",
+    "reading": "あつまる",
+    "fr": "se réunir; se rassembler",
+    "en": "to gather"
+   },
+   {
+    "word": "集める",
+    "reading": "あつめる",
+    "fr": "collecter; réunir; rassembler",
+    "en": "to collect something"
+   }
+  ]
+ },
+ {
+  "character": "青",
+  "level": "N4",
+  "onyomi": [
+   "セイ",
+   "ショウ"
+  ],
+  "kunyomi": [
+   "あお",
+   "あお-",
+   "あお.い"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "bleu"
+  ],
+  "meaningsEn": [
+   "blue",
+   "green",
+   "bleu",
+   "vert",
+   "azul",
+   "verde",
+   "pálido",
+   "verde",
+   "azul",
+   "imaturo",
+   "verde-claro"
+  ],
+  "examples": [
+   {
+    "word": "青",
+    "reading": "あお",
+    "fr": "bleu; vert",
+    "en": "blue"
+   },
+   {
+    "word": "青い",
+    "reading": "あおい",
+    "fr": "bleu (profond); pâle; vert (des plantes)",
+    "en": "blue"
+   }
+  ]
+ },
+ {
+  "character": "音",
+  "level": "N4",
+  "onyomi": [
+   "オン",
+   "イン",
+   "-ノン"
+  ],
+  "kunyomi": [
+   "おと",
+   "ね"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "son"
+  ],
+  "meaningsEn": [
+   "sound",
+   "noise",
+   "son",
+   "bruit",
+   "sonido",
+   "ruido",
+   "som",
+   "barulho"
+  ],
+  "examples": [
+   {
+    "word": "音楽",
+    "reading": "おんがく",
+    "fr": "musique",
+    "en": "music"
+   },
+   {
+    "word": "音",
+    "reading": "おと",
+    "fr": "bruit; son",
+    "en": "sound; note"
+   },
+   {
+    "word": "発音",
+    "reading": "はつおん",
+    "fr": "prononciation",
+    "en": "pronunciation"
+   }
+  ]
+ },
+ {
+  "character": "題",
+  "level": "N4",
+  "onyomi": [
+   "ダイ"
+  ],
+  "kunyomi": [],
+  "strokes": 18,
+  "meaningsFr": [
+   "sujet"
+  ],
+  "meaningsEn": [
+   "topic",
+   "subject",
+   "sujet",
+   "objeto",
+   "tema",
+   "materia",
+   "tópico",
+   "assunto"
+  ],
+  "examples": [
+   {
+    "word": "宿題",
+    "reading": "しゅくだい",
+    "fr": "devoirs (d'école)",
+    "en": "homework"
+   },
+   {
+    "word": "問題",
+    "reading": "もんだい",
+    "fr": "problème; question",
+    "en": "problem"
+   }
+  ]
+ },
+ {
+  "character": "風",
+  "level": "N4",
+  "onyomi": [
+   "フウ",
+   "フ"
+  ],
+  "kunyomi": [
+   "かぜ",
+   "かざ-"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "vent"
+  ],
+  "meaningsEn": [
+   "wind",
+   "air",
+   "style",
+   "manner",
+   "vent",
+   "air",
+   "style",
+   "manière",
+   "viento",
+   "aire",
+   "hábito",
+   "estilo",
+   "conducta",
+   "vento",
+   "ar",
+   "estilo",
+   "maneira"
+  ],
+  "examples": [
+   {
+    "word": "お風呂",
+    "reading": "おふろ",
+    "fr": "bain",
+    "en": "bath"
+   },
+   {
+    "word": "風",
+    "reading": "かぜ",
+    "fr": "brise; vent",
+    "en": "wind"
+   },
+   {
+    "word": "風邪",
+    "reading": "かぜ",
+    "fr": "grippe; refroidissement; rhume",
+    "en": "a cold"
+   },
+   {
+    "word": "台風",
+    "reading": "たいふう",
+    "fr": "typhon",
+    "en": "typhoon"
+   }
+  ]
+ },
+ {
+  "character": "飯",
+  "level": "N4",
+  "onyomi": [
+   "ハン"
+  ],
+  "kunyomi": [
+   "めし"
+  ],
+  "strokes": 12,
+  "meaningsFr": [
+   "repas"
+  ],
+  "meaningsEn": [
+   "meal",
+   "boiled rice",
+   "repas",
+   "riz bouilli",
+   "comida",
+   "arroz cocido",
+   "refeição",
+   "arroz cozido"
+  ],
+  "examples": [
+   {
+    "word": "御飯",
+    "reading": "ごはん",
+    "fr": "repas; riz (cuit)",
+    "en": "cooked rice; meal"
+   },
+   {
+    "word": "晩御飯",
+    "reading": "ばんごはん",
+    "fr": "dîner; souper; repas du soir",
+    "en": "evening meal"
+   },
+   {
+    "word": "昼御飯",
+    "reading": "ひるごはん",
+    "fr": "déjeuner; repas de midi",
+    "en": "midday meal"
+   },
+   {
+    "word": "夕飯",
+    "reading": "ゆうはん",
+    "fr": "souper (dîner en France)",
+    "en": "dinner"
+   }
+  ]
+ },
+ {
+  "character": "飲",
+  "level": "N5",
+  "onyomi": [
+   "イン",
+   "オン"
+  ],
+  "kunyomi": [
+   "の.む",
+   "-の.み"
+  ],
+  "strokes": 12,
+  "meaningsFr": [
+   "boire"
+  ],
+  "meaningsEn": [
+   "drink",
+   "smoke",
+   "take",
+   "boire",
+   "fumer",
+   "prendre",
+   "beber",
+   "beber",
+   "fumar",
+   "tomar"
+  ],
+  "examples": [
+   {
+    "word": "飲み物",
+    "reading": "のみもの",
+    "fr": "boisson; breuvage",
+    "en": "a drink"
+   },
+   {
+    "word": "飲む",
+    "reading": "のむ",
+    "fr": "boire",
+    "en": "to drink"
+   }
+  ]
+ },
+ {
+  "character": "館",
+  "level": "N4",
+  "onyomi": [
+   "カン"
+  ],
+  "kunyomi": [
+   "やかた",
+   "たて"
+  ],
+  "strokes": 16,
+  "meaningsFr": [
+   "bâtiment"
+  ],
+  "meaningsEn": [
+   "building",
+   "mansion",
+   "large building",
+   "palace",
+   "bâtiment",
+   "grand bâtiment",
+   "résidence",
+   "palais",
+   "edificio",
+   "mansión",
+   "edifício",
+   "mansão",
+   "edifício grande",
+   "palácio"
+  ],
+  "examples": [
+   {
+    "word": "映画館",
+    "reading": "えいがかん",
+    "fr": "cinéma (batiment)",
+    "en": "cinema"
+   },
+   {
+    "word": "大使館",
+    "reading": "たいしかん",
+    "fr": "ambassade",
+    "en": "embassy"
+   },
+   {
+    "word": "図書館",
+    "reading": "としょかん",
+    "fr": "bibliothèque",
+    "en": "library"
+   },
+   {
+    "word": "旅館",
+    "reading": "りょかん",
+    "fr": "auberge de style japonais; hôtel",
+    "en": "Japanese hotel"
+   }
+  ]
+ },
+ {
+  "character": "駅",
+  "level": "N5",
+  "onyomi": [
+   "エキ"
+  ],
+  "kunyomi": [],
+  "strokes": 14,
+  "meaningsFr": [
+   "station"
+  ],
+  "meaningsEn": [
+   "station",
+   "gare",
+   "estación",
+   "estação"
+  ],
+  "examples": [
+   {
+    "word": "駅",
+    "reading": "えき",
+    "fr": "gare",
+    "en": "station"
+   }
+  ]
+ },
+ {
+  "character": "験",
+  "level": "N4",
+  "onyomi": [
+   "ケン",
+   "ゲン"
+  ],
+  "kunyomi": [
+   "あかし",
+   "しるし",
+   "ため.す",
+   "ためし"
+  ],
+  "strokes": 18,
+  "meaningsFr": [
+   "vérification"
+  ],
+  "meaningsEn": [
+   "verification",
+   "effect",
+   "testing",
+   "vérification",
+   "examen",
+   "effet",
+   "prueba",
+   "intento",
+   "efecto",
+   "verificação",
+   "efeito",
+   "teste"
+  ],
+  "examples": [
+   {
+    "word": "経験",
+    "reading": "けいけん",
+    "fr": "expérience",
+    "en": "to experience"
+   },
+   {
+    "word": "試験",
+    "reading": "しけん",
+    "fr": "épreuve; examen; test",
+    "en": "examination"
+   }
+  ]
+ },
+ {
+  "character": "魚",
+  "level": "N5",
+  "onyomi": [
+   "ギョ"
+  ],
+  "kunyomi": [
+   "うお",
+   "さかな",
+   "-ざかな"
+  ],
+  "strokes": 11,
+  "meaningsFr": [
+   "poisson"
+  ],
+  "meaningsEn": [
+   "fish",
+   "poisson",
+   "pez",
+   "pescado",
+   "peixe"
+  ],
+  "examples": [
+   {
+    "word": "魚",
+    "reading": "さかな",
+    "fr": "poisson",
+    "en": "fish"
+   }
+  ]
+ },
+ {
+  "character": "鳥",
+  "level": "N4",
+  "onyomi": [
+   "チョウ"
+  ],
+  "kunyomi": [
+   "とり"
+  ],
+  "strokes": 11,
+  "meaningsFr": [
+   "oiseau"
+  ],
+  "meaningsEn": [
+   "bird",
+   "chicken",
+   "oiseau",
+   "poulet",
+   "pájaro",
+   "ave",
+   "Pássaro",
+   "sufixo para nomes de pássaros."
+  ],
+  "examples": [
+   {
+    "word": "鳥",
+    "reading": "とり",
+    "fr": "oiseau; volaille",
+    "en": "bird"
+   },
+   {
+    "word": "小鳥",
+    "reading": "ことり",
+    "fr": "petit oiseau",
+    "en": "small bird"
+   }
+  ]
+ },
+ {
+  "character": "黒",
+  "level": "N4",
+  "onyomi": [
+   "コク"
+  ],
+  "kunyomi": [
+   "くろ",
+   "くろ.ずむ",
+   "くろ.い"
+  ],
+  "strokes": 11,
+  "meaningsFr": [
+   "noir"
+  ],
+  "meaningsEn": [
+   "black",
+   "noir",
+   "negro",
+   "maldad",
+   "preto"
+  ],
+  "examples": [
+   {
+    "word": "黒",
+    "reading": "くろ",
+    "fr": "noir; sombre",
+    "en": "black"
+   },
+   {
+    "word": "黒い",
+    "reading": "くろい",
+    "fr": "noir; sombre",
+    "en": "black"
+   }
+  ]
+ },
+ {
+  "character": "一",
+  "level": "N5",
+  "onyomi": [
+   "イチ",
+   "イツ"
+  ],
+  "kunyomi": [
+   "ひと-",
+   "ひと.つ"
+  ],
+  "strokes": 1,
+  "meaningsFr": [
+   "un",
+   "radical un (no. 1)"
+  ],
+  "meaningsEn": [
+   "one",
+   "one radical (no.1)",
+   "un",
+   "radical un (no. 1)",
+   "uno",
+   "1",
+   "um"
+  ],
+  "examples": [
+   {
+    "word": "一",
+    "reading": "いち",
+    "fr": "un",
+    "en": "one"
+   },
+   {
+    "word": "一日",
+    "reading": "いちにち",
+    "fr": "une journée; le 1er du mois",
+    "en": "one day; first of month"
+   },
+   {
+    "word": "一緒",
+    "reading": "いっしょ",
+    "fr": "ensemble",
+    "en": "together"
+   },
+   {
+    "word": "一昨日",
+    "reading": "おととい",
+    "fr": "avant-hier",
+    "en": "day before yesterday"
+   },
+   {
+    "word": "一昨年",
+    "reading": "おととし",
+    "fr": "il y a 2 ans",
+    "en": "year before last"
+   },
+   {
+    "word": "一つ",
+    "reading": "ひとつ",
+    "fr": "un",
+    "en": "one"
+   }
+  ]
+ },
+ {
+  "character": "七",
+  "level": "N5",
+  "onyomi": [
+   "シチ"
+  ],
+  "kunyomi": [
+   "なな",
+   "なな.つ",
+   "なの"
+  ],
+  "strokes": 2,
+  "meaningsFr": [
+   "sept",
+   "7"
+  ],
+  "meaningsEn": [
+   "seven",
+   "sept",
+   "siete",
+   "7",
+   "Sete"
+  ],
+  "examples": [
+   {
+    "word": "七",
+    "reading": "しち",
+    "fr": "sept",
+    "en": "seven"
+   },
+   {
+    "word": "七つ",
+    "reading": "ななつ",
+    "fr": "sept",
+    "en": "seven"
+   },
+   {
+    "word": "七日",
+    "reading": "なのか",
+    "fr": "le septième jour (du mois); sept jours",
+    "en": "seven days; the seventh day"
+   }
+  ]
+ },
+ {
+  "character": "万",
+  "level": "N5",
+  "onyomi": [
+   "マン",
+   "バン"
+  ],
+  "kunyomi": [
+   "よろず"
+  ],
+  "strokes": 3,
+  "meaningsFr": [
+   "dix mille",
+   "myriade",
+   "muchos"
+  ],
+  "meaningsEn": [
+   "ten thousand",
+   "10,000",
+   "myriade",
+   "10000",
+   "diez mil",
+   "muchos",
+   "dez mil"
+  ],
+  "examples": [
+   {
+    "word": "万",
+    "reading": "まん",
+    "fr": "10.000; dix mille; innombrables",
+    "en": "ten thousand"
+   },
+   {
+    "word": "万年筆",
+    "reading": "まんねんひつ",
+    "fr": "stylo",
+    "en": "fountain pen"
+   }
+  ]
+ },
+ {
+  "character": "三",
+  "level": "N5",
+  "onyomi": [
+   "サン",
+   "ゾウ"
+  ],
+  "kunyomi": [
+   "み",
+   "み.つ",
+   "みっ.つ"
+  ],
+  "strokes": 3,
+  "meaningsFr": [
+   "trois",
+   "3"
+  ],
+  "meaningsEn": [
+   "three",
+   "trois",
+   "tres",
+   "3",
+   "três"
+  ],
+  "examples": [
+   {
+    "word": "三",
+    "reading": "さん",
+    "fr": "trois (3)",
+    "en": "three"
+   },
+   {
+    "word": "三日",
+    "reading": "みっか",
+    "fr": "le 3; trois jours",
+    "en": "three days; third day of the month"
+   },
+   {
+    "word": "三つ",
+    "reading": "みっつ",
+    "fr": "trois",
+    "en": "three"
+   }
+  ]
+ },
+ {
+  "character": "上",
+  "level": "N5",
+  "onyomi": [
+   "ジョウ",
+   "ショウ",
+   "シャン"
+  ],
+  "kunyomi": [
+   "うえ",
+   "-うえ",
+   "うわ-",
+   "かみ",
+   "あ.げる",
+   "-あ.げる",
+   "あ.がる",
+   "-あ.がる",
+   "あ.がり",
+   "-あ.がり",
+   "のぼ.る",
+   "のぼ.り",
+   "のぼ.せる",
+   "のぼ.す",
+   "たてまつ.る"
+  ],
+  "strokes": 3,
+  "meaningsFr": [
+   "au-dessus",
+   "haut",
+   "monter"
+  ],
+  "meaningsEn": [
+   "above",
+   "up",
+   "au-dessus",
+   "haut",
+   "monter",
+   "donner (je te donne)",
+   "arriba",
+   "encima",
+   "parte superior",
+   "cima",
+   "superficie",
+   "acima",
+   "para cima",
+   "sobre",
+   "subir",
+   "galgar",
+   "em cima",
+   "escalar"
+  ],
+  "examples": [
+   {
+    "word": "上げる",
+    "reading": "あげる",
+    "fr": "donner; offrir; refiler",
+    "en": "to give"
+   },
+   {
+    "word": "上",
+    "reading": "うえ",
+    "fr": "au-dessus; autorité supérieure; dessus",
+    "en": "on top of"
+   },
+   {
+    "word": "上着",
+    "reading": "うわぎ",
+    "fr": "manteau; tunique; vêtement de dessus",
+    "en": "jacket"
+   },
+   {
+    "word": "上手",
+    "reading": "じょうず",
+    "fr": "adroit; bon; doué",
+    "en": "skillful"
+   },
+   {
+    "word": "以上",
+    "reading": "いじょう",
+    "fr": "ci-dessus; davantage; plus que",
+    "en": "more than; this is all"
+   },
+   {
+    "word": "屋上",
+    "reading": "おくじょう",
+    "fr": "dessus le toit; sur le toit",
+    "en": "rooftop"
+   }
+  ]
+ },
+ {
+  "character": "下",
+  "level": "N5",
+  "onyomi": [
+   "カ",
+   "ゲ"
+  ],
+  "kunyomi": [
+   "した",
+   "しも",
+   "もと",
+   "さ.げる",
+   "さ.がる",
+   "くだ.る",
+   "くだ.り",
+   "くだ.す",
+   "-くだ.す",
+   "くだ.さる",
+   "お.ろす",
+   "お.りる"
+  ],
+  "strokes": 3,
+  "meaningsFr": [
+   "au-dessous",
+   "descendre",
+   "bas"
+  ],
+  "meaningsEn": [
+   "below",
+   "down",
+   "descend",
+   "give",
+   "low",
+   "inferior",
+   "au-dessous",
+   "descendre",
+   "bas",
+   "donner (vous me donnez)",
+   "inférieur",
+   "debajo",
+   "inferior",
+   "debajo de",
+   "parte inferior",
+   "baixo",
+   "abaixo",
+   "descende",
+   "inferior",
+   "sub",
+   "sob"
+  ],
+  "examples": [
+   {
+    "word": "靴下",
+    "reading": "くつした",
+    "fr": "chaussettes",
+    "en": "socks"
+   },
+   {
+    "word": "下",
+    "reading": "した",
+    "fr": "en-dessous; inférieur; sous",
+    "en": "below"
+   },
+   {
+    "word": "地下鉄",
+    "reading": "ちかてつ",
+    "fr": "métro; métropolitain",
+    "en": "underground train"
+   },
+   {
+    "word": "下手",
+    "reading": "へた",
+    "fr": "être mauvais en; maladroit; pas doué",
+    "en": "unskillful"
+   },
+   {
+    "word": "廊下",
+    "reading": "ろうか",
+    "fr": "corridor; couloir",
+    "en": "corridor"
+   },
+   {
+    "word": "以下",
+    "reading": "いか",
+    "fr": "jusqu'à; moins que; sous",
+    "en": "less than"
+   }
+  ]
+ },
+ {
+  "character": "中",
+  "level": "N5",
+  "onyomi": [
+   "チュウ"
+  ],
+  "kunyomi": [
+   "なか",
+   "うち",
+   "あた.る"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "dans",
+   "dedans",
+   "milieu"
+  ],
+  "meaningsEn": [
+   "in",
+   "inside",
+   "middle",
+   "mean",
+   "center",
+   "dans",
+   "dedans",
+   "à l'intérieur",
+   "milieu",
+   "centre",
+   "moyenne",
+   "centro",
+   "dentro",
+   "interior",
+   "medio",
+   "em",
+   "interior",
+   "médio",
+   "meio",
+   "centro"
+  ],
+  "examples": [
+   {
+    "word": "中",
+    "reading": "なか",
+    "fr": "à l'intérieur; dedans",
+    "en": "middle"
+   },
+   {
+    "word": "背中",
+    "reading": "せなか",
+    "fr": "dos",
+    "en": "back of the body"
+   },
+   {
+    "word": "途中",
+    "reading": "とちゅう",
+    "fr": "à mi-chemin; en chemin; en route",
+    "en": "on the way"
+   },
+   {
+    "word": "中々",
+    "reading": "なかなか",
+    "fr": "assez; avoir des difficultés à; diffcilement",
+    "en": "considerably"
+   }
+  ]
+ },
+ {
+  "character": "九",
+  "level": "N5",
+  "onyomi": [
+   "キュウ",
+   "ク"
+  ],
+  "kunyomi": [
+   "ここの",
+   "ここの.つ"
+  ],
+  "strokes": 2,
+  "meaningsFr": [
+   "neuf",
+   "9"
+  ],
+  "meaningsEn": [
+   "nine",
+   "neuf",
+   "nueve",
+   "9",
+   "nove"
+  ],
+  "examples": [
+   {
+    "word": "九",
+    "reading": "きゅう",
+    "fr": "neuf (9)",
+    "en": "nine"
+   },
+   {
+    "word": "九日",
+    "reading": "ここのか",
+    "fr": "le neuvième jour du mois; neuf jours",
+    "en": "nine days; ninth day"
+   },
+   {
+    "word": "九つ",
+    "reading": "ここのつ",
+    "fr": "neuf",
+    "en": "nine"
+   }
+  ]
+ },
+ {
+  "character": "二",
+  "level": "N5",
+  "onyomi": [
+   "ニ",
+   "ジ"
+  ],
+  "kunyomi": [
+   "ふた",
+   "ふた.つ",
+   "ふたたび"
+  ],
+  "strokes": 2,
+  "meaningsFr": [
+   "deux",
+   "radical deux (no. 2)",
+   "2"
+  ],
+  "meaningsEn": [
+   "two",
+   "two radical (no. 7)",
+   "deux",
+   "radical deux (no. 2)",
+   "dos",
+   "2",
+   "dois"
+  ],
+  "examples": [
+   {
+    "word": "二",
+    "reading": "に",
+    "fr": "deux",
+    "en": "two"
+   },
+   {
+    "word": "二十歳",
+    "reading": "はたち",
+    "fr": "20 ans (être agé de)",
+    "en": "20 years old; 20th year"
+   },
+   {
+    "word": "二十日",
+    "reading": "はつか",
+    "fr": "le vingt (du mois); vingt jours",
+    "en": "twenty days; twentieth"
+   },
+   {
+    "word": "二つ",
+    "reading": "ふたつ",
+    "fr": "deux",
+    "en": "two"
+   },
+   {
+    "word": "二人",
+    "reading": "ふたり",
+    "fr": "deux personnes; couple; paire",
+    "en": "two people"
+   },
+   {
+    "word": "二日",
+    "reading": "ふつか",
+    "fr": "deuxième jour du mois",
+    "en": "two days; second day of the month"
+   }
+  ]
+ },
+ {
+  "character": "五",
+  "level": "N5",
+  "onyomi": [
+   "ゴ"
+  ],
+  "kunyomi": [
+   "いつ",
+   "いつ.つ"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "cinq",
+   "5"
+  ],
+  "meaningsEn": [
+   "five",
+   "cinq",
+   "cinco",
+   "5",
+   "cinco"
+  ],
+  "examples": [
+   {
+    "word": "五日",
+    "reading": "いつか",
+    "fr": "cinq jours; le cinq (dans le mois)",
+    "en": "five days; fifth day"
+   },
+   {
+    "word": "五つ",
+    "reading": "いつつ",
+    "fr": "cinq",
+    "en": "five"
+   },
+   {
+    "word": "五",
+    "reading": "ご",
+    "fr": "cinq",
+    "en": "five"
+   }
+  ]
+ },
+ {
+  "character": "人",
+  "level": "N5",
+  "onyomi": [
+   "ジン",
+   "ニン"
+  ],
+  "kunyomi": [
+   "ひと",
+   "-り",
+   "-と"
+  ],
+  "strokes": 2,
+  "meaningsFr": [
+   "personne",
+   "être humain"
+  ],
+  "meaningsEn": [
+   "person",
+   "être humain",
+   "personne",
+   "persona",
+   "pessoa"
+  ],
+  "examples": [
+   {
+    "word": "大人",
+    "reading": "おとな",
+    "fr": "adulte",
+    "en": "adult"
+   },
+   {
+    "word": "外国人",
+    "reading": "がいこくじん",
+    "fr": "étranger",
+    "en": "foreigner"
+   },
+   {
+    "word": "人",
+    "reading": "ひと",
+    "fr": "être humain; adult; homme",
+    "en": "person"
+   },
+   {
+    "word": "一人",
+    "reading": "ひとり",
+    "fr": "une personne",
+    "en": "one person"
+   },
+   {
+    "word": "二人",
+    "reading": "ふたり",
+    "fr": "deux personnes; couple; paire",
+    "en": "two people"
+   },
+   {
+    "word": "人口",
+    "reading": "じんこう",
+    "fr": "population; \"on-dit\"; ragots",
+    "en": "population"
+   }
+  ]
+ },
+ {
+  "character": "今",
+  "level": "N5",
+  "onyomi": [
+   "コン",
+   "キン"
+  ],
+  "kunyomi": [
+   "いま"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "maintenant"
+  ],
+  "meaningsEn": [
+   "now",
+   "maintenant",
+   "ahora",
+   "momento actual",
+   "agora"
+  ],
+  "examples": [
+   {
+    "word": "今",
+    "reading": "いま",
+    "fr": "actuellement; en ce moment; maintenant",
+    "en": "now"
+   },
+   {
+    "word": "今日",
+    "reading": "きょう",
+    "fr": "aujourd'hui; ce jour",
+    "en": "today"
+   },
+   {
+    "word": "今朝",
+    "reading": "けさ",
+    "fr": "ce matin",
+    "en": "this morning"
+   },
+   {
+    "word": "今年",
+    "reading": "ことし",
+    "fr": "cette année",
+    "en": "this year"
+   },
+   {
+    "word": "今月",
+    "reading": "こんげつ",
+    "fr": "ce mois-ci",
+    "en": "this month"
+   },
+   {
+    "word": "今週",
+    "reading": "こんしゅう",
+    "fr": "cette semaine",
+    "en": "this week"
+   }
+  ]
+ },
+ {
+  "character": "休",
+  "level": "N5",
+  "onyomi": [
+   "キュウ"
+  ],
+  "kunyomi": [
+   "やす.む",
+   "やす.まる",
+   "やす.める"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "repos",
+   "se coucher",
+   "dormir"
+  ],
+  "meaningsEn": [
+   "rest",
+   "day off",
+   "retire",
+   "sleep",
+   "repos",
+   "jour de repos",
+   "se coucher",
+   "dormir",
+   "descanso",
+   "descansar",
+   "tomarse un descanso",
+   "estar descansado",
+   "dar descanso",
+   "descanso",
+   "dia desligado",
+   "aposentar",
+   "sono"
+  ],
+  "examples": [
+   {
+    "word": "夏休み",
+    "reading": "なつやすみ",
+    "fr": "vacances d'été",
+    "en": "summer holiday"
+   },
+   {
+    "word": "休み",
+    "reading": "やすみ",
+    "fr": "congé; repos; vacances",
+    "en": "rest; holiday"
+   },
+   {
+    "word": "休む",
+    "reading": "やすむ",
+    "fr": "être absent; dormir; faire une pause",
+    "en": "to rest"
+   }
+  ]
+ },
+ {
+  "character": "何",
+  "level": "N5",
+  "onyomi": [
+   "カ"
+  ],
+  "kunyomi": [
+   "なに",
+   "なん",
+   "なに-",
+   "なん-"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "quoi"
+  ],
+  "meaningsEn": [
+   "what",
+   "quoi",
+   "qué",
+   "que"
+  ],
+  "examples": [
+   {
+    "word": "何",
+    "reading": "なん",
+    "fr": "que; quel; quoi",
+    "en": "what"
+   }
+  ]
+ },
+ {
+  "character": "先",
+  "level": "N5",
+  "onyomi": [
+   "セン"
+  ],
+  "kunyomi": [
+   "さき",
+   "ま.ず"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "avant",
+   "devant",
+   "précédent"
+  ],
+  "meaningsEn": [
+   "before",
+   "ahead",
+   "previous",
+   "future",
+   "precedence",
+   "avant",
+   "devant",
+   "précédent",
+   "futur",
+   "antériorité",
+   "antes",
+   "adelante",
+   "previo",
+   "precedencia",
+   "extremo",
+   "punta",
+   "final",
+   "anterior",
+   "antes",
+   "prévio",
+   "na frente",
+   "futuro",
+   "precedência"
+  ],
+  "examples": [
+   {
+    "word": "先",
+    "reading": "さき",
+    "fr": "avant; précédent; bout (de ligne)",
+    "en": "the future; previous"
+   },
+   {
+    "word": "先月",
+    "reading": "せんげつ",
+    "fr": "le mois passé",
+    "en": "last month"
+   },
+   {
+    "word": "先週",
+    "reading": "せんしゅう",
+    "fr": "la semaine passée",
+    "en": "last week"
+   },
+   {
+    "word": "先生",
+    "reading": "せんせい",
+    "fr": "instituteur; maître; professeur",
+    "en": "teacher; doctor"
+   },
+   {
+    "word": "先輩",
+    "reading": "せんぱい",
+    "fr": "aîné; ancien (école, travail)",
+    "en": "senior"
+   }
+  ]
+ },
+ {
+  "character": "入",
+  "level": "N5",
+  "onyomi": [
+   "ニュウ",
+   "ジュ"
+  ],
+  "kunyomi": [
+   "い.る",
+   "-い.る",
+   "-い.り",
+   "い.れる",
+   "-い.れ",
+   "はい.る"
+  ],
+  "strokes": 2,
+  "meaningsFr": [
+   "entrer",
+   "insérer"
+  ],
+  "meaningsEn": [
+   "enter",
+   "insert",
+   "entrer",
+   "insérer",
+   "entrar",
+   "insertar",
+   "admitir",
+   "introducir",
+   "meter",
+   "entrar",
+   "inserir"
+  ],
+  "examples": [
+   {
+    "word": "入口",
+    "reading": "いりぐち",
+    "fr": "bouche (métro); entrée; porte",
+    "en": "entrance"
+   },
+   {
+    "word": "入れる",
+    "reading": "いれる",
+    "fr": "ajouter; faire entrer; insérer",
+    "en": "to put in"
+   },
+   {
+    "word": "入る",
+    "reading": "はいる",
+    "fr": "entrer; pénétrer; devenir membre de",
+    "en": "to enter; to contain"
+   },
+   {
+    "word": "入院",
+    "reading": "にゅういん",
+    "fr": "hospitalisation",
+    "en": "to hospitalise"
+   },
+   {
+    "word": "入学",
+    "reading": "にゅうがく",
+    "fr": "entrée, admission dans une école ou une université",
+    "en": "to enter school or university"
+   },
+   {
+    "word": "輸入",
+    "reading": "ゆにゅう",
+    "fr": "importation; introduction",
+    "en": "to import"
+   }
+  ]
+ },
+ {
+  "character": "八",
+  "level": "N5",
+  "onyomi": [
+   "ハチ",
+   "ハツ"
+  ],
+  "kunyomi": [
+   "や",
+   "や.つ",
+   "やっ.つ",
+   "よう"
+  ],
+  "strokes": 2,
+  "meaningsFr": [
+   "huit",
+   "radical huit (no. 12)",
+   "8"
+  ],
+  "meaningsEn": [
+   "eight",
+   "eight radical (no. 12)",
+   "huit",
+   "radical huit (no. 12)",
+   "ocho",
+   "8",
+   "Oito"
+  ],
+  "examples": [
+   {
+    "word": "八",
+    "reading": "はち",
+    "fr": "huit (8)",
+    "en": "eight"
+   },
+   {
+    "word": "八百屋",
+    "reading": "やおや",
+    "fr": "marchand de légumes",
+    "en": "greengrocer"
+   },
+   {
+    "word": "八つ",
+    "reading": "やっつ",
+    "fr": "huit",
+    "en": "eight"
+   },
+   {
+    "word": "八日",
+    "reading": "ようか",
+    "fr": "le 8 (jour du mois)",
+    "en": "eight days; eighth day of the month"
+   }
+  ]
+ },
+ {
+  "character": "六",
+  "level": "N5",
+  "onyomi": [
+   "ロク",
+   "リク"
+  ],
+  "kunyomi": [
+   "む",
+   "む.つ",
+   "むっ.つ",
+   "むい"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "six",
+   "6"
+  ],
+  "meaningsEn": [
+   "six",
+   "six",
+   "seis",
+   "6",
+   "seis"
+  ],
+  "examples": [
+   {
+    "word": "六日",
+    "reading": "むいか",
+    "fr": "le six (du mois); six jours",
+    "en": "six days; sixth day of the month"
+   },
+   {
+    "word": "六つ",
+    "reading": "むっつ",
+    "fr": "six",
+    "en": "six"
+   },
+   {
+    "word": "六",
+    "reading": "ろく",
+    "fr": "six",
+    "en": "six"
+   }
+  ]
+ },
+ {
+  "character": "円",
+  "level": "N5",
+  "onyomi": [
+   "エン"
+  ],
+  "kunyomi": [
+   "まる.い",
+   "まる",
+   "まど",
+   "まど.か",
+   "まろ.やか"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "cercle",
+   "yen",
+   "rond"
+  ],
+  "meaningsEn": [
+   "circle",
+   "yen",
+   "round",
+   "cercle",
+   "yen",
+   "rond",
+   "circular",
+   "redondo",
+   "yen",
+   "círculo",
+   "iene",
+   "redondo"
+  ],
+  "examples": []
+ },
+ {
+  "character": "出",
+  "level": "N5",
+  "onyomi": [
+   "シュツ",
+   "スイ"
+  ],
+  "kunyomi": [
+   "で.る",
+   "-で",
+   "だ.す",
+   "-だ.す",
+   "い.でる",
+   "い.だす"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "sortir",
+   "quitter",
+   "sortir"
+  ],
+  "meaningsEn": [
+   "exit",
+   "leave",
+   "go out",
+   "come out",
+   "put out",
+   "protrude",
+   "sortir",
+   "quitter",
+   "présence",
+   "salir",
+   "dejar",
+   "sacar",
+   "saída",
+   "deixa"
+  ],
+  "examples": [
+   {
+    "word": "出す",
+    "reading": "だす",
+    "fr": "envoyer (par la poste); sortir (quelque chose de son sac); tirer (la langue)",
+    "en": "to put out"
+   },
+   {
+    "word": "出かける",
+    "reading": "でかける",
+    "fr": "partir; sortir",
+    "en": "to go out"
+   },
+   {
+    "word": "出口",
+    "reading": "でぐち",
+    "fr": "fuite; orifice; passerelle",
+    "en": "exit"
+   },
+   {
+    "word": "出る",
+    "reading": "でる",
+    "fr": "être publié; apparaître; sortir",
+    "en": "to appear; to leave"
+   },
+   {
+    "word": "出席",
+    "reading": "しゅっせき",
+    "fr": "présence",
+    "en": "to attend"
+   },
+   {
+    "word": "出発",
+    "reading": "しゅっぱつ",
+    "fr": "départ",
+    "en": "to depart"
+   }
+  ]
+ },
+ {
+  "character": "分",
+  "level": "N5",
+  "onyomi": [
+   "ブン",
+   "フン",
+   "ブ"
+  ],
+  "kunyomi": [
+   "わ.ける",
+   "わ.け",
+   "わ.かれる",
+   "わ.かる",
+   "わ.かつ"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "partie",
+   "minute",
+   "comprendre"
+  ],
+  "meaningsEn": [
+   "part",
+   "minute of time",
+   "segment",
+   "share",
+   "degree",
+   "one's lot",
+   "duty",
+   "understand",
+   "know",
+   "rate",
+   "1%",
+   "chances",
+   "shaku/100",
+   "portion",
+   "minute",
+   "section",
+   "part",
+   "degré",
+   "son lot dans la vie",
+   "comprendre",
+   "savoir",
+   "devoir",
+   "taux",
+   "1%",
+   "chances",
+   "bu = 1/100 de shaku = 3.03 mm",
+   "parte",
+   "segmento",
+   "minuto",
+   "dividir",
+   "separar",
+   "parte",
+   "minuto",
+   "segmento",
+   "grau",
+   "dever",
+   "compreender",
+   "saber",
+   "valor",
+   "1%",
+   "oportunidades",
+   "shaku/100"
+  ],
+  "examples": [
+   {
+    "word": "自分",
+    "reading": "じぶん",
+    "fr": "moi-même; soi-même",
+    "en": "oneself"
+   },
+   {
+    "word": "半分",
+    "reading": "はんぶん",
+    "fr": "moitié",
+    "en": "half minute"
+   },
+   {
+    "word": "分かる",
+    "reading": "わかる",
+    "fr": "être au courant; comprendre; connaître (une langue)",
+    "en": "to be understood"
+   },
+   {
+    "word": "気分",
+    "reading": "きぶん",
+    "fr": "disposition (d'esprit); humeur; sentiment",
+    "en": "mood"
+   },
+   {
+    "word": "十分",
+    "reading": "じゅうぶん",
+    "fr": "adéquat; assez; pas mal",
+    "en": "enough"
+   },
+   {
+    "word": "大分",
+    "reading": "だいぶ",
+    "fr": "assez; considérablement; plutôt",
+    "en": "greatly"
+   }
+  ]
+ },
+ {
+  "character": "前",
+  "level": "N5",
+  "onyomi": [
+   "ゼン"
+  ],
+  "kunyomi": [
+   "まえ",
+   "-まえ"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "devant",
+   "avant"
+  ],
+  "meaningsEn": [
+   "in front",
+   "before",
+   "devant",
+   "avant",
+   "antes",
+   "delante de",
+   "em frente",
+   "antes"
+  ],
+  "examples": [
+   {
+    "word": "午前",
+    "reading": "ごぜん",
+    "fr": "matin",
+    "en": "morning"
+   },
+   {
+    "word": "名前",
+    "reading": "なまえ",
+    "fr": "nom",
+    "en": "name"
+   },
+   {
+    "word": "前",
+    "reading": "まえ",
+    "fr": "antérieur; auparavant; avant",
+    "en": "before"
+   }
+  ]
+ },
+ {
+  "character": "北",
+  "level": "N5",
+  "onyomi": [
+   "ホク"
+  ],
+  "kunyomi": [
+   "きた"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "nord"
+  ],
+  "meaningsEn": [
+   "north",
+   "nord",
+   "Norte",
+   "huir",
+   "perder",
+   "norte"
+  ],
+  "examples": [
+   {
+    "word": "北",
+    "reading": "きた",
+    "fr": "nord",
+    "en": "north"
+   }
+  ]
+ },
+ {
+  "character": "十",
+  "level": "N5",
+  "onyomi": [
+   "ジュウ",
+   "ジッ",
+   "ジュッ"
+  ],
+  "kunyomi": [
+   "とお",
+   "と",
+   "そ"
+  ],
+  "strokes": 2,
+  "meaningsFr": [
+   "dix",
+   "10"
+  ],
+  "meaningsEn": [
+   "ten",
+   "dix",
+   "diez",
+   "10",
+   "dez"
+  ],
+  "examples": [
+   {
+    "word": "十",
+    "reading": "じゅう",
+    "fr": "dix (10); le chiffre dix (utilisé dans les documents officiels)",
+    "en": "ten"
+   },
+   {
+    "word": "十日",
+    "reading": "とおか",
+    "fr": "dix jours; le dix (du mois)",
+    "en": "ten days; the tenth day"
+   },
+   {
+    "word": "二十歳",
+    "reading": "はたち",
+    "fr": "20 ans (être agé de)",
+    "en": "20 years old; 20th year"
+   },
+   {
+    "word": "二十日",
+    "reading": "はつか",
+    "fr": "le vingt (du mois); vingt jours",
+    "en": "twenty days; twentieth"
+   },
+   {
+    "word": "十分",
+    "reading": "じゅうぶん",
+    "fr": "adéquat; assez; pas mal",
+    "en": "enough"
+   }
+  ]
+ },
+ {
+  "character": "千",
+  "level": "N5",
+  "onyomi": [
+   "セン"
+  ],
+  "kunyomi": [
+   "ち"
+  ],
+  "strokes": 3,
+  "meaningsFr": [
+   "mille",
+   "mil",
+   "muchos"
+  ],
+  "meaningsEn": [
+   "thousand",
+   "mille",
+   "mil",
+   "muchos",
+   "Mil"
+  ],
+  "examples": [
+   {
+    "word": "千",
+    "reading": "せん",
+    "fr": "1000; mille",
+    "en": "thousand"
+   }
+  ]
+ },
+ {
+  "character": "午",
+  "level": "N5",
+  "onyomi": [
+   "ゴ"
+  ],
+  "kunyomi": [
+   "うま"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "midi",
+   "signe du cheval",
+   "11h-13h"
+  ],
+  "meaningsEn": [
+   "noon",
+   "sign of the horse",
+   "11AM-1PM",
+   "seventh sign of Chinese zodiac",
+   "midi",
+   "signe de la 7ème branche terrestre",
+   "signe du Cheval (zodiaque)",
+   "11 h à 13 h",
+   "Sud (180°)",
+   "mediodía",
+   "meio-dia"
+  ],
+  "examples": [
+   {
+    "word": "午後",
+    "reading": "ごご",
+    "fr": "après-midi",
+    "en": "afternoon"
+   },
+   {
+    "word": "午前",
+    "reading": "ごぜん",
+    "fr": "matin",
+    "en": "morning"
+   }
+  ]
+ },
+ {
+  "character": "半",
+  "level": "N5",
+  "onyomi": [
+   "ハン"
+  ],
+  "kunyomi": [
+   "なか.ば"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "moitié",
+   "demi",
+   "milieu"
+  ],
+  "meaningsEn": [
+   "half",
+   "middle",
+   "odd number",
+   "semi-",
+   "part-",
+   "moitié",
+   "demi",
+   "milieu",
+   "nombre impair",
+   "mitad",
+   "medio",
+   "incompleto",
+   "semi-",
+   "semi",
+   "a medias",
+   "en parte",
+   "metade",
+   "médio",
+   "número ímpar",
+   "semi-",
+   "parte-"
+  ],
+  "examples": [
+   {
+    "word": "半",
+    "reading": "はん",
+    "fr": "demi; et demie; moitié",
+    "en": "half"
+   },
+   {
+    "word": "半分",
+    "reading": "はんぶん",
+    "fr": "moitié",
+    "en": "half minute"
+   }
+  ]
+ },
+ {
+  "character": "南",
+  "level": "N5",
+  "onyomi": [
+   "ナン",
+   "ナ"
+  ],
+  "kunyomi": [
+   "みなみ"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "sud"
+  ],
+  "meaningsEn": [
+   "south",
+   "sud",
+   "Sur",
+   "sul"
+  ],
+  "examples": [
+   {
+    "word": "南",
+    "reading": "みなみ",
+    "fr": "sud",
+    "en": "south"
+   }
+  ]
+ },
+ {
+  "character": "友",
+  "level": "N5",
+  "onyomi": [
+   "ユウ"
+  ],
+  "kunyomi": [
+   "とも"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "ami"
+  ],
+  "meaningsEn": [
+   "friend",
+   "ami",
+   "amigo",
+   "compañero",
+   "amigo"
+  ],
+  "examples": [
+   {
+    "word": "友達",
+    "reading": "ともだち",
+    "fr": "ami",
+    "en": "friend"
+   }
+  ]
+ },
+ {
+  "character": "右",
+  "level": "N5",
+  "onyomi": [
+   "ウ",
+   "ユウ"
+  ],
+  "kunyomi": [
+   "みぎ"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "droite"
+  ],
+  "meaningsEn": [
+   "right",
+   "droite",
+   "derecha",
+   "Direita"
+  ],
+  "examples": [
+   {
+    "word": "右",
+    "reading": "みぎ",
+    "fr": "droite",
+    "en": "right side"
+   }
+  ]
+ },
+ {
+  "character": "名",
+  "level": "N5",
+  "onyomi": [
+   "メイ",
+   "ミョウ"
+  ],
+  "kunyomi": [
+   "な",
+   "-な"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "nom",
+   "célèbre",
+   "réputation"
+  ],
+  "meaningsEn": [
+   "name",
+   "noted",
+   "distinguished",
+   "reputation",
+   "nom",
+   "célèbre",
+   "fameux",
+   "réputation",
+   "nombre",
+   "célebre",
+   "distinguido",
+   "reputación",
+   "nome",
+   "fama",
+   "distinção",
+   "reputação"
+  ],
+  "examples": [
+   {
+    "word": "名前",
+    "reading": "なまえ",
+    "fr": "nom",
+    "en": "name"
+   },
+   {
+    "word": "有名",
+    "reading": "ゆうめい",
+    "fr": "célébrité",
+    "en": "famous"
+   }
+  ]
+ },
+ {
+  "character": "四",
+  "level": "N5",
+  "onyomi": [
+   "シ"
+  ],
+  "kunyomi": [
+   "よ",
+   "よ.つ",
+   "よっ.つ",
+   "よん"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "quatre"
+  ],
+  "meaningsEn": [
+   "four",
+   "quatre",
+   "cuatro",
+   "4",
+   "quatro"
+  ],
+  "examples": [
+   {
+    "word": "四",
+    "reading": "し",
+    "fr": "quatre (4)",
+    "en": "four"
+   },
+   {
+    "word": "四日",
+    "reading": "よっか",
+    "fr": "quatrième jour du mois; quatre jours (durée)",
+    "en": "four days; fouth day of the month"
+   },
+   {
+    "word": "四つ",
+    "reading": "よっつ",
+    "fr": "quatre",
+    "en": "four"
+   }
+  ]
+ },
+ {
+  "character": "国",
+  "level": "N5",
+  "onyomi": [
+   "コク"
+  ],
+  "kunyomi": [
+   "くに"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "pays"
+  ],
+  "meaningsEn": [
+   "country",
+   "pays",
+   "país",
+   "País",
+   "terra",
+   "nação"
+  ],
+  "examples": [
+   {
+    "word": "外国",
+    "reading": "がいこく",
+    "fr": "l'étranger; pays étranger",
+    "en": "foreign country"
+   },
+   {
+    "word": "外国人",
+    "reading": "がいこくじん",
+    "fr": "étranger",
+    "en": "foreigner"
+   },
+   {
+    "word": "国",
+    "reading": "くに",
+    "fr": "pays",
+    "en": "country"
+   },
+   {
+    "word": "国際",
+    "reading": "こくさい",
+    "fr": "international; mondial",
+    "en": "international"
+   }
+  ]
+ },
+ {
+  "character": "土",
+  "level": "N5",
+  "onyomi": [
+   "ド",
+   "ト"
+  ],
+  "kunyomi": [
+   "つち"
+  ],
+  "strokes": 3,
+  "meaningsFr": [
+   "terre",
+   "sol"
+  ],
+  "meaningsEn": [
+   "soil",
+   "earth",
+   "ground",
+   "Turkey",
+   "sol",
+   "terre",
+   "terrain",
+   "Turquie",
+   "suelo",
+   "tierra",
+   "Turquía",
+   "solo",
+   "terra",
+   "chão",
+   "Turquia"
+  ],
+  "examples": [
+   {
+    "word": "土曜日",
+    "reading": "どようび",
+    "fr": "samedi",
+    "en": "Saturday"
+   }
+  ]
+ },
+ {
+  "character": "外",
+  "level": "N5",
+  "onyomi": [
+   "ガイ",
+   "ゲ"
+  ],
+  "kunyomi": [
+   "そと",
+   "ほか",
+   "はず.す",
+   "はず.れる",
+   "と-"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "extérieur",
+   "autre"
+  ],
+  "meaningsEn": [
+   "outside",
+   "extérieur",
+   "fuera",
+   "exterior",
+   "otro",
+   "desatar",
+   "estar desatado",
+   "estar desconectado",
+   "Exterior"
+  ],
+  "examples": [
+   {
+    "word": "外国",
+    "reading": "がいこく",
+    "fr": "l'étranger; pays étranger",
+    "en": "foreign country"
+   },
+   {
+    "word": "外国人",
+    "reading": "がいこくじん",
+    "fr": "étranger",
+    "en": "foreigner"
+   },
+   {
+    "word": "外",
+    "reading": "そと",
+    "fr": "à l'extérieur; extérieur",
+    "en": "outside"
+   },
+   {
+    "word": "以外",
+    "reading": "いがい",
+    "fr": "à l'exception de; sauf",
+    "en": "with the exception of"
+   },
+   {
+    "word": "郊外",
+    "reading": "こうがい",
+    "fr": "banlieue",
+    "en": "outskirts"
+   }
+  ]
+ },
+ {
+  "character": "大",
+  "level": "N5",
+  "onyomi": [
+   "ダイ",
+   "タイ"
+  ],
+  "kunyomi": [
+   "おお-",
+   "おお.きい",
+   "-おお.いに"
+  ],
+  "strokes": 3,
+  "meaningsFr": [
+   "grand",
+   "gros"
+  ],
+  "meaningsEn": [
+   "large",
+   "big",
+   "grand",
+   "grande",
+   "muy",
+   "mucho",
+   "grande",
+   "enorme"
+  ],
+  "examples": [
+   {
+    "word": "大きい",
+    "reading": "おおきい",
+    "fr": "gros; large",
+    "en": "big"
+   },
+   {
+    "word": "大きな",
+    "reading": "おおきな",
+    "fr": "grand; gros; large",
+    "en": "big"
+   },
+   {
+    "word": "大勢",
+    "reading": "おおぜい",
+    "fr": "foule; nombreux (personnes)",
+    "en": "great number of people"
+   },
+   {
+    "word": "大人",
+    "reading": "おとな",
+    "fr": "adulte",
+    "en": "adult"
+   },
+   {
+    "word": "大学",
+    "reading": "だいがく",
+    "fr": "université",
+    "en": "university"
+   },
+   {
+    "word": "大使館",
+    "reading": "たいしかん",
+    "fr": "ambassade",
+    "en": "embassy"
+   }
+  ]
+ },
+ {
+  "character": "天",
+  "level": "N5",
+  "onyomi": [
+   "テン"
+  ],
+  "kunyomi": [
+   "あまつ",
+   "あめ",
+   "あま-"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "ciel",
+   "impérial"
+  ],
+  "meaningsEn": [
+   "heavens",
+   "sky",
+   "imperial",
+   "cieux",
+   "ciel",
+   "impérial",
+   "paraíso",
+   "cielo",
+   "imperial",
+   "paraíso",
+   "ceú",
+   "imperiais"
+  ],
+  "examples": [
+   {
+    "word": "天気",
+    "reading": "てんき",
+    "fr": "beau temps; les éléments; temps",
+    "en": "weather"
+   }
+  ]
+ },
+ {
+  "character": "女",
+  "level": "N5",
+  "onyomi": [
+   "ジョ",
+   "ニョ",
+   "ニョウ"
+  ],
+  "kunyomi": [
+   "おんな",
+   "め"
+  ],
+  "strokes": 3,
+  "meaningsFr": [
+   "femme",
+   "féminin"
+  ],
+  "meaningsEn": [
+   "woman",
+   "female",
+   "femme",
+   "féminin",
+   "femenino",
+   "mujer",
+   "mulher",
+   "fêmea"
+  ],
+  "examples": [
+   {
+    "word": "女",
+    "reading": "おんな",
+    "fr": "femme",
+    "en": "woman"
+   },
+   {
+    "word": "女の子",
+    "reading": "おんなのこ",
+    "fr": "fille; petite fille",
+    "en": "girl"
+   },
+   {
+    "word": "彼女",
+    "reading": "かのじょ",
+    "fr": "elle; petite amie",
+    "en": "she; girlfriend"
+   },
+   {
+    "word": "女性",
+    "reading": "じょせい",
+    "fr": "de sexe féminin; femme; le sexe féminin",
+    "en": "woman"
+   }
+  ]
+ },
+ {
+  "character": "子",
+  "level": "N5",
+  "onyomi": [
+   "シ",
+   "ス",
+   "ツ"
+  ],
+  "kunyomi": [
+   "こ",
+   "-こ",
+   "ね"
+  ],
+  "strokes": 3,
+  "meaningsFr": [
+   "enfant",
+   "signe du rat"
+  ],
+  "meaningsEn": [
+   "child",
+   "sign of the rat",
+   "11PM-1AM",
+   "first sign of Chinese zodiac",
+   "enfant",
+   "signe de la 1ère branche terrestre",
+   "signe du Rat (zodiaque)",
+   "23 h à 01 h",
+   "Nord (0°)",
+   "chiquillo",
+   "niño",
+   "criança"
+  ],
+  "examples": [
+   {
+    "word": "お菓子",
+    "reading": "おかし",
+    "fr": "bonbon; confiserie; gâteaux",
+    "en": "sweets; candy"
+   },
+   {
+    "word": "男の子",
+    "reading": "おとこのこ",
+    "fr": "garçon; jeune garçon",
+    "en": "boy"
+   },
+   {
+    "word": "女の子",
+    "reading": "おんなのこ",
+    "fr": "fille; petite fille",
+    "en": "girl"
+   },
+   {
+    "word": "子供",
+    "reading": "こども",
+    "fr": "enfant",
+    "en": "child"
+   },
+   {
+    "word": "帽子",
+    "reading": "ぼうし",
+    "fr": "bonnet; casquette; chapeau",
+    "en": "hat"
+   },
+   {
+    "word": "子",
+    "reading": "こ",
+    "fr": "enfant",
+    "en": "child"
+   }
+  ]
+ },
+ {
+  "character": "学",
+  "level": "N5",
+  "onyomi": [
+   "ガク"
+  ],
+  "kunyomi": [
+   "まな.ぶ"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "étudier",
+   "science"
+  ],
+  "meaningsEn": [
+   "study",
+   "learning",
+   "science",
+   "étudier",
+   "apprendre",
+   "science",
+   "estudio",
+   "aprendizaje",
+   "ciencia",
+   "estudiar",
+   "estudo",
+   "aprendizagem",
+   "ciência"
+  ],
+  "examples": [
+   {
+    "word": "学生",
+    "reading": "がくせい",
+    "fr": "élève; étudiant",
+    "en": "student"
+   },
+   {
+    "word": "学校",
+    "reading": "がっこう",
+    "fr": "école",
+    "en": "school"
+   },
+   {
+    "word": "大学",
+    "reading": "だいがく",
+    "fr": "université",
+    "en": "university"
+   },
+   {
+    "word": "留学生",
+    "reading": "りゅうがくせい",
+    "fr": "étudiant envoyé à l'étranger pour étudier",
+    "en": "overseas student"
+   },
+   {
+    "word": "医学",
+    "reading": "いがく",
+    "fr": "médecine",
+    "en": "medical science"
+   },
+   {
+    "word": "科学",
+    "reading": "かがく",
+    "fr": "science",
+    "en": "science"
+   }
+  ]
+ },
+ {
+  "character": "小",
+  "level": "N5",
+  "onyomi": [
+   "ショウ"
+  ],
+  "kunyomi": [
+   "ちい.さい",
+   "こ-",
+   "お-",
+   "さ-"
+  ],
+  "strokes": 3,
+  "meaningsFr": [
+   "petit"
+  ],
+  "meaningsEn": [
+   "little",
+   "small",
+   "petit",
+   "poco",
+   "pequeño",
+   "Pequeno",
+   "pouco"
+  ],
+  "examples": [
+   {
+    "word": "小さい",
+    "reading": "ちいさい",
+    "fr": "petit",
+    "en": "little"
+   },
+   {
+    "word": "小さな",
+    "reading": "ちいさな",
+    "fr": "petit; minuscule",
+    "en": "little"
+   },
+   {
+    "word": "小鳥",
+    "reading": "ことり",
+    "fr": "petit oiseau",
+    "en": "small bird"
+   },
+   {
+    "word": "小説",
+    "reading": "しょうせつ",
+    "fr": "histoire; roman",
+    "en": "novel"
+   }
+  ]
+ },
+ {
+  "character": "山",
+  "level": "N5",
+  "onyomi": [
+   "サン",
+   "セン"
+  ],
+  "kunyomi": [
+   "やま"
+  ],
+  "strokes": 3,
+  "meaningsFr": [
+   "montagne"
+  ],
+  "meaningsEn": [
+   "mountain",
+   "montagne",
+   "montaña",
+   "montanha"
+  ],
+  "examples": [
+   {
+    "word": "山",
+    "reading": "やま",
+    "fr": "mont; montagne; amas",
+    "en": "mountain"
+   }
+  ]
+ },
+ {
+  "character": "川",
+  "level": "N5",
+  "onyomi": [
+   "セン"
+  ],
+  "kunyomi": [
+   "かわ"
+  ],
+  "strokes": 3,
+  "meaningsFr": [
+   "rivière"
+  ],
+  "meaningsEn": [
+   "stream",
+   "river",
+   "river or three-stroke river radical (no. 47)",
+   "rivière",
+   "fleuve",
+   "radical rivière (no. 47)",
+   "arroyo",
+   "río",
+   "corrente",
+   "rio"
+  ],
+  "examples": [
+   {
+    "word": "川",
+    "reading": "かわ",
+    "fr": "cours d'eau; fleuve; rivière",
+    "en": "river"
+   }
+  ]
+ },
+ {
+  "character": "左",
+  "level": "N5",
+  "onyomi": [
+   "サ",
+   "シャ"
+  ],
+  "kunyomi": [
+   "ひだり"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "gauche"
+  ],
+  "meaningsEn": [
+   "left",
+   "gauche",
+   "izquierda",
+   "Esquerda"
+  ],
+  "examples": [
+   {
+    "word": "左",
+    "reading": "ひだり",
+    "fr": "gauche",
+    "en": "left hand side"
+   }
+  ]
+ },
+ {
+  "character": "年",
+  "level": "N5",
+  "onyomi": [
+   "ネン"
+  ],
+  "kunyomi": [
+   "とし"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "année",
+   "compteur d'années"
+  ],
+  "meaningsEn": [
+   "year",
+   "counter for years",
+   "année",
+   "compteur d'années",
+   "año",
+   "edad",
+   "Ano"
+  ],
+  "examples": [
+   {
+    "word": "一昨年",
+    "reading": "おととし",
+    "fr": "il y a 2 ans",
+    "en": "year before last"
+   },
+   {
+    "word": "去年",
+    "reading": "きょねん",
+    "fr": "l'année dernière",
+    "en": "last year"
+   },
+   {
+    "word": "今年",
+    "reading": "ことし",
+    "fr": "cette année",
+    "en": "this year"
+   },
+   {
+    "word": "再来年",
+    "reading": "さらいねん",
+    "fr": "dans deux ans",
+    "en": "year after next"
+   },
+   {
+    "word": "年",
+    "reading": "とし",
+    "fr": "âge; année",
+    "en": "year"
+   },
+   {
+    "word": "毎年",
+    "reading": "まいねん",
+    "fr": "annuel; chaque année",
+    "en": "every year"
+   }
+  ]
+ },
+ {
+  "character": "後",
+  "level": "N5",
+  "onyomi": [
+   "ゴ",
+   "コウ"
+  ],
+  "kunyomi": [
+   "のち",
+   "うし.ろ",
+   "うしろ",
+   "あと",
+   "おく.れる"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "après",
+   "derrière",
+   "plus tard"
+  ],
+  "meaningsEn": [
+   "behind",
+   "back",
+   "later",
+   "après",
+   "derrière",
+   "plus tard",
+   "después",
+   "atrás",
+   "detrás",
+   "retrasarse",
+   "atrás",
+   "costas",
+   "mais tarde"
+  ],
+  "examples": [
+   {
+    "word": "後",
+    "reading": "あと",
+    "fr": "derrière; en arrière",
+    "en": "afterwards"
+   },
+   {
+    "word": "後ろ",
+    "reading": "うしろ",
+    "fr": "arrière; derrière; dos",
+    "en": "behind"
+   },
+   {
+    "word": "午後",
+    "reading": "ごご",
+    "fr": "après-midi",
+    "en": "afternoon"
+   },
+   {
+    "word": "最後",
+    "reading": "さいご",
+    "fr": "conclusion; fin",
+    "en": "last; end"
+   }
+  ]
+ },
+ {
+  "character": "日",
+  "level": "N5",
+  "onyomi": [
+   "ニチ",
+   "ジツ"
+  ],
+  "kunyomi": [
+   "ひ",
+   "-び",
+   "-か"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "jour",
+   "soleil",
+   "Japon"
+  ],
+  "meaningsEn": [
+   "day",
+   "sun",
+   "Japan",
+   "counter for days",
+   "jour",
+   "soleil",
+   "Japon",
+   "compteur de jours",
+   "día",
+   "solar",
+   "Japón",
+   "sol",
+   "rayo de sol",
+   "dia",
+   "sol",
+   "Japão"
+  ],
+  "examples": [
+   {
+    "word": "明日",
+    "reading": "あした",
+    "fr": "demain",
+    "en": "tomorrow"
+   },
+   {
+    "word": "一日",
+    "reading": "いちにち",
+    "fr": "une journée; le 1er du mois",
+    "en": "one day; first of month"
+   },
+   {
+    "word": "五日",
+    "reading": "いつか",
+    "fr": "cinq jours; le cinq (dans le mois)",
+    "en": "five days; fifth day"
+   },
+   {
+    "word": "一昨日",
+    "reading": "おととい",
+    "fr": "avant-hier",
+    "en": "day before yesterday"
+   },
+   {
+    "word": "火曜日",
+    "reading": "かようび",
+    "fr": "Mardi",
+    "en": "Tuesday"
+   },
+   {
+    "word": "昨日",
+    "reading": "きのう",
+    "fr": "hier",
+    "en": "yesterday"
+   }
+  ]
+ },
+ {
+  "character": "時",
+  "level": "N5",
+  "onyomi": [
+   "ジ"
+  ],
+  "kunyomi": [
+   "とき",
+   "-どき"
+  ],
+  "strokes": 10,
+  "meaningsFr": [
+   "temps",
+   "heure"
+  ],
+  "meaningsEn": [
+   "time",
+   "hour",
+   "temps",
+   "heure",
+   "tiempo",
+   "hora",
+   "ocasión",
+   "tempo",
+   "hora"
+  ],
+  "examples": [
+   {
+    "word": "時間",
+    "reading": "じかん",
+    "fr": "temps",
+    "en": "time"
+   },
+   {
+    "word": "時々",
+    "reading": "ときどき",
+    "fr": "de temps en temps; quelquefois",
+    "en": "sometimes"
+   },
+   {
+    "word": "時計",
+    "reading": "とけい",
+    "fr": "horloge; montre",
+    "en": "watch; clock"
+   },
+   {
+    "word": "時代",
+    "reading": "じだい",
+    "fr": "âge; ère; époque",
+    "en": "era"
+   }
+  ]
+ },
+ {
+  "character": "書",
+  "level": "N5",
+  "onyomi": [
+   "ショ"
+  ],
+  "kunyomi": [
+   "か.く",
+   "-が.き",
+   "-がき"
+  ],
+  "strokes": 10,
+  "meaningsFr": [
+   "écrire"
+  ],
+  "meaningsEn": [
+   "write",
+   "écrire",
+   "escritura",
+   "escrito",
+   "escribir",
+   "escrever"
+  ],
+  "examples": [
+   {
+    "word": "書く",
+    "reading": "かく",
+    "fr": "écrire",
+    "en": "to write"
+   },
+   {
+    "word": "辞書",
+    "reading": "じしょ",
+    "fr": "dictionnaire",
+    "en": "dictionary"
+   },
+   {
+    "word": "図書館",
+    "reading": "としょかん",
+    "fr": "bibliothèque",
+    "en": "library"
+   },
+   {
+    "word": "葉書",
+    "reading": "はがき",
+    "fr": "carte postale",
+    "en": "postcard"
+   }
+  ]
+ },
+ {
+  "character": "月",
+  "level": "N5",
+  "onyomi": [
+   "ゲツ",
+   "ガツ"
+  ],
+  "kunyomi": [
+   "つき"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "mois",
+   "lune"
+  ],
+  "meaningsEn": [
+   "month",
+   "moon",
+   "lune",
+   "mois",
+   "mes",
+   "luna",
+   "mês",
+   "lua"
+  ],
+  "examples": [
+   {
+    "word": "月曜日",
+    "reading": "げつようび",
+    "fr": "Lundi",
+    "en": "Monday"
+   },
+   {
+    "word": "今月",
+    "reading": "こんげつ",
+    "fr": "ce mois-ci",
+    "en": "this month"
+   },
+   {
+    "word": "先月",
+    "reading": "せんげつ",
+    "fr": "le mois passé",
+    "en": "last month"
+   },
+   {
+    "word": "一月",
+    "reading": "ひとつき",
+    "fr": "un mois",
+    "en": "one month"
+   },
+   {
+    "word": "毎月",
+    "reading": "まいげつ",
+    "fr": "chaque mois; mensuel",
+    "en": "every month"
+   },
+   {
+    "word": "来月",
+    "reading": "らいげつ",
+    "fr": "mois suivant",
+    "en": "next month"
+   }
+  ]
+ },
+ {
+  "character": "木",
+  "level": "N5",
+  "onyomi": [
+   "ボク",
+   "モク"
+  ],
+  "kunyomi": [
+   "き",
+   "こ-"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "arbre",
+   "bois"
+  ],
+  "meaningsEn": [
+   "tree",
+   "wood",
+   "arbre",
+   "bois (matière)",
+   "árbol",
+   "madera",
+   "árvore",
+   "madeira"
+  ],
+  "examples": [
+   {
+    "word": "木",
+    "reading": "き",
+    "fr": "arbre; bois (matière)",
+    "en": "tree; wood"
+   },
+   {
+    "word": "木曜日",
+    "reading": "もくようび",
+    "fr": "jeudi",
+    "en": "Thursday"
+   },
+   {
+    "word": "木綿",
+    "reading": "もめん",
+    "fr": "coton",
+    "en": "cotton"
+   }
+  ]
+ },
+ {
+  "character": "本",
+  "level": "N5",
+  "onyomi": [
+   "ホン"
+  ],
+  "kunyomi": [
+   "もと"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "livre",
+   "principal",
+   "compteur d'objets allongés"
+  ],
+  "meaningsEn": [
+   "book",
+   "present",
+   "main",
+   "origin",
+   "true",
+   "real",
+   "counter for long cylindrical things",
+   "livre",
+   "présent",
+   "essentiel",
+   "origine",
+   "principal",
+   "réalité",
+   "vérité",
+   "compteur d'objets allongés",
+   "libro",
+   "origen",
+   "base",
+   "contador de cosas alargadas",
+   "livro",
+   "presente",
+   "real",
+   "verdadeiro",
+   "principal",
+   "sufixo p/ contagem De coisas longas"
+  ],
+  "examples": [
+   {
+    "word": "本",
+    "reading": "ほん",
+    "fr": "(pour compter les objets ronds et longs); ceci; chef",
+    "en": "book"
+   },
+   {
+    "word": "本棚",
+    "reading": "ほんだな",
+    "fr": "étagère d'une bibliothèque; bibliothèque (meuble); rayonnage d'une bibliothèque",
+    "en": "bookshelves"
+   }
+  ]
+ },
+ {
+  "character": "来",
+  "level": "N5",
+  "onyomi": [
+   "ライ",
+   "タイ"
+  ],
+  "kunyomi": [
+   "く.る",
+   "きた.る",
+   "きた.す",
+   "き.たす",
+   "き.たる",
+   "き",
+   "こ"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "venir",
+   "devenir"
+  ],
+  "meaningsEn": [
+   "come",
+   "due",
+   "next",
+   "cause",
+   "become",
+   "venir",
+   "dû à",
+   "suivant",
+   "causer",
+   "devenir",
+   "venir",
+   "llegar",
+   "acercarse",
+   "aproximarse",
+   "Vir",
+   "devido",
+   "próximo",
+   "causa",
+   "tornar-se"
+  ],
+  "examples": [
+   {
+    "word": "来る",
+    "reading": "くる",
+    "fr": "arriver; atteindre; provenir de",
+    "en": "to come"
+   },
+   {
+    "word": "再来年",
+    "reading": "さらいねん",
+    "fr": "dans deux ans",
+    "en": "year after next"
+   },
+   {
+    "word": "来月",
+    "reading": "らいげつ",
+    "fr": "mois suivant",
+    "en": "next month"
+   },
+   {
+    "word": "来週",
+    "reading": "らいしゅう",
+    "fr": "semaine prochaine",
+    "en": "next week"
+   },
+   {
+    "word": "来年",
+    "reading": "らいねん",
+    "fr": "année prochaine",
+    "en": "next year"
+   },
+   {
+    "word": "将来",
+    "reading": "しょうらい",
+    "fr": "futur; perspectives",
+    "en": "future; prospects"
+   }
+  ]
+ },
+ {
+  "character": "東",
+  "level": "N5",
+  "onyomi": [
+   "トウ"
+  ],
+  "kunyomi": [
+   "ひがし"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "est"
+  ],
+  "meaningsEn": [
+   "east",
+   "Est",
+   "Este",
+   "Oriente"
+  ],
+  "examples": [
+   {
+    "word": "東",
+    "reading": "ひがし",
+    "fr": "est",
+    "en": "east"
+   }
+  ]
+ },
+ {
+  "character": "校",
+  "level": "N5",
+  "onyomi": [
+   "コウ",
+   "キョウ"
+  ],
+  "kunyomi": [],
+  "strokes": 10,
+  "meaningsFr": [
+   "école",
+   "examen"
+  ],
+  "meaningsEn": [
+   "exam",
+   "school",
+   "printing",
+   "proof",
+   "correction",
+   "école",
+   "examen",
+   "impression",
+   "épreuve",
+   "correction",
+   "escuela",
+   "colegio",
+   "centro docente",
+   "exame",
+   "escola",
+   "impressão",
+   "prova",
+   "correção"
+  ],
+  "examples": [
+   {
+    "word": "学校",
+    "reading": "がっこう",
+    "fr": "école",
+    "en": "school"
+   },
+   {
+    "word": "高校",
+    "reading": "こうこう",
+    "fr": "lycée",
+    "en": "high school"
+   },
+   {
+    "word": "校長",
+    "reading": "こうちょう",
+    "fr": "directeur; principal; proviseur",
+    "en": "headmaster"
+   }
+  ]
+ },
+ {
+  "character": "母",
+  "level": "N5",
+  "onyomi": [
+   "ボ"
+  ],
+  "kunyomi": [
+   "はは",
+   "も"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "mère"
+  ],
+  "meaningsEn": [
+   "mother",
+   "maman",
+   "mère",
+   "madre",
+   "base",
+   "cimientos",
+   "mãe",
+   "materno"
+  ],
+  "examples": [
+   {
+    "word": "お母さん",
+    "reading": "おかあさん",
+    "fr": "mère",
+    "en": "(honorable) mother"
+   },
+   {
+    "word": "伯母さん",
+    "reading": "おばさん",
+    "fr": "tante; dame; (hon) tante",
+    "en": "aunt"
+   },
+   {
+    "word": "祖母",
+    "reading": "そぼ",
+    "fr": "grand-mère",
+    "en": "grandmother"
+   }
+  ]
+ },
+ {
+  "character": "毎",
+  "level": "N5",
+  "onyomi": [
+   "マイ"
+  ],
+  "kunyomi": [
+   "ごと",
+   "-ごと.に"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "chaque"
+  ],
+  "meaningsEn": [
+   "every",
+   "chaque",
+   "siempre",
+   "cada",
+   "en ese momento",
+   "todo"
+  ],
+  "examples": [
+   {
+    "word": "毎朝",
+    "reading": "まいあさ",
+    "fr": "chaque matin; tous les matins",
+    "en": "every morning"
+   },
+   {
+    "word": "毎月",
+    "reading": "まいげつ",
+    "fr": "chaque mois; mensuel",
+    "en": "every month"
+   },
+   {
+    "word": "毎週",
+    "reading": "まいしゅう",
+    "fr": "chaque semaine; toutes les semaines",
+    "en": "every week"
+   },
+   {
+    "word": "毎日",
+    "reading": "まいにち",
+    "fr": "chaque jour; tous les jours",
+    "en": "every day"
+   },
+   {
+    "word": "毎年",
+    "reading": "まいねん",
+    "fr": "annuel; chaque année",
+    "en": "every year"
+   },
+   {
+    "word": "毎晩",
+    "reading": "まいばん",
+    "fr": "chaque soir; tous les soirs",
+    "en": "every night"
+   }
+  ]
+ },
+ {
+  "character": "気",
+  "level": "N5",
+  "onyomi": [
+   "キ",
+   "ケ"
+  ],
+  "kunyomi": [
+   "いき",
+   "き"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "esprit",
+   "air",
+   "humeur"
+  ],
+  "meaningsEn": [
+   "spirit",
+   "mind",
+   "air",
+   "atmosphere",
+   "mood",
+   "esprit",
+   "air",
+   "atmosphère",
+   "humeur",
+   "espíritu",
+   "mente",
+   "espírito",
+   "mente"
+  ],
+  "examples": [
+   {
+    "word": "元気",
+    "reading": "げんき",
+    "fr": "énergie; bonne santé; santé",
+    "en": "health; vitality"
+   },
+   {
+    "word": "天気",
+    "reading": "てんき",
+    "fr": "beau temps; les éléments; temps",
+    "en": "weather"
+   },
+   {
+    "word": "電気",
+    "reading": "でんき",
+    "fr": "électricité; lumière (électrique)",
+    "en": "electricity; electric light"
+   },
+   {
+    "word": "病気",
+    "reading": "びょうき",
+    "fr": "maladie; manie",
+    "en": "illness"
+   },
+   {
+    "word": "気",
+    "reading": "き",
+    "fr": "esprit; humeur",
+    "en": "spirit; mood"
+   },
+   {
+    "word": "気分",
+    "reading": "きぶん",
+    "fr": "disposition (d'esprit); humeur; sentiment",
+    "en": "mood"
+   }
+  ]
+ },
+ {
+  "character": "水",
+  "level": "N5",
+  "onyomi": [
+   "スイ"
+  ],
+  "kunyomi": [
+   "みず",
+   "みず-"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "eau"
+  ],
+  "meaningsEn": [
+   "water",
+   "eau",
+   "agua",
+   "água"
+  ],
+  "examples": [
+   {
+    "word": "水曜日",
+    "reading": "すいようび",
+    "fr": "mercredi",
+    "en": "Wednesday"
+   },
+   {
+    "word": "水",
+    "reading": "みず",
+    "fr": "eau",
+    "en": "water"
+   },
+   {
+    "word": "水泳",
+    "reading": "すいえい",
+    "fr": "nage; natation",
+    "en": "swimming"
+   },
+   {
+    "word": "水道",
+    "reading": "すいどう",
+    "fr": "approvisionnement d'eau; conduite d'eau; distribution d'eau",
+    "en": "water supply"
+   }
+  ]
+ },
+ {
+  "character": "火",
+  "level": "N5",
+  "onyomi": [
+   "カ"
+  ],
+  "kunyomi": [
+   "ひ",
+   "-び",
+   "ほ-"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "feu"
+  ],
+  "meaningsEn": [
+   "fire",
+   "feu",
+   "fuego",
+   "flama",
+   "llama",
+   "fogo"
+  ],
+  "examples": [
+   {
+    "word": "火曜日",
+    "reading": "かようび",
+    "fr": "Mardi",
+    "en": "Tuesday"
+   },
+   {
+    "word": "火",
+    "reading": "ひ",
+    "fr": "feu; flamme",
+    "en": "fire"
+   },
+   {
+    "word": "火事",
+    "reading": "かじ",
+    "fr": "incendie",
+    "en": "fire"
+   }
+  ]
+ },
+ {
+  "character": "父",
+  "level": "N5",
+  "onyomi": [
+   "フ"
+  ],
+  "kunyomi": [
+   "ちち"
+  ],
+  "strokes": 4,
+  "meaningsFr": [
+   "père"
+  ],
+  "meaningsEn": [
+   "father",
+   "père",
+   "padre",
+   "pai"
+  ],
+  "examples": [
+   {
+    "word": "お祖父さん",
+    "reading": "おじいさん",
+    "fr": "grand-père; homme âgé; vieillard",
+    "en": "grandfather; male senior citizen"
+   },
+   {
+    "word": "お父さん",
+    "reading": "おとうさん",
+    "fr": "père; père; papa",
+    "en": "(honorable) father"
+   },
+   {
+    "word": "祖父",
+    "reading": "そふ",
+    "fr": "grand-père",
+    "en": "grandfather"
+   }
+  ]
+ },
+ {
+  "character": "生",
+  "level": "N5",
+  "onyomi": [
+   "セイ",
+   "ショウ"
+  ],
+  "kunyomi": [
+   "い.きる",
+   "い.かす",
+   "い.ける",
+   "う.まれる",
+   "うま.れる",
+   "う.まれ",
+   "うまれ",
+   "う.む",
+   "お.う",
+   "は.える",
+   "は.やす",
+   "き",
+   "なま",
+   "なま-",
+   "な.る",
+   "な.す",
+   "む.す",
+   "-う"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "vie",
+   "naître"
+  ],
+  "meaningsEn": [
+   "life",
+   "genuine",
+   "birth",
+   "vie",
+   "naissance",
+   "authentique",
+   "cru",
+   "vida",
+   "nacimiento",
+   "vivir",
+   "existir",
+   "nacer",
+   "dar a luz",
+   "puro",
+   "crudo",
+   "vida",
+   "genuína",
+   "nascimento"
+  ],
+  "examples": [
+   {
+    "word": "生まれる",
+    "reading": "うまれる",
+    "fr": "naître",
+    "en": "to be born"
+   },
+   {
+    "word": "学生",
+    "reading": "がくせい",
+    "fr": "élève; étudiant",
+    "en": "student"
+   },
+   {
+    "word": "生徒",
+    "reading": "せいと",
+    "fr": "élève",
+    "en": "pupil"
+   },
+   {
+    "word": "先生",
+    "reading": "せんせい",
+    "fr": "instituteur; maître; professeur",
+    "en": "teacher; doctor"
+   },
+   {
+    "word": "誕生日",
+    "reading": "たんじょうび",
+    "fr": "(jour) anniversaire",
+    "en": "birthday"
+   },
+   {
+    "word": "留学生",
+    "reading": "りゅうがくせい",
+    "fr": "étudiant envoyé à l'étranger pour étudier",
+    "en": "overseas student"
+   }
+  ]
+ },
+ {
+  "character": "男",
+  "level": "N5",
+  "onyomi": [
+   "ダン",
+   "ナン"
+  ],
+  "kunyomi": [
+   "おとこ",
+   "お"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "homme",
+   "masculin"
+  ],
+  "meaningsEn": [
+   "male",
+   "homme",
+   "mâle",
+   "masculino",
+   "hombre",
+   "masculino"
+  ],
+  "examples": [
+   {
+    "word": "男",
+    "reading": "おとこ",
+    "fr": "homme; mâle",
+    "en": "man"
+   },
+   {
+    "word": "男の子",
+    "reading": "おとこのこ",
+    "fr": "garçon; jeune garçon",
+    "en": "boy"
+   },
+   {
+    "word": "男性",
+    "reading": "だんせい",
+    "fr": "mâle; sexe masculin",
+    "en": "male"
+   }
+  ]
+ },
+ {
+  "character": "白",
+  "level": "N5",
+  "onyomi": [
+   "ハク",
+   "ビャク"
+  ],
+  "kunyomi": [
+   "しろ",
+   "しら-",
+   "しろ.い"
+  ],
+  "strokes": 5,
+  "meaningsFr": [
+   "blanc"
+  ],
+  "meaningsEn": [
+   "white",
+   "blanc",
+   "blanco",
+   "branco"
+  ],
+  "examples": [
+   {
+    "word": "白",
+    "reading": "しろ",
+    "fr": "blanc",
+    "en": "white"
+   },
+   {
+    "word": "白い",
+    "reading": "しろい",
+    "fr": "blanc",
+    "en": "white"
+   }
+  ]
+ },
+ {
+  "character": "百",
+  "level": "N5",
+  "onyomi": [
+   "ヒャク",
+   "ビャク"
+  ],
+  "kunyomi": [
+   "もも"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "cent"
+  ],
+  "meaningsEn": [
+   "hundred",
+   "cent",
+   "cien",
+   "muchos",
+   "cem"
+  ],
+  "examples": [
+   {
+    "word": "百",
+    "reading": "ひゃく",
+    "fr": "100; cent",
+    "en": "hundred"
+   },
+   {
+    "word": "八百屋",
+    "reading": "やおや",
+    "fr": "marchand de légumes",
+    "en": "greengrocer"
+   }
+  ]
+ },
+ {
+  "character": "耳",
+  "level": "N5",
+  "onyomi": [
+   "ジ"
+  ],
+  "kunyomi": [
+   "みみ"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "oreille"
+  ],
+  "meaningsEn": [
+   "ear",
+   "oreille",
+   "oreja",
+   "oído",
+   "ouvido"
+  ],
+  "examples": [
+   {
+    "word": "耳",
+    "reading": "みみ",
+    "fr": "oreille",
+    "en": "ear"
+   }
+  ]
+ },
+ {
+  "character": "聞",
+  "level": "N5",
+  "onyomi": [
+   "ブン",
+   "モン"
+  ],
+  "kunyomi": [
+   "き.く",
+   "き.こえる"
+  ],
+  "strokes": 14,
+  "meaningsFr": [
+   "entendre",
+   "écouter",
+   "demander"
+  ],
+  "meaningsEn": [
+   "hear",
+   "ask",
+   "listen",
+   "entendre",
+   "écouter",
+   "demander",
+   "preguntar",
+   "escuchar",
+   "rumor",
+   "reputación",
+   "oír",
+   "escutar",
+   "perguntar",
+   "escuta"
+  ],
+  "examples": [
+   {
+    "word": "聞く",
+    "reading": "きく",
+    "fr": "écouter; demander; entendre",
+    "en": "to hear; to listen to; to ask"
+   },
+   {
+    "word": "新聞",
+    "reading": "しんぶん",
+    "fr": "journal",
+    "en": "newspaper"
+   }
+  ]
+ },
+ {
+  "character": "行",
+  "level": "N5",
+  "onyomi": [
+   "コウ",
+   "ギョウ",
+   "アン"
+  ],
+  "kunyomi": [
+   "い.く",
+   "ゆ.く",
+   "-ゆ.き",
+   "-ゆき",
+   "-い.き",
+   "-いき",
+   "おこな.う",
+   "おこ.なう"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "aller",
+   "effectuer",
+   "file"
+  ],
+  "meaningsEn": [
+   "going",
+   "journey",
+   "carry out",
+   "conduct",
+   "act",
+   "line",
+   "row",
+   "bank",
+   "aller",
+   "voyage",
+   "ir",
+   "fila",
+   "línea (texto)",
+   "ocurrencia",
+   "conducta",
+   "realizar",
+   "llevar a cabo",
+   "ocurrir",
+   "ir",
+   "viagem",
+   "viajar"
+  ],
+  "examples": [
+   {
+    "word": "行く",
+    "reading": "いく",
+    "fr": "aller; décéder; mourir",
+    "en": "to go"
+   },
+   {
+    "word": "銀行",
+    "reading": "ぎんこう",
+    "fr": "banque",
+    "en": "bank"
+   },
+   {
+    "word": "飛行機",
+    "reading": "ひこうき",
+    "fr": "avion",
+    "en": "aeroplane"
+   },
+   {
+    "word": "旅行",
+    "reading": "りょこう",
+    "fr": "voyage",
+    "en": "travel"
+   },
+   {
+    "word": "行う",
+    "reading": "おこなう",
+    "fr": "accomplir; faire; mettre à exécution",
+    "en": "to do"
+   },
+   {
+    "word": "急行",
+    "reading": "きゅうこう",
+    "fr": "train express",
+    "en": "speedy; express"
+   }
+  ]
+ },
+ {
+  "character": "西",
+  "level": "N5",
+  "onyomi": [
+   "セイ",
+   "サイ",
+   "ス"
+  ],
+  "kunyomi": [
+   "にし"
+  ],
+  "strokes": 6,
+  "meaningsFr": [
+   "ouest"
+  ],
+  "meaningsEn": [
+   "west",
+   "Spain",
+   "Ouest",
+   "Espagne",
+   "Oeste",
+   "España",
+   "oeste",
+   "Espanha"
+  ],
+  "examples": [
+   {
+    "word": "西",
+    "reading": "にし",
+    "fr": "ouest",
+    "en": "west"
+   },
+   {
+    "word": "西洋",
+    "reading": "せいよう",
+    "fr": "L'Ouest; l'Occident; les pays occidentaux",
+    "en": "western countries"
+   }
+  ]
+ },
+ {
+  "character": "見",
+  "level": "N5",
+  "onyomi": [
+   "ケン"
+  ],
+  "kunyomi": [
+   "み.る",
+   "み.える",
+   "み.せる"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "voir",
+   "regarder",
+   "espérer"
+  ],
+  "meaningsEn": [
+   "see",
+   "hopes",
+   "chances",
+   "idea",
+   "opinion",
+   "look at",
+   "visible",
+   "regarder",
+   "voir",
+   "visible",
+   "espoirs",
+   "chances",
+   "idée",
+   "opinion",
+   "vista",
+   "ver",
+   "esperanza",
+   "idea",
+   "opinión",
+   "observar",
+   "ser visto",
+   "estar a la vista",
+   "poder verse",
+   "mostrar",
+   "ver",
+   "esperanças",
+   "oportunidades",
+   "idéia",
+   "opinião",
+   "olhar",
+   "visíveis"
+  ],
+  "examples": [
+   {
+    "word": "見せる",
+    "reading": "みせる",
+    "fr": "montrer",
+    "en": "to show"
+   },
+   {
+    "word": "見る",
+    "reading": "みる",
+    "fr": "voir",
+    "en": "to see; to watch"
+   },
+   {
+    "word": "意見",
+    "reading": "いけん",
+    "fr": "avis; opinion",
+    "en": "opinion"
+   },
+   {
+    "word": "見物",
+    "reading": "けんぶつ",
+    "fr": "excursion",
+    "en": "sightseeing"
+   },
+   {
+    "word": "拝見",
+    "reading": "はいけん",
+    "fr": "regarder; voir",
+    "en": "(humble) to look at"
+   },
+   {
+    "word": "花見",
+    "reading": "はなみ",
+    "fr": "sortie, excursion pour admirer la floraison des cerisiers",
+    "en": "cherry-blossom viewing"
+   }
+  ]
+ },
+ {
+  "character": "話",
+  "level": "N5",
+  "onyomi": [
+   "ワ"
+  ],
+  "kunyomi": [
+   "はな.す",
+   "はなし"
+  ],
+  "strokes": 13,
+  "meaningsFr": [
+   "parler",
+   "histoire"
+  ],
+  "meaningsEn": [
+   "tale",
+   "talk",
+   "parler",
+   "histoire",
+   "cuento",
+   "charla",
+   "hablar",
+   "narrar",
+   "Conversar",
+   "falar uma língua",
+   "conto"
+  ],
+  "examples": [
+   {
+    "word": "電話",
+    "reading": "でんわ",
+    "fr": "téléphone",
+    "en": "telephone"
+   },
+   {
+    "word": "話",
+    "reading": "はなし",
+    "fr": "conversation; discours; discussion",
+    "en": "talk; story"
+   },
+   {
+    "word": "話す",
+    "reading": "はなす",
+    "fr": "discuter; parler",
+    "en": "to speak"
+   },
+   {
+    "word": "会話",
+    "reading": "かいわ",
+    "fr": "conversation; dialogue; discussion",
+    "en": "conversation"
+   },
+   {
+    "word": "世話",
+    "reading": "せわ",
+    "fr": "aide; assistance",
+    "en": "to look after"
+   }
+  ]
+ },
+ {
+  "character": "語",
+  "level": "N5",
+  "onyomi": [
+   "ゴ"
+  ],
+  "kunyomi": [
+   "かた.る",
+   "かた.らう"
+  ],
+  "strokes": 14,
+  "meaningsFr": [
+   "langue",
+   "parler",
+   "mot"
+  ],
+  "meaningsEn": [
+   "word",
+   "speech",
+   "language",
+   "langage",
+   "mot",
+   "raconter",
+   "palabra",
+   "discurso",
+   "lenguaje",
+   "hablar",
+   "conversar",
+   "narrar",
+   "palavra",
+   "discurso",
+   "língua"
+  ],
+  "examples": [
+   {
+    "word": "英語",
+    "reading": "えいご",
+    "fr": "la langue anglaise",
+    "en": "English language"
+   }
+  ]
+ },
+ {
+  "character": "読",
+  "level": "N5",
+  "onyomi": [
+   "ドク",
+   "トク",
+   "トウ"
+  ],
+  "kunyomi": [
+   "よ.む",
+   "-よ.み"
+  ],
+  "strokes": 14,
+  "meaningsFr": [
+   "lire"
+  ],
+  "meaningsEn": [
+   "read",
+   "lire",
+   "leer",
+   "leia"
+  ],
+  "examples": [
+   {
+    "word": "読む",
+    "reading": "よむ",
+    "fr": "lire",
+    "en": "to read"
+   }
+  ]
+ },
+ {
+  "character": "車",
+  "level": "N5",
+  "onyomi": [
+   "シャ"
+  ],
+  "kunyomi": [
+   "くるま"
+  ],
+  "strokes": 7,
+  "meaningsFr": [
+   "voiture"
+  ],
+  "meaningsEn": [
+   "car",
+   "véhicule",
+   "voiture",
+   "coche",
+   "vehículo",
+   "rueda",
+   "carro"
+  ],
+  "examples": [
+   {
+    "word": "車",
+    "reading": "くるま",
+    "fr": "véhicule; voiture",
+    "en": "car; vehicle"
+   },
+   {
+    "word": "自転車",
+    "reading": "じてんしゃ",
+    "fr": "bicyclette; vélo",
+    "en": "bicycle"
+   },
+   {
+    "word": "自動車",
+    "reading": "じどうしゃ",
+    "fr": "automobile; voiture",
+    "en": "automobile"
+   },
+   {
+    "word": "電車",
+    "reading": "でんしゃ",
+    "fr": "train (électrique)",
+    "en": "electric train"
+   },
+   {
+    "word": "汽車",
+    "reading": "きしゃ",
+    "fr": "train (à vapeur)",
+    "en": "steam train"
+   }
+  ]
+ },
+ {
+  "character": "金",
+  "level": "N5",
+  "onyomi": [
+   "キン",
+   "コン",
+   "ゴン"
+  ],
+  "kunyomi": [
+   "かね",
+   "かな-",
+   "-がね"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "or",
+   "or",
+   "argent"
+  ],
+  "meaningsEn": [
+   "gold",
+   "or",
+   "oro",
+   "dinero",
+   "metal",
+   "ouro"
+  ],
+  "examples": [
+   {
+    "word": "お金",
+    "reading": "おかね",
+    "fr": "argent",
+    "en": "money"
+   },
+   {
+    "word": "金曜日",
+    "reading": "きんようび",
+    "fr": "vendredi",
+    "en": "Friday"
+   }
+  ]
+ },
+ {
+  "character": "長",
+  "level": "N5",
+  "onyomi": [
+   "チョウ"
+  ],
+  "kunyomi": [
+   "なが.い",
+   "おさ"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "long",
+   "chef",
+   "supérieur"
+  ],
+  "meaningsEn": [
+   "long",
+   "leader",
+   "superior",
+   "senior",
+   "long",
+   "chef",
+   "largo",
+   "jefe",
+   "sobresaliente",
+   "Longo",
+   "ambicionar",
+   "líder",
+   "chefe"
+  ],
+  "examples": [
+   {
+    "word": "長い",
+    "reading": "ながい",
+    "fr": "long; long (temps); long (temps)",
+    "en": "long"
+   },
+   {
+    "word": "課長",
+    "reading": "かちょう",
+    "fr": "chef de groupe; chef de section",
+    "en": "section manager"
+   },
+   {
+    "word": "校長",
+    "reading": "こうちょう",
+    "fr": "directeur; principal; proviseur",
+    "en": "headmaster"
+   },
+   {
+    "word": "社長",
+    "reading": "しゃちょう",
+    "fr": "directeur; président",
+    "en": "company president"
+   },
+   {
+    "word": "部長",
+    "reading": "ぶちょう",
+    "fr": "chef de section; directeur",
+    "en": "head of a section"
+   }
+  ]
+ },
+ {
+  "character": "間",
+  "level": "N5",
+  "onyomi": [
+   "カン",
+   "ケン"
+  ],
+  "kunyomi": [
+   "あいだ",
+   "ま",
+   "あい"
+  ],
+  "strokes": 12,
+  "meaningsFr": [
+   "intervalle",
+   "espace",
+   "chambre"
+  ],
+  "meaningsEn": [
+   "interval",
+   "space",
+   "intervalle",
+   "espace",
+   "intervalo",
+   "espacio",
+   "habitación",
+   "intervalo",
+   "espaço"
+  ],
+  "examples": [
+   {
+    "word": "時間",
+    "reading": "じかん",
+    "fr": "temps",
+    "en": "time"
+   },
+   {
+    "word": "間",
+    "reading": "あいだ",
+    "fr": "entre; espace; intervalle",
+    "en": "a space"
+   },
+   {
+    "word": "昼間",
+    "reading": "ひるま",
+    "fr": "jour; journée",
+    "en": "daytime; during the day"
+   }
+  ]
+ },
+ {
+  "character": "雨",
+  "level": "N5",
+  "onyomi": [
+   "ウ"
+  ],
+  "kunyomi": [
+   "あめ",
+   "あま-",
+   "-さめ"
+  ],
+  "strokes": 8,
+  "meaningsFr": [
+   "pluie"
+  ],
+  "meaningsEn": [
+   "rain",
+   "pluie",
+   "lluvia",
+   "chuva"
+  ],
+  "examples": [
+   {
+    "word": "雨",
+    "reading": "あめ",
+    "fr": "pluie",
+    "en": "rain"
+   }
+  ]
+ },
+ {
+  "character": "電",
+  "level": "N5",
+  "onyomi": [
+   "デン"
+  ],
+  "kunyomi": [],
+  "strokes": 13,
+  "meaningsFr": [
+   "électricité"
+  ],
+  "meaningsEn": [
+   "electricity",
+   "électricité",
+   "electricidad",
+   "eléctrico",
+   "eletricidade"
+  ],
+  "examples": [
+   {
+    "word": "電気",
+    "reading": "でんき",
+    "fr": "électricité; lumière (électrique)",
+    "en": "electricity; electric light"
+   },
+   {
+    "word": "電車",
+    "reading": "でんしゃ",
+    "fr": "train (électrique)",
+    "en": "electric train"
+   },
+   {
+    "word": "電話",
+    "reading": "でんわ",
+    "fr": "téléphone",
+    "en": "telephone"
+   },
+   {
+    "word": "電灯",
+    "reading": "でんとう",
+    "fr": "lampe; lumière électrique",
+    "en": "electric light"
+   },
+   {
+    "word": "電報",
+    "reading": "でんぽう",
+    "fr": "télégramme",
+    "en": "telegram"
+   }
+  ]
+ },
+ {
+  "character": "食",
+  "level": "N5",
+  "onyomi": [
+   "ショク",
+   "ジキ"
+  ],
+  "kunyomi": [
+   "く.う",
+   "く.らう",
+   "た.べる",
+   "は.む"
+  ],
+  "strokes": 9,
+  "meaningsFr": [
+   "manger",
+   "nourriture"
+  ],
+  "meaningsEn": [
+   "eat",
+   "food",
+   "manger",
+   "nourriture",
+   "alimento",
+   "comida",
+   "eclipse",
+   "comer",
+   "comer",
+   "comida",
+   "alimento"
+  ],
+  "examples": [
+   {
+    "word": "食堂",
+    "reading": "しょくどう",
+    "fr": "cafétéria; restaurant; salle à manger",
+    "en": "dining hall"
+   },
+   {
+    "word": "食べ物",
+    "reading": "たべもの",
+    "fr": "nourriture",
+    "en": "food"
+   },
+   {
+    "word": "食べる",
+    "reading": "たべる",
+    "fr": "manger",
+    "en": "to eat"
+   },
+   {
+    "word": "食事",
+    "reading": "しょくじ",
+    "fr": "repas",
+    "en": "to have a meal"
+   }
+  ]
+ },
+ {
+  "character": "高",
+  "level": "N5",
+  "onyomi": [
+   "コウ"
+  ],
+  "kunyomi": [
+   "たか.い",
+   "たか",
+   "-だか",
+   "たか.まる",
+   "たか.める"
+  ],
+  "strokes": 10,
+  "meaningsFr": [
+   "haut",
+   "élevé",
+   "cher"
+  ],
+  "meaningsEn": [
+   "tall",
+   "high",
+   "expensive",
+   "haut",
+   "élevé",
+   "grand",
+   "cher",
+   "alto",
+   "caro",
+   "sobresaliente",
+   "elevar",
+   "levantar",
+   "Caro",
+   "alto"
+  ],
+  "examples": [
+   {
+    "word": "高い",
+    "reading": "たかい",
+    "fr": "élevé; cher; grand",
+    "en": "tall; expensive"
+   },
+   {
+    "word": "高校",
+    "reading": "こうこう",
+    "fr": "lycée",
+    "en": "high school"
+   }
+  ]
+ }
+]

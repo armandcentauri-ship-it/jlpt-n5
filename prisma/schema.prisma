@@ -1,0 +1,67 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// Kanji (niveaux N5 + N4, source kanjikana.com / KANJIDIC2)
+model Kanji {
+  id         String   @id @default(cuid())
+  character  String   @unique
+  level      String // "N5" | "N4"
+  onyomi     String   @default("") // séparés par "、"
+  kunyomi    String   @default("")
+  strokes    Int      @default(0)
+  meaningsFr String   @default("[]") // JSON array
+  meaningsEn String   @default("[]") // JSON array
+  examples   String   @default("[]") // JSON [{word, reading, fr}]
+  createdAt  DateTime @default(now())
+}
+
+// Vocabulaire (~1050 mots, N5 + complément N4)
+model Word {
+  id         String   @id @default(cuid())
+  wid        Int      @unique // ordre d'origine
+  word       String
+  reading    String
+  romaji     String   @default("")
+  level      String // "N5" | "N4"
+  pos        String   @default("[]") // JSON array
+  meaningFr  String
+  meaningEn  String   @default("")
+  exJa       String   @default("")
+  exKana     String   @default("")
+  exFurigana String   @default("") // notation {kanji|kana}
+  exFr       String   @default("")
+  exDif      String   @default("avance") // "simple" | "avance"
+  createdAt  DateTime @default(now())
+}
+
+// Progression SRS (SM-2 type Anki), profil unique
+model Progress {
+  id             String    @id @default(cuid())
+  itemType       String // "kanji" | "word"
+  itemId         String
+  ease           Float     @default(2.5)
+  intervalDays   Float     @default(0)
+  reps           Int       @default(0)
+  lapses         Int       @default(0)
+  dueAt          DateTime  @default(now())
+  lastReviewedAt DateTime?
+  @@unique([itemType, itemId])
+  @@index([itemType, dueAt])
+}
+
+// Journal des révisions / tentatives d'exercices
+model ReviewLog {
+  id        String   @id @default(cuid())
+  itemType  String // "kanji" | "word"
+  itemId    String
+  mode      String // "flashcard" | "ex_jp_fr" | "ex_fr_jp"
+  grade     Int // 0 = encore, 1 = difficile, 2 = bien, 3 = facile
+  createdAt DateTime @default(now())
+  @@index([createdAt])
+}

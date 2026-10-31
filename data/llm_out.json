@@ -1,0 +1,4851 @@
+{
+ "meanings": {
+  "千": [
+   "mille",
+   "mil",
+   "muchos"
+  ],
+  "午": [
+   "midi",
+   "signe du cheval",
+   "11h-13h"
+  ],
+  "半": [
+   "moitié",
+   "demi",
+   "milieu"
+  ],
+  "南": [
+   "sud"
+  ],
+  "友": [
+   "ami"
+  ],
+  "口": [
+   "bouche",
+   "orifice"
+  ],
+  "古": [
+   "vieux",
+   "antique"
+  ],
+  "右": [
+   "droite"
+  ],
+  "名": [
+   "nom",
+   "célèbre",
+   "réputation"
+  ],
+  "四": [
+   "quatre"
+  ],
+  "国": [
+   "pays"
+  ],
+  "土": [
+   "terre",
+   "sol"
+  ],
+  "外": [
+   "extérieur",
+   "autre"
+  ],
+  "多": [
+   "beaucoup",
+   "nombreux"
+  ],
+  "大": [
+   "grand",
+   "gros"
+  ],
+  "天": [
+   "ciel",
+   "impérial"
+  ],
+  "女": [
+   "femme",
+   "féminin"
+  ],
+  "子": [
+   "enfant",
+   "signe du rat"
+  ],
+  "学": [
+   "étudier",
+   "science"
+  ],
+  "安": [
+   "paisible",
+   "calme"
+  ],
+  "小": [
+   "petit"
+  ],
+  "少": [
+   "peu",
+   "peu nombreux"
+  ],
+  "山": [
+   "montagne"
+  ],
+  "川": [
+   "rivière"
+  ],
+  "左": [
+   "gauche"
+  ],
+  "一": [
+   "un",
+   "radical un (no. 1)"
+  ],
+  "七": [
+   "sept",
+   "7"
+  ],
+  "万": [
+   "dix mille",
+   "myriade",
+   "muchos"
+  ],
+  "三": [
+   "trois",
+   "3"
+  ],
+  "上": [
+   "au-dessus",
+   "haut",
+   "monter"
+  ],
+  "下": [
+   "au-dessous",
+   "descendre",
+   "bas"
+  ],
+  "中": [
+   "dans",
+   "dedans",
+   "milieu"
+  ],
+  "九": [
+   "neuf",
+   "9"
+  ],
+  "二": [
+   "deux",
+   "radical deux (no. 2)",
+   "2"
+  ],
+  "五": [
+   "cinq",
+   "5"
+  ],
+  "人": [
+   "personne",
+   "être humain"
+  ],
+  "今": [
+   "maintenant"
+  ],
+  "休": [
+   "repos",
+   "se coucher",
+   "dormir"
+  ],
+  "会": [
+   "réunion",
+   "rencontrer",
+   "association"
+  ],
+  "何": [
+   "quoi"
+  ],
+  "先": [
+   "avant",
+   "devant",
+   "précédent"
+  ],
+  "入": [
+   "entrer",
+   "insérer"
+  ],
+  "八": [
+   "huit",
+   "radical huit (no. 12)",
+   "8"
+  ],
+  "六": [
+   "six",
+   "6"
+  ],
+  "円": [
+   "cercle",
+   "yen",
+   "rond"
+  ],
+  "出": [
+   "sortir",
+   "quitter",
+   "sortir"
+  ],
+  "分": [
+   "partie",
+   "minute",
+   "comprendre"
+  ],
+  "前": [
+   "devant",
+   "avant"
+  ],
+  "北": [
+   "nord"
+  ],
+  "十": [
+   "dix",
+   "10"
+  ],
+  "年": [
+   "année",
+   "compteur d'années"
+  ],
+  "店": [
+   "magasin",
+   "échoppe"
+  ],
+  "後": [
+   "après",
+   "derrière",
+   "plus tard"
+  ],
+  "手": [
+   "main"
+  ],
+  "新": [
+   "nouveau"
+  ],
+  "日": [
+   "jour",
+   "soleil",
+   "Japon"
+  ],
+  "時": [
+   "temps",
+   "heure"
+  ],
+  "書": [
+   "écrire"
+  ],
+  "月": [
+   "mois",
+   "lune"
+  ],
+  "木": [
+   "arbre",
+   "bois"
+  ],
+  "本": [
+   "livre",
+   "principal",
+   "compteur d'objets allongés"
+  ],
+  "来": [
+   "venir",
+   "devenir"
+  ],
+  "東": [
+   "est"
+  ],
+  "校": [
+   "école",
+   "examen"
+  ],
+  "母": [
+   "mère"
+  ],
+  "毎": [
+   "chaque"
+  ],
+  "気": [
+   "esprit",
+   "air",
+   "humeur"
+  ],
+  "水": [
+   "eau"
+  ],
+  "火": [
+   "feu"
+  ],
+  "父": [
+   "père"
+  ],
+  "生": [
+   "vie",
+   "naître"
+  ],
+  "男": [
+   "homme",
+   "masculin"
+  ],
+  "白": [
+   "blanc"
+  ],
+  "百": [
+   "cent"
+  ],
+  "目": [
+   "œil",
+   "regard",
+   "classe"
+  ],
+  "駅": [
+   "gare",
+   "station"
+  ],
+  "高": [
+   "haut",
+   "élevé",
+   "cher"
+  ],
+  "魚": [
+   "poisson"
+  ],
+  "いい::いい": [
+   "bon"
+  ],
+  "いかが::いかが": [
+   "comment"
+  ],
+  "コート::コート": [
+   "manteau",
+   "court de tennis"
+  ],
+  "どうぞよろしく::どうぜんよろしく": [
+   "je vous en prie",
+   "ravi de faire votre connaissance"
+  ],
+  "どの::どの": [
+   "lequel"
+  ],
+  "はじめまして::はじめまして": [
+   "ravi de faire votre connaissance"
+  ],
+  "私::わたくし": [
+   "je"
+  ],
+  "あ::あ": [
+   "ah"
+  ],
+  "直る::なおる": [
+   "se réparer",
+   "être réparé"
+  ],
+  "どうぜんよろしく": [
+   "je vous en prie",
+   "ravi de faire votre connaissance"
+  ],
+  "社": [
+   "compagnie",
+   "association",
+   "sanctuaire"
+  ],
+  "空": [
+   "vide",
+   "ciel",
+   "vide"
+  ],
+  "立": [
+   "se tenir debout",
+   "ériger",
+   "lever"
+  ],
+  "耳": [
+   "oreille"
+  ],
+  "聞": [
+   "entendre",
+   "écouter",
+   "demander"
+  ],
+  "花": [
+   "fleur"
+  ],
+  "行": [
+   "aller",
+   "effectuer",
+   "file"
+  ],
+  "西": [
+   "ouest"
+  ],
+  "見": [
+   "voir",
+   "regarder",
+   "espérer"
+  ],
+  "言": [
+   "dire",
+   "mot"
+  ],
+  "話": [
+   "parler",
+   "histoire"
+  ],
+  "語": [
+   "langue",
+   "parler",
+   "mot"
+  ],
+  "読": [
+   "lire"
+  ],
+  "買": [
+   "acheter"
+  ],
+  "足": [
+   "pied",
+   "jambe",
+   "suffire"
+  ],
+  "車": [
+   "voiture"
+  ],
+  "週": [
+   "semaine"
+  ],
+  "道": [
+   "voie",
+   "route",
+   "chemin"
+  ],
+  "金": [
+   "or",
+   "or",
+   "argent"
+  ],
+  "長": [
+   "long",
+   "chef",
+   "supérieur"
+  ],
+  "間": [
+   "intervalle",
+   "espace",
+   "chambre"
+  ],
+  "雨": [
+   "pluie"
+  ],
+  "電": [
+   "électricité"
+  ],
+  "食": [
+   "manger",
+   "nourriture"
+  ],
+  "飲": [
+   "boire",
+   "fumer",
+   "prendre"
+  ],
+  "どうぞよろしく::どうぞよろしく": [
+   "ravi de faire votre connaissance",
+   "soyez le bienvenu",
+   "je vous en prie"
+  ]
+ },
+ "sentences": {
+  "0": {
+   "fr": "Vous avez déjà vu M. Smith, n'est-ce pas ?",
+   "dif": "avance"
+  },
+  "1": {
+   "fr": "Le feu est passé au vert.",
+   "dif": "simple"
+  },
+  "2": {
+   "fr": "Tu es encore un novice.",
+   "dif": "avance"
+  },
+  "3": {
+   "fr": "Il ne faut pas écrire en encre rouge.",
+   "dif": "simple"
+  },
+  "4": {
+   "fr": "Elle portait une jupe rouge.",
+   "dif": "simple"
+  },
+  "5": {
+   "fr": "Dehors, il fait de plus en plus clair.",
+   "dif": "simple"
+  },
+  "6": {
+   "fr": "L'automne est tout proche.",
+   "dif": "simple"
+  },
+  "7": {
+   "fr": "La porte s'est ouverte d'un coup de forte poussée.",
+   "dif": "avance"
+  },
+  "8": {
+   "fr": "La porte est ouverte par Jim.",
+   "dif": "avance"
+  },
+  "9": {
+   "fr": "Levez la main gauche.",
+   "dif": "simple"
+  },
+  "10": {
+   "fr": "Le pic de la matinée est maintenant.",
+   "dif": "avance"
+  },
+  "11": {
+   "fr": "Que souhaitez-vous pour le petit-déjeuner ?",
+   "dif": "simple"
+  },
+  "12": {
+   "fr": "Je vais le faire venir ici après-demain.",
+   "dif": "avance"
+  },
+  "13": {
+   "fr": "Mon pied est engourdi à nouveau.",
+   "dif": "avance"
+  },
+  "14": {
+   "fr": "Je serai libre toute la journée demain.",
+   "dif": "simple"
+  },
+  "15": {
+   "fr": "Professeur, j'ai des démangeaisons à cet endroit.",
+   "dif": "avance"
+  },
+  "16": {
+   "fr": "Bill joue souvent seul avec des jouets.",
+   "dif": "simple"
+  },
+  "17": {
+   "fr": "Il fera de plus en plus chaud.",
+   "dif": "simple"
+  },
+  "18": {
+   "fr": "Alice a une fleur dans les cheveux.",
+   "dif": "simple"
+  },
+  "19": {
+   "fr": "Notre professeur aime sa nouvelle voiture.",
+   "dif": "simple"
+  },
+  "20": {
+   "fr": "Les livres ici sont plus faciles que ceux-là.",
+   "dif": "simple"
+  },
+  "21": {
+   "fr": "Cela a une épaisseur de 4 cm.",
+   "dif": "simple"
+  },
+  "22": {
+   "fr": "Pourquoi qu'il fait si chaud ?",
+   "dif": "simple"
+  },
+  "23": {
+   "fr": "Je vais te préparer un café chaud.",
+   "dif": "simple"
+  },
+  "24": {
+   "fr": "Les livres ici sont plus faciles que ceux-là.",
+   "dif": "simple"
+  },
+  "25": {
+   "fr": "Après la pluie vient le beau temps.",
+   "dif": "avance"
+  },
+  "26": {
+   "fr": "Hé, vous deux, ne partez pas.",
+   "dif": "simple"
+  },
+  "27": {
+   "fr": "C'est mon frère. N'est-il pas mignon ?",
+   "dif": "simple"
+  },
+  "28": {
+   "fr": "Le mois dernier, ma sœur a accouché d'un garçon de 6 livres.",
+   "dif": "avance"
+  },
+  "29": {
+   "fr": "Pourquoi ne pas essayer ce vin délicieux ?",
+   "dif": "avance"
+  },
+  "30": {
+   "fr": "Mon frère cherche un appartement.",
+   "dif": "simple"
+  },
+  "31": {
+   "fr": "Je prenais une douche à ce moment-là.",
+   "dif": "avance"
+  },
+  "32": {
+   "fr": "Ce fut un coup de chance ! C'était risqué.",
+   "dif": "avance"
+  },
+  "33": {
+   "fr": "Je suis toujours faible avec Mary.",
+   "dif": "avance"
+  },
+  "34": {
+   "fr": "Je ne lis pas beaucoup ce genre de livres.",
+   "dif": "simple"
+  },
+  "35": {
+   "fr": "Si tu sagesse, je te donnerais des bonbons.",
+   "dif": "avance"
+  },
+  "36": {
+   "fr": "Grâce aux arbres, je n'ai pas été mouillé par la pluie.",
+   "dif": "avance"
+  },
+  "37": {
+   "fr": "Quand cette voiture a-t-elle été lavée ?",
+   "dif": "avance"
+  },
+  "38": {
+   "fr": "Merci d'être venu de si loin.",
+   "dif": "simple"
+  },
+  "39": {
+   "fr": "Si vous avez quelque chose à dire, appelez-moi.",
+   "dif": "simple"
+  },
+  "40": {
+   "fr": "Vous y allez à pied ou en bus ?",
+   "dif": "simple"
+  },
+  "42": {
+   "fr": "Il suffit de lire encore deux ou trois pages.",
+   "dif": "avance"
+  },
+  "44": {
+   "fr": "John a dit : \"Faisons tous une pause !\"",
+   "dif": "simple"
+  },
+  "45": {
+   "fr": "On voit une maison entre les arbres.",
+   "dif": "simple"
+  },
+  "46": {
+   "fr": "Et si vous portiez des lentilles de contact ?",
+   "dif": "avance"
+  },
+  "47": {
+   "fr": "Maman, est-ce que je peux aller nager ?",
+   "dif": "simple"
+  },
+  "48": {
+   "fr": "Quel âge a votre père ?",
+   "dif": "simple"
+  },
+  "49": {
+   "fr": "Combien coûte ce mouchoir ?",
+   "dif": "simple"
+  },
+  "50": {
+   "fr": "Il y a peu d'eau dans l'étang.",
+   "dif": "simple"
+  },
+  "51": {
+   "fr": "Je comptais devenir médecin.",
+   "dif": "avance"
+  },
+  "52": {
+   "fr": "Tu pourrais déplacer la chaise un peu ?",
+   "dif": "simple"
+  },
+  "53": {
+   "fr": "Je suis trop occupé pour ça.",
+   "dif": "avance"
+  },
+  "54": {
+   "fr": "Avez-vous mal ailleurs ?",
+   "dif": "simple"
+  },
+  "55": {
+   "fr": "Huit dollars cinquante, s'il vous plaît.",
+   "dif": "simple"
+  },
+  "56": {
+   "fr": "C'est le meilleur restaurant indien de Tokyo.",
+   "dif": "avance"
+  },
+  "57": {
+   "fr": "J'ai dépensé 500 dollars en une journée.",
+   "dif": "simple"
+  },
+  "58": {
+   "fr": "C'est le plus délicieux des pommes.",
+   "dif": "avance"
+  },
+  "59": {
+   "fr": "Quand comptez-vous voyager ?",
+   "dif": "avance"
+  },
+  "60": {
+   "fr": "Du 5 au 15 janvier, s'il vous plaît.",
+   "dif": "simple"
+  },
+  "61": {
+   "fr": "\"Puis-je vous accompagner ?\" \"Bien sûr.\"",
+   "dif": "simple"
+  },
+  "62": {
+   "fr": "Dans cette boîte, il y a cinq pommes.",
+   "dif": "simple"
+  },
+  "63": {
+   "fr": "Cet enfant est toujours souriant(e).",
+   "dif": "simple"
+  },
+  "64": {
+   "fr": "Ce chien ne mord pas.",
+   "dif": "simple"
+  },
+  "65": {
+   "fr": "Qu'est-ce que l'annonce précédente disait ?",
+   "dif": "simple"
+  },
+  "66": {
+   "fr": "Ce mot a plusieurs significations.",
+   "dif": "simple"
+  },
+  "67": {
+   "fr": "Les garçons ont tendance à mépriser leurs petites sœurs.",
+   "dif": "avance"
+  },
+  "68": {
+   "fr": "Ce temps est vraiment déprimant chaque jour.",
+   "dif": "avance"
+  },
+  "69": {
+   "fr": "Une voiture s'est arrêtée à l'entrée.",
+   "dif": "simple"
+  },
+  "70": {
+   "fr": "Je n'ai pas tout à fait fini de manger.",
+   "dif": "simple"
+  },
+  "71": {
+   "fr": "Pour le moment, je n'ai pas besoin d'argent.",
+   "dif": "simple"
+  },
+  "72": {
+   "fr": "Je l'ai mis dans le tiroir.",
+   "dif": "simple"
+  },
+  "73": {
+   "fr": "Le caméléon peut prendre n'importe quelle couleur.",
+   "dif": "simple"
+  },
+  "74": {
+   "fr": "Même en disant profs, il y en a de toutes sortes.",
+   "dif": "avance"
+  },
+  "75": {
+   "fr": "Il y a une pomme sur la table.",
+   "dif": "simple"
+  },
+  "76": {
+   "fr": "Le directeur est entré après le professeur.",
+   "dif": "simple"
+  },
+  "77": {
+   "fr": "J'aime mon café léger.",
+   "dif": "simple"
+  },
+  "78": {
+   "fr": "Si seulement j'étais bon chanteur...",
+   "dif": "avance"
+  },
+  "79": {
+   "fr": "Qu'est-ce que John a chanté sur scène ?",
+   "dif": "simple"
+  },
+  "80": {
+   "fr": "De glands naissent des chênes.",
+   "dif": "simple"
+  },
+  "81": {
+   "fr": "Je désire de voir la mer à tout prix.",
+   "dif": "avance"
+  },
+  "82": {
+   "fr": "Tom a vendu sa moto à Mary.",
+   "dif": "simple"
+  },
+  "83": {
+   "fr": "Quelle enfant bruyante !",
+   "dif": "avance"
+  },
+  "84": {
+   "fr": "Accrochez votre manteau sur le crochet près de la porte.",
+   "dif": "simple"
+  },
+  "85": {
+   "fr": "Le tableau est accroché au-dessus de la table.",
+   "dif": "simple"
+  },
+  "86": {
+   "fr": "Je voudrais revoir ce film.",
+   "dif": "simple"
+  },
+  "87": {
+   "fr": "Le cinéma était rempli de monde.",
+   "dif": "simple"
+  },
+  "88": {
+   "fr": "On parle anglais en Amérique.",
+   "dif": "simple"
+  },
+  "89": {
+   "fr": "« Faisons du tennis ? » « Oui, allons-y. »",
+   "dif": "simple"
+  },
+  "90": {
+   "fr": "Gare Grand Central, s'il vous plaît.",
+   "dif": "simple"
+  },
+  "91": {
+   "fr": "Où est l'ascenseur ?",
+   "dif": "simple"
+  },
+  "92": {
+   "fr": "Écrivez votre nom avec le crayon.",
+   "dif": "simple"
+  },
+  "93": {
+   "fr": "Merci pour ce délicieux repas.",
+   "dif": "simple"
+  },
+  "94": {
+   "fr": "Dans cette école, il y a plus de filles que de garçons.",
+   "dif": "avance"
+  },
+  "95": {
+   "fr": "Avez-vous une taille plus grande ?",
+   "dif": "simple"
+  },
+  "96": {
+   "fr": "Ce sont de très grosses pommes.",
+   "dif": "simple"
+  },
+  "97": {
+   "fr": "Il y avait beaucoup de monde.",
+   "dif": "simple"
+  },
+  "98": {
+   "fr": "Tu ne dois pas répondre à ta mère.",
+   "dif": "simple"
+  },
+  "99": {
+   "fr": "Vous ne voulez pas un peu de gâteau ?",
+   "dif": "avance"
+  },
+  "100": {
+   "fr": "Comment avez-vous obtenu cet argent ?",
+   "dif": "avance"
+  },
+  "101": {
+   "fr": "Votre enfant est encore réveillé ?",
+   "dif": "simple"
+  },
+  "102": {
+   "fr": "Mets cela sur la table.",
+   "dif": "simple"
+  },
+  "103": {
+   "fr": "Il semble que sa femme soit partie quelque part.",
+   "dif": "avance"
+  },
+  "104": {
+   "fr": "Mike a arrêté de boire ?",
+   "dif": "avance"
+  },
+  "105": {
+   "fr": "Avez-vous une assiette creuse pour la soupe ?",
+   "dif": "simple"
+  },
+  "106": {
+   "fr": "Le grand-père parle très lentement.",
+   "dif": "simple"
+  },
+  "107": {
+   "fr": "Pourriez-vous me donner votre date de naissance ?",
+   "dif": "simple"
+  },
+  "108": {
+   "fr": "Pourriez-vous appuyer sur ce bouton ?",
+   "dif": "simple"
+  },
+  "109": {
+   "fr": "Mieux vaut tard que jamais.",
+   "dif": "avance"
+  },
+  "110": {
+   "fr": "Faisons du thé à 15h.",
+   "dif": "simple"
+  },
+  "111": {
+   "fr": "Où sont les toilettes ?",
+   "dif": "simple"
+  },
+  "112": {
+   "fr": "J'ai un message de votre père pour vous.",
+   "dif": "simple"
+  },
+  "113": {
+   "fr": "Laisse-le tranquille.",
+   "dif": "simple"
+  },
+  "114": {
+   "fr": "Tu ne dois rien avoir à voir avec cet homme.",
+   "dif": "avance"
+  },
+  "115": {
+   "fr": "Regarde ce beau garçon.",
+   "dif": "simple"
+  },
+  "116": {
+   "fr": "La veille d'hier, il a peut-être manqué l'école.",
+   "dif": "avance"
+  },
+  "117": {
+   "fr": "Elle est beaucoup mieux lotie que l'année d'avant.",
+   "dif": "avance"
+  },
+  "118": {
+   "fr": "Seuls les adultes peuvent voir ce film.",
+   "dif": "simple"
+  },
+  "119": {
+   "fr": "Mange quelque chose avant de sortir.",
+   "dif": "simple"
+  },
+  "120": {
+   "fr": "Cet arbre est à peu près de la même hauteur que celui-là.",
+   "dif": "avance"
+  },
+  "121": {
+   "fr": "Je suis plus âgé que ton frère.",
+   "dif": "simple"
+  },
+  "122": {
+   "fr": "Que fait ta grande sœur maintenant ?",
+   "dif": "simple"
+  },
+  "123": {
+   "fr": "Je voudrais en classe affaire.",
+   "dif": "avance"
+  },
+  "124": {
+   "fr": "La grand-mère de Tom semble en bonne santé.",
+   "dif": "simple"
+  },
+  "125": {
+   "fr": "Quelle délicieuse repas quand on est allé voir notre tante !",
+   "dif": "avance"
+  },
+  "126": {
+   "fr": "Bonjour. Je peux servir le repas ?",
+   "dif": "simple"
+  },
+  "127": {
+   "fr": "Je prends un bain presque tous les jours.",
+   "dif": "simple"
+  },
+  "128": {
+   "fr": "Il a apporté son déjeuner aujourd'hui.",
+   "dif": "simple"
+  },
+  "129": {
+   "fr": "Le japonais est difficile à apprendre pour les étrangers.",
+   "dif": "avance"
+  },
+  "130": {
+   "fr": "Excusez-moi, officier. Où sommes-nous ?",
+   "dif": "simple"
+  },
+  "131": {
+   "fr": "Tom est dix livres plus lourd que Jack.",
+   "dif": "avance"
+  },
+  "132": {
+   "fr": "Le patinage était très amusant.",
+   "dif": "simple"
+  },
+  "133": {
+   "fr": "Tom saura bientôt nager.",
+   "dif": "simple"
+  },
+  "134": {
+   "fr": "Descendons ici.",
+   "dif": "simple"
+  },
+  "135": {
+   "fr": "Le concert s'est terminé à dix heures.",
+   "dif": "simple"
+  },
+  "136": {
+   "fr": "Écoutez cette musique et détendez-vous.",
+   "dif": "simple"
+  },
+  "137": {
+   "fr": "Une personne est soit un homme, soit une femme.",
+   "dif": "avance"
+  },
+  "138": {
+   "fr": "Presque toutes les filles sont gentilles.",
+   "dif": "simple"
+  },
+  "139": {
+   "fr": "Avez-vous des livres étrangers ?",
+   "dif": "simple"
+  },
+  "140": {
+   "fr": "Cet étranger parle japonais assez bien.",
+   "dif": "avance"
+  },
+  "141": {
+   "fr": "Bill a rejoint cette entreprise il y a trois ans.",
+   "dif": "simple"
+  },
+  "142": {
+   "fr": "Vous ne devez pas monter cet escalier.",
+   "dif": "simple"
+  },
+  "143": {
+   "fr": "J'achète tous les deux jours.",
+   "dif": "simple"
+  },
+  "144": {
+   "fr": "C'est à vous de décider si vous l'achetez ou non.",
+   "dif": "avance"
+  },
+  "145": {
+   "fr": "Quand devrais-je rendre la voiture ?",
+   "dif": "avance"
+  },
+  "146": {
+   "fr": "\"Rentrons.\" \"On s'arrête chez McDonald's ?\"",
+   "dif": "avance"
+  },
+  "147": {
+   "fr": "Comment puis-je démarrer le moteur ?",
+   "dif": "simple"
+  },
+  "148": {
+   "fr": "J'ai perdu mes clés de voiture.",
+   "dif": "simple"
+  },
+  "149": {
+   "fr": "Je dois le remplir tout de suite ?",
+   "dif": "simple"
+  },
+  "150": {
+   "fr": "La moitié des élèves étaient absents.",
+   "dif": "simple"
+  },
+  "151": {
+   "fr": "Je peux appeler avec dix yens ?",
+   "dif": "simple"
+  },
+  "152": {
+   "fr": "J'ai oublié mon parapluie dans le taxi.",
+   "dif": "simple"
+  },
+  "153": {
+   "fr": "Pourriez-vous me prêter une agrafeuse ?",
+   "dif": "avance"
+  },
+  "154": {
+   "fr": "Les rideaux ont dansé dans le vent.",
+   "dif": "avance"
+  },
+  "155": {
+   "fr": "Ce doit juste être un rhume.",
+   "dif": "avance"
+  },
+  "156": {
+   "fr": "Votre famille doit être très gentille.",
+   "dif": "avance"
+  },
+  "157": {
+   "fr": "C'est la personne avec qui vous devriez parler.",
+   "dif": "avance"
+  },
+  "158": {
+   "fr": "Cette école a beaucoup d'élèves.",
+   "dif": "simple"
+  },
+  "159": {
+   "fr": "Il y a une tasse sur la table.",
+   "dif": "simple"
+  },
+  "160": {
+   "fr": "Mangez-vous à la maison ou au restaurant ?",
+   "dif": "simple"
+  },
+  "161": {
+   "fr": "On aimerait bien avoir une table dans le coin.",
+   "dif": "avance"
+  },
+  "162": {
+   "fr": "C'est le sac de Jane.",
+   "dif": "simple"
+  },
+  "163": {
+   "fr": "Mets de l'eau dans le vase.",
+   "dif": "simple"
+  },
+  "164": {
+   "fr": "Le papier est fabriqué à partir du bois.",
+   "dif": "avance"
+  },
+  "165": {
+   "fr": "Mon oncle m'a donné un appareil photo.",
+   "dif": "simple"
+  },
+  "166": {
+   "fr": "Le Parlement se réunira mardi.",
+   "dif": "avance"
+  },
+  "167": {
+   "fr": "Ce curry est trop épicé pour être mangeable.",
+   "dif": "avance"
+  },
+  "168": {
+   "fr": "Prenez surtout soin de votre santé.",
+   "dif": "avance"
+  },
+  "169": {
+   "fr": "Puis-je emprunter ce livre?",
+   "dif": "simple"
+  },
+  "170": {
+   "fr": "Mangeons quelque chose de léger.",
+   "dif": "simple"
+  },
+  "171": {
+   "fr": "Le curry de ce restaurant est bon.",
+   "dif": "simple"
+  },
+  "172": {
+   "fr": "Où devons-nous accrocher ce calendrier?",
+   "dif": "avance"
+  },
+  "173": {
+   "fr": "Cette rivière n'était pas très propre.",
+   "dif": "simple"
+  },
+  "174": {
+   "fr": "Lucy est une jolie petite fille.",
+   "dif": "simple"
+  },
+  "175": {
+   "fr": "Que veut dire ce kanji?",
+   "dif": "simple"
+  },
+  "176": {
+   "fr": "L'arbre était chargé de fruits.",
+   "dif": "avance"
+  },
+  "177": {
+   "fr": "Les feuilles des arbres deviennent jaunes en automne.",
+   "dif": "simple"
+  },
+  "178": {
+   "fr": "Je prendrai celui qui est jaune.",
+   "dif": "simple"
+  },
+  "179": {
+   "fr": "Veuillez veiller à ce que le feu ne s'éteigne pas.",
+   "dif": "avance"
+  },
+  "180": {
+   "fr": "Vous devrez demander au kiosque à journaux.",
+   "dif": "avance"
+  },
+  "181": {
+   "fr": "Cette ville se trouve juste au nord de Londres.",
+   "dif": "avance"
+  },
+  "182": {
+   "fr": "Laquelle est votre guitare ?",
+   "dif": "simple"
+  },
+  "183": {
+   "fr": "Jack m'a fait une mauvaise farce.",
+   "dif": "avance"
+  },
+  "184": {
+   "fr": "Nous avons déjeuné dans un café.",
+   "dif": "simple"
+  },
+  "185": {
+   "fr": "Veuillez signer au-dessus du timbre.",
+   "dif": "avance"
+  },
+  "186": {
+   "fr": "Ce billet permet l'entrée de deux personnes.",
+   "dif": "avance"
+  },
+  "187": {
+   "fr": "Hier, le professeur a dit qu'il nous ferait un test aujourd'hui.",
+   "dif": "avance"
+  },
+  "188": {
+   "fr": "Il a dit : « Il est neuf heures ».",
+   "dif": "avance"
+  },
+  "189": {
+   "fr": "Les Japonais mangent plus de bœuf que les Anglais.",
+   "dif": "simple"
+  },
+  "190": {
+   "fr": "Le lait est transformé en beurre et en fromage.",
+   "dif": "avance"
+  },
+  "191": {
+   "fr": "Que souhaitez-vous faire aujourd'hui ?",
+   "dif": "simple"
+  },
+  "192": {
+   "fr": "Pouvons-nous utiliser la salle de langues ?",
+   "dif": "simple"
+  },
+  "193": {
+   "fr": "Combien de frères et sœurs avez-vous ?",
+   "dif": "simple"
+  },
+  "194": {
+   "fr": "Bill est venu me voir l'automne dernier.",
+   "dif": "simple"
+  },
+  "195": {
+   "fr": "Jim a tendance à aller trop loin.",
+   "dif": "avance"
+  },
+  "196": {
+   "fr": "Veuillez bien mélanger les cartes.",
+   "dif": "avance"
+  },
+  "197": {
+   "fr": "Essayez ce pull.",
+   "dif": "simple"
+  },
+  "198": {
+   "fr": "Ensuite, nettoie-le bien.",
+   "dif": "avance"
+  },
+  "199": {
+   "fr": "Helen ne pèse pas plus de 40 kilos.",
+   "dif": "avance"
+  },
+  "200": {
+   "fr": "Combien d'avez-vous d'argent en banque ?",
+   "dif": "avance"
+  },
+  "201": {
+   "fr": "Que comptez-vous faire vendredi ?",
+   "dif": "simple"
+  },
+  "202": {
+   "fr": "Prenez ce médicament toutes les quatre heures.",
+   "dif": "simple"
+  },
+  "203": {
+   "fr": "Veuillez demander au kiosque à journaux.",
+   "dif": "simple"
+  },
+  "204": {
+   "fr": "Mon père ne mange pas beaucoup de fruits.",
+   "dif": "simple"
+  },
+  "205": {
+   "fr": "Ne parlez pas la bouche pleine.",
+   "dif": "simple"
+  },
+  "206": {
+   "fr": "Brossez la poussière de vos chaussures.",
+   "dif": "simple"
+  },
+  "207": {
+   "fr": "Ces chaussettes ne sont pas assorties.",
+   "dif": "simple"
+  },
+  "208": {
+   "fr": "Quelle langue parlez-vous dans votre pays ?",
+   "dif": "simple"
+  },
+  "209": {
+   "fr": "C'est un jour nuageux.",
+   "dif": "simple"
+  },
+  "210": {
+   "fr": "Aujourd'hui il y a des nuages.",
+   "dif": "simple"
+  },
+  "211": {
+   "fr": "Je me suis rendu compte qu'il faisait déjà sombre autour de moi.",
+   "dif": "avance"
+  },
+  "212": {
+   "fr": "C'est le plus idiot de la classe.",
+   "dif": "avance"
+  },
+  "213": {
+   "fr": "Puis-je avoir le programme ?",
+   "dif": "simple"
+  },
+  "214": {
+   "fr": "Je serai là avant 10 heures.",
+   "dif": "simple"
+  },
+  "215": {
+   "fr": "Regardez le garçon près de la voiture.",
+   "dif": "simple"
+  },
+  "216": {
+   "fr": "Deux noirs ne font pas un blanc.",
+   "dif": "avance"
+  },
+  "217": {
+   "fr": "Nancy est un peu plus brune qu'Hélène.",
+   "dif": "avance"
+  },
+  "218": {
+   "fr": "Les deux policiers étaient aussi épuisés.",
+   "dif": "avance"
+  },
+  "219": {
+   "fr": "Il faisait très froid ce matin.",
+   "dif": "simple"
+  },
+  "220": {
+   "fr": "Éteignez la lumière avant de vous coucher.",
+   "dif": "simple"
+  },
+  "221": {
+   "fr": "Non, merci. J'en ai assez.",
+   "dif": "simple"
+  },
+  "222": {
+   "fr": "John était marié à Jane.",
+   "dif": "avance"
+  },
+  "223": {
+   "fr": "Je serai ici d'ici lundi.",
+   "dif": "avance"
+  },
+  "224": {
+   "fr": "Comment fonctionne la serrure de la porte d'entrée?",
+   "dif": "avance"
+  },
+  "225": {
+   "fr": "Bonjour Roger. Je vais très bien !",
+   "dif": "simple"
+  },
+  "226": {
+   "fr": "Il est 5 heures quelque part en ce moment.",
+   "dif": "avance"
+  },
+  "227": {
+   "fr": "Ce parc est ouvert à tout le monde.",
+   "dif": "simple"
+  },
+  "228": {
+   "fr": "Qu'est-ce qui s'est passé à ce carrefour?",
+   "dif": "avance"
+  },
+  "229": {
+   "fr": "Vous désirez du thé ou du café?",
+   "dif": "avance"
+  },
+  "230": {
+   "fr": "Demandez au poste de police de l'autre côté.",
+   "dif": "avance"
+  },
+  "231": {
+   "fr": "J'entends ta voix, ça me fait plaisir.",
+   "dif": "avance"
+  },
+  "232": {
+   "fr": "Je trouve ce manteau super. Est-ce que je peux l'essayer?",
+   "dif": "avance"
+  },
+  "233": {
+   "fr": "Ce café sent bon.",
+   "dif": "simple"
+  },
+  "235": {
+   "fr": "Quand devrais-je vous appeler cet après-midi?",
+   "dif": "avance"
+  },
+  "236": {
+   "fr": "Le concours de discours a eu lieu le 9 novembre.",
+   "dif": "avance"
+  },
+  "237": {
+   "fr": "Notreécole a neuf classes.",
+   "dif": "simple"
+  },
+  "238": {
+   "fr": "Le train part d'ici à 9 heures du matin.",
+   "dif": "simple"
+  },
+  "239": {
+   "fr": "« Non, je n'en ai pas », a réponu M. Jordan.",
+   "dif": "avance"
+  },
+  "240": {
+   "fr": "Merci pour le café.",
+   "dif": "simple"
+  },
+  "241": {
+   "fr": "Pour l'instant, c'est celui-ci que nous avons.",
+   "dif": "avance"
+  },
+  "242": {
+   "fr": "Viens ici, et ne traîne pas !",
+   "dif": "avance"
+  },
+  "244": {
+   "fr": "Que cette année vous soit aussi bonne.",
+   "dif": "simple"
+  },
+  "245": {
+   "fr": "Je n'ai pas trouvé mes mots.",
+   "dif": "simple"
+  },
+  "246": {
+   "fr": "Combien d'enfants avez-vous?",
+   "dif": "simple"
+  },
+  "247": {
+   "fr": "J'ai rempli ce verre de lait.",
+   "dif": "simple"
+  },
+  "248": {
+   "fr": "Préférez-vous le riz ou le pain?",
+   "dif": "simple"
+  },
+  "249": {
+   "fr": "Mettez un post-it sur les pages que vous voulez copier.",
+   "dif": "simple"
+  },
+  "250": {
+   "fr": "Je suis vraiment pressé(e) par le temps.",
+   "dif": "simple"
+  },
+  "251": {
+   "fr": "Excusez-moi de vous interrompre.",
+   "dif": "simple"
+  },
+  "252": {
+   "fr": "Voici mon frère. Il est mignon, n'est-ce pas?",
+   "dif": "simple"
+  },
+  "253": {
+   "fr": "Les ventes de ce mois ne sont pas bonnes.",
+   "dif": "simple"
+  },
+  "254": {
+   "fr": "Où étiez-vous cette semaine?",
+   "dif": "simple"
+  },
+  "255": {
+   "fr": "À quoi bon lire de tels livres?",
+   "dif": "avance"
+  },
+  "256": {
+   "fr": "Salut Georges, comment ça va?",
+   "dif": "simple"
+  },
+  "257": {
+   "fr": "Il y aura une ce soir, je me demande.",
+   "dif": "avance"
+  },
+  "258": {
+   "fr": "Bonsoir à tous les habitants de Chicago.",
+   "dif": "simple"
+  },
+  "259": {
+   "fr": "Eh bien, mettons fin à la fête.",
+   "dif": "avance"
+  },
+  "260": {
+   "fr": "Il s'est soudain rendu compte que son portefeuille manquait.",
+   "dif": "avance"
+  },
+  "261": {
+   "fr": "Les japonais mangent beaucoup de poisson?",
+   "dif": "simple"
+  },
+  "262": {
+   "fr": "Je voudrais entendre la suite de l'histoire.",
+   "dif": "simple"
+  },
+  "263": {
+   "fr": "Les tulips ont fleuri magnifiquement.",
+   "dif": "simple"
+  },
+  "264": {
+   "fr": "Tu as déjà fini ta rédaction ?",
+   "dif": "simple"
+  },
+  "265": {
+   "fr": "Il a continué à marcher sous la pluie sans même ouvrir son parapluie.",
+   "dif": "avance"
+  },
+  "266": {
+   "fr": "Où puis-acheter ce magazine ?",
+   "dif": "simple"
+  },
+  "267": {
+   "fr": "Il n'y avait pas beaucoup de sucre dans la théière.",
+   "dif": "simple"
+  },
+  "268": {
+   "fr": "Il fait froid, tu devrais porter un manteau.",
+   "dif": "simple"
+  },
+  "269": {
+   "fr": "Alors à ce soir, au revoir !",
+   "dif": "simple"
+  },
+  "270": {
+   "fr": "Mon grand-père prévoit de prendre sa retraite dans deux ans.",
+   "dif": "avance"
+  },
+  "271": {
+   "fr": "Il y a quelques inconvénients.",
+   "dif": "simple"
+  },
+  "272": {
+   "fr": "Puis-je sortir me promener ?",
+   "dif": "simple"
+  },
+  "273": {
+   "fr": "En train, cela ne fait que quatre minutes d'ici.",
+   "dif": "avance"
+  },
+  "274": {
+   "fr": "Cette soupe manque un peu de sel.",
+   "dif": "avance"
+  },
+  "275": {
+   "fr": "Cependant, mets ce livre de côté pour l'instant.",
+   "dif": "avance"
+  },
+  "276": {
+   "fr": "On peut toujours trouver du temps pour lire.",
+   "dif": "simple"
+  },
+  "277": {
+   "fr": "Il s'est fait virer pour avoir fainéanté au travail.",
+   "dif": "avance"
+  },
+  "278": {
+   "fr": "On le trouve dans n'importe quel dictionnaire.",
+   "dif": "simple"
+  },
+  "279": {
+   "fr": "Le capitaine a ordonné le silence.",
+   "dif": "avance"
+  },
+  "280": {
+   "fr": "Cookie est sous la table.",
+   "dif": "simple"
+  },
+  "281": {
+   "fr": "Quoi qu'il en soit, il faut que j'y sois avant sept heures.",
+   "dif": "avance"
+  },
+  "282": {
+   "fr": "Tu peux poser une question à ce professeur.",
+   "dif": "simple"
+  },
+  "283": {
+   "fr": "Mon vélo a une crevaison.",
+   "dif": "simple"
+  },
+  "284": {
+   "fr": "N'est-ce pas qu'il a été renversé par une voiture?",
+   "dif": "avance"
+  },
+  "285": {
+   "fr": "Le garçon a été considéré comme mort.",
+   "dif": "avance"
+  },
+  "286": {
+   "fr": "Monsieur Johnson est, pour ainsi dire, un dictionnaire vivant.",
+   "dif": "avance"
+  },
+  "287": {
+   "fr": "Vous devez le faire vous-même.",
+   "dif": "simple"
+  },
+  "288": {
+   "fr": "Malheureusement, le magasin était fermé.",
+   "dif": "simple"
+  },
+  "289": {
+   "fr": "Attachez toujours votre ceinture de sécurité.",
+   "dif": "simple"
+  },
+  "290": {
+   "fr": "Pourriez-vous fermer la porte, s'il vous plaît?",
+   "dif": "simple"
+  },
+  "291": {
+   "fr": "Alors, pourrais-je avoir la clé?",
+   "dif": "simple"
+  },
+  "292": {
+   "fr": "Que c'est une belle photo!",
+   "dif": "simple"
+  },
+  "293": {
+   "fr": "Veuillez repasser la chemise.",
+   "dif": "simple"
+  },
+  "294": {
+   "fr": "L'eau du douche ne sort pas.",
+   "dif": "simple"
+  },
+  "295": {
+   "fr": "La fête s'est terminée à dix heures.",
+   "dif": "simple"
+  },
+  "296": {
+   "fr": "C'était la fin du cours.",
+   "dif": "simple"
+  },
+  "297": {
+   "fr": "Tu as déjà fini tes devoirs?",
+   "dif": "simple"
+  },
+  "298": {
+   "fr": "Tu joues bien au basket?",
+   "dif": "simple"
+  },
+  "299": {
+   "fr": "Cette corde est très solide.",
+   "dif": "simple"
+  },
+  "300": {
+   "fr": "La société produit de la sauce soja et d'autres produits alimentaires.",
+   "dif": "avance"
+  },
+  "301": {
+   "fr": "La cafétéria était en libre-service.",
+   "dif": "simple"
+  },
+  "302": {
+   "fr": "Je ne sais pas et je m'en fiche.",
+   "dif": "simple"
+  },
+  "303": {
+   "fr": "Deux noirs ne font pas un blanc.",
+   "dif": "avance"
+  },
+  "304": {
+   "fr": "Celui avec une ceinture blanche, ce serait bien.",
+   "dif": "simple"
+  },
+  "305": {
+   "fr": "John était mentionné dans le journal.",
+   "dif": "simple"
+  },
+  "306": {
+   "fr": "Mercredi prochain, ça ira.",
+   "dif": "simple"
+  },
+  "307": {
+   "fr": "Ce papier n'absorbe pas l'encre.",
+   "dif": "simple"
+  },
+  "308": {
+   "fr": "Pourriez-vous me montrer cette jupe ?",
+   "dif": "simple"
+  },
+  "309": {
+   "fr": "J'aime ça chez vous.",
+   "dif": "simple"
+  },
+  "310": {
+   "fr": "C'est bien en vue.",
+   "dif": "simple"
+  },
+  "311": {
+   "fr": "J'ai de moins en moins de temps pour lire.",
+   "dif": "avance"
+  },
+  "312": {
+   "fr": "Est-ce que je dois le remplir tout de suite ?",
+   "dif": "simple"
+  },
+  "313": {
+   "fr": "Est-ce que je peux regarder la télé un moment ?",
+   "dif": "simple"
+  },
+  "314": {
+   "fr": "Il fait de plus en plus frais.",
+   "dif": "avance"
+  },
+  "315": {
+   "fr": "J'ai offert dix dollars pour l'ancien poêle.",
+   "dif": "avance"
+  },
+  "316": {
+   "fr": "On pourrait avoir une cuillère ?",
+   "dif": "simple"
+  },
+  "317": {
+   "fr": "Billy est doué pour les sports.",
+   "dif": "simple"
+  },
+  "318": {
+   "fr": "Peux-tu resserrer un peu ce pantalon ?",
+   "dif": "simple"
+  },
+  "319": {
+   "fr": "Excusez-moi, ce siège est-il libre ?",
+   "dif": "simple"
+  },
+  "320": {
+   "fr": "Pourquoi vivait-il aux États-Unis ?",
+   "dif": "avance"
+  },
+  "321": {
+   "fr": "Veuillez mettre des chaussons.",
+   "dif": "simple"
+  },
+  "322": {
+   "fr": "Je ne devais pas me déconnecter.",
+   "dif": "avance"
+  },
+  "323": {
+   "fr": "Mon père et ma mère étaient assis sous un arbre.",
+   "dif": "simple"
+  },
+  "324": {
+   "fr": "Tom est à peu près de la même taille que Jack.",
+   "dif": "simple"
+  },
+  "325": {
+   "fr": "Cette école a beaucoup d'élèves.",
+   "dif": "simple"
+  },
+  "326": {
+   "fr": "Je n'aime pas ce pull.",
+   "dif": "simple"
+  },
+  "327": {
+   "fr": "Ne me touche pas avec les mains pleines de savon.",
+   "dif": "avance"
+  },
+  "328": {
+   "fr": "J'ai acheté un nouveau costume.",
+   "dif": "simple"
+  },
+  "329": {
+   "fr": "Les Pays-Bas est un petit pays.",
+   "dif": "simple"
+  },
+  "330": {
+   "fr": "Nous avons dû commencer notre entreprise à zéro.",
+   "dif": "avance"
+  },
+  "331": {
+   "fr": "Deux mille personnes peuvent entrer dans cette salle.",
+   "dif": "avance"
+  },
+  "332": {
+   "fr": "Le mois dernier, il a presque pas plu.",
+   "dif": "avance"
+  },
+  "333": {
+   "fr": "C'est la personne qui était ici la semaine dernière.",
+   "dif": "avance"
+  },
+  "334": {
+   "fr": "Le directeur est entré après le professeur.",
+   "dif": "avance"
+  },
+  "335": {
+   "fr": "Je peux utiliser le linge n'importe quand ?",
+   "dif": "avance"
+  },
+  "336": {
+   "fr": "Mets tout dessus, s'il te plaît.",
+   "dif": "avance"
+  },
+  "337": {
+   "fr": "Mon père nettoie le garage.",
+   "dif": "simple"
+  },
+  "338": {
+   "fr": "Je serai très heureux si vous le faites.",
+   "dif": "avance"
+  },
+  "339": {
+   "fr": "Il faut deux heures pour aller là-bus en bus.",
+   "dif": "avance"
+  },
+  "340": {
+   "fr": "Quelle est la différence entre celui-ci et celui-là ?",
+   "dif": "avance"
+  },
+  "341": {
+   "fr": "Quel temps fait-il par là ?",
+   "dif": "simple"
+  },
+  "342": {
+   "fr": "Tu peux le sortir dehors ?",
+   "dif": "avance"
+  },
+  "344": {
+   "fr": "Le garage est à côté de la maison.",
+   "dif": "simple"
+  },
+  "345": {
+   "fr": "Le ciel était entièrement couvert de brume.",
+   "dif": "avance"
+  },
+  "346": {
+   "fr": "J'ai été surpris en le voyant.",
+   "dif": "avance"
+  },
+  "347": {
+   "fr": "Ensuite, nettoie-le soigneusement.",
+   "dif": "simple"
+  },
+  "348": {
+   "fr": "Donc, ça veut dire que vous ne venez pas ?",
+   "dif": "avance"
+  },
+  "349": {
+   "fr": "Qu'est-ce que vous comptez faire à l'université ?",
+   "dif": "avance"
+  },
+  "350": {
+   "fr": "Où se trouve l'ambassade du Japon ?",
+   "dif": "simple"
+  },
+  "351": {
+   "fr": "Non, ça va.",
+   "dif": "simple"
+  },
+  "352": {
+   "fr": "Roger adore les fêtes.",
+   "dif": "simple"
+  },
+  "353": {
+   "fr": "Lire des livres est important.",
+   "dif": "simple"
+  },
+  "354": {
+   "fr": "Lucy doit être dans la cuisine maintenant.",
+   "dif": "avance"
+  },
+  "355": {
+   "fr": "C'était un choc terrible.",
+   "dif": "simple"
+  },
+  "356": {
+   "fr": "Des deux, lequel est le plus cher ?",
+   "dif": "avance"
+  },
+  "357": {
+   "fr": "Il y a encore beaucoup de choses à faire.",
+   "dif": "avance"
+  },
+  "358": {
+   "fr": "Le taxi a viré à gauche brusquement.",
+   "dif": "avance"
+  },
+  "359": {
+   "fr": "On sert de bons plats ici.",
+   "dif": "avance"
+  },
+  "360": {
+   "fr": "Ceux qui étaient debout étaient tous des hommes.",
+   "dif": "avance"
+  },
+  "361": {
+   "fr": "Disposez les tables en une seule rangée.",
+   "dif": "avance"
+  },
+  "362": {
+   "fr": "Les bâtiments paraissent très petits.",
+   "dif": "simple"
+  },
+  "363": {
+   "fr": "J'ai bien aimé être avec vous.",
+   "dif": "simple"
+  },
+  "364": {
+   "fr": "Puis-je vous demander une faveur ?",
+   "dif": "avance"
+  },
+  "365": {
+   "fr": "L'homme a allumé une cigarette avec un briquet.",
+   "dif": "simple"
+  },
+  "366": {
+   "fr": "Tu sais probablement tout à ce sujet.",
+   "dif": "avance"
+  },
+  "367": {
+   "fr": "Toute la nourriture était partie.",
+   "dif": "simple"
+  },
+  "368": {
+   "fr": "C'est justement ce que j'avais envie de manger.",
+   "dif": "avance"
+  },
+  "369": {
+   "fr": "Rangez les œufs par douzaines.",
+   "dif": "simple"
+  },
+  "370": {
+   "fr": "On ne sait pas qui a fait ça.",
+   "dif": "avance"
+  },
+  "371": {
+   "fr": "Un anniversaire, c'est le jour où une personne est née.",
+   "dif": "simple"
+  },
+  "372": {
+   "fr": "Les jours deviennent de plus en plus longs.",
+   "dif": "simple"
+  },
+  "373": {
+   "fr": "Avez-vous une taille plus petite ?",
+   "dif": "simple"
+  },
+  "374": {
+   "fr": "Ne t'inquiète pas pour des riens.",
+   "dif": "avance"
+  },
+  "375": {
+   "fr": "Noël approche à grands pas.",
+   "dif": "simple"
+  },
+  "376": {
+   "fr": "Quelle est la différence entre un lion et un léopard ?",
+   "dif": "simple"
+  },
+  "377": {
+   "fr": "Il est presque sept heures. Il faut aller à l'école.",
+   "dif": "avance"
+  },
+  "378": {
+   "fr": "Je veux y aller en métro.",
+   "dif": "simple"
+  },
+  "379": {
+   "fr": "Regarde cette grande carte des États-Unis.",
+   "dif": "simple"
+  },
+  "380": {
+   "fr": "Le chien est brun, petit et maigre.",
+   "dif": "simple"
+  },
+  "381": {
+   "fr": "Quelle belle tasse !",
+   "dif": "avance"
+  },
+  "382": {
+   "fr": "C'est justement ce que j'avais envie de manger.",
+   "dif": "avance"
+  },
+  "383": {
+   "fr": "Hé, toi là-bas !",
+   "dif": "simple"
+  },
+  "384": {
+   "fr": "Puis-je utiliser le flash ?",
+   "dif": "simple"
+  },
+  "385": {
+   "fr": "Vous avez l'air très fatigué.",
+   "dif": "simple"
+  },
+  "386": {
+   "fr": "Quand devrais-je revenir ?",
+   "dif": "simple"
+  },
+  "387": {
+   "fr": "J'appellerai dès que j'arriverai à Chicago.",
+   "dif": "simple"
+  },
+  "388": {
+   "fr": "Il n'y a aucun stylo sur le bureau.",
+   "dif": "simple"
+  },
+  "389": {
+   "fr": "On ne fait pas d'omelette sans casser des œufs.",
+   "dif": "avance"
+  },
+  "390": {
+   "fr": "Allume la télévision, s'il te plaît.",
+   "dif": "simple"
+  },
+  "391": {
+   "fr": "Mon père travaille dans une banque.",
+   "dif": "simple"
+  },
+  "392": {
+   "fr": "Cette vidéo est ennuyeuse.",
+   "dif": "simple"
+  },
+  "393": {
+   "fr": "Ma main devient trop froide.",
+   "dif": "avance"
+  },
+  "394": {
+   "fr": "Le tigre ou le lion, lequel est le plus fort ?",
+   "dif": "simple"
+  },
+  "395": {
+   "fr": "Voici une poêle sans poignées.",
+   "dif": "simple"
+  },
+  "396": {
+   "fr": "As-tu enregistré ce concert ?",
+   "dif": "simple"
+  },
+  "397": {
+   "fr": "Je n'ai pas demandé une table ici.",
+   "dif": "simple"
+  },
+  "398": {
+   "fr": "Ce magnétophone n'est pas neuf.",
+   "dif": "simple"
+  },
+  "399": {
+   "fr": "Je préférerais rester plutôt que d'aller sortir.",
+   "dif": "avance"
+  },
+  "400": {
+   "fr": "J'ai une lettre à écrire.",
+   "dif": "simple"
+  },
+  "401": {
+   "fr": "Ils semblent s'aimer.",
+   "dif": "avance"
+  },
+  "402": {
+   "fr": "S'il vous plaît, sortez au niveau de la rue par la sortie B2.",
+   "dif": "avance"
+  },
+  "403": {
+   "fr": "J'ai trouvé ce test difficile.",
+   "dif": "simple"
+  },
+  "404": {
+   "fr": "Alors, à ce soir, au revoir.",
+   "dif": "simple"
+  },
+  "405": {
+   "fr": "Je voudrais acheter un nouveau manteau dans ce grand magasin.",
+   "dif": "simple"
+  },
+  "406": {
+   "fr": "Mieux vaut quelqu'un que personne.",
+   "dif": "simple"
+  },
+  "407": {
+   "fr": "Il n'a pas décroché, alors je lui ai laissé un e-mail.",
+   "dif": "simple"
+  },
+  "408": {
+   "fr": "Où regardez-vous la télévision ?",
+   "dif": "simple"
+  },
+  "409": {
+   "fr": "Si seulement le temps était beau aujourd'hui.",
+   "dif": "avance"
+  },
+  "410": {
+   "fr": "Mon rasoir électrique est en feu.",
+   "dif": "simple"
+  },
+  "411": {
+   "fr": "On m'a volé dans le train.",
+   "dif": "avance"
+  },
+  "412": {
+   "fr": "C'est un appel de Monsieur Brown.",
+   "dif": "simple"
+  },
+  "413": {
+   "fr": "Quelqu'un frappe bruyamment à la porte.",
+   "dif": "simple"
+  },
+  "414": {
+   "fr": "Veuillez frapper à la porte avant d'entrer.",
+   "dif": "simple"
+  },
+  "415": {
+   "fr": "L'eau ne s'arrête pas de couler dans les toilettes.",
+   "dif": "simple"
+  },
+  "417": {
+   "fr": "Comment as-tu fini(e) tout seul(e) ?",
+   "dif": "avance"
+  },
+  "418": {
+   "fr": "Veuillez me montrer votre photo.",
+   "dif": "simple"
+  },
+  "419": {
+   "fr": "Ravi de faire votre connaissance.",
+   "dif": "simple"
+  },
+  "420": {
+   "fr": "Je connais le nom de cet animal.",
+   "dif": "simple"
+  },
+  "421": {
+   "fr": "Ils semblent s'aimer.",
+   "dif": "avance"
+  },
+  "422": {
+   "fr": "Ce n'est pas loin de l'hôtel.",
+   "dif": "simple"
+  },
+  "423": {
+   "fr": "Jack est né le 10 août.",
+   "dif": "simple"
+  },
+  "424": {
+   "fr": "Jane court parfois jusqu'à l'école.",
+   "dif": "simple"
+  },
+  "425": {
+   "fr": "Quelle heure est-il à ta montre ?",
+   "dif": "simple"
+  },
+  "426": {
+   "fr": "Où regardez-vous la télévision?",
+   "dif": "simple"
+  },
+  "427": {
+   "fr": "Où peut-on trouver un travail à temps partiel?",
+   "dif": "simple"
+  },
+  "428": {
+   "fr": "Puis-je me permettre de vous demander votre âge?",
+   "dif": "avance"
+  },
+  "429": {
+   "fr": "Il ne faut pas parler dans la bibliothèque.",
+   "dif": "simple"
+  },
+  "430": {
+   "fr": "Les deux, laquelle est la plus haute?",
+   "dif": "simple"
+  },
+  "431": {
+   "fr": "Lequel de ces deux livres est le plus facile à lire?",
+   "dif": "simple"
+  },
+  "432": {
+   "fr": "Sortir sous cette pluie est tout à fait impossible.",
+   "dif": "avance"
+  },
+  "433": {
+   "fr": "« Qui est-ce ? » « C'est maman. »",
+   "dif": "simple"
+  },
+  "434": {
+   "fr": "C'est à côté de ce bâtiment.",
+   "dif": "simple"
+  },
+  "435": {
+   "fr": "C'est plus haut que n'importe quel autre arbre.",
+   "dif": "avance"
+  },
+  "436": {
+   "fr": "Un fusible a sauté.",
+   "dif": "simple"
+  },
+  "437": {
+   "fr": "Juste à ce moment-là, le bus s'est arrêté.",
+   "dif": "simple"
+  },
+  "438": {
+   "fr": "J'ai beaucoup de bons amis et je suis heureux.",
+   "dif": "simple"
+  },
+  "439": {
+   "fr": "Je suis ici depuis samedi.",
+   "dif": "simple"
+  },
+  "440": {
+   "fr": "Quelle belle oiseau !",
+   "dif": "avance"
+  },
+  "441": {
+   "fr": "Je voudrais trois livres de poulet.",
+   "dif": "simple"
+  },
+  "442": {
+   "fr": "Vous pouvez prendre des photos de l'extérieur, ça ne nous dérange pas.",
+   "dif": "avance"
+  },
+  "443": {
+   "fr": "Je garde cet argent pour les moments difficiles.",
+   "dif": "avance"
+  },
+  "445": {
+   "fr": "Ce n'est pas votre couteau.",
+   "dif": "simple"
+  },
+  "446": {
+   "fr": "Mangeons dehors au lieu d'être dans nos tentes.",
+   "dif": "simple"
+  },
+  "447": {
+   "fr": "Les jours deviennent de plus en plus longs.",
+   "dif": "simple"
+  },
+  "448": {
+   "fr": "Rentrons quand la grenouille chantera.",
+   "dif": "simple"
+  },
+  "449": {
+   "fr": "J'ai trouvé le livre que j'avais perdu la veille.",
+   "dif": "avance"
+  },
+  "450": {
+   "fr": "Pourquoi travailles-tu encore ?",
+   "dif": "simple"
+  },
+  "451": {
+   "fr": "Les fourmis travaillent dur tout l'été.",
+   "dif": "simple"
+  },
+  "452": {
+   "fr": "Partez-vous quelque part pour les vacances d'été ?",
+   "dif": "avance"
+  },
+  "453": {
+   "fr": "On ne trouve nulle part la moindre chaleur.",
+   "dif": "avance"
+  },
+  "454": {
+   "fr": "Qu'est-ce que les sept mers ?",
+   "dif": "simple"
+  },
+  "455": {
+   "fr": "Une semaine a sept jours.",
+   "dif": "simple"
+  },
+  "456": {
+   "fr": "Votre nom a été retiré de la liste.",
+   "dif": "avance"
+  },
+  "457": {
+   "fr": "J'apprends à conduire.",
+   "dif": "simple"
+  },
+  "458": {
+   "fr": "Fais-tu la queue pour quelque chose ?",
+   "dif": "avance"
+  },
+  "459": {
+   "fr": "La servante a disposé les couteaux et les fourchettes sur la table.",
+   "dif": "avance"
+  },
+  "460": {
+   "fr": "On parle partout de ce phénomène Internet.",
+   "dif": "avance"
+  },
+  "461": {
+   "fr": "On voit quelques arbres devant l'école.",
+   "dif": "simple"
+  },
+  "462": {
+   "fr": "Deux mille personnes peuvent entrer dans cette salle.",
+   "dif": "avance"
+  },
+  "463": {
+   "fr": "Cette rue est animée.",
+   "dif": "simple"
+  },
+  "464": {
+   "fr": "La chair était remplie de vers.",
+   "dif": "avance"
+  },
+  "465": {
+   "fr": "Le train roulait vers l'ouest.",
+   "dif": "simple"
+  },
+  "466": {
+   "fr": "Ce sera justement un dimanche.",
+   "dif": "avance"
+  },
+  "467": {
+   "fr": "Puis-je déposer cela en haut pour vous?",
+   "dif": "simple"
+  },
+  "468": {
+   "fr": "J'ai entendu cette nouvelle à la radio.",
+   "dif": "simple"
+  },
+  "469": {
+   "fr": "Il n'y avait pas du tout de roses dans le jardin.",
+   "dif": "simple"
+  },
+  "470": {
+   "fr": "Dois-je enlever mes chaussures ici?",
+   "dif": "simple"
+  },
+  "471": {
+   "fr": "Ce café n'est pas assez chaud.",
+   "dif": "simple"
+  },
+  "472": {
+   "fr": "Combien coûte cette cravate?",
+   "dif": "simple"
+  },
+  "473": {
+   "fr": "Le chat a continué à miauler.",
+   "dif": "simple"
+  },
+  "474": {
+   "fr": "Je me suis endormi en lisant.",
+   "dif": "avance"
+  },
+  "475": {
+   "fr": "Écrivez ces mots dans votre cahier.",
+   "dif": "simple"
+  },
+  "476": {
+   "fr": "Plus un arbre est grand, plus il est difficile à grimper.",
+   "dif": "avance"
+  },
+  "477": {
+   "fr": "Puis-je avoir quelque chose à boire?",
+   "dif": "simple"
+  },
+  "478": {
+   "fr": "Tout le Coca-Cola a été bu.",
+   "dif": "avance"
+  },
+  "479": {
+   "fr": "Regardez, votre train arrive.",
+   "dif": "simple"
+  },
+  "480": {
+   "fr": "Le bébé fait ses dents.",
+   "dif": "avance"
+  },
+  "481": {
+   "fr": "La fête était amusante?",
+   "dif": "simple"
+  },
+  "482": {
+   "fr": "« Allo, Madame Brown ? » « Oui, c'est moi. »",
+   "dif": "simple"
+  },
+  "483": {
+   "fr": "Je voudrais un cendrier.",
+   "dif": "simple"
+  },
+  "484": {
+   "fr": "Veuillez frapper à la porte avant d'entrer.",
+   "dif": "simple"
+  },
+  "485": {
+   "fr": "Il y a beaucoup de cartes postales dans ce magasin.",
+   "dif": "simple"
+  },
+  "486": {
+   "fr": "Ces chaussures sont trop serrées pour pouvoir les mettre.",
+   "dif": "avance"
+  },
+  "487": {
+   "fr": "La boîte était presque pleine.",
+   "dif": "simple"
+  },
+  "488": {
+   "fr": "M. Parker a essayé de manger avec des baguettes.",
+   "dif": "simple"
+  },
+  "489": {
+   "fr": "Quelle est la longueur de ce pont ?",
+   "dif": "simple"
+  },
+  "490": {
+   "fr": "Le concert va commencer maintenant.",
+   "dif": "avance"
+  },
+  "491": {
+   "fr": "Les deux premiers jours de mon voyage étaient pluvieux.",
+   "dif": "simple"
+  },
+  "492": {
+   "fr": "J'ai mangé du durian pour la première fois.",
+   "dif": "simple"
+  },
+  "493": {
+   "fr": "Enchanté, Ken.",
+   "dif": "simple"
+  },
+  "494": {
+   "fr": "Regarde ce garçon qui court.",
+   "dif": "simple"
+  },
+  "495": {
+   "fr": "La scolarisation par autobus et les mesures proactives contre la discrimination étaient des sujets très débattus.",
+   "dif": "avance"
+  },
+  "496": {
+   "fr": "Le beurre est fabriqué à partir du lait.",
+   "dif": "simple"
+  },
+  "497": {
+   "fr": "Muiriel a 20 ans.",
+   "dif": "simple"
+  },
+  "498": {
+   "fr": "L'interrupteur n'a pas fonctionné à l'heure.",
+   "dif": "simple"
+  },
+  "499": {
+   "fr": "Cette randonnée prendra au moins huit heures.",
+   "dif": "avance"
+  },
+  "500": {
+   "fr": "Je prévois de revenir avant le 20.",
+   "dif": "simple"
+  },
+  "501": {
+   "fr": "Il y a une fleur sur la table.",
+   "dif": "simple"
+  },
+  "502": {
+   "fr": "Tu as le nez qui coule. Va le moucher.",
+   "dif": "simple"
+  },
+  "503": {
+   "fr": "Fais-moi un rapport complet.",
+   "dif": "avance"
+  },
+  "504": {
+   "fr": "L'anglais est parlé au Canada.",
+   "dif": "avance"
+  },
+  "505": {
+   "fr": "Le temps passe vite.",
+   "dif": "simple"
+  },
+  "506": {
+   "fr": "Certains ont des services de tennis très rapides.",
+   "dif": "avance"
+  },
+  "507": {
+   "fr": "Le coucou arrive ici au printemps.",
+   "dif": "simple"
+  },
+  "508": {
+   "fr": "Il vaut mieux coller ces photos dans un album.",
+   "dif": "avance"
+  },
+  "509": {
+   "fr": "Il fait beau à Londres.",
+   "dif": "simple"
+  },
+  "510": {
+   "fr": "J'espère qu'il fera beau demain.",
+   "dif": "simple"
+  },
+  "511": {
+   "fr": "Il sera ici dans une demi-heure.",
+   "dif": "simple"
+  },
+  "512": {
+   "fr": "Il pleuvra probablement avant ce soir.",
+   "dif": "avance"
+  },
+  "514": {
+   "fr": "Combien coûte ce mouchoir ?",
+   "dif": "simple"
+  },
+  "515": {
+   "fr": "Je crains que vous vous soyez trompé de numéro.",
+   "dif": "avance"
+  },
+  "516": {
+   "fr": "Le dîner est prêt, papa.",
+   "dif": "simple"
+  },
+  "517": {
+   "fr": "Prends la moitié du gâteau que tu veux.",
+   "dif": "avance"
+  },
+  "518": {
+   "fr": "Cette ville se trouve à l'est de Londres.",
+   "dif": "simple"
+  },
+  "519": {
+   "fr": "Les rideaux ont été fermés lentement.",
+   "dif": "avance"
+  },
+  "520": {
+   "fr": "Jouer de la guitare est amusant.",
+   "dif": "avance"
+  },
+  "521": {
+   "fr": "Baissez le volume de la radio, s'il vous plaît.",
+   "dif": "simple"
+  },
+  "522": {
+   "fr": "Avez-vous déjà voyagé en avion ?",
+   "dif": "avance"
+  },
+  "523": {
+   "fr": "On écrit l'arabe de droite à gauche.",
+   "dif": "simple"
+  },
+  "524": {
+   "fr": "Même n'importe qui serait mieux que personne.",
+   "dif": "avance"
+  },
+  "525": {
+   "fr": "Une voiture a un volant.",
+   "dif": "simple"
+  },
+  "526": {
+   "fr": "Quand l'argent sera épuisé, il restera encore un mois.",
+   "dif": "avance"
+  },
+  "527": {
+   "fr": "Comment as-tu fini seul ?",
+   "dif": "simple"
+  },
+  "528": {
+   "fr": "John était si pressé qu'il n'avait même pas le temps de parler.",
+   "dif": "avance"
+  },
+  "529": {
+   "fr": "Dans cent ans, tout sera pareil.",
+   "dif": "simple"
+  },
+  "530": {
+   "fr": "Y a-t-il un hôpital près d'ici ?",
+   "dif": "simple"
+  },
+  "531": {
+   "fr": "Bob est-il vraiment malade ?",
+   "dif": "avance"
+  },
+  "532": {
+   "fr": "J'ai mangé un hot-dog pour le déjeuner.",
+   "dif": "simple"
+  },
+  "533": {
+   "fr": "Tu ne veux pas sortir déjeuner ?",
+   "dif": "simple"
+  },
+  "534": {
+   "fr": "Cette rue est large mais pas très longue.",
+   "dif": "simple"
+  },
+  "535": {
+   "fr": "Je voudrais un rouleau de film couleur.",
+   "dif": "avance"
+  },
+  "536": {
+   "fr": "Qui a ouvert cet envelopecoupé ?",
+   "dif": "avance"
+  },
+  "537": {
+   "fr": "Il y a un sauna et une piscine.",
+   "dif": "simple"
+  },
+  "539": {
+   "fr": "Il y avait un fort vent ce jour-là.",
+   "dif": "simple"
+  },
+  "540": {
+   "fr": "Ce vêtement est trop beau pour moi.",
+   "dif": "simple"
+  },
+  "541": {
+   "fr": "Les deux, lequel est le plus cher ?",
+   "dif": "avance"
+  },
+  "542": {
+   "fr": "Combien coûte ce porc par kilo ?",
+   "dif": "simple"
+  },
+  "543": {
+   "fr": "Que faites-vous tous les deux ?",
+   "dif": "simple"
+  },
+  "544": {
+   "fr": "C'était il y a une semaine, c'est-à-dire le 2 avril.",
+   "dif": "avance"
+  },
+  "545": {
+   "fr": "Il a un cou épais.",
+   "dif": "simple"
+  },
+  "546": {
+   "fr": "Bientôt ce sera l'hiver.",
+   "dif": "simple"
+  },
+  "547": {
+   "fr": "Il pleuvait autour de Chicago.",
+   "dif": "simple"
+  },
+  "548": {
+   "fr": "Il existe un vieil adage qui dit que le temps, c'est de l'argent.",
+   "dif": "avance"
+  },
+  "549": {
+   "fr": "Je prends un bain un jour sur deux.",
+   "dif": "simple"
+  },
+  "550": {
+   "fr": "Le style d'écriture d'Hemingway était mauvais.",
+   "dif": "avance"
+  },
+  "551": {
+   "fr": "Il me reste encore trois pages.",
+   "dif": "simple"
+  },
+  "552": {
+   "fr": "Il est très mauvais pour trouver des excuses.",
+   "dif": "avance"
+  },
+  "553": {
+   "fr": "Un lit, même mauvais, est toujours mieux que pas de lit.",
+   "dif": "avance"
+  },
+  "554": {
+   "fr": "Tu ne peux pas t'occuper d'animaux de compagnie.",
+   "dif": "simple"
+  },
+  "555": {
+   "fr": "Mayuko est entrée dans la chambre.",
+   "dif": "simple"
+  },
+  "556": {
+   "fr": "Y a-t-il un hôtel par ici ?",
+   "dif": "simple"
+  },
+  "557": {
+   "fr": "Il y a un stylo entre la pomme et le livre.",
+   "dif": "simple"
+  },
+  "558": {
+   "fr": "Depuis combien de heures étudies-tu ?",
+   "dif": "avance"
+  },
+  "559": {
+   "fr": "Le téléphone est une commodité.",
+   "dif": "avance"
+  },
+  "560": {
+   "fr": "Ce chapeau est bon marché à 1000 yens.",
+   "dif": "avance"
+  },
+  "561": {
+   "fr": "L'encre de mon stylo à bille est épuisée.",
+   "dif": "avance"
+  },
+  "562": {
+   "fr": "Où sont les autres filles ?",
+   "dif": "simple"
+  },
+  "563": {
+   "fr": "Qu'as-tu dans ta poche ?",
+   "dif": "simple"
+  },
+  "564": {
+   "fr": "Mon ami veut sa propre voiture.",
+   "dif": "avance"
+  },
+  "565": {
+   "fr": "Où est la boîte aux lettres ?",
+   "dif": "simple"
+  },
+  "566": {
+   "fr": "Il est gros mais a une voix fine.",
+   "dif": "avance"
+  },
+  "567": {
+   "fr": "Un bouton de mon imperméable est tombé.",
+   "dif": "avance"
+  },
+  "568": {
+   "fr": "Êtes-vous un client de cet hôtel ?",
+   "dif": "simple"
+  },
+  "569": {
+   "fr": "J'ai une bouteille de whisky.",
+   "dif": "simple"
+  },
+  "570": {
+   "fr": "Je n'ai pas lu tous les livres sur l'étagère.",
+   "dif": "avance"
+  },
+  "571": {
+   "fr": "Ce n'est pas un vrai appartement.",
+   "dif": "simple"
+  },
+  "572": {
+   "fr": "J'ai décidé de courir tous les matins.",
+   "dif": "avance"
+  },
+  "573": {
+   "fr": "Combien coûte votre facture de gaz mensuelle?",
+   "dif": "simple"
+  },
+  "574": {
+   "fr": "Mon père joue au golf tous les dimanches.",
+   "dif": "simple"
+  },
+  "575": {
+   "fr": "Ce temps est vraiment déprimant tous les jours, n'est-ce pas?",
+   "dif": "avance"
+  },
+  "576": {
+   "fr": "Je dois venir ici tous les ans.",
+   "dif": "avance"
+  },
+  "577": {
+   "fr": "Je suis à la maison tous les soirs.",
+   "dif": "simple"
+  },
+  "578": {
+   "fr": "Polis tes chaussures avant de sortir.",
+   "dif": "simple"
+  },
+  "579": {
+   "fr": "Marchez deux pâtés de maisons et tournez à gauche.",
+   "dif": "avance"
+  },
+  "580": {
+   "fr": "Oh non ! On manque d'essence.",
+   "dif": "simple"
+  },
+  "581": {
+   "fr": "Viendra aussi à la fête.",
+   "dif": "avance"
+  },
+  "582": {
+   "fr": "Il reste encore beaucoup de choses à faire.",
+   "dif": "avance"
+  },
+  "583": {
+   "fr": "Cette ville se trouve juste au nord de Londres.",
+   "dif": "avance"
+  },
+  "584": {
+   "fr": "Pourriez-vous attendre un moment ?",
+   "dif": "avance"
+  },
+  "585": {
+   "fr": "Regardez tout droit, s'il vous plaît.",
+   "dif": "simple"
+  },
+  "586": {
+   "fr": "Vous avez des allumettes ?",
+   "dif": "simple"
+  },
+  "587": {
+   "fr": "Tu laisses la fenêtre ouverte ?",
+   "dif": "avance"
+  },
+  "588": {
+   "fr": "Les balles sont rondes.",
+   "dif": "simple"
+  },
+  "589": {
+   "fr": "J'ai payé 40 000 yens pour ce magnétophone.",
+   "dif": "simple"
+  },
+  "590": {
+   "fr": "J'ai perdu mon stylo-plume neuf.",
+   "dif": "simple"
+  },
+  "591": {
+   "fr": "Pourriez-vous nettoyer cette casserole?",
+   "dif": "avance"
+  },
+  "592": {
+   "fr": "On écrit de droite à gauche en arabe.",
+   "dif": "simple"
+  },
+  "593": {
+   "fr": "Les jours deviennent de plus en plus courts.",
+   "dif": "simple"
+  },
+  "594": {
+   "fr": "Il semble qu'il y ait de l'eau dans votre articulation du genou.",
+   "dif": "avance"
+  },
+  "595": {
+   "fr": "Le magasin a fermé et c'était définitif.",
+   "dif": "avance"
+  },
+  "596": {
+   "fr": "Pourriez-vous me montrer votre passeport?",
+   "dif": "simple"
+  },
+  "597": {
+   "fr": "Les deux routes se croisent là-bas.",
+   "dif": "simple"
+  },
+  "598": {
+   "fr": "Nous sommes le 3 octobre.",
+   "dif": "simple"
+  },
+  "599": {
+   "fr": "Trois cafés, s'il vous plaît.",
+   "dif": "simple"
+  },
+  "600": {
+   "fr": "Tokyo Midtown est rempli de verdure!",
+   "dif": "simple"
+  },
+  "601": {
+   "fr": "Tout le monde, restez immobile, s'il vous plaît.",
+   "dif": "simple"
+  },
+  "602": {
+   "fr": "La France se trouve au sud de l'Angleterre.",
+   "dif": "simple"
+  },
+  "603": {
+   "fr": "Pourquoi vos oreilles sont-elles si grandes?",
+   "dif": "simple"
+  },
+  "604": {
+   "fr": "J'ai été saisi d'effroi en le voyant.",
+   "dif": "avance"
+  },
+  "605": {
+   "fr": "Presque toutes les filles sont gentilles.",
+   "dif": "simple"
+  },
+  "606": {
+   "fr": "Pourriez-vous nous rencontrer le 5 ou 6 avril?",
+   "dif": "avance"
+  },
+  "607": {
+   "fr": "Le garçon est là-bas.",
+   "dif": "simple"
+  },
+  "608": {
+   "fr": "Pour un étranger, apprendre le japonais est difficile.",
+   "dif": "simple"
+  },
+  "609": {
+   "fr": "Il a fait six erreurs en six lignes.",
+   "dif": "simple"
+  },
+  "610": {
+   "fr": "Les villes sont plus grandes que les villages.",
+   "dif": "simple"
+  },
+  "611": {
+   "fr": "Elle de beaux yeux.",
+   "dif": "simple"
+  },
+  "612": {
+   "fr": "Veuillez vous aligner en laissant un mètre d'avec la personne qui est devant vous.",
+   "dif": "simple"
+  },
+  "613": {
+   "fr": "Je ne peux pas lire sans mes lunettes.",
+   "dif": "simple"
+  },
+  "614": {
+   "fr": "Oh, mais que fais-tu là ?",
+   "dif": "avance"
+  },
+  "615": {
+   "fr": "Pourriez-vous répéter plus lentement ?",
+   "dif": "simple"
+  },
+  "616": {
+   "fr": "Salut Fred, qu'est-ce que tu dirais pour du badminton jeudi ?",
+   "dif": "simple"
+  },
+  "617": {
+   "fr": "Je deviens votre manteau ?",
+   "dif": "simple"
+  },
+  "618": {
+   "fr": "Si seulement mon père avait vécu plus longtemps.",
+   "dif": "avance"
+  },
+  "619": {
+   "fr": "De quel sac est-ce le vôtre ?",
+   "dif": "simple"
+  },
+  "620": {
+   "fr": "John est sorti jusqu'à la porte.",
+   "dif": "simple"
+  },
+  "621": {
+   "fr": "Le problème, c'est que nous n'avons pas d'argent.",
+   "dif": "simple"
+  },
+  "622": {
+   "fr": "Le primeur est très aimable avec ses clients.",
+   "dif": "simple"
+  },
+  "623": {
+   "fr": "Ce magasin vend des légumes.",
+   "dif": "simple"
+  },
+  "624": {
+   "fr": "Demandez-moi quelque chose de plus facile.",
+   "dif": "simple"
+  },
+  "625": {
+   "fr": "Montrez-m'en un moins cher.",
+   "dif": "simple"
+  },
+  "626": {
+   "fr": "L'école est fermée pour les vacances de Noël.",
+   "dif": "simple"
+  },
+  "627": {
+   "fr": "Mon père est encore au lit.",
+   "dif": "simple"
+  },
+  "628": {
+   "fr": "Il y avait huit petits cailloux là-bas.",
+   "dif": "simple"
+  },
+  "629": {
+   "fr": "Quelle est la hauteur de cette montagne?",
+   "dif": "simple"
+  },
+  "630": {
+   "fr": "Voici 5 dollars.",
+   "dif": "simple"
+  },
+  "631": {
+   "fr": "Il se pourrait qu'il pleuve avant le soir.",
+   "dif": "avance"
+  },
+  "632": {
+   "fr": "As déjà dîné?",
+   "dif": "simple"
+  },
+  "633": {
+   "fr": "Euh... où est la poste?",
+   "dif": "simple"
+  },
+  "634": {
+   "fr": "As bien dormi hier soir?",
+   "dif": "simple"
+  },
+  "635": {
+   "fr": "Cet hôtel est connu pour sa cuisine.",
+   "dif": "simple"
+  },
+  "636": {
+   "fr": "À cause de la neige abondante, nous n'avons pas pu sortir.",
+   "dif": "avance"
+  },
+  "637": {
+   "fr": "Le grand-père parle très lentement.",
+   "dif": "simple"
+  },
+  "638": {
+   "fr": "L'école commence le 8 avril.",
+   "dif": "simple"
+  },
+  "639": {
+   "fr": "Je vais faire un nouveau costume pour toi.",
+   "dif": "simple"
+  },
+  "640": {
+   "fr": "Merci d'être venu, Jack!",
+   "dif": "simple"
+  },
+  "641": {
+   "fr": "La mère a couché le bébé dans son lit.",
+   "dif": "simple"
+  },
+  "642": {
+   "fr": "Je ne peux attendre que quatre jours au maximum.",
+   "dif": "avance"
+  },
+  "643": {
+   "fr": "Plie le papier en quatre.",
+   "dif": "simple"
+  },
+  "644": {
+   "fr": "Je vais t'appeler Céphas.",
+   "dif": "simple"
+  },
+  "645": {
+   "fr": "J'ai presque pas le temps de lire.",
+   "dif": "simple"
+  },
+  "646": {
+   "fr": "Maintenant, il n'y a pas d'autre solution.",
+   "dif": "avance"
+  },
+  "647": {
+   "fr": "Tu ne dors pas bien la nuit?",
+   "dif": "simple"
+  },
+  "648": {
+   "fr": "Cela me met mal à l'aise quand tu dis ça.",
+   "dif": "avance"
+  },
+  "649": {
+   "fr": "Le tarif des taxis augmentera le mois prochain.",
+   "dif": "simple"
+  },
+  "650": {
+   "fr": "Je prévais d'aller en Europe la semaine prochaine.",
+   "dif": "simple"
+  },
+  "651": {
+   "fr": "Vous pourrez lire ce livre l'année prochaine.",
+   "dif": "simple"
+  },
+  "652": {
+   "fr": "J'ai entendu cette nouvelle à la radio.",
+   "dif": "simple"
+  },
+  "653": {
+   "fr": "Il est vrai qu'au Japon actuel, \"rajikase\" est peut-être déjà un terme dépassé.",
+   "dif": "avance"
+  },
+  "654": {
+   "fr": "C'est vraiment une belle excuse.",
+   "dif": "avance"
+  },
+  "655": {
+   "fr": "Est-ce que les étudiants étrangers peuvent entrer ?",
+   "dif": "simple"
+  },
+  "656": {
+   "fr": "Mes deux parents sont encore en vie.",
+   "dif": "simple"
+  },
+  "657": {
+   "fr": "Ces pommes sont parfaites pour la cuisine.",
+   "dif": "avance"
+  },
+  "658": {
+   "fr": "Quand partez-vous en voyage ?",
+   "dif": "avance"
+  },
+  "660": {
+   "fr": "Il y a deux livres de beurre dans le réfrigérateur.",
+   "dif": "simple"
+  },
+  "661": {
+   "fr": "Mets un disque sur le stéréo.",
+   "dif": "simple"
+  },
+  "662": {
+   "fr": "Ce restaurant offre un bon service.",
+   "dif": "simple"
+  },
+  "663": {
+   "fr": "Quand est-ce que vous vous entraînez au piano ?",
+   "dif": "simple"
+  },
+  "664": {
+   "fr": "Un incendie s'est déclaré au bout du couloir.",
+   "dif": "avance"
+  },
+  "665": {
+   "fr": "Je me lève à six heures tous les matins.",
+   "dif": "simple"
+  },
+  "666": {
+   "fr": "Attachez un bouton à ma chemise.",
+   "dif": "avance"
+  },
+  "667": {
+   "fr": "\"Est-elle jeune ?\" \"Oui, elle est jeune.\"",
+   "dif": "simple"
+  },
+  "668": {
+   "fr": "Je ne sais pas quand Bob est venu au Japon.",
+   "dif": "avance"
+  },
+  "669": {
+   "fr": "Je suis désolé de ne pas avoir appelé.",
+   "dif": "simple"
+  },
+  "670": {
+   "fr": "Je ne sais pas nager.",
+   "dif": "simple"
+  },
+  "671": {
+   "fr": "S'il vous plaît, emmenez-moi de l'autre côté de la rivière.",
+   "dif": "simple"
+  },
+  "672": {
+   "fr": "Le groupe a traversé l'Amérique.",
+   "dif": "simple"
+  },
+  "673": {
+   "fr": "Ce n'est pas une mauvaise affaire, n'est-ce pas ?",
+   "dif": "avance"
+  },
+  "674": {
+   "fr": "Oh non ! On manque d'essence.",
+   "dif": "simple"
+  },
+  "675": {
+   "fr": "Ils ne s'entendent pas bien.",
+   "dif": "simple"
+  },
+  "676": {
+   "fr": "Ce fromage a un goût piquant.",
+   "dif": "avance"
+  },
+  "677": {
+   "fr": "Je ne peux pas soulever cette pierre.",
+   "dif": "simple"
+  },
+  "678": {
+   "fr": "Un fil long s'emmêle facilement.",
+   "dif": "simple"
+  },
+  "679": {
+   "fr": "Montrez-moi votre bras blessé.",
+   "dif": "simple"
+  },
+  "680": {
+   "fr": "Du chewing-gum est collé sous la semelle de ma chaussure.",
+   "dif": "avance"
+  },
+  "681": {
+   "fr": "De nombreux oiseaux sont sur la branche.",
+   "dif": "simple"
+  },
+  "682": {
+   "fr": "Un milliard de personnes parlent anglais.",
+   "dif": "simple"
+  },
+  "683": {
+   "fr": "Les épouses vivent généralement plus longtemps que leurs maris.",
+   "dif": "avance"
+  },
+  "684": {
+   "fr": "On entend le bruit de la mer d'ici.",
+   "dif": "simple"
+  },
+  "685": {
+   "fr": "Je ne sais pas quel côté de ce papier est le recto.",
+   "dif": "avance"
+  },
+  "686": {
+   "fr": "Nous ne devrions pas dépendre de nos parents.",
+   "dif": "simple"
+  },
+  "687": {
+   "fr": "La fille s'est tenue debout et a regardé dans le miroir.",
+   "dif": "avance"
+  },
+  "688": {
+   "fr": "La matière change de forme selon la température.",
+   "dif": "avance"
+  },
+  "689": {
+   "fr": "Dois-je repeindre le mur ?",
+   "dif": "simple"
+  },
+  "690": {
+   "fr": "J'ai rencontré une fille avec de longs cheveux.",
+   "dif": "simple"
+  },
+  "691": {
+   "fr": "Son swing est vraiment magnifique.",
+   "dif": "simple"
+  },
+  "692": {
+   "fr": "Il est plus doux que gentil.",
+   "dif": "avance"
+  },
+  "693": {
+   "fr": "Cette belle robe est en soie.",
+   "dif": "simple"
+  },
+  "694": {
+   "fr": "Tu as été négligent d'avoir oublié tes devoirs.",
+   "dif": "avance"
+  },
+  "695": {
+   "fr": "C'était au début du printemps, donc il n'y avait pas beaucoup de clients.",
+   "dif": "avance"
+  },
+  "696": {
+   "fr": "Le courant de cette rivière est rapide.",
+   "dif": "simple"
+  },
+  "697": {
+   "fr": "Il n'y a pas d'herbe sur la lune.",
+   "dif": "simple"
+  },
+  "698": {
+   "fr": "Votre poste est en jeu.",
+   "dif": "avance"
+  },
+  "699": {
+   "fr": "Les nuages deviennent de plus en plus sombres.",
+   "dif": "simple"
+  },
+  "700": {
+   "fr": "Le poil du chien est, pour ainsi dire, un pull.",
+   "dif": "avance"
+  },
+  "701": {
+   "fr": "Il est un vrai londonien.",
+   "dif": "simple"
+  },
+  "702": {
+   "fr": "J'ai une bonne idée en tête.",
+   "dif": "simple"
+  },
+  "703": {
+   "fr": "Dis-moi la bonne réponse.",
+   "dif": "simple"
+  },
+  "704": {
+   "fr": "Les Japonais vivent de riz.",
+   "dif": "simple"
+  },
+  "705": {
+   "fr": "Je suis descendu la côte en tombant à plusieurs reprises.",
+   "dif": "avance"
+  },
+  "706": {
+   "fr": "La ville a grandi pour devenir une métropole.",
+   "dif": "avance"
+  },
+  "707": {
+   "fr": "Tu écris très bien, n'est-ce pas ?",
+   "dif": "simple"
+  },
+  "708": {
+   "fr": "L'île est très facile d'accès.",
+   "dif": "simple"
+  },
+  "709": {
+   "fr": "Il m'a fait quelque chose comme soulever son talon contre moi.",
+   "dif": "avance"
+  },
+  "710": {
+   "fr": "Je préfèrerais la table dans le coin.",
+   "dif": "simple"
+  },
+  "711": {
+   "fr": "Pouvez-vous garder cette place pour moi ?",
+   "dif": "simple"
+  },
+  "712": {
+   "fr": "Où se trouve la fin de cette ligne ?",
+   "dif": "simple"
+  },
+  "713": {
+   "fr": "Il s'est étendu en grand sur le tatami.",
+   "dif": "avance"
+  },
+  "714": {
+   "fr": "Veuillez mettre ce livre sur l'étagère du dessus.",
+   "dif": "simple"
+  },
+  "715": {
+   "fr": "C'est pour bien entendre ta voix.",
+   "dif": "avance"
+  },
+  "716": {
+   "fr": "Nous sommes liés par le sang.",
+   "dif": "avance"
+  },
+  "717": {
+   "fr": "Tu as perdu ta capacité de concentration.",
+   "dif": "avance"
+  },
+  "719": {
+   "fr": "Avant, il y avait un temple juste ici.",
+   "dif": "simple"
+  },
+  "720": {
+   "fr": "On peut voir le plus petit des points.",
+   "dif": "avance"
+  },
+  "721": {
+   "fr": "« Vous pouvez l'obtenir à l'Hôtel de Ville », a ajouté l'employé.",
+   "dif": "avance"
+  },
+  "722": {
+   "fr": "J'ai une fièvre de 102°F.",
+   "dif": "simple"
+  },
+  "723": {
+   "fr": "Nous avons de très grandes feuilles de lotus.",
+   "dif": "simple"
+  },
+  "724": {
+   "fr": "Cette montagne est cinq fois plus haute que celle-ci.",
+   "dif": "avance"
+  },
+  "725": {
+   "fr": "Les bambous se détachent dans la forêt.",
+   "dif": "avance"
+  },
+  "726": {
+   "fr": "Rapproche ta chaise plus près du feu.",
+   "dif": "simple"
+  },
+  "727": {
+   "fr": "Les jours raccourcissent alors que l'hiver approche.",
+   "dif": "avance"
+  },
+  "728": {
+   "fr": "La lumière est venue dans le monde.",
+   "dif": "avance"
+  },
+  "729": {
+   "fr": "Le bateau est censé partir à trois heures.",
+   "dif": "avance"
+  },
+  "730": {
+   "fr": "Jouons aux échecs une autre fois.",
+   "dif": "simple"
+  },
+  "731": {
+   "fr": "Cet orange avait un arrière-goût étrange.",
+   "dif": "simple"
+  },
+  "732": {
+   "fr": "Tu me prends pour un idiot, hein ?",
+   "dif": "avance"
+  },
+  "733": {
+   "fr": "Il y avait une grande étoile dorée sur la porte.",
+   "dif": "simple"
+  },
+  "734": {
+   "fr": "Quelle est la profondeur du lac ?",
+   "dif": "simple"
+  },
+  "735": {
+   "fr": "Le bateau est maintenant dans le port.",
+   "dif": "simple"
+  },
+  "736": {
+   "fr": "Chaque fois que je lis ce livre, je me souviens du passé.",
+   "dif": "avance"
+  },
+  "737": {
+   "fr": "L'oiseau cherchait des vers.",
+   "dif": "simple"
+  },
+  "738": {
+   "fr": "Je suis la fille de Helen Cartwright.",
+   "dif": "simple"
+  },
+  "739": {
+   "fr": "J'ai aperçu un lapin dans la forêt.",
+   "dif": "simple"
+  },
+  "740": {
+   "fr": "Ah, cette eau chaude est bonne !",
+   "dif": "simple"
+  },
+  "741": {
+   "fr": "Je ai coincé mon doigt dans la porte.",
+   "dif": "simple"
+  },
+  "742": {
+   "fr": "Que tous vos rêves se réalisent !",
+   "dif": "avance"
+  },
+  "743": {
+   "fr": "Qu'est-ce qui vous amène ici ?",
+   "dif": "simple"
+  },
+  "744": {
+   "fr": "C'est pourquoi je suis revenu si tôt.",
+   "dif": "simple"
+  },
+  "745": {
+   "fr": "Les uns disent une chose, les autres une autre.",
+   "dif": "avance"
+  },
+  "746": {
+   "fr": "Cette veste ne se ferme pas devant.",
+   "dif": "avance"
+  },
+  "747": {
+   "fr": "Cette rivière devient peu profonde là-bas.",
+   "dif": "avance"
+  },
+  "748": {
+   "fr": "Notre prochain voyage est pour le plaisir, pas pour le travail.",
+   "dif": "simple"
+  },
+  "749": {
+   "fr": "Je dois m'excuser auprès d'elle.",
+   "dif": "simple"
+  },
+  "750": {
+   "fr": "On peut lui confier n'importe quel travail, il est digne de confiance.",
+   "dif": "avance"
+  },
+  "751": {
+   "fr": "Nous ne sommes pas aussi en sécurité que nous le pensons.",
+   "dif": "avance"
+  },
+  "752": {
+   "fr": "Veuillez me montrer autour.",
+   "dif": "simple"
+  },
+  "753": {
+   "fr": "On ne peut pas l'acheter pour moins de mille yens.",
+   "dif": "simple"
+  },
+  "754": {
+   "fr": "Je fais n'importe quoi sauf ce travail.",
+   "dif": "avance"
+  },
+  "755": {
+   "fr": "Deux médecins parlaient de médecine.",
+   "dif": "simple"
+  },
+  "756": {
+   "fr": "Vous pouvez librement exprimer vos opinions ici.",
+   "dif": "avance"
+  },
+  "757": {
+   "fr": "C'est tout ?",
+   "dif": "simple"
+  },
+  "758": {
+   "fr": "Nick s'est dépêché pour attraper le bus.",
+   "dif": "simple"
+  },
+  "759": {
+   "fr": "Voulez-vous que je le commande pour vous ?",
+   "dif": "avance"
+  },
+  "760": {
+   "fr": "On ne vit qu'une fois dans ce monde.",
+   "dif": "avance"
+  },
+  "761": {
+   "fr": "Je vous appelle dans une semaine.",
+   "dif": "simple"
+  },
+  "762": {
+   "fr": "L'été dernier, je suis allé(e) dans le village natal de mon père.",
+   "dif": "simple"
+  },
+  "763": {
+   "fr": "J'espère que vous vous rétablirez bientôt.",
+   "dif": "avance"
+  },
+  "764": {
+   "fr": "Veuillez effectuer les démarches d'admission à l'accueil.",
+   "dif": "avance"
+  },
+  "765": {
+   "fr": "Je devrais le vendre tant qu'il fonctionne encore.",
+   "dif": "avance"
+  },
+  "766": {
+   "fr": "Eh ? Tu plaisantes ?",
+   "dif": "avance"
+  },
+  "767": {
+   "fr": "L'église est entre ma maison et la vôtre.",
+   "dif": "simple"
+  },
+  "768": {
+   "fr": "Il vient de sonner huit heures, n'est-ce pas ?",
+   "dif": "avance"
+  },
+  "769": {
+   "fr": "La photo a été prise depuis le ciel.",
+   "dif": "avance"
+  },
+  "770": {
+   "fr": "Si j'avais plus d'argent, je pourrais déménager dans une plus grande maison.",
+   "dif": "avance"
+  },
+  "771": {
+   "fr": "Oui, tant que les vacances ne sont pas terminées, ça ira.",
+   "dif": "simple"
+  },
+  "772": {
+   "fr": "Carol conduit une voiture de location.",
+   "dif": "simple"
+  },
+  "773": {
+   "fr": "Fais du sport au moins une fois par semaine.",
+   "dif": "simple"
+  },
+  "774": {
+   "fr": "Choisissez entre celui-ci et celui-là.",
+   "dif": "simple"
+  },
+  "775": {
+   "fr": "Je vous prie de ne pas fumer ici.",
+   "dif": "simple"
+  },
+  "776": {
+   "fr": "Un ballon publicitaire vole au-dessus du grand magasin.",
+   "dif": "avance"
+  },
+  "777": {
+   "fr": "Pourriez-vous envoyer cette lettre au Japon ?",
+   "dif": "simple"
+  },
+  "778": {
+   "fr": "L'enfant malade s'est redressé dans son lit.",
+   "dif": "avance"
+  },
+  "779": {
+   "fr": "Dire et faire sont deux choses complètement différentes.",
+   "dif": "avance"
+  },
+  "780": {
+   "fr": "Laisse-le comme ça, sinon tu vas être grondé(e).",
+   "dif": "simple"
+  },
+  "781": {
+   "fr": "Nous viendrons vous voir d'ici peu.",
+   "dif": "simple"
+  },
+  "782": {
+   "fr": "Ne retirez pas mon nom de votre liste.",
+   "dif": "simple"
+  },
+  "783": {
+   "fr": "Ma petite amie danse bien.",
+   "dif": "simple"
+  },
+  "784": {
+   "fr": "Pourquoi n'as-tu pas dansé avec lui ?",
+   "dif": "simple"
+  },
+  "785": {
+   "fr": "Ma mère a été surprise par la nouvelle.",
+   "dif": "simple"
+  },
+  "786": {
+   "fr": "Je pense qu'il fera beau.",
+   "dif": "simple"
+  },
+  "787": {
+   "fr": "Pliez ce papier en quatre.",
+   "dif": "simple"
+  },
+  "788": {
+   "fr": "Je vous remercie au nom de mon fils.",
+   "dif": "avance"
+  },
+  "789": {
+   "fr": "Ce bus va à la plage ?",
+   "dif": "simple"
+  },
+  "790": {
+   "fr": "La conférence touchait à sa fin.",
+   "dif": "avance"
+  },
+  "791": {
+   "fr": "Nous nous sommes assis à l'arrière de la salle.",
+   "dif": "simple"
+  },
+  "792": {
+   "fr": "Cet écrivain est doué pour écrire des dialogues.",
+   "dif": "simple"
+  },
+  "793": {
+   "fr": "Pourquoi es-tu rentré si tard ?",
+   "dif": "simple"
+  },
+  "794": {
+   "fr": "J'apprends les sciences depuis longtemps.",
+   "dif": "avance"
+  },
+  "795": {
+   "fr": "La grande salle était décorée de peintures japonaises.",
+   "dif": "avance"
+  },
+  "796": {
+   "fr": "L'incendie s'est produit l'avant-veille.",
+   "dif": "simple"
+  },
+  "798": {
+   "fr": "Le diamant est intrinsèquement dur.",
+   "dif": "avance"
+  },
+  "799": {
+   "fr": "J'ai été nommé chef de service.",
+   "dif": "avance"
+  },
+  "800": {
+   "fr": "Peu de gens peuvent vaincre cette maladie.",
+   "dif": "avance"
+  },
+  "801": {
+   "fr": "Ma femme est en voyage à l'étranger et m'appelle souvent.",
+   "dif": "avance"
+  },
+  "802": {
+   "fr": "Cette chanson va forcément être un succès.",
+   "dif": "avance"
+  },
+  "803": {
+   "fr": "La question est de savoir si elle viendra ou non.",
+   "dif": "avance"
+  },
+  "804": {
+   "fr": "Est-ce que ça fait mal quand on mâche ?",
+   "dif": "simple"
+  },
+  "805": {
+   "fr": "Mike va à l'école en bus.",
+   "dif": "simple"
+  },
+  "806": {
+   "fr": "Ils ne se sont jamais revus.",
+   "dif": "simple"
+  },
+  "807": {
+   "fr": "Ce tee-shirt mouillé va sécher rapidement.",
+   "dif": "simple"
+  },
+  "808": {
+   "fr": "Quel est le lien entre ceci et cela ?",
+   "dif": "avance"
+  },
+  "809": {
+   "fr": "Pour moi, jouer au tennis est facile.",
+   "dif": "simple"
+  },
+  "810": {
+   "fr": "Retenons cela pour une prochaine fois.",
+   "dif": "avance"
+  },
+  "811": {
+   "fr": "Le danger frappe quand on le sous-estime.",
+   "dif": "avance"
+  },
+  "812": {
+   "fr": "Le train n'est pas encore arrivé.",
+   "dif": "simple"
+  },
+  "813": {
+   "fr": "La technologie moderne nous donne beaucoup de choses.",
+   "dif": "simple"
+  },
+  "814": {
+   "fr": "L'automne est la saison idéale pour lire.",
+   "dif": "simple"
+  },
+  "815": {
+   "fr": "Cette règle s'applique aussi à vous.",
+   "dif": "simple"
+  },
+  "816": {
+   "fr": "Je me sens complètement rafraîchi.",
+   "dif": "avance"
+  },
+  "817": {
+   "fr": "Elle a l'air bizarre dans ce kimono.",
+   "dif": "simple"
+  },
+  "818": {
+   "fr": "L'éducation dans ce monde me déçoit.",
+   "dif": "avance"
+  },
+  "819": {
+   "fr": "Cette église date de 1173.",
+   "dif": "avance"
+  },
+  "820": {
+   "fr": "Nous avons fait courir nos scarabées.",
+   "dif": "avance"
+  },
+  "821": {
+   "fr": "Êtes-vous intéressé par les fleurs?",
+   "dif": "simple"
+  },
+  "822": {
+   "fr": "Il a déménagé dans mon quartier.",
+   "dif": "simple"
+  },
+  "823": {
+   "fr": "Il y a un problème avec ma montre.",
+   "dif": "simple"
+  },
+  "824": {
+   "fr": "L'air est très pur en montagne.",
+   "dif": "simple"
+  },
+  "825": {
+   "fr": "De quel aéroport partez-vous?",
+   "dif": "simple"
+  },
+  "826": {
+   "fr": "Nous avons approuvé son plan.",
+   "dif": "avance"
+  },
+  "827": {
+   "fr": "L'expérience fait la différence dans ce travail.",
+   "dif": "avance"
+  },
+  "828": {
+   "fr": "Les États-Unis sont une économie de services.",
+   "dif": "simple"
+  },
+  "829": {
+   "fr": "Dans ce cas, appelez la police.",
+   "dif": "simple"
+  },
+  "830": {
+   "fr": "C'est un paysage que je n'ai jamais vu.",
+   "dif": "avance"
+  },
+  "831": {
+   "fr": "C'est un paysage que je n'ai jamais vu.",
+   "dif": "simple"
+  },
+  "832": {
+   "fr": "Elle loge des étudiants.",
+   "dif": "avance"
+  },
+  "833": {
+   "fr": "On connaît à peu près la cause de l'incendie.",
+   "dif": "simple"
+  },
+  "834": {
+   "fr": "Comment se déroulent vos recherches ?",
+   "dif": "simple"
+  },
+  "835": {
+   "fr": "Qu'est-ce que je devrais visiter ?",
+   "dif": "simple"
+  },
+  "837": {
+   "fr": "J'habite à la périphérie de Tokyo.",
+   "dif": "simple"
+  },
+  "838": {
+   "fr": "Peu de personnes sont venues au cours.",
+   "dif": "simple"
+  },
+  "839": {
+   "fr": "La production industrielle a fortement augmenté en juillet.",
+   "dif": "simple"
+  },
+  "840": {
+   "fr": "Mon fils est entré au lycée.",
+   "dif": "simple"
+  },
+  "841": {
+   "fr": "L'usine cessera ses activités le mois prochain.",
+   "dif": "simple"
+  },
+  "842": {
+   "fr": "Le directeur est entré après le professeur.",
+   "dif": "simple"
+  },
+  "843": {
+   "fr": "Il faut faire attention à la circulation.",
+   "dif": "simple"
+  },
+  "844": {
+   "fr": "Le professeur a rassemblé les élèves dans la salle.",
+   "dif": "simple"
+  },
+  "845": {
+   "fr": "L'anglais est une langue internationale.",
+   "dif": "simple"
+  },
+  "846": {
+   "fr": "J'ai été en retard parce que ma voiture est tombée en panne.",
+   "dif": "simple"
+  },
+  "847": {
+   "fr": "Le problème c'est qu'on n'a pas d'argent.",
+   "dif": "simple"
+  },
+  "848": {
+   "fr": "Les oiseaux chantent joyeusement.",
+   "dif": "simple"
+  },
+  "849": {
+   "fr": "Ils viennent ramasser les déchets tous les lundis.",
+   "dif": "simple"
+  },
+  "850": {
+   "fr": "Le train est très bondé ce soir.",
+   "dif": "simple"
+  },
+  "851": {
+   "fr": "J'ai été plus surpris qu'effrayé.",
+   "dif": "avance"
+  },
+  "852": {
+   "fr": "Cela a détruit tous ses rêves.",
+   "dif": "simple"
+  },
+  "853": {
+   "fr": "Ce samedi, tu ne veux pas faire du tennis ?",
+   "dif": "simple"
+  },
+  "854": {
+   "fr": "Ce soir, on organise une fête.",
+   "dif": "simple"
+  },
+  "855": {
+   "fr": "Ces temps-ci, je n'ai presque pas le temps de lire.",
+   "dif": "simple"
+  },
+  "856": {
+   "fr": "Les examens finaux vont probablement s'étaler jusqu'au mois prochain.",
+   "dif": "avance"
+  },
+  "857": {
+   "fr": "Je savais cela dès le début.",
+   "dif": "simple"
+  },
+  "858": {
+   "fr": "Je suis en train de chercher une chambre à louer.",
+   "dif": "simple"
+  },
+  "859": {
+   "fr": "Au Japon, l'enseignement de l'anglais est très développé.",
+   "dif": "avance"
+  },
+  "860": {
+   "fr": "S'il vous plaît, ne faites pas autant de bruit.",
+   "dif": "simple"
+  },
+  "861": {
+   "fr": "Ne touche pas, laisse tel quel.",
+   "dif": "simple"
+  },
+  "862": {
+   "fr": "Le Japon est un pays industriel.",
+   "dif": "simple"
+  },
+  "863": {
+   "fr": "Je regrette de ne pas pouvoir venir.",
+   "dif": "avance"
+  },
+  "864": {
+   "fr": "À quelle heure le match commence-t-il ?",
+   "dif": "simple"
+  },
+  "865": {
+   "fr": "Savez-vous jouer aux échecs ?",
+   "dif": "simple"
+  },
+  "866": {
+   "fr": "En tout cas, je suis soulagé que les examens soient terminés.",
+   "dif": "avance"
+  },
+  "867": {
+   "fr": "Je lui ai posé des questions sur l'accident.",
+   "dif": "simple"
+  },
+  "868": {
+   "fr": "En cas de séisme, coupez le gaz.",
+   "dif": "simple"
+  },
+  "869": {
+   "fr": "Pendant mes études universitaires, j'étais abonné à un journal en anglais.",
+   "dif": "avance"
+  },
+  "870": {
+   "fr": "Je suis satisfait de mes nouveaux sous-vêtements.",
+   "dif": "simple"
+  },
+  "871": {
+   "fr": "Prépare-toi pour le voyage tout de suite.",
+   "dif": "simple"
+  },
+  "872": {
+   "fr": "Tout le monde échoue une ou deux fois.",
+   "dif": "simple"
+  },
+  "873": {
+   "fr": "J'ai toujours trois dictionnaires à portée de main.",
+   "dif": "simple"
+  },
+  "874": {
+   "fr": "Ces articles ne sont pas en vente.",
+   "dif": "simple"
+  },
+  "875": {
+   "fr": "Je suis citoyen de Chiba, mais je travaille à Tokyo.",
+   "dif": "simple"
+  },
+  "876": {
+   "fr": "Il a vécu et est mort dans l'ombre.",
+   "dif": "avance"
+  },
+  "877": {
+   "fr": "Qui est le patron de cette entreprise ?",
+   "dif": "simple"
+  },
+  "878": {
+   "fr": "Vous pouvez dépenser ou épargner comme vous l'entendez.",
+   "dif": "avance"
+  },
+  "879": {
+   "fr": "Cette coutume a commencé en Chine.",
+   "dif": "simple"
+  },
+  "880": {
+   "fr": "Veuillez indiquer votre nom et votre adresse.",
+   "dif": "simple"
+  },
+  "881": {
+   "fr": "En judo, la technique est plus importante que la force.",
+   "dif": "simple"
+  },
+  "882": {
+   "fr": "J'ai assez d'argent pour acheter ce livre.",
+   "dif": "simple"
+  },
+  "883": {
+   "fr": "Vous ne pouvez pas venir ? Pourquoi ?",
+   "dif": "simple"
+  },
+  "884": {
+   "fr": "Il vaut mieux partir tout de suite.",
+   "dif": "avance"
+  },
+  "885": {
+   "fr": "Avez-vous parlé de vos passe-temps ?",
+   "dif": "simple"
+  },
+  "886": {
+   "fr": "Attends un peu que je sois prêt.",
+   "dif": "simple"
+  },
+  "887": {
+   "fr": "Je voudrais vous présenter à mes parents.",
+   "dif": "avance"
+  },
+  "888": {
+   "fr": "Tom lit un roman.",
+   "dif": "simple"
+  },
+  "889": {
+   "fr": "Merci pour votre invitation.",
+   "dif": "simple"
+  },
+  "890": {
+   "fr": "Nous savons que tous les hommes sont mortels.",
+   "dif": "avance"
+  },
+  "891": {
+   "fr": "Je ne peux m'empêcher de penser à l'avenir.",
+   "dif": "avance"
+  },
+  "892": {
+   "fr": "Ma mère me prépare les repas.",
+   "dif": "simple"
+  },
+  "893": {
+   "fr": "Cette jeune fille est devenue une grande femme élancée.",
+   "dif": "avance"
+  },
+  "894": {
+   "fr": "Quelle est la population de l'Inde ?",
+   "dif": "simple"
+  },
+  "895": {
+   "fr": "Il y a beaucoup de sanctuaires à Kyoto.",
+   "dif": "simple"
+  },
+  "896": {
+   "fr": "Votre famille doit être très gentille.",
+   "dif": "simple"
+  },
+  "897": {
+   "fr": "Le garçon est tombé malade à cause de son anxiété.",
+   "dif": "avance"
+  },
+  "898": {
+   "fr": "La natation est l'une de mes passions.",
+   "dif": "simple"
+  },
+  "899": {
+   "fr": "L'eau a été coupée hier.",
+   "dif": "avance"
+  },
+  "900": {
+   "fr": "Ce problème de maths dépasse mes capacités.",
+   "dif": "simple"
+  },
+  "901": {
+   "fr": "Quelle voiture est la moins bondée ?",
+   "dif": "avance"
+  },
+  "902": {
+   "fr": "Une lumière intense éclairait le stade de baseball.",
+   "dif": "avance"
+  },
+  "903": {
+   "fr": "Comment progressez-vous dans votre apprentissage de l'anglais ?",
+   "dif": "avance"
+  },
+  "904": {
+   "fr": "L'année prochaine, vous serez capable de bien skier.",
+   "dif": "simple"
+  },
+  "905": {
+   "fr": "Nous avons terminé le travail juste avant 10 heures.",
+   "dif": "simple"
+  },
+  "906": {
+   "fr": "Le pickpocket s'est enfui dans la foule.",
+   "dif": "avance"
+  },
+  "907": {
+   "fr": "Comment comptez-vous vivre ?",
+   "dif": "avance"
+  },
+  "908": {
+   "fr": "Cette usine produit des lecteurs de CD.",
+   "dif": "simple"
+  },
+  "909": {
+   "fr": "Je préfère ne pas parler de politique.",
+   "dif": "avance"
+  },
+  "910": {
+   "fr": "Ils sont bien meilleurs que les bains occidentaux.",
+   "dif": "simple"
+  },
+  "911": {
+   "fr": "L'amour fait tourner le monde.",
+   "dif": "simple"
+  },
+  "912": {
+   "fr": "Comment expliquez-vous cela ?",
+   "dif": "simple"
+  },
+  "913": {
+   "fr": "Ce chemisier a des boutons dans le dos.",
+   "dif": "simple"
+  },
+  "914": {
+   "fr": "Venez absolument à la fête.",
+   "dif": "simple"
+  },
+  "915": {
+   "fr": "Tu ne peux pas t'occuper d'un animal de compagnie.",
+   "dif": "simple"
+  },
+  "916": {
+   "fr": "J'espère que la guerre n'éclatera pas.",
+   "dif": "avance"
+  },
+  "917": {
+   "fr": "Sur le plan professionnel, il est mon aîné.",
+   "dif": "avance"
+  },
+  "918": {
+   "fr": "Il va bientôt pleuvoir.",
+   "dif": "simple"
+  },
+  "919": {
+   "fr": "J'ai quelque chose de important à vous dire.",
+   "dif": "simple"
+  },
+  "920": {
+   "fr": "Je commence à me lasser de la musique pop.",
+   "dif": "avance"
+  },
+  "921": {
+   "fr": "Mon grand-père ne peut pas marcher sans une canne.",
+   "dif": "simple"
+  },
+  "922": {
+   "fr": "J'adore beaucoup ma grand-mère.",
+   "dif": "simple"
+  },
+  "923": {
+   "fr": "Elle est sortie de l'hôpital il y a une heure.",
+   "dif": "simple"
+  },
+  "924": {
+   "fr": "Il est précieux pour nous.",
+   "dif": "simple"
+  },
+  "925": {
+   "fr": "Ils sont à peu près de la même taille.",
+   "dif": "simple"
+  },
+  "926": {
+   "fr": "La douleur a presque complètement disparu.",
+   "dif": "simple"
+  },
+  "927": {
+   "fr": "L'école était fermée à cause du typhon.",
+   "dif": "simple"
+  },
+  "928": {
+   "fr": "Il est certain qu'il a tort.",
+   "dif": "avance"
+  },
+  "929": {
+   "fr": "Qu'est-ce qu'il faut ajouter à 17 pour obtenir 60?",
+   "dif": "simple"
+  },
+  "930": {
+   "fr": "C'est fini.",
+   "dif": "simple"
+  },
+  "931": {
+   "fr": "Messieurs, merci de porter votre veste.",
+   "dif": "avance"
+  },
+  "932": {
+   "fr": "Comment faites-vous pour chauffer votre maison?",
+   "dif": "simple"
+  },
+  "933": {
+   "fr": "J'ai fait attention à ne pas être en retard pour lui.",
+   "dif": "simple"
+  },
+  "934": {
+   "fr": "Je vais vous faire une injection.",
+   "dif": "simple"
+  },
+  "935": {
+   "fr": "Je connais bien la géographie de cette ville.",
+   "dif": "simple"
+  },
+  "936": {
+   "fr": "Bientôt, nous pourrons probablement voyager sur la lune.",
+   "dif": "avance"
+  },
+  "937": {
+   "fr": "Notre voiture est équipée de climatisation.",
+   "dif": "simple"
+  },
+  "938": {
+   "fr": "Quelle heure vous conviendrait-il ?",
+   "dif": "simple"
+  },
+  "939": {
+   "fr": "Ce temps froid va durer combien de temps ?",
+   "dif": "simple"
+  },
+  "940": {
+   "fr": "Pourriez-vous l'emballer comme cadeau ?",
+   "dif": "simple"
+  },
+  "941": {
+   "fr": "Je n'ai pas pris autant de poissons que je l'espérais.",
+   "dif": "avance"
+  },
+  "942": {
+   "fr": "En écrivant les kanji, faites attention aux points et aux traits, et essayez d'écrire le plus vite et le plus soigneusement possible.",
+   "dif": "avance"
+  },
+  "943": {
+   "fr": "Lisez tous les livres que vous jugez appropriés.",
+   "dif": "avance"
+  },
+  "944": {
+   "fr": "Ces gants ne forment pas une paire.",
+   "dif": "simple"
+  },
+  "945": {
+   "fr": "Le vendeur a mis une étiquette sur cette valise.",
+   "dif": "simple"
+  },
+  "946": {
+   "fr": "Lucy a allumé l'interrupteur de la lumière.",
+   "dif": "simple"
+  },
+  "947": {
+   "fr": "J'ai reçu un télégramme d'elle.",
+   "dif": "simple"
+  },
+  "948": {
+   "fr": "Cet outil est inutile.",
+   "dif": "simple"
+  },
+  "949": {
+   "fr": "On a aperçu une lumière faible au loin.",
+   "dif": "simple"
+  },
+  "950": {
+   "fr": "Je passe devant cette église tous les jours.",
+   "dif": "simple"
+  },
+  "951": {
+   "fr": "J'adore la musique, en particulier le rock.",
+   "dif": "simple"
+  },
+  "952": {
+   "fr": "Nous avons un plat spécial pour vous.",
+   "dif": "simple"
+  },
+  "953": {
+   "fr": "N'abandonne pas en chemin.",
+   "dif": "simple"
+  },
+  "954": {
+   "fr": "Comme ma montre était à l'heure, j'ai raté le train express.",
+   "dif": "avance"
+  },
+  "955": {
+   "fr": "On a découvert que ce mendiant était un voleur.",
+   "dif": "avance"
+  },
+  "956": {
+   "fr": "Je ferai réparer votre montre d'ici demain.",
+   "dif": "avance"
+  },
+  "957": {
+   "fr": "En deux semaines, ça ira tout seul.",
+   "dif": "simple"
+  },
+  "958": {
+   "fr": "Quand est-ce que tu vas enfin ouvrir ton portefeuille ?",
+   "dif": "avance"
+  },
+  "959": {
+   "fr": "Les examens ont été très pénibles.",
+   "dif": "simple"
+  },
+  "960": {
+   "fr": "Bill a pleuré pendant des heures.",
+   "dif": "simple"
+  },
+  "961": {
+   "fr": "Quand le téléphone sonne, tu dois répondre tout de suite.",
+   "dif": "simple"
+  },
+  "962": {
+   "fr": "Ce café a un goût amer.",
+   "dif": "simple"
+  },
+  "963": {
+   "fr": "Elle a écrit cela dans son journal intime.",
+   "dif": "simple"
+  },
+  "964": {
+   "fr": "Dois-je être hospitalisé(e) ?",
+   "dif": "simple"
+  },
+  "965": {
+   "fr": "Je suis entré(e) dans cette école il y a deux ans.",
+   "dif": "simple"
+  },
+  "966": {
+   "fr": "J'ai aussi entendu une histoire similaire.",
+   "dif": "simple"
+  },
+  "967": {
+   "fr": "Mary m'a donné une poupée américaine.",
+   "dif": "simple"
+  },
+  "968": {
+   "fr": "Je ne renonce pas à l'argent volé.",
+   "dif": "avance"
+  },
+  "969": {
+   "fr": "John était en train de peindre la porte.",
+   "dif": "avance"
+  },
+  "970": {
+   "fr": "Il fait parfois la grasse matinée.",
+   "dif": "simple"
+  },
+  "971": {
+   "fr": "Quand je regarde la télé, j'ai sommeil.",
+   "dif": "simple"
+  },
+  "972": {
+   "fr": "Si tu risquais de t'endormir, règle ton réveil.",
+   "dif": "avance"
+  },
+  "973": {
+   "fr": "Il me reste encore trois pages.",
+   "dif": "simple"
+  },
+  "974": {
+   "fr": "Ma gorge me brûle.",
+   "dif": "simple"
+  },
+  "975": {
+   "fr": "Parfois, le système ne fonctionne pas.",
+   "dif": "simple"
+  },
+  "976": {
+   "fr": "Puis-je voir votre passport, s'il vous plaît?",
+   "dif": "simple"
+  },
+  "977": {
+   "fr": "Le travail s'est déroulé sans problème.",
+   "dif": "avance"
+  },
+  "978": {
+   "fr": "Ce canapé prend trop de place.",
+   "dif": "simple"
+  },
+  "979": {
+   "fr": "Tom devrait arriver d'un moment à l'autre.",
+   "dif": "avance"
+  },
+  "980": {
+   "fr": "Comment prononcez-vous votre nom?",
+   "dif": "simple"
+  },
+  "981": {
+   "fr": "J'ai hâte que le printemps arrive pour pouvoir faire du hanami.",
+   "dif": "avance"
+  },
+  "982": {
+   "fr": "Jack a brossé la poussière de son pardessus.",
+   "dif": "simple"
+  },
+  "983": {
+   "fr": "Quels programmes y a-t-il ce soir?",
+   "dif": "simple"
+  },
+  "984": {
+   "fr": "Je ne peux m'empêcher de m'opposer à cette idée.",
+   "dif": "avance"
+  },
+  "985": {
+   "fr": "Quelque chose brille en avant.",
+   "dif": "simple"
+  },
+  "986": {
+   "fr": "Mon père se rase dans la salle de bain.",
+   "dif": "simple"
+  },
+  "987": {
+   "fr": "Tu n'as pas besoin d'aller chez le dentiste.",
+   "dif": "simple"
+  },
+  "988": {
+   "fr": "Les bourgeons de l'arbuste à roses de mon jardin commencent à s'ouvrir petit à petit.",
+   "dif": "avance"
+  },
+  "990": {
+   "fr": "Les chouettes ne peuvent pas voir pendant la journée.",
+   "dif": "simple"
+  },
+  "991": {
+   "fr": "Veuillez venir me chercher en voiture devant l'hôtel.",
+   "dif": "simple"
+  },
+  "992": {
+   "fr": "Quelle est la profondeur du lac?",
+   "dif": "simple"
+  },
+  "993": {
+   "fr": "À quel point est-ce complexe?",
+   "dif": "simple"
+  },
+  "994": {
+   "fr": "Asi revu la leçon?",
+   "dif": "simple"
+  },
+  "995": {
+   "fr": "Le président a nommé un nouveau directeur.",
+   "dif": "simple"
+  },
+  "996": {
+   "fr": "J'habite généralement à vélo pour aller à l'école.",
+   "dif": "simple"
+  },
+  "997": {
+   "fr": "Il est devenu si gros que son col ne fermait plus.",
+   "dif": "avance"
+  },
+  "998": {
+   "fr": "Plie ton futon.",
+   "dif": "simple"
+  },
+  "999": {
+   "fr": "Sans téléphones, ce serait inconfortable.",
+   "dif": "avance"
+  },
+  "1000": {
+   "fr": "Je ne voulais pas marcher sur votre pied.",
+   "dif": "simple"
+  },
+  "1001": {
+   "fr": "J'ai appris la culture grecque.",
+   "dif": "simple"
+  },
+  "1002": {
+   "fr": "Elle est très connaisseuse en littérature espagnole.",
+   "dif": "avance"
+  },
+  "1003": {
+   "fr": "La grammaire, je m'en fous.",
+   "dif": "avance"
+  },
+  "1004": {
+   "fr": "Le téléphone a été inventé par Bell.",
+   "dif": "avance"
+  },
+  "1005": {
+   "fr": "J'aimerais que tu me réponde rapidement.",
+   "dif": "avance"
+  },
+  "1006": {
+   "fr": "Le Japon dépend du commerce international.",
+   "dif": "simple"
+  },
+  "1007": {
+   "fr": "Nous diffusons les actualités à chaque heure.",
+   "dif": "avance"
+  },
+  "1008": {
+   "fr": "Cette loi s'applique à tout le monde.",
+   "dif": "simple"
+  },
+  "1009": {
+   "fr": "Si seulement je pouvais jouer du piano aussi bien que Susie.",
+   "dif": "avance"
+  },
+  "1010": {
+   "fr": "Elle l'a traduit mot à mot.",
+   "dif": "simple"
+  },
+  "1011": {
+   "fr": "Joe est complètement amoureux de cette fille.",
+   "dif": "avance"
+  },
+  "1012": {
+   "fr": "D'abord, avalez une gorgée de baryum.",
+   "dif": "avance"
+  },
+  "1013": {
+   "fr": "Regarde autour de toi.",
+   "dif": "simple"
+  },
+  "1014": {
+   "fr": "Nous sommes passés derrière la voiture et nous l'avons poussée.",
+   "dif": "simple"
+  },
+  "1015": {
+   "fr": "Arrête de lire des bandes dessinées pendant le travail.",
+   "dif": "simple"
+  },
+  "1016": {
+   "fr": "Le bon point de ce dictionnaire électronique, c'est qu'il est facile à transporter.",
+   "dif": "avance"
+  },
+  "1017": {
+   "fr": "La mère a sermonné son fils.",
+   "dif": "avance"
+  },
+  "1018": {
+   "fr": "C'est une demande irréaliste.",
+   "dif": "simple"
+  },
+  "1019": {
+   "fr": "Ici c'est Smith. Monsieur Johnson est-il disponible ?",
+   "dif": "avance"
+  },
+  "1020": {
+   "fr": "Si le téléphone sonne, tu peux répondre ?",
+   "dif": "simple"
+  },
+  "1021": {
+   "fr": "Ce qui est fait est fait.",
+   "dif": "simple"
+  },
+  "1022": {
+   "fr": "Ce t-shirt est en coton.",
+   "dif": "simple"
+  },
+  "1023": {
+   "fr": "Je vais essayer de bien bronzer cet été.",
+   "dif": "simple"
+  },
+  "1024": {
+   "fr": "Rappelle-toi de ta promesse.",
+   "dif": "simple"
+  },
+  "1025": {
+   "fr": "La vient de s'arrêter, partons.",
+   "dif": "simple"
+  },
+  "1026": {
+   "fr": "La baisse du dollar donne un coup de pouce aux exportations.",
+   "dif": "avance"
+  },
+  "1027": {
+   "fr": "C'est une voiture importée d'Allemagne.",
+   "dif": "simple"
+  },
+  "1028": {
+   "fr": "J'ai acheté cette bague à un certain endroit.",
+   "dif": "simple"
+  },
+  "1029": {
+   "fr": "La chambre est prête pour vous.",
+   "dif": "simple"
+  },
+  "1030": {
+   "fr": "Désolé, j'ai autre chose à faire.",
+   "dif": "simple"
+  },
+  "1031": {
+   "fr": "Tu devrais commencer à préparer tes cours.",
+   "dif": "simple"
+  },
+  "1032": {
+   "fr": "J'avais rendez-vous avec Bob à six heures.",
+   "dif": "simple"
+  },
+  "1033": {
+   "fr": "« Avez-vous réservé un hôtel ? » « Non, pas encore. »",
+   "dif": "simple"
+  },
+  "1034": {
+   "fr": "Ne voulez-vous pas passer un moment ?",
+   "dif": "simple"
+  },
+  "1035": {
+   "fr": "Je serais ravi de répondre à votre question.",
+   "dif": "simple"
+  },
+  "1036": {
+   "fr": "Pourquoi voulez-vous entrer dans cette université ?",
+   "dif": "simple"
+  },
+  "1037": {
+   "fr": "Les étudiants devraient utiliser les livres de la bibliothèque.",
+   "dif": "simple"
+  },
+  "1038": {
+   "fr": "Ces gants ne forment pas une paire.",
+   "dif": "simple"
+  },
+  "1039": {
+   "fr": "Cet hôtel a une ambiance familiale.",
+   "dif": "simple"
+  },
+  "1040": {
+   "fr": "Je suis parti en voyage en lui laissant la maison.",
+   "dif": "avance"
+  },
+  "1041": {
+   "fr": "La climatisation est trop forte.",
+   "dif": "simple"
+  },
+  "1042": {
+   "fr": "Je préfère l'histoire à la géographie.",
+   "dif": "simple"
+  },
+  "1043": {
+   "fr": "Où est la caisse ?",
+   "dif": "simple"
+  },
+  "1044": {
+   "fr": "Quand vous serez là, n'oubliez pas de m'appeler.",
+   "dif": "simple"
+  },
+  "1045": {
+   "fr": "Toutes les industries de la ville sont en pleine expansion.",
+   "dif": "avance"
+  },
+  "1046": {
+   "fr": "Cependant, il ne souriait que rarement.",
+   "dif": "avance"
+  },
+  "1047": {
+   "fr": "Le ratio de filles à garçons dans la classe est de trois pour deux.",
+   "dif": "avance"
+  },
+  "1048": {
+   "fr": "La batterie de la voiture est morte.",
+   "dif": "simple"
+  },
+  "1049": {
+   "fr": "Notre bébé commence à parler.",
+   "dif": "simple"
+  },
+  "1050": {
+   "fr": "L'Europe a une population plus faible que l'Asie.",
+   "dif": "simple"
+  },
+  "1051": {
+   "fr": "Il y a beaucoup de gens rassemblés dans la rue.",
+   "dif": "simple"
+  },
+  "1052": {
+   "fr": "Ils viennent collecter nos déchets tous les lundis.",
+   "dif": "simple"
+  },
+  "1053": {
+   "fr": "Il n'y a pas beaucoup d'hommes aussi gentils !!",
+   "dif": "avance"
+  }
+ },
+ "kana": {
+  "11": "あさごはんにはなにがよろしいですか。",
+  "26": "ねえあなたたちいかないで。",
+  "35": "いいこにしていたら、あめをあげよう。",
+  "40": "あるいていきますか？それともバスでいきますか？",
+  "44": "「みんなひとやすみしようぜ」とジョンはいった。",
+  "47": "おかあさん、およぎにいってもいい？",
+  "60": "いちがついつかからいちがつじゅうごにかおねがいします。",
+  "69": "いちだいのくるまがいりぐちにとまった。",
+  "81": "なにとしてもうみをひとめみたいものだ。",
+  "91": "エレベーターはどこですか。",
+  "97": "おおぜいのひとたちがいた。",
+  "117": "かのじょは、いっさくねんよりもはるかにくらしなきがよい。",
+  "119": "なにかおなかにいれてからでかけなさい。",
+  "128": "かれはきょう、おべんとうをもってきた。",
+  "132": "スケートはとてもおもしろかった。",
+  "135": "そのコンサートはじゅうじにおわった。",
+  "142": "かいだんをのぼってはいけません。",
+  "143": "いちにちおきにかいものにいく。",
+  "162": "これはジェーンのかんです。",
+  "163": "はびんにみずをいれなさい。",
+  "171": "このレストランのカレーはうまいよ。",
+  "172": "このカレンダーはどこにかましょうか。",
+  "182": "どちらがあなたのギターですか。",
+  "187": "きのうせんせいはきょうテストをするといった。",
+  "188": "かれは「くじだ」といった。",
+  "193": "あなたはなんにんきょうだいがいますか。",
+  "210": "きょうはくもっている。",
+  "226": "どこかはごごごじゅうだろう。",
+  "233": "そのコーヒーはいいにおいがする。",
+  "236": "スピーチコンテストはじゅういちがつここのかにおこなわれた。",
+  "240": "こーひー、ごちそうさまでした。",
+  "246": "あなたにはなんにんこどもがいますか。",
+  "256": "こんにちはじょーじ、どう？",
+  "259": "さあ、ぱーてーをおしまいにしよう。",
+  "262": "それからさきのはなしをききたい。",
+  "271": "に、さんでめりっとがありますね。",
+  "273": "れっしゃでならここからたったよんぷんだ。",
+  "281": "どういってもしちじまでにいかないと。",
+  "291": "じゃあ、きーをもらえますか。",
+  "295": "そのかいはじゅうじにおわった。",
+  "298": "あなたはじょうずにばすけっとぼーるができますか。",
+  "299": "すぷーんをいただけますか。",
+  "316": "びりーはすぽーつがうまいです。",
+  "317": "このほーるにはにせんにんはいる。",
+  "331": "にほんたいしかんはどこにありますか。",
+  "350": "たまごをいちだーずつつめなさい。",
+  "369": "しちじちかだ。がっこうへいかなくては。",
+  "377": "ちかでつでいきたいのです。",
+  "378": "このちゃわんはなんとすばらしいのでしょう。",
+  "381": "きょうがてんきならいいのに。",
+  "409": "じゃっくははちがつとおかにおまれた。",
+  "423": "おとしをおきしてよろしいでしょうか。",
+  "428": "このなつやすみはどこかへいくのですか。",
+  "452": "ちまたではいんたーねっとなるものがはやっています。",
+  "460": "がっこうのまえになんぼんかきがみえます。",
+  "461": "このほーるにはにせんにんはいる。",
+  "462": "このこーひーはぬるいです。",
+  "471": "なにかのみものをいただけますか。",
+  "477": "ぱーてーはたのしかったですか。",
+  "495": "バスつうがくとせっきょくてきさべつせいしそちなどがろんそうのおおいわだった。",
+  "497": "ムーリエルはにじゅっさいになりました。",
+  "499": "そのハイキングははちじかんもかかるでしょう。",
+  "516": "ばんごはんですよ、おとうさん。",
+  "520": "ギターをひくのはおもしろい。",
+  "529": "ひゃくねんごにはみなおなじになる。",
+  "537": "サウナとプールがあります。",
+  "544": "それは１しゅうかんまえ、すなわちよつがつふつかにおこなわれた。",
+  "559": "でんわはべんりなものである。",
+  "561": "ボールペンのインクがなくなった。",
+  "567": "レーンコートのボタンがとれた。",
+  "569": "ウイスキーを１ぽんもっています。",
+  "573": "まいげつのかスダイはいくらですか。",
+  "576": "まいとこここにきなきゃ。",
+  "578": "そとへでるまえにくつをみがきなさい。",
+  "579": "２ブロックさきまであるき、ひへまがりなさい。",
+  "587": "まどをあけっぱなしにしておいたの？",
+  "589": "このテープレコーダーはよんまええんしました。",
+  "598": "１０がつみっかです。",
+  "606": "４がついつかにあっていただけませんか。",
+  "612": "まえのひとから１メートルはなれてならんでください。",
+  "632": "ゆうはんはもうたべましたか。",
+  "638": "がっこうは４がつようかからはじまります。",
+  "642": "ながくてもよっかしかまてませんよ。",
+  "648": "それをいわれるとよわいなあ。",
+  "650": "らいしゅヨーロッパへいくつもりなんです。",
+  "653": "たしかいまのにほんででは、「ラジカセ」はもうふるいことばなのかもしれない。",
+  "654": "どうもごりっぱないわけだよ。",
+  "661": "ステレオにレコードをかけてください。",
+  "662": "あのレストランはサービスがよい。",
+  "665": "わたしはまあさろくじにおきます。",
+  "682": "いちおくにんのひとたちがえいごをはなしています。",
+  "698": "あなたのくびはふうぜんのともしびだ。",
+  "701": "かれはきっすいのロンドンこです。",
+  "714": "そのほんはいちばんうえのたなにおいてください。",
+  "721": "「とちょうしゃでもらえますよ」とかかりがつけくわえた。",
+  "730": "またべつのときにチェスをしましょう。",
+  "733": "ドアにはおおきかながりのほしがついていました。",
+  "745": "あるひとはこうだといい、またあるひとはああだいう。",
+  "761": "いっしゅうかんいないにでんわします。",
+  "762": "きょねんのなつ、ちちのいなかいきました。",
+  "767": "きょうかいはわたしのいえとあなたのいえのなかにあります。",
+  "777": "このてがみにほんにおくってくれませんか。",
+  "778": "びょうきのこどもはベッドのうえでからだをおこした。",
+  "782": "わたしのガールフレンドはおどりがうまい。",
+  "783": "このバスは、かいがんいきますか。",
+  "789": "ダイヤモンドはほんらいかたいものだ。",
+  "798": "かないかいがいりょこうちゅうで、よくでんわをかけてくる。",
+  "801": "このしごとではけいけんがものをいう。",
+  "828": "アメリカはサービスけいざいのくんだ。",
+  "829": "しちがつのこうぎょうせいさんはきゅうぞうした。",
+  "839": "わたしのむすこは、こうこうににゅうがくした。",
+  "840": "そのこうじょうはらいげつからさぎょうをちゅうしする。",
+  "841": "にほんではえいごきょういくがさかんである。",
+  "859": "にほんはさんぎょうこくである。",
+  "862": "いちどやにどのしっぱいはだれにでもある。",
+  "872": "わたしはいつもじてんをさんさつてもとにおいています。",
+  "873": "わたしはちばしみんですが、とうきょうでつとめています。",
+  "875": "わたしはこのほんをかうのにじゅうぶなおかねをもっている。",
+  "887": "あなたをわたしのりょうしんにしょうかいしたい。",
+  "898": "すいえいがわたしのたのしみの１つです。",
+  "899": "きのうすいどうをとめられた。",
+  "906": "すりはひとごみのなかにきえた。",
+  "908": "このこうじょうはＣＤプレーヤーをせいさんしている。",
+  "914": "ぜひパーティーにおいでください。",
+  "917": "かれはしごとのうえではわたしのせんぱいだ。",
+  "923": "かのじょは１じかんまえにていいんしました。",
+  "924": "かれはわたしたちにとってだいじなひとだ。",
+  "942": "かんじをかくときはてんやはらいにきをつけて、なるべくはやくていねいにかきましょう。",
+  "948": "このどうぐはなんのやくにもたたない。",
+  "956": "あなたのとけいはあすまでになおしておきますよ。",
+  "957": "２しゅかんもすればしぜんになおります。",
+  "959": "しけんちゅうはなかなかたいへんだった。",
+  "985": "じょうぶぜんぽうでなにかがひかっている。",
+  "987": "はいしゃにいくひつようはないですよ。",
+  "1006": "にほんはぼうえきにたよっている。",
+  "1007": "ニュースはまいじほうそうしています。",
+  "1009": "スージーほどじょうずにピアノをひけるとよいのだが。",
+  "1010": "かのじょはそれをいちごいちごほんやくした。",
+  "1017": "ははおやはむすこにやかましくいってきかせた。",
+  "1018": "それはむりなちゅうもんだ。",
+  "1021": "やってしまったことはもとにもどらない。",
+  "1022": "このブラウスはもめんせいです。",
+  "1034": "ちょっとよっていきませんか。",
+  "1049": "うちのあかんぼうはくちをきくようになってきました。"
+ },
+ "generated": {
+  "41": {
+   "ja": "あれは何ですか",
+   "kana": "あれはなんですか",
+   "fr": "Qu'est-ce que c'est ?",
+   "dif": "simple"
+  },
+  "43": {
+   "ja": "いいえ、違います",
+   "kana": "いいえ、ちがいます",
+   "fr": "Non, ce n'est pas ça",
+   "dif": "simple"
+  },
+  "234": {
+   "ja": "ここは静かです",
+   "kana": "ここはしずかです",
+   "fr": "C'est calme ici",
+   "dif": "simple"
+  },
+  "243": {
+   "ja": "コップがあります",
+   "kana": "コップがあります",
+   "fr": "Il y a un verre",
+   "dif": "simple"
+  },
+  "343": {
+   "ja": "その本です",
+   "kana": "そのほんです",
+   "fr": "C'est ce livre",
+   "dif": "simple"
+  },
+  "416": {
+   "ja": "どうですか",
+   "kana": "どうですか",
+   "fr": "Comment ça va ?",
+   "dif": "simple"
+  },
+  "444": {
+   "ja": "どれが好きですか",
+   "kana": "どれがすきですか",
+   "fr": "Lequel tu aimes ?",
+   "dif": "simple"
+  },
+  "513": {
+   "ja": "パンを食べます",
+   "kana": "パンをたべます",
+   "fr": "Je mange du pain",
+   "dif": "simple"
+  },
+  "538": {
+   "ja": "フォークを使います",
+   "kana": "フォークをつかいます",
+   "fr": "J'utilise une fourchette",
+   "dif": "simple"
+  },
+  "659": {
+   "ja": "零です",
+   "kana": "れいです",
+   "fr": "C'est zéro",
+   "dif": "simple"
+  },
+  "718": {
+   "ja": "妻は料理が上手",
+   "kana": "つまりょうりがじょうず",
+   "fr": "L'épouse est douée pour la cuisine",
+   "dif": "simple"
+  },
+  "797": {
+   "ja": "ガスが漏れた",
+   "kana": "ガスもれた",
+   "fr": "Le gaz a fuité",
+   "dif": "simple"
+  },
+  "836": {
+   "ja": "こうして歩く",
+   "kana": "こうあるく",
+   "fr": "Marcher comme ceci",
+   "dif": "simple"
+  },
+  "989": {
+   "ja": "ビルが高い",
+   "kana": "ビルがたかい",
+   "fr": "Le bâtiment est haut",
+   "dif": "simple"
+  }
+ }
+}

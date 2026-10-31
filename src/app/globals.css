@@ -1,0 +1,220 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-noto-jp);
+  --font-serif-jp: var(--font-noto-serif-jp);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-matcha: var(--matcha);
+  --color-matcha-foreground: var(--matcha-foreground);
+  --color-gold: var(--gold);
+  --color-ink-soft: var(--ink-soft);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.75rem;
+  /* Palette zen japonais : washi, sumi, vermillon, matcha */
+  --background: oklch(0.955 0.016 90);
+  --foreground: oklch(0.27 0.012 80);
+  --card: oklch(0.99 0.005 95);
+  --card-foreground: oklch(0.27 0.012 80);
+  --popover: oklch(0.99 0.005 95);
+  --popover-foreground: oklch(0.27 0.012 80);
+  --primary: oklch(0.56 0.17 29);
+  --primary-foreground: oklch(0.99 0.005 95);
+  --secondary: oklch(0.93 0.022 88);
+  --secondary-foreground: oklch(0.35 0.02 70);
+  --muted: oklch(0.925 0.018 88);
+  --muted-foreground: oklch(0.5 0.02 75);
+  --accent: oklch(0.93 0.03 120);
+  --accent-foreground: oklch(0.3 0.03 130);
+  --destructive: oklch(0.52 0.2 27);
+  --border: oklch(0.88 0.02 85);
+  --input: oklch(0.88 0.02 85);
+  --ring: oklch(0.56 0.17 29);
+  --matcha: oklch(0.56 0.07 140);
+  --matcha-foreground: oklch(0.99 0.005 95);
+  --gold: oklch(0.72 0.12 90);
+  --ink-soft: oklch(0.45 0.02 75);
+  --chart-1: oklch(0.56 0.17 29);
+  --chart-2: oklch(0.56 0.07 140);
+  --chart-3: oklch(0.72 0.12 90);
+  --chart-4: oklch(0.65 0.1 70);
+  --chart-5: oklch(0.45 0.02 75);
+  --sidebar: oklch(0.99 0.005 95);
+  --sidebar-foreground: oklch(0.27 0.012 80);
+  --sidebar-primary: oklch(0.56 0.17 29);
+  --sidebar-primary-foreground: oklch(0.99 0.005 95);
+  --sidebar-accent: oklch(0.93 0.03 120);
+  --sidebar-accent-foreground: oklch(0.3 0.03 130);
+  --sidebar-border: oklch(0.88 0.02 85);
+  --sidebar-ring: oklch(0.56 0.17 29);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23b9a98a' stroke-opacity='0.14' stroke-width='1'%3E%3Ccircle cx='24' cy='24' r='23'/%3E%3Ccircle cx='24' cy='24' r='16'/%3E%3Ccircle cx='24' cy='24' r='9'/%3E%3Ccircle cx='0' cy='0' r='16'/%3E%3Ccircle cx='48' cy='0' r='16'/%3E%3Ccircle cx='0' cy='48' r='16'/%3E%3Ccircle cx='48' cy='48' r='16'/%3E%3Ccircle cx='24' cy='-24' r='16'/%3E%3Ccircle cx='24' cy='72' r='16'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  ::selection {
+    background: oklch(0.56 0.17 29 / 0.2);
+  }
+}
+
+/* ---------- Typographie japonaise ---------- */
+.font-jp-serif {
+  font-family: var(--font-noto-serif-jp), "Hiragino Mincho ProN", "Yu Mincho", "MS Mincho", serif;
+}
+.font-jp {
+  font-family: var(--font-noto-jp), "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+
+/* ---------- Ruby furigana ---------- */
+ruby {
+  ruby-align: center;
+}
+ruby rt {
+  font-size: 0.5em;
+  color: oklch(0.5 0.02 75);
+  font-weight: 400;
+  transform: translateY(-0.1em);
+}
+
+/* ---------- Flip card ---------- */
+.flip-scene {
+  perspective: 1400px;
+}
+.flip-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.flip-inner.flipped {
+  transform: rotateY(180deg);
+}
+.flip-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-back {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(180deg);
+}
+
+/* ---------- Barres de défilement ---------- */
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: oklch(0.8 0.03 85);
+  border-radius: 8px;
+}
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.72 0.05 75);
+}
+
+/* ---------- Animations douces ---------- */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.anim-fade-up {
+  animation: fadeUp 0.35s ease-out both;
+}
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.anim-pop {
+  animation: popIn 0.25s ease-out both;
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+.anim-shake {
+  animation: shake 0.3s ease-in-out;
+}
+@keyframes brushIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+.anim-brush {
+  transform-origin: left center;
+  animation: brushIn 0.5s ease-out both;
+}
+
+/* Caché pour lecteurs d'écran */
+.sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+/* zen theme v2 */
