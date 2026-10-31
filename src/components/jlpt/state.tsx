@@ -39,7 +39,7 @@ export function useReview() {
   const [pending, setPending] = React.useState(false);
 
   const submit = useCallback(
-    async (itemType: "kanji" | "word", itemId: string, grade: number, mode: string) => {
+    async (itemType: "kanji" | "word" | "conj", itemId: string, grade: number, mode: string) => {
       bumpStats(grade, mode);
       try {
         setPending(true);

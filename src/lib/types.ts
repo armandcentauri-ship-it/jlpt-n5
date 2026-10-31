@@ -41,7 +41,7 @@ export interface WordItem {
 
 export interface ProgressItem {
   id: string;
-  itemType: "kanji" | "word";
+  itemType: "kanji" | "word" | "conj"; // conj = conjugaison (itemId = `${wordId}:${form}`)
   itemId: string;
   ease: number;
   intervalDays: number;
@@ -59,4 +59,4 @@ export interface ContentResponse {
 }
 
 export type Grade = 0 | 1 | 2 | 3; // encore | difficile | bien | facile
-export type ReviewMode = "flashcard" | "ex_jp_fr" | "ex_fr_jp";
+export type ReviewMode = "flashcard" | "ex_jp_fr" | "ex_fr_jp" | "conj";

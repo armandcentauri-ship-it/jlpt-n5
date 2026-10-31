@@ -1,11 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import { applySm2 } from "@/lib/srs";
+import { FORM_KEYS } from "@/lib/conjugation";
 import type { Grade, ReviewMode } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
-const MODES: ReviewMode[] = ["flashcard", "ex_jp_fr", "ex_fr_jp"];
+const MODES: ReviewMode[] = ["flashcard", "ex_jp_fr", "ex_fr_jp", "conj"];
 
 /** POST /api/review — enregistre une révision (SM-2) + journal. */
 export async function POST(req: NextRequest) {
@@ -17,7 +18,7 @@ export async function POST(req: NextRequest) {
       mode?: string;
     };
 
-    const itemType = body.itemType === "kanji" ? "kanji" : "word";
+    const itemType = body.itemType === "kanji" ? "kanji" : body.itemType === "conj" ? "conj" : "word";
     const mode = MODES.includes(body.mode as ReviewMode) ? (body.mode as ReviewMode) : "flashcard";
     const grade = Number(body.grade);
     const itemId = body.itemId;
@@ -27,10 +28,20 @@ export async function POST(req: NextRequest) {
     }
 
     // Vérifie que l'item existe
-    const exists =
-      itemType === "kanji"
-        ? !!(await db.kanji.findUnique({ where: { id: itemId }, select: { id: true } }))
-        : !!(await db.word.findUnique({ where: { id: itemId }, select: { id: true } }));
+    let exists: boolean;
+    if (itemType === "kanji") {
+      exists = !!(await db.kanji.findUnique({ where: { id: itemId }, select: { id: true } }));
+    } else if (itemType === "conj") {
+      // itemId = `${wordId}:${formKey}` — vérifie le mot et la forme
+      const sep = itemId.lastIndexOf(":");
+      const wordId = sep > 0 ? itemId.slice(0, sep) : "";
+      const formKey = sep > 0 ? itemId.slice(sep + 1) : "";
+      exists =
+        (FORM_KEYS as string[]).includes(formKey) &&
+        !!(await db.word.findUnique({ where: { id: wordId }, select: { id: true } }));
+    } else {
+      exists = !!(await db.word.findUnique({ where: { id: itemId }, select: { id: true } }));
+    }
     if (!exists) {
       return NextResponse.json({ error: "Item introuvable." }, { status: 404 });
     }

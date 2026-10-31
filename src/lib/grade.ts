@@ -81,3 +81,26 @@ export function checkAnswer(
     bestRatio >= threshold ? "correct" : bestRatio >= threshold - 0.13 ? "close" : "wrong";
   return { result, best, ratio: bestRatio };
 }
+
+/**
+ * Variante stricte pour la conjugaison : correspondance exacte (kana normalisé)
+ * = correct ; ≥ 0,8 de similarité = « close » (faute de frappe probable) ; sinon faux.
+ * Pas de règle d'inclusion : une forme tronquée (のみ pour のみました) est fausse.
+ */
+export function checkConj(input: string, refs: string[]): { result: CheckResult; best: string; ratio: number } {
+  const user = normalizeJp(input);
+  let best = "";
+  let bestRatio = 0;
+  for (const ref of refs) {
+    if (!ref) continue;
+    const r = normalizeJp(ref);
+    if (!r) continue;
+    if (user === r) return { result: "correct", best: ref, ratio: 1 };
+    const ratio = similarity(user, r);
+    if (ratio > bestRatio) {
+      bestRatio = ratio;
+      best = ref;
+    }
+  }
+  return { result: bestRatio >= 0.7 ? "close" : "wrong", best, ratio: bestRatio };
+}

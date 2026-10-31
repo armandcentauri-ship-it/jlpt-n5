@@ -8,6 +8,7 @@ import { Flashcards } from "@/components/jlpt/Flashcards";
 import { Exercises } from "@/components/jlpt/Exercises";
 import { KanjiExplorer } from "@/components/jlpt/KanjiExplorer";
 import { VocabExplorer } from "@/components/jlpt/VocabExplorer";
+import { Conjugation } from "@/components/jlpt/Conjugation";
 import type { ContentResponse, ProgressItem } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
@@ -151,6 +152,7 @@ export default function Home() {
             {tab === "dashboard" && <Dashboard go={setTab} />}
             {tab === "flashcards" && <Flashcards go={setTab} />}
             {tab === "exercises" && <Exercises />}
+            {tab === "conjugation" && <Conjugation />}
             {tab === "kanji" && <KanjiExplorer />}
             {tab === "vocab" && <VocabExplorer />}
           </AppStateProvider>
