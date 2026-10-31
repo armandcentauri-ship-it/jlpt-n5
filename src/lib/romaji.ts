@@ -107,10 +107,18 @@ export function toKana(input: string): string {
     }
     if (matched) continue;
 
-    // 4) n / nn / n' → ん (n suivi d'une consonne ou en fin de mot)
+    // 4) n / nn / n' → ん (n suivi d'une consonne, d'un autre n, d'une
+    //    ponctuation/espace, d'une apostrophe ou en fin de mot ;
+    //    n suivi d'une voyelle → syllabe BASIC : "kana" → かな)
     if (chL === "n") {
       const after = (input[i + 1] ?? "").toLowerCase();
-      if (after === "" || after === "'" || CONSONANTS.includes(after)) {
+      const stopsN =
+        after === "" ||
+        after === "'" ||
+        after === "n" ||
+        CONSONANTS.includes(after) ||
+        !/[a-z]/.test(after);
+      if (stopsN) {
         out += "ん";
         i += after === "'" ? 2 : 1;
         continue;
