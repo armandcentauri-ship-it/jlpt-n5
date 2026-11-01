@@ -1,18 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
+import { Nunito, Zen_Kaku_Gothic_New } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
-const notoJp = Noto_Sans_JP({
-  variable: "--font-noto-jp",
-  weight: ["400", "500", "700"],
-  subsets: ["latin", "japanese"],
+const rounded = Nunito({
+  variable: "--font-rounded",
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin", "latin-ext"],
   display: "swap",
 });
 
-const notoSerifJp = Noto_Serif_JP({
-  variable: "--font-noto-serif-jp",
-  weight: ["400", "600", "700"],
+const jpFont = Zen_Kaku_Gothic_New({
+  variable: "--font-jp",
+  weight: ["400", "500", "700"],
   subsets: ["latin", "japanese"],
   display: "swap",
 });
@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="fr" suppressHydrationWarning>
       <body
-        className={`${notoJp.variable} ${notoSerifJp.variable} antialiased bg-background text-foreground min-h-screen flex flex-col`}
+        className={`${rounded.variable} ${jpFont.variable} font-sans antialiased bg-background text-foreground min-h-screen flex flex-col`}
       >
         {children}
         <Toaster />

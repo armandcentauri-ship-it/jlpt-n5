@@ -9,7 +9,7 @@ export interface AppState {
   progressMap: Map<string, ProgressItem>; // clé `${itemType}:${itemId}`
   stats: ContentResponse["stats"];
   applyProgress: (p: ProgressItem) => void;
-  bumpStats: (grade: number, mode: string) => void;
+  bumpStats: (grade: number, mode: string, itemType: string) => void;
 }
 
 export const progressKey = (itemType: string, itemId: string) => `${itemType}:${itemId}`;
@@ -40,7 +40,7 @@ export function useReview() {
 
   const submit = useCallback(
     async (itemType: "kanji" | "word" | "conj", itemId: string, grade: number, mode: string) => {
-      bumpStats(grade, mode);
+      bumpStats(grade, mode, itemType);
       try {
         setPending(true);
         const res = await fetch("/api/review", {

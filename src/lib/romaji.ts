@@ -58,8 +58,13 @@ const PUNCT: Record<string, string> = {
 const VOWELS = "aiueo";
 const CONSONANTS = "kstcpgzdbhfvjqrwy";
 
-/** Convertit une chaîne (romaji + kana mixés) en hiragana. */
-export function toKana(input: string): string {
+/** Convertit une chaîne (romaji + kana mixés) en hiragana.
+ *  Par défaut, un « n » isolé en fin de chaîne reste EN ATTENTE (comme un vrai
+ *  IME) : « kan » s'affiche « かn » jusqu'au prochain caractère, ce qui permet
+ *  de taper « kane » → かね. Avec { finalize: true } (appelé à la soumission),
+ *  le « n » final est converti en ん. */
+export function toKana(input: string, opts?: { finalize?: boolean }): string {
+  const finalize = opts?.finalize ?? false;
   let out = "";
   let i = 0;
   while (i < input.length) {
@@ -108,16 +113,17 @@ export function toKana(input: string): string {
     if (matched) continue;
 
     // 4) n / nn / n' → ん (n suivi d'une consonne, d'un autre n, d'une
-    //    ponctuation/espace, d'une apostrophe ou en fin de mot ;
-    //    n suivi d'une voyelle → syllabe BASIC : "kana" → かな)
+    //    ponctuation/espace, d'une apostrophe, ou en fin de saisie si finalize ;
+    //    n suivi d'une voyelle → syllabe BASIC : "kana" → かな ;
+    //    n isolé en fin de chaîne (pas finalize) → laissé en attente : "かn")
     if (chL === "n") {
       const after = (input[i + 1] ?? "").toLowerCase();
       const stopsN =
-        after === "" ||
         after === "'" ||
         after === "n" ||
-        CONSONANTS.includes(after) ||
-        !/[a-z]/.test(after);
+        (after === "" && finalize) ||
+        (after !== "" && CONSONANTS.includes(after)) ||
+        (!/[a-z]/.test(after) && after !== "");
       if (stopsN) {
         out += "ん";
         i += after === "'" ? 2 : 1;
@@ -148,6 +154,11 @@ export function toKana(input: string): string {
     i += 1;
   }
   return out;
+}
+
+/** Finalise la saisie : convertit le « n » en attente (ん) juste avant la vérification. */
+export function finalizeKana(input: string): string {
+  return toKana(input, { finalize: true });
 }
 
 /** Katakana → hiragana (ー et kanji inchangés). */

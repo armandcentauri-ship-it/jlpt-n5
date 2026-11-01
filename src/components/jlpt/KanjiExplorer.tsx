@@ -52,7 +52,7 @@ export function KanjiExplorer() {
   return (
     <div className="mx-auto w-full max-w-3xl space-y-4 px-4 pb-10 pt-6">
       <div className="flex items-baseline justify-between">
-        <h2 className="font-jp-serif text-2xl font-bold">
+        <h2 className="font-jp text-2xl font-bold">
           漢字 <span className="text-lg text-muted-foreground">· Kanji N5 + N4</span>
         </h2>
         <span className="text-xs text-muted-foreground">{filtered.length} kanji</span>
@@ -102,7 +102,7 @@ export function KanjiExplorer() {
                 )}
                 aria-label={`Kanji ${k.character}, ${k.meaningsFr[0] ?? ""}`}
               >
-                <span className="font-jp-serif text-4xl">{k.character}</span>
+                <span className="font-jp text-4xl">{k.character}</span>
                 <span className="w-full truncate text-center text-[11px] text-muted-foreground">
                   {k.meaningsFr[0] ?? k.meaningsEn[0]}
                 </span>
@@ -127,7 +127,7 @@ export function KanjiExplorer() {
             <>
               <DialogHeader>
                 <DialogTitle className="flex items-center gap-3">
-                  <span className="font-jp-serif text-5xl">{selected.character}</span>
+                  <span className="font-jp text-5xl">{selected.character}</span>
                   <div className="flex flex-col gap-1">
                     <LevelBadge level={selected.level} className="w-fit" />
                     <span className="text-xs font-normal text-muted-foreground">

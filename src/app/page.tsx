@@ -20,8 +20,10 @@ export default function Home() {
     correct: 0,
     attemptsToday: 0,
     correctToday: 0,
+    doneToday: { vocab: false, kanji: false, phrases: false, conj: false },
   });
   const [tab, setTab] = useState<TabId>("dashboard");
+  const [launch, setLaunch] = useState<{ tab: TabId; nonce: number; cardType?: "word" | "kanji" } | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -54,15 +56,33 @@ export default function Home() {
     });
   }, []);
 
-  const bumpStats = useCallback((grade: number, mode: string) => {
-    if (mode === "flashcard") return;
+  const bumpStats = useCallback((grade: number, mode: string, itemType: string) => {
+    // domaine du tableau de bord touché par cette révision
+    const domain =
+      mode === "conj" || itemType === "conj"
+        ? "conj"
+        : mode === "ex_jp_fr" || mode === "ex_fr_jp"
+          ? "phrases"
+          : itemType === "kanji"
+            ? "kanji"
+            : "vocab";
     setStats((s) => ({
-      attempts: s.attempts + 1,
-      correct: s.correct + (grade >= 2 ? 1 : 0),
-      attemptsToday: s.attemptsToday + 1,
-      correctToday: s.correctToday + (grade >= 2 ? 1 : 0),
+      attempts: s.attempts + (mode === "flashcard" ? 0 : 1),
+      correct: s.correct + (mode === "flashcard" || grade < 2 ? 0 : 1),
+      attemptsToday: s.attemptsToday + (mode === "flashcard" ? 0 : 1),
+      correctToday: s.correctToday + (mode === "flashcard" || grade < 2 ? 0 : 1),
+      doneToday: { ...s.doneToday, [domain]: true },
     }));
   }, []);
+
+  /** Navigation ; autoStart = lancer directement l'exercice avec ses réglages par défaut. */
+  const go = useCallback(
+    (t: TabId, autoStart?: boolean, cardType?: "word" | "kanji") => {
+      if (autoStart) setLaunch({ tab: t, nonce: Date.now(), cardType });
+      setTab(t);
+    },
+    []
+  );
 
   const appState: AppState | null = useMemo(
     () =>
@@ -81,18 +101,18 @@ export default function Home() {
             <div className="flex items-center gap-2.5">
               <span
                 aria-hidden
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-primary font-jp-serif text-lg font-bold text-primary-foreground"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-primary font-jp text-lg font-bold text-primary-foreground"
               >
                 日
               </span>
               <div>
-                <p className="font-jp-serif text-lg font-bold leading-tight">日本語 N5</p>
+                <p className="font-jp text-lg font-bold leading-tight">日本語 N5</p>
                 <p className="text-[11px] leading-tight text-muted-foreground">
                   Kanji N5 + N4 · Vocabulaire par thème · Révision SRS
                 </p>
               </div>
             </div>
-            <p className="hidden font-jp-serif text-sm text-muted-foreground sm:block" aria-hidden>
+            <p className="hidden font-jp text-sm text-muted-foreground sm:block" aria-hidden>
               一期一会
             </p>
           </div>
@@ -111,7 +131,7 @@ export default function Home() {
                       : "text-muted-foreground hover:bg-secondary hover:text-foreground"
                   )}
                 >
-                  <span className="font-jp-serif text-xs" aria-hidden>
+                  <span className="font-jp text-xs" aria-hidden>
                     {t.jp}
                   </span>
                   {t.label}
@@ -127,7 +147,7 @@ export default function Home() {
           <div className="flex min-h-[50vh] flex-col items-center justify-center gap-4" role="status">
             <span
               aria-hidden
-              className="flex h-14 w-14 animate-pulse items-center justify-center rounded-full bg-primary/10 font-jp-serif text-2xl text-primary"
+              className="flex h-14 w-14 animate-pulse items-center justify-center rounded-full bg-primary/10 font-jp text-2xl text-primary"
             >
               日
             </span>
@@ -135,7 +155,7 @@ export default function Home() {
           </div>
         ) : error || !appState ? (
           <div className="flex min-h-[50vh] flex-col items-center justify-center gap-4 px-4 text-center">
-            <p className="font-jp-serif text-4xl text-primary" aria-hidden>
+            <p className="font-jp text-4xl text-primary" aria-hidden>
               残念
             </p>
             <p className="max-w-sm text-sm text-muted-foreground">{error}</p>
@@ -149,10 +169,21 @@ export default function Home() {
           </div>
         ) : (
           <AppStateProvider value={appState}>
-            {tab === "dashboard" && <Dashboard go={setTab} />}
-            {tab === "flashcards" && <Flashcards go={setTab} />}
-            {tab === "exercises" && <Exercises />}
-            {tab === "conjugation" && <Conjugation />}
+            {tab === "dashboard" && <Dashboard go={go} />}
+            {tab === "flashcards" && (
+              <Flashcards
+                key={launch?.tab === "flashcards" ? `fc-${launch.nonce}` : "flashcards"}
+                go={go}
+                autoStart={launch?.tab === "flashcards"}
+                initialType={launch?.cardType ?? "word"}
+              />
+            )}
+            {tab === "exercises" && (
+              <Exercises key={launch?.tab === "exercises" ? `ex-${launch.nonce}` : "exercises"} autoStart={launch?.tab === "exercises"} />
+            )}
+            {tab === "conjugation" && (
+              <Conjugation key={launch?.tab === "conjugation" ? `cj-${launch.nonce}` : "conjugation"} autoStart={launch?.tab === "conjugation"} />
+            )}
             {tab === "kanji" && <KanjiExplorer />}
             {tab === "vocab" && <VocabExplorer />}
           </AppStateProvider>

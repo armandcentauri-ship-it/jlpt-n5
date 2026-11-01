@@ -1,7 +1,16 @@
 "use client";
 
 import React, { useMemo } from "react";
-import { BookOpenText, Layers, Sparkles, Trash2 } from "lucide-react";
+import {
+  BookOpen,
+  CalendarDays,
+  CheckCircle2,
+  Circle,
+  MessagesSquare,
+  PenLine,
+  Repeat,
+  Trash2,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import {
@@ -17,15 +26,110 @@ import {
 } from "@/components/ui/alert-dialog";
 import { useToast } from "@/hooks/use-toast";
 import { useAppState, progressKey } from "./state";
-import { ProgressRing, StatCard } from "./bits";
+import { ProgressRing } from "./bits";
+import { buildVerbList } from "@/lib/conjugation";
 import type { TabId } from "./tabs";
+import { cn } from "@/lib/utils";
 
 const MASTERED_DAYS = 21;
 
-export function Dashboard({ go }: { go: (tab: TabId) => void }) {
+type Domain = "vocab" | "kanji" | "phrases" | "conj";
+
+interface PanelDef {
+  id: Domain;
+  tab: TabId;
+  jp: string;
+  title: string;
+  desc: string;
+  icon: React.ComponentType<{ className?: string }>;
+  /* lancement : accède directement à l'exercice (session démarrée) */
+  launch: (go: (t: TabId, autoStart?: boolean, cardType?: "word" | "kanji") => void) => void;
+  /* palette zen — 4 couleurs distinctes */
+  iconCls: string;
+  jpCls: string;
+  borderCls: string;
+  badgeCls: string;
+  todayCls: string;
+}
+
+const PANELS: PanelDef[] = [
+  {
+    id: "vocab",
+    tab: "flashcards",
+    jp: "単語",
+    title: "Vocabulaire",
+    desc: "Flashcards de mots, répétition espacée",
+    icon: BookOpen,
+    launch: (go) => go("flashcards", true, "word"),
+    iconCls: "bg-matcha/15 text-matcha",
+    jpCls: "text-matcha",
+    borderCls: "hover:border-matcha/60",
+    badgeCls: "bg-matcha/15 text-matcha",
+    todayCls: "border-matcha/50 bg-matcha/5",
+  },
+  {
+    id: "kanji",
+    tab: "flashcards",
+    jp: "漢字",
+    title: "Kanji",
+    desc: "Caractères N5 + N4, sens et lectures",
+    icon: PenLine,
+    launch: (go) => go("flashcards", true, "kanji"),
+    iconCls: "bg-gold/20 text-[#8a6d1d]",
+    jpCls: "text-[#8a6d1d]",
+    borderCls: "hover:border-gold/60",
+    badgeCls: "bg-gold/20 text-[#8a6d1d]",
+    todayCls: "border-gold/60 bg-gold/5",
+  },
+  {
+    id: "phrases",
+    tab: "exercises",
+    jp: "文章",
+    title: "Phrases",
+    desc: "Traduction JP ⇄ FR, tirage aléatoire",
+    icon: MessagesSquare,
+    launch: (go) => go("exercises", true),
+    iconCls: "bg-primary/10 text-primary",
+    jpCls: "text-primary",
+    borderCls: "hover:border-primary/60",
+    badgeCls: "bg-primary/10 text-primary",
+    todayCls: "border-primary/50 bg-primary/5",
+  },
+  {
+    id: "conj",
+    tab: "conjugation",
+    jp: "動詞",
+    title: "Conjugaison",
+    desc: "Entraînement aux formes verbales",
+    icon: Repeat,
+    launch: (go) => go("conjugation", true),
+    iconCls: "bg-fuji/15 text-fuji",
+    jpCls: "text-fuji",
+    borderCls: "hover:border-fuji/60",
+    badgeCls: "bg-fuji/15 text-fuji",
+    todayCls: "border-fuji/50 bg-fuji/5",
+  },
+];
+
+export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardType?: "word" | "kanji") => void }) {
   const { words, kanji, progressMap, stats } = useAppState();
   const { toast } = useToast();
 
+  /* ---- alternance quotidienne : jour impair = vocabulaire + conjugaison, pair = kanji + phrases ---- */
+  const program = useMemo(() => {
+    const now = new Date();
+    const start = new Date(now.getFullYear(), 0, 0);
+    const doy = Math.floor((now.getTime() - start.getTime()) / 86400000);
+    const dayA = doy % 2 === 1;
+    return {
+      today: (dayA ? ["vocab", "conj"] : ["kanji", "phrases"]) as Domain[],
+      todayLabel: dayA ? "Vocabulaire + Conjugaison" : "Kanji + Phrases",
+      tomorrowLabel: dayA ? "Kanji + Phrases" : "Vocabulaire + Conjugaison",
+      dateStr: now.toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" }),
+    };
+  }, []);
+
+  /* ---- compteurs ---- */
   const s = useMemo(() => {
     let wordsStudied = 0,
       wordsMastered = 0,
@@ -52,7 +156,24 @@ export function Dashboard({ go }: { go: (tab: TabId) => void }) {
   }, [words, kanji, progressMap]);
 
   const accuracy = stats.attempts > 0 ? Math.round((stats.correct / stats.attempts) * 100) : null;
-  const dueTotal = s.wordsDue + s.kanjiDue;
+
+  const metrics = useMemo(() => {
+    const phraseCount = words.filter((w) => w.exJa && w.exFr && w.exKana && w.exDif === "simple").length;
+    return {
+      vocab: `${s.wordsDue > 0 ? `${s.wordsDue} carte${s.wordsDue > 1 ? "s" : ""} à réviser` : "à jour"} · ${s.wordsStudied}/${words.length} étudiés`,
+      kanji: `${s.kanjiDue > 0 ? `${s.kanjiDue} carte${s.kanjiDue > 1 ? "s" : ""} à réviser` : "à jour"} · ${s.kanjiStudied}/${kanji.length} étudiés`,
+      phrases: `${phraseCount} phrases · tirage aléatoire`,
+      conj: `${buildVerbList(words).length} verbes · formes N5 & N4`,
+    } as Record<Domain, string>;
+  }, [words, kanji.length, s]);
+
+  const panels = useMemo(
+    () =>
+      [...PANELS].sort(
+        (a, b) => Number(program.today.includes(b.id)) - Number(program.today.includes(a.id))
+      ),
+    [program]
+  );
 
   const reset = async () => {
     try {
@@ -65,108 +186,137 @@ export function Dashboard({ go }: { go: (tab: TabId) => void }) {
 
   return (
     <div className="mx-auto w-full max-w-3xl space-y-8 px-4 pb-10 pt-6">
-      {/* Hero */}
-      <section className="anim-fade-up relative overflow-hidden rounded-2xl border bg-card px-6 py-8 text-center shadow-sm">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-primary/10"
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -bottom-12 -left-10 h-36 w-36 rounded-full bg-gold/10"
-        />
-        <div className="relative mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary shadow-md">
-          <span className="font-jp-serif text-3xl font-bold text-primary-foreground">日</span>
+      {/* ---- Programme du jour ---- */}
+      <section className="anim-fade-up space-y-4" aria-label="Programme du jour">
+        <div className="flex flex-wrap items-end justify-between gap-2">
+          <div>
+            <h1 className="flex items-center gap-2 text-xl font-bold md:text-2xl">
+              <CalendarDays className="h-5 w-5 text-primary" aria-hidden />
+              Programme du jour
+            </h1>
+            <p className="mt-0.5 text-sm capitalize text-muted-foreground">{program.dateStr}</p>
+          </div>
+          <p className="text-xs text-muted-foreground">
+            Aujourd&apos;hui : <span className="font-semibold text-foreground">{program.todayLabel}</span>
+            <span className="mx-1.5 text-border">|</span>
+            Demain : {program.tomorrowLabel}
+          </p>
         </div>
-        <h1 className="relative mt-4 font-jp-serif text-2xl font-bold md:text-3xl">
-          日本語を学ぼう <span className="text-primary">·</span> JLPT N5
-        </h1>
-        <p className="relative mx-auto mt-2 max-w-md text-sm text-muted-foreground">
-          251 kanji (N5 + N4), 1054 mots de vocabulaire organisés par thèmes, flashcards à répétition
-          espacée et exercices de traduction dans les deux sens.
-        </p>
-        <div className="relative mt-5 flex flex-wrap items-center justify-center gap-3">
-          <Button onClick={() => go("flashcards")} className="h-11 rounded-full px-6 font-medium shadow-sm">
-            <Layers className="mr-2 h-4 w-4" aria-hidden />
-            Flashcards {dueTotal > 0 && <span className="ml-1 rounded-full bg-primary-foreground/20 px-1.5 text-xs">{dueTotal}</span>}
-          </Button>
-          <Button
-            onClick={() => go("exercises")}
-            variant="outline"
-            className="h-11 rounded-full border-primary/40 px-6 font-medium text-primary hover:bg-primary/10 hover:text-primary"
-          >
-            <BookOpenText className="mr-2 h-4 w-4" aria-hidden />
-            Exercices de traduction
-          </Button>
+
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {panels.map((p) => {
+            const inProgram = program.today.includes(p.id);
+            const done = stats.doneToday[p.id];
+            const Icon = p.icon;
+            return (
+              <button
+                key={p.id}
+                type="button"
+                onClick={() => p.launch(go)}
+                className={cn(
+                  "group rounded-2xl border bg-card p-5 text-left shadow-sm transition-all hover:shadow-md",
+                  p.borderCls,
+                  inProgram && p.todayCls
+                )}
+              >
+                <div className="flex items-start justify-between gap-2">
+                  <span className={cn("flex h-10 w-10 items-center justify-center rounded-xl", p.iconCls)}>
+                    <Icon className="h-5 w-5" aria-hidden />
+                  </span>
+                  <span
+                    className={cn(
+                      "rounded-full px-2.5 py-0.5 text-[10px] font-semibold",
+                      inProgram ? p.badgeCls : "bg-secondary text-muted-foreground"
+                    )}
+                  >
+                    {inProgram ? "Au programme" : "Bonus"}
+                  </span>
+                </div>
+                <div className="mt-3 flex items-baseline gap-2">
+                  <span className={cn("font-jp text-lg font-bold", p.jpCls)} aria-hidden>
+                    {p.jp}
+                  </span>
+                  <span className="text-base font-semibold">{p.title}</span>
+                </div>
+                <p className="mt-0.5 text-xs text-muted-foreground">{p.desc}</p>
+                <p className="mt-2 text-xs font-medium text-foreground/80">{metrics[p.id]}</p>
+                <div className="mt-3 flex items-center gap-1.5 text-xs">
+                  {done ? (
+                    <>
+                      <CheckCircle2 className="h-3.5 w-3.5 text-matcha" aria-hidden />
+                      <span className="font-medium text-matcha">Fait aujourd&apos;hui</span>
+                    </>
+                  ) : (
+                    <>
+                      <Circle className="h-3.5 w-3.5 text-muted-foreground/60" aria-hidden />
+                      <span className="text-muted-foreground">Pas encore aujourd&apos;hui</span>
+                    </>
+                  )}
+                </div>
+              </button>
+            );
+          })}
         </div>
       </section>
 
-      {/* Progression */}
+      {/* ---- Progression ---- */}
       <section className="anim-fade-up grid grid-cols-1 gap-4 sm:grid-cols-3" aria-label="Progression">
-        <StatCard title="Vocabulaire" className="text-center">
-          <div className="mt-2 flex justify-center">
-            <ProgressRing value={words.length ? s.wordsStudied / words.length : 0} color="var(--primary)">
-              <span className="font-jp-serif text-lg font-bold">
-                {Math.round((s.wordsStudied / Math.max(words.length, 1)) * 100)}%
-              </span>
-              <span className="text-[10px] text-muted-foreground">étudié</span>
-            </ProgressRing>
-          </div>
-          <p className="mt-2 text-xs text-muted-foreground">
-            {s.wordsStudied} / {words.length} mots · <span className="text-matcha">{s.wordsMastered} maîtrisés</span>
+        <div className="rounded-xl border bg-card p-4 text-center shadow-sm">
+          <ProgressRing value={words.length ? s.wordsStudied / words.length : 0} color="var(--matcha)" size={72} stroke={8}>
+            <span className="text-base font-bold">
+              {Math.round((s.wordsStudied / Math.max(words.length, 1)) * 100)}%
+            </span>
+          </ProgressRing>
+          <p className="mt-2 text-xs font-medium">Vocabulaire</p>
+          <p className="text-[11px] text-muted-foreground">
+            {s.wordsStudied}/{words.length} · <span className="text-matcha">{s.wordsMastered} maîtrisés</span>
           </p>
-        </StatCard>
+        </div>
 
-        <StatCard title="Kanji" className="text-center">
-          <div className="mt-2 flex justify-center">
-            <ProgressRing value={kanji.length ? s.kanjiStudied / kanji.length : 0} color="var(--gold)">
-              <span className="font-jp-serif text-lg font-bold">
-                {Math.round((s.kanjiStudied / Math.max(kanji.length, 1)) * 100)}%
-              </span>
-              <span className="text-[10px] text-muted-foreground">étudié</span>
-            </ProgressRing>
-          </div>
-          <p className="mt-2 text-xs text-muted-foreground">
-            {s.kanjiStudied} / {kanji.length} kanji · <span className="text-matcha">{s.kanjiMastered} maîtrisés</span>
+        <div className="rounded-xl border bg-card p-4 text-center shadow-sm">
+          <ProgressRing value={kanji.length ? s.kanjiStudied / kanji.length : 0} color="var(--gold)" size={72} stroke={8}>
+            <span className="text-base font-bold">
+              {Math.round((s.kanjiStudied / Math.max(kanji.length, 1)) * 100)}%
+            </span>
+          </ProgressRing>
+          <p className="mt-2 text-xs font-medium">Kanji</p>
+          <p className="text-[11px] text-muted-foreground">
+            {s.kanjiStudied}/{kanji.length} · <span className="text-[#8a6d1d]">{s.kanjiMastered} maîtrisés</span>
           </p>
-        </StatCard>
+        </div>
 
-        <StatCard title="Exercices" className="text-center">
-          <div className="mt-2 flex justify-center">
-            <ProgressRing value={accuracy !== null ? accuracy / 100 : 0} color="var(--matcha)">
-              <span className="font-jp-serif text-lg font-bold">{accuracy !== null ? `${accuracy}%` : "—"}</span>
-              <span className="text-[10px] text-muted-foreground">réussite</span>
-            </ProgressRing>
-          </div>
-          <p className="mt-2 text-xs text-muted-foreground">
-            {stats.attempts} tentatives · {stats.attemptsToday} aujourd&apos;hui
+        <div className="rounded-xl border bg-card p-4 text-center shadow-sm">
+          <ProgressRing value={accuracy !== null ? accuracy / 100 : 0} color="var(--primary)" size={72} stroke={8}>
+            <span className="text-base font-bold">{accuracy !== null ? `${accuracy}%` : "—"}</span>
+          </ProgressRing>
+          <p className="mt-2 text-xs font-medium">Exercices</p>
+          <p className="text-[11px] text-muted-foreground">
+            {stats.attemptsToday} tentative{stats.attemptsToday > 1 ? "s" : ""} aujourd&apos;hui
           </p>
-        </StatCard>
+        </div>
       </section>
 
-      {/* À réviser */}
+      {/* ---- Rappel des révisions ---- */}
       <section className="anim-fade-up rounded-2xl border bg-card p-5 shadow-sm" aria-label="Révisions du jour">
-        <div className="flex items-center gap-3">
-          <Sparkles className="h-5 w-5 text-gold" aria-hidden />
-          <h2 className="font-semibold">Révisions du jour</h2>
+        <div className="flex items-center justify-between gap-3">
+          <p className="text-sm text-muted-foreground">
+            {s.wordsDue + s.kanjiDue === 0 ? (
+              <>Rien à réviser pour l&apos;instant — les nouveaux éléments arrivent au fil des sessions.</>
+            ) : (
+              <>
+                <span className="font-semibold text-foreground">{s.wordsDue + s.kanjiDue} carte(s)</span> attendent ta
+                révision dans les flashcards ({s.wordsDue} mot{s.wordsDue > 1 ? "s" : ""}, {s.kanjiDue} kanji).
+              </>
+            )}
+          </p>
         </div>
-        {dueTotal === 0 ? (
-          <p className="mt-2 text-sm text-muted-foreground">
-            Rien à réviser pour l&apos;instant — commence une session pour découvrir de nouveaux mots et kanji !
-          </p>
-        ) : (
-          <p className="mt-2 text-sm text-muted-foreground">
-            <span className="font-semibold text-foreground">{dueTotal} carte{dueTotal > 1 ? "s" : ""}</span> attend
-            {dueTotal > 1 ? "" : ""} ta révision ({s.wordsDue} mot{s.wordsDue > 1 ? "s" : ""}, {s.kanjiDue} kanji).
-          </p>
-        )}
-        <div className="mt-3 flex flex-wrap gap-2">
+        <div className="mt-3 grid gap-2 sm:grid-cols-2">
           {(["words", "kanji"] as const).map((t) => {
             const total = t === "words" ? words.length : kanji.length;
             const studied = t === "words" ? s.wordsStudied : s.kanjiStudied;
             const due = t === "words" ? s.wordsDue : s.kanjiDue;
             return (
-              <div key={t} className="min-w-[180px] flex-1 rounded-lg border bg-secondary/40 p-3">
+              <div key={t} className="rounded-lg border bg-secondary/40 p-3">
                 <p className="text-xs font-medium">{t === "words" ? "Mots" : "Kanji"}</p>
                 <Progress className="mt-2 h-1.5" value={(studied / Math.max(total, 1)) * 100} />
                 <p className="mt-1.5 text-[11px] text-muted-foreground">
@@ -178,7 +328,7 @@ export function Dashboard({ go }: { go: (tab: TabId) => void }) {
         </div>
       </section>
 
-      {/* Réinitialisation */}
+      {/* ---- Réinitialisation ---- */}
       <section className="flex justify-center pb-2">
         <AlertDialog>
           <AlertDialogTrigger asChild>

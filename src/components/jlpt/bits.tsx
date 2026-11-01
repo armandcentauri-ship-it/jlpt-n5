@@ -78,7 +78,7 @@ export function StatCard({
   return (
     <div className={cn("rounded-xl border bg-card p-4 shadow-sm", className)}>
       <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">{title}</p>
-      {main !== undefined && <p className="mt-1 font-jp-serif text-2xl font-semibold">{main}</p>}
+      {main !== undefined && <p className="mt-1 font-jp text-2xl font-semibold">{main}</p>}
       {sub && <p className="mt-0.5 text-xs text-muted-foreground">{sub}</p>}
       {children}
     </div>
@@ -119,7 +119,7 @@ export function FilterChip({
 export function SectionTitle({ kanji, children }: { kanji: string; children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3">
-      <span className="font-jp-serif text-xl text-primary" aria-hidden>
+      <span className="font-jp text-xl text-primary" aria-hidden>
         {kanji}
       </span>
       <h2 className="text-lg font-semibold">{children}</h2>

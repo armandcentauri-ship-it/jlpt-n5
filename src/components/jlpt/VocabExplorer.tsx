@@ -97,7 +97,7 @@ export function VocabExplorer() {
   return (
     <div className="mx-auto w-full max-w-3xl space-y-4 px-4 pb-10 pt-6">
       <div className="flex items-baseline justify-between">
-        <h2 className="font-jp-serif text-2xl font-bold">
+        <h2 className="font-jp text-2xl font-bold">
           単語 <span className="text-lg text-muted-foreground">· Vocabulaire par thème</span>
         </h2>
         <span className="text-xs text-muted-foreground">{filtered.length} mot(s)</span>
@@ -188,7 +188,7 @@ export function VocabExplorer() {
                 className="flex w-full items-center gap-3 px-4 py-3 text-left"
               >
                 <span className="flex min-w-0 flex-1 items-center gap-3">
-                  <span className="font-jp-serif shrink-0 text-xl">{w.word}</span>
+                  <span className="font-jp shrink-0 text-xl">{w.word}</span>
                   <span className="min-w-0 flex-1">
                     <span className="block truncate text-sm">
                       <span className="font-jp text-primary">{w.reading}</span>

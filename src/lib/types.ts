@@ -55,7 +55,13 @@ export interface ContentResponse {
   words: WordItem[];
   kanji: KanjiItem[];
   progress: ProgressItem[];
-  stats: { attempts: number; correct: number; attemptsToday: number; correctToday: number };
+  stats: {
+    attempts: number;
+    correct: number;
+    attemptsToday: number;
+    correctToday: number;
+    doneToday: { vocab: boolean; kanji: boolean; phrases: boolean; conj: boolean };
+  };
 }
 
 export type Grade = 0 | 1 | 2 | 3; // encore | difficile | bien | facile

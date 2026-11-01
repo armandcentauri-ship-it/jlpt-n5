@@ -1,16 +1,17 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import { ArrowRight, CheckCircle2, Eye, Lock, Send, XCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { progressKey, useAppState, useReview } from "./state";
-import { SectionTitle, FilterChip } from "./bits";
+import { SectionTitle } from "./bits";
 import { useToast } from "@/hooks/use-toast";
 import { AudioButton } from "./AudioButton";
 import { Ruby } from "./Ruby";
 import { KanaInput } from "./KanaInput";
 import { checkAnswer } from "@/lib/grade";
+import { finalizeKana } from "@/lib/romaji";
 import type { WordItem } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
@@ -23,24 +24,16 @@ interface ExItem {
   direction: Direction;
 }
 
-const WEEK = 7 * 24 * 3600 * 1000;
 const MASTERED_DAYS = 21; // cohérent avec le tableau de bord / vocabulaire
 const UNLOCK_PCT = 0.2; // niveau 2 débloqué à 20 % de vocabulaire maîtrisé
 
-export function Exercises() {
+export function Exercises({ autoStart }: { autoStart?: boolean }) {
   const { words, progressMap } = useAppState();
   const { submit } = useReview();
   const { toast } = useToast();
 
-  const [phase, setPhase] = useState<Phase>("setup");
   const [size, setSize] = useState(10);
-  const [scope, setScope] = useState<"recent" | "all">("recent");
   const [tier, setTier] = useState<1 | 2>(1);
-  const [queue, setQueue] = useState<ExItem[]>([]);
-  const [index, setIndex] = useState(0);
-  const [input, setInput] = useState("");
-  const [status, setStatus] = useState<Status>("answering");
-  const [tally, setTally] = useState({ correct: 0, total: 0 });
 
   /* maîtrise du vocabulaire → déblocage du niveau 2 */
   const mastery = useMemo(() => {
@@ -53,56 +46,38 @@ export function Exercises() {
     return { mastered, pct, unlocked: pct >= UNLOCK_PCT };
   }, [words, progressMap]);
 
-  const pools = useMemo(() => {
-    const now = Date.now();
-    const weekAgo = now - WEEK;
-    const recentlyStudied: WordItem[] = [];
-    const others: WordItem[] = [];
-    const isEligible = (w: WordItem) =>
-      w.exJa && w.exFr && w.exKana && w.exDif === "simple" && w.exTier === tier;
-    for (const w of words) {
-      const p = progressMap.get(progressKey("word", w.id));
-      if (p?.lastReviewedAt && new Date(p.lastReviewedAt).getTime() >= weekAgo) {
-        if (isEligible(w)) recentlyStudied.push(w);
-      } else if (isEligible(w)) {
-        others.push(w);
-      }
-    }
-    return { recentlyStudied, others };
-  }, [words, progressMap, tier]);
+  /* pool unique : toutes les phrases éligibles, tirage aléatoire */
+  const eligible = useMemo(
+    () => words.filter((w) => w.exJa && w.exFr && w.exKana && w.exDif === "simple"),
+    [words]
+  );
 
   const tierCounts = useMemo(() => {
-    const eligible = (w: WordItem) => w.exJa && w.exFr && w.exKana && w.exDif === "simple";
     const c = { 1: 0, 2: 0 };
-    for (const w of words) if (eligible(w)) c[(w.exTier || 2) as 1 | 2]++;
+    for (const w of eligible) c[(w.exTier || 2) as 1 | 2]++;
     return c;
-  }, [words]);
+  }, [eligible]);
 
-  const buildQueue = () => {
-    const eligible = (pool: WordItem[]) =>
-      pool.filter((w) => w.exJa && w.exFr && w.exKana && w.exDif === "simple" && w.exTier === tier);
-    let picked: WordItem[] = [];
-    if (scope === "recent") {
-      const recent = eligible(pools.recentlyStudied);
-      picked = recent.slice(0, size);
-      if (picked.length < size) {
-        const rest = eligible(pools.others).filter((w) => !picked.includes(w));
-        // d'abord les jamais étudiés (ordre pédagogique), puis le reste
-        const fresh = rest.filter((w) => !progressMap.get(progressKey("word", w.id)));
-        const seen = rest.filter((w) => progressMap.get(progressKey("word", w.id)));
-        picked = [...picked, ...fresh.slice(0, size - picked.length)];
-        if (picked.length < size) {
-          picked = [...picked, ...seen.sort(() => Math.random() - 0.5).slice(0, size - picked.length)];
-        }
-      }
-    } else {
-      const all = eligible(words);
-      // moitié récents, moitié hasard pour la variété
-      const recent = eligible(pools.recentlyStudied).slice(0, Math.ceil(size / 2));
-      const rest = all.filter((w) => !recent.includes(w)).sort(() => Math.random() - 0.5);
-      picked = [...recent, ...rest].slice(0, size);
-    }
-    picked.sort(() => Math.random() - 0.5);
+  /* file initiale quand l'exercice est lancé directement depuis le tableau de bord */
+  const initialEntries = useMemo(() => {
+    if (!autoStart) return [];
+    const pool = eligible.filter((w) => w.exTier === tier);
+    return [...pool]
+      .sort(() => Math.random() - 0.5)
+      .slice(0, size)
+      .map((word, i) => ({ word, direction: (i % 2 === 0 ? "j2f" : "f2j") as Direction }));
+  }, []);
+
+  const [phase, setPhase] = useState<Phase>(initialEntries.length ? "session" : "setup");
+  const [queue, setQueue] = useState<ExItem[]>(initialEntries);
+  const [index, setIndex] = useState(0);
+  const [input, setInput] = useState("");
+  const [status, setStatus] = useState<Status>("answering");
+  const [tally, setTally] = useState({ correct: 0, total: 0 });
+
+  const buildQueue = useCallback(() => {
+    const pool = eligible.filter((w) => w.exTier === tier);
+    const picked = [...pool].sort(() => Math.random() - 0.5).slice(0, size);
     const entries: ExItem[] = picked.map((word, i) => ({
       word,
       direction: i % 2 === 0 ? "j2f" : "f2j",
@@ -122,7 +97,7 @@ export function Exercises() {
             : "Aucune phrase de ce niveau ne correspond à ce filtre pour le moment.",
       });
     }
-  };
+  }, [eligible, tier, size, toast]);
 
   const finishItem = (wasCorrect: boolean, mode: Direction) => {
     submit("word", queue[index].word.id, wasCorrect ? 2 : 0, mode === "j2f" ? "ex_jp_fr" : "ex_fr_jp");
@@ -140,9 +115,11 @@ export function Exercises() {
     if (!input.trim()) return;
     const item = queue[index];
     if (!item) return;
+    /* finalise le « n » en attente du clavier kana (f2j uniquement) */
+    const candidate = item.direction === "f2j" ? finalizeKana(input) : input;
     const refs =
       item.direction === "j2f" ? [item.word.exFr] : [item.word.exKana || item.word.exJa, item.word.exJa];
-    const { result } = checkAnswer(input, refs, item.direction === "j2f" ? "fr" : "jp");
+    const { result } = checkAnswer(candidate, refs, item.direction === "j2f" ? "fr" : "jp");
     if (result === "correct") {
       setStatus("correct");
     } else {
@@ -154,7 +131,6 @@ export function Exercises() {
 
   /* ---------------- Configuration ---------------- */
   if (phase === "setup") {
-    const nRecent = pools.recentlyStudied.length;
     const pctDisplay = Math.round(mastery.pct * 100);
     const needed = Math.max(0, Math.ceil(UNLOCK_PCT * words.length) - mastery.mastered);
     return (
@@ -166,9 +142,10 @@ export function Exercises() {
             <div className="rounded-lg border bg-secondary/40 p-4 text-sm text-muted-foreground">
               <p>
                 Traduis des phrases <span className="font-medium text-foreground">dans les deux sens</span> :
-                japonais → français, puis français → japonais. Les phrases reprennent le vocabulaire
-                que tu viens d&apos;étudier. La saisie japonaise se fait en romaji, converti
-                automatiquement en kana (touche <span className="font-jp font-semibold">あ</span>).
+                japonais → français, puis français → japonais. Les phrases sont tirées
+                <span className="font-medium text-foreground"> au hasard</span> dans tout le corpus.
+                La saisie japonaise se fait en romaji, converti automatiquement en kana (touche{" "}
+                <span className="font-jp font-semibold">あ</span>).
               </p>
             </div>
 
@@ -239,24 +216,6 @@ export function Exercises() {
             </div>
 
             <div>
-              <p className="mb-2 text-sm font-medium">Vocabulaire visé</p>
-              <div className="flex flex-wrap gap-2">
-                <FilterChip active={scope === "recent"} onClick={() => setScope("recent")}>
-                  Récemment vu ({nRecent})
-                </FilterChip>
-                <FilterChip active={scope === "all"} onClick={() => setScope("all")}>
-                  Tout le vocabulaire
-                </FilterChip>
-              </div>
-              {scope === "recent" && nRecent === 0 && (
-                <p className="mt-2 text-xs text-muted-foreground">
-                  Aucun mot étudié récemment — les premières sessions piocheront dans les nouveaux mots
-                  (ordre pédagogique).
-                </p>
-              )}
-            </div>
-
-            <div>
               <p className="mb-2 text-sm font-medium">Nombre de phrases</p>
               <div className="flex gap-2">
                 {[5, 10, 15].map((n) => (
@@ -296,11 +255,11 @@ export function Exercises() {
                 pct >= 80 ? "bg-matcha/15" : pct >= 50 ? "bg-gold/20" : "bg-destructive/10"
               )}
             >
-              <span className="font-jp-serif text-2xl font-bold">
+              <span className="font-jp text-2xl font-bold">
                 {pct >= 80 ? "上" : pct >= 50 ? "中" : "初"}
               </span>
             </div>
-            <h2 className="font-jp-serif text-2xl font-bold">
+            <h2 className="font-jp text-2xl font-bold">
               {pct >= 80 ? "素晴らしい !" : pct >= 50 ? "いいね !" : "練習、練習 !"}
             </h2>
             <p className="text-sm text-muted-foreground">

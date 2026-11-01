@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ArrowRight, CheckCircle2, Layers, RotateCcw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -29,12 +29,20 @@ const GRADES: { grade: Grade; label: string; key: string; cls: string }[] = [
   { grade: 3, label: "Facile", key: "4", cls: "border-matcha/50 text-matcha hover:bg-matcha hover:text-matcha-foreground" },
 ];
 
-export function Flashcards({ go }: { go: (tab: TabId) => void }) {
+export function Flashcards({
+  go,
+  autoStart,
+  initialType = "word",
+}: {
+  go: (tab: TabId) => void;
+  autoStart?: boolean;
+  initialType?: CardType;
+}) {
   const { words: allWords, kanji: allKanji, progressMap } = useAppState();
   const { submit } = useReview();
 
   const [phase, setPhase] = useState<Phase>("setup");
-  const [type, setType] = useState<CardType>("word");
+  const [type, setType] = useState<CardType>(initialType);
   const [size, setSize] = useState(15);
   const [queue, setQueue] = useState<QueueEntry[]>([]);
   const [index, setIndex] = useState(0);
@@ -56,30 +64,32 @@ export function Flashcards({ go }: { go: (tab: TabId) => void }) {
   }, [items, progressMap, type]);
 
   const buildQueue = useCallback(
-    (mode: "normal" | "free") => {
+    (mode: "normal" | "free", typeOverride?: CardType) => {
+      const t = typeOverride ?? type;
+      const pool = t === "word" ? allWords : allKanji;
       const now = Date.now();
-      const dueList = items
+      const dueList = pool
         .filter((it) => {
-          const p = progressMap.get(progressKey(type, it.id));
+          const p = progressMap.get(progressKey(t, it.id));
           return p && new Date(p.dueAt).getTime() <= now;
         })
         .sort((a, b) => {
-          const pa = progressMap.get(progressKey(type, a.id))!;
-          const pb = progressMap.get(progressKey(type, b.id))!;
+          const pa = progressMap.get(progressKey(t, a.id))!;
+          const pb = progressMap.get(progressKey(t, b.id))!;
           return new Date(pa.dueAt).getTime() - new Date(pb.dueAt).getTime();
         });
-      const freshList = items.filter((it) => !progressMap.get(progressKey(type, it.id)));
+      const freshList = pool.filter((it) => !progressMap.get(progressKey(t, it.id)));
 
       let entries: QueueEntry[];
       if (mode === "free") {
-        const pool = [...items].sort(() => Math.random() - 0.5).slice(0, size);
-        entries = pool.map((it) => ({ id: it.id, type }));
+        const shuffled = [...pool].sort(() => Math.random() - 0.5).slice(0, size);
+        entries = shuffled.map((it) => ({ id: it.id, type: t }));
       } else {
         const dueTake = dueList.slice(0, size);
         const freshTake = freshList.slice(0, Math.max(0, Math.min(10, size - dueTake.length)));
         entries = [
-          ...dueTake.map((it) => ({ id: it.id, type: type as CardType })),
-          ...freshTake.map((it) => ({ id: it.id, type: type as CardType })),
+          ...dueTake.map((it) => ({ id: it.id, type: t as CardType })),
+          ...freshTake.map((it) => ({ id: it.id, type: t as CardType })),
         ];
         // mélange doux : on intercale les nouvelles cartes
         entries = entries.sort((a, b) => {
@@ -95,8 +105,17 @@ export function Flashcards({ go }: { go: (tab: TabId) => void }) {
       setTally({ 0: 0, 1: 0, 2: 0, 3: 0 });
       setPhase(entries.length ? "session" : "setup");
     },
-    [items, progressMap, size, type]
+    [allWords, allKanji, progressMap, size, type]
   );
+
+  /* Lancement direct depuis le tableau de bord (panneau vocabulaire ou kanji) */
+  const started = useRef(false);
+  useEffect(() => {
+    if (autoStart && !started.current) {
+      started.current = true;
+      buildQueue("normal", initialType);
+    }
+  });
 
   const grade = useCallback(
     (g: Grade) => {
@@ -170,7 +189,7 @@ export function Flashcards({ go }: { go: (tab: TabId) => void }) {
                   >
                     <div className="flex items-center justify-between">
                       <span className="font-semibold">{opt.title}</span>
-                      <span className="font-jp-serif text-lg text-primary">{opt.jp}</span>
+                      <span className="font-jp text-lg text-primary">{opt.jp}</span>
                     </div>
                     <p className="mt-1 text-xs text-muted-foreground">{opt.desc}</p>
                   </button>
@@ -250,7 +269,7 @@ export function Flashcards({ go }: { go: (tab: TabId) => void }) {
             <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-matcha/15">
               <CheckCircle2 className="h-8 w-8 text-matcha" aria-hidden />
             </div>
-            <h2 className="font-jp-serif text-2xl font-bold">お疲れ様 !</h2>
+            <h2 className="font-jp text-2xl font-bold">お疲れ様 !</h2>
             <p className="text-sm text-muted-foreground">
               {total} carte{total > 1 ? "s" : ""} révisée{total > 1 ? "s" : ""} · {good} réussie{good > 1 ? "s" : ""}
             </p>
@@ -309,7 +328,7 @@ export function Flashcards({ go }: { go: (tab: TabId) => void }) {
               {entry.type === "word" && word ? (
                 <>
                   <LevelBadge level={word.level} />
-                  <p className="font-jp-serif break-all text-center text-6xl font-semibold md:text-7xl">
+                  <p className="font-jp break-all text-center text-6xl font-semibold md:text-7xl">
                     {word.word}
                   </p>
                   <AudioButton text={word.word} size="icon-lg" />
@@ -320,7 +339,7 @@ export function Flashcards({ go }: { go: (tab: TabId) => void }) {
               ) : curKanji ? (
                 <>
                   <LevelBadge level={curKanji.level} />
-                  <p className="font-jp-serif text-center text-8xl font-semibold">{curKanji.character}</p>
+                  <p className="font-jp text-center text-8xl font-semibold">{curKanji.character}</p>
                   <p className="text-sm text-muted-foreground">{curKanji.strokes} traits</p>
                   <p className="text-xs uppercase tracking-wide text-muted-foreground">
                     Clique ou espace pour révéler
@@ -337,7 +356,7 @@ export function Flashcards({ go }: { go: (tab: TabId) => void }) {
                 <div className="flex h-full flex-col gap-3" onClick={(e) => e.stopPropagation()}>
                   <div className="flex items-start justify-between gap-2">
                     <div>
-                      <p className="font-jp-serif text-3xl font-semibold">{word.word}</p>
+                      <p className="font-jp text-3xl font-semibold">{word.word}</p>
                       <p className="font-jp mt-1 text-lg text-primary">{word.reading}</p>
                       {word.romaji && <p className="text-xs italic text-muted-foreground">{word.romaji}</p>}
                     </div>
@@ -372,10 +391,50 @@ export function Flashcards({ go }: { go: (tab: TabId) => void }) {
                 </div>
               ) : curKanji ? (
                 <div className="flex h-full flex-col gap-3" onClick={(e) => e.stopPropagation()}>
-                  <div className="flex items-start justify-between">
-                    <div className="flex items-baseline gap-4">
-                      <p className="font-jp-serif text-6xl font-semibold">{curKanji.character}</p>
-                      <p className="text-sm text-muted-foreground">{curKanji.strokes} traits</p>
+                  {/* kanji + lectures les plus usitées directement sous le caractère */}
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex items-center gap-4">
+                      <p className="font-jp text-6xl font-semibold md:text-7xl">{curKanji.character}</p>
+                      <div className="space-y-1.5">
+                        {splitOnyomi(curKanji.onyomi).length > 0 && (
+                          <div className="flex flex-wrap items-center gap-1.5">
+                            <span
+                              className="rounded bg-gold/20 px-1.5 py-0.5 text-[10px] font-bold text-[#8a6d1d]"
+                              title="Lecture on (chinoise)"
+                            >
+                              音
+                            </span>
+                            {splitOnyomi(curKanji.onyomi)
+                              .slice(0, 2)
+                              .map((o) => (
+                                <span
+                                  key={o}
+                                  className="font-jp rounded-md bg-gold/15 px-2 py-0.5 text-base font-semibold text-[#8a6d1d]"
+                                >
+                                  {o}
+                                </span>
+                              ))}
+                          </div>
+                        )}
+                        {cleanKunyomi(curKanji.kunyomi).length > 0 && (
+                          <div className="flex flex-wrap items-center gap-1.5">
+                            <span
+                              className="rounded bg-secondary px-1.5 py-0.5 text-[10px] font-bold text-muted-foreground"
+                              title="Lecture kun (japonaise)"
+                            >
+                              訓
+                            </span>
+                            {cleanKunyomi(curKanji.kunyomi)
+                              .slice(0, 2)
+                              .map((k) => (
+                                <span key={k} className="font-jp rounded-md bg-secondary px-2 py-0.5 text-base font-semibold">
+                                  {k}
+                                </span>
+                              ))}
+                          </div>
+                        )}
+                        <p className="text-[11px] text-muted-foreground">{curKanji.strokes} traits · lectures les plus usitées</p>
+                      </div>
                     </div>
                     <div className="flex flex-col items-end gap-2">
                       <AudioButton text={curKanji.character} />
@@ -383,49 +442,39 @@ export function Flashcards({ go }: { go: (tab: TabId) => void }) {
                     </div>
                   </div>
 
-                  <div className="rounded-lg bg-secondary/50 p-3">
-                    <p className="text-base font-medium">{curKanji.meaningsFr.join(" ; ") || curKanji.meaningsEn.join(" ; ")}</p>
-                    <p className="mt-1 text-xs text-muted-foreground">{curKanji.meaningsEn.join(" ; ")}</p>
-                  </div>
+                  {/* autres lectures (listées, plus discrètes) */}
+                  {(splitOnyomi(curKanji.onyomi).length > 2 || cleanKunyomi(curKanji.kunyomi).length > 2) && (
+                    <p className="text-[11px] leading-relaxed text-muted-foreground">
+                      Autres lectures :{" "}
+                      {[...splitOnyomi(curKanji.onyomi).slice(2), ...cleanKunyomi(curKanji.kunyomi).slice(2)].join(" · ")}
+                    </p>
+                  )}
 
-                  {splitOnyomi(curKanji.onyomi).length > 0 && (
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Lectures on</p>
-                      <div className="mt-1 flex flex-wrap gap-1.5">
-                        {splitOnyomi(curKanji.onyomi).map((o) => (
-                          <span key={o} className="font-jp rounded-md bg-gold/15 px-2 py-0.5 text-sm text-[#8a6d1d]">
-                            {o}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                  {cleanKunyomi(curKanji.kunyomi).length > 0 && (
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Lectures kun</p>
-                      <div className="mt-1 flex flex-wrap gap-1.5">
-                        {cleanKunyomi(curKanji.kunyomi).map((k) => (
-                          <span key={k} className="font-jp rounded-md bg-secondary px-2 py-0.5 text-sm">
-                            {k}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+                  {/* sens principal, bien visible */}
+                  <div className="rounded-lg bg-secondary/50 p-3">
+                    <p className="text-xl font-semibold">
+                      {curKanji.meaningsFr[0] ?? curKanji.meaningsEn[0] ?? "—"}
+                    </p>
+                    {curKanji.meaningsFr.length > 1 && (
+                      <p className="mt-0.5 text-sm text-muted-foreground">aussi : {curKanji.meaningsFr.slice(1).join(" ; ")}</p>
+                    )}
+                  </div>
 
                   {curKanji.examples.length > 0 && (
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Mots avec ce kanji</p>
-                      <div className="mt-1 flex flex-wrap gap-1.5">
-                        {curKanji.examples.slice(0, 4).map((ex) => (
-                          <span
+                      <div className="mt-1 space-y-1.5">
+                        {curKanji.examples.slice(0, 3).map((ex) => (
+                          <div
                             key={ex.word}
-                            className="rounded-md border bg-card px-2 py-1 text-xs"
-                            title={ex.fr || ""}
+                            className="flex items-baseline justify-between gap-2 rounded-md border bg-card px-2.5 py-1.5"
                           >
-                            <span className="font-jp">{ex.word}</span>
-                            {ex.reading && <span className="text-muted-foreground"> [{ex.reading}]</span>}
-                          </span>
+                            <span className="text-sm">
+                              <span className="font-jp font-medium">{ex.word}</span>
+                              {ex.reading && <span className="font-jp text-xs text-muted-foreground"> [{ex.reading}]</span>}
+                            </span>
+                            <span className="text-right text-xs text-muted-foreground">{ex.fr}</span>
+                          </div>
                         ))}
                       </div>
                     </div>

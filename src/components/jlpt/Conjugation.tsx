@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
   ArrowRight,
   BookOpen,
@@ -21,6 +21,7 @@ import { AudioButton } from "./AudioButton";
 import { Ruby } from "./Ruby";
 import { KanaInput } from "./KanaInput";
 import { checkConj } from "@/lib/grade";
+import { finalizeKana } from "@/lib/romaji";
 import {
   buildVerbList,
   conjRefs,
@@ -64,7 +65,7 @@ const inGroupFilter = (v: VerbItem, g: GroupFilter) =>
     ? v.group === "suru" || v.group === "kuru" || v.isSpecialIku || v.isSpecialAru
     : v.group === g);
 
-export function Conjugation() {
+export function Conjugation({ autoStart }: { autoStart?: boolean }) {
   const { words, progressMap } = useAppState();
   const { submit } = useReview();
 
@@ -172,6 +173,15 @@ export function Conjugation() {
     setMode("train");
   };
 
+  /* Lancement direct depuis le tableau de bord (panneau conjugaison) */
+  const started = useRef(false);
+  useEffect(() => {
+    if (autoStart && !started.current) {
+      started.current = true;
+      buildQueue();
+    }
+  });
+
   const finishItem = (wasCorrect: boolean) => {
     const q = queue[index];
     if (!q) return;
@@ -191,7 +201,8 @@ export function Conjugation() {
     const q = queue[index];
     if (!q) return;
     const f = conjugateVerb(q.verb)[q.form];
-    const { result } = checkConj(input, conjRefs(f));
+    /* finalise le « n » en attente du clavier kana */
+    const { result } = checkConj(finalizeKana(input), conjRefs(f));
     setStatus(result === "correct" ? "correct" : result === "close" ? "close" : "wrong");
   };
 
@@ -701,9 +712,9 @@ function TrainDone(props: {
             pct >= 80 ? "bg-matcha/15" : pct >= 50 ? "bg-gold/20" : "bg-destructive/10"
           )}
         >
-          <span className="font-jp-serif text-2xl font-bold">{pct >= 80 ? "上" : pct >= 50 ? "中" : "初"}</span>
+          <span className="font-jp text-2xl font-bold">{pct >= 80 ? "上" : pct >= 50 ? "中" : "初"}</span>
         </div>
-        <h2 className="font-jp-serif text-2xl font-bold">
+        <h2 className="font-jp text-2xl font-bold">
           {pct >= 80 ? "素晴らしい !" : pct >= 50 ? "いいね !" : "練習、練習 !"}
         </h2>
         <p className="text-sm text-muted-foreground">
