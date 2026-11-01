@@ -122,15 +122,12 @@ export default function Home() {
                   onClick={() => setTab(t.id)}
                   aria-current={tab === t.id ? "page" : undefined}
                   className={cn(
-                    "flex shrink-0 items-center gap-1.5 rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
+                    "flex shrink-0 items-center rounded-full px-4 py-2 text-sm font-medium transition-colors",
                     tab === t.id
                       ? "bg-primary text-primary-foreground shadow-sm"
                       : "text-muted-foreground hover:bg-secondary hover:text-foreground"
                   )}
                 >
-                  <span className="font-jp text-xs" aria-hidden>
-                    {t.jp}
-                  </span>
                   {t.label}
                 </button>
               ))}

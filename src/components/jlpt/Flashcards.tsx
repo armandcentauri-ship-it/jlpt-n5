@@ -171,8 +171,8 @@ export function Flashcards({
               <div className="grid grid-cols-2 gap-3">
                 {(
                   [
-                    { id: "word" as CardType, title: "Mots", jp: "単語", desc: `${allWords.length} mots de vocabulaire` },
-                    { id: "kanji" as CardType, title: "Kanji", jp: "漢字", desc: `${allKanji.length} kanji N5 + N4` },
+                    { id: "word" as CardType, title: "Mots", jp: "単語", desc: `${allWords.length} mots` },
+                    { id: "kanji" as CardType, title: "Kanji", jp: "漢字", desc: `${allKanji.length} kanji` },
                   ]
                 ).map((opt) => (
                   <button
@@ -218,10 +218,7 @@ export function Flashcards({
             {nothingDue && counts.fresh === 0 && counts.due === 0 ? (
               <div className="rounded-lg border border-matcha/30 bg-matcha/10 p-4 text-sm">
                 <p className="font-medium text-matcha">Tout est à jour ! ✨</p>
-                <p className="mt-1 text-muted-foreground">
-                  Aucune carte à réviser pour le moment. Tu peux tout de même t&apos;entraîner avec une
-                  session libre, ou revenir plus tard.
-                </p>
+                <p className="mt-1 text-muted-foreground">Session libre possible, ou reviens plus tard.</p>
               </div>
             ) : (
               <div className="flex flex-wrap items-center gap-3 rounded-lg bg-secondary/50 p-4 text-sm">
@@ -240,7 +237,7 @@ export function Flashcards({
                 className="h-11 flex-1 rounded-full"
               >
                 <Layers className="mr-2 h-4 w-4" aria-hidden />
-                Commencer la session
+                Commencer
               </Button>
               <Button variant="outline" onClick={() => buildQueue("free")} className="h-11 rounded-full">
                 <RotateCcw className="mr-2 h-4 w-4" aria-hidden />

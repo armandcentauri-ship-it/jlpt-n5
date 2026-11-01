@@ -14,7 +14,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { useToast } from "@/hooks/use-toast";
-import { useAppState } from "./state";
+import { progressKey, useAppState } from "./state";
 import type { TabId } from "./tabs";
 import { cn } from "@/lib/utils";
 
@@ -83,7 +83,7 @@ const PANELS: PanelDef[] = [
 ];
 
 export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardType?: "word" | "kanji") => void }) {
-  const { stats } = useAppState();
+  const { stats, words, kanji, progressMap } = useAppState();
   const { toast } = useToast();
 
   /* alternance quotidienne : jour impair = vocabulaire + conjugaison, pair = kanji + phrases */
@@ -93,6 +93,23 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
     const doy = Math.floor((now.getTime() - start.getTime()) / 86400000);
     return (doy % 2 === 1 ? ["vocab", "conj"] : ["kanji", "phrases"]) as Domain[];
   }, []);
+
+  /* progression globale : maîtrise = intervalle SRS ≥ 21 j (cohérent avec le reste de l'app) */
+  const prog = useMemo(() => {
+    const calc = (items: { id: string }[], type: "word" | "kanji") => {
+      let seen = 0;
+      let mastered = 0;
+      for (const it of items) {
+        const p = progressMap.get(progressKey(type, it.id));
+        if (p) {
+          seen++;
+          if (p.intervalDays >= 21) mastered++;
+        }
+      }
+      return { total: items.length, seen, mastered };
+    };
+    return { vocab: calc(words, "word"), kanji: calc(kanji, "kanji") };
+  }, [words, kanji, progressMap]);
 
   const reset = async () => {
     try {
@@ -161,8 +178,28 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
         })}
       </div>
 
+      {/* progression globale — graphique, sans texte superflu */}
+      <div className="anim-fade-up mt-6 space-y-2.5" aria-label="Progression globale">
+        <MasteryBar
+          jp="単語"
+          total={prog.vocab.total}
+          seen={prog.vocab.seen}
+          mastered={prog.vocab.mastered}
+          soft="bg-matcha/30"
+          solid="bg-matcha"
+        />
+        <MasteryBar
+          jp="漢字"
+          total={prog.kanji.total}
+          seen={prog.kanji.seen}
+          mastered={prog.kanji.mastered}
+          soft="bg-gold/40"
+          solid="bg-gold"
+        />
+      </div>
+
       {/* réinitialisation — discret */}
-      <div className="mt-8 flex justify-center">
+      <div className="mt-6 flex justify-center">
         <AlertDialog>
           <AlertDialogTrigger asChild>
             <button
@@ -191,6 +228,54 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
           </AlertDialogContent>
         </AlertDialog>
       </div>
+    </div>
+  );
+}
+
+/** Barre de progression bicolore : couche claire = vu, couche pleine = maîtrisé. */
+function MasteryBar({
+  jp,
+  total,
+  seen,
+  mastered,
+  soft,
+  solid,
+}: {
+  jp: string;
+  total: number;
+  seen: number;
+  mastered: number;
+  soft: string;
+  solid: string;
+}) {
+  const pctSeen = total ? (seen / total) * 100 : 0;
+  const pctMastered = total ? (mastered / total) * 100 : 0;
+  return (
+    <div className="flex items-center gap-3">
+      <span className="font-jp w-9 shrink-0 text-base font-semibold text-muted-foreground" aria-hidden>
+        {jp}
+      </span>
+      <div
+        className="relative h-3 flex-1 overflow-hidden rounded-full bg-secondary"
+        role="progressbar"
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-valuenow={Math.round((mastered / Math.max(1, total)) * 100)}
+        aria-label={`${mastered} sur ${total} maîtrisés`}
+        title={`${mastered}/${total} maîtrisés · ${seen - mastered} en cours`}
+      >
+        <div
+          className={cn("absolute inset-y-0 left-0 rounded-full transition-all duration-700", soft)}
+          style={{ width: `${pctSeen}%` }}
+        />
+        <div
+          className={cn("absolute inset-y-0 left-0 rounded-full transition-all duration-700", solid)}
+          style={{ width: `${pctMastered}%` }}
+        />
+      </div>
+      <span className="w-14 shrink-0 text-right text-xs font-medium tabular-nums text-muted-foreground">
+        {mastered}/{total}
+      </span>
     </div>
   );
 }

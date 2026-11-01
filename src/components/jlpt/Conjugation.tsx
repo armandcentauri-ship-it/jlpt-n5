@@ -243,6 +243,14 @@ export function Conjugation({ autoStart }: { autoStart?: boolean }) {
     [selectedVerb]
   );
 
+  /* un verbe est toujours sélectionné en mode Tableaux → la table de synthèse est visible d'emblée */
+  useEffect(() => {
+    if (mode === "tables" && (!selectedVerb || !tPool.some((v) => v.id === selectedVerb.id))) {
+      setSelectedVerb(tPool[0] ?? null);
+      setRevealedRows(new Set());
+    }
+  }, [mode, tPool, selectedVerb]);
+
   const conjStat = (verb: VerbItem, form: FormKey) =>
     progressMap.get(progressKey("conj", `${verb.id}:${form}`));
 
@@ -396,7 +404,7 @@ function TrainSetup(props: {
         </div>
 
         <div>
-          <p className="mb-2 text-sm font-medium">Groupes de verbes</p>
+          <p className="mb-2 text-sm font-medium">Groupes</p>
           <div className="flex flex-wrap gap-2">
             <FilterChip active={group === "all"} onClick={() => setGroup("all")}>
               Tous ({groupCounts.all})
@@ -415,7 +423,7 @@ function TrainSetup(props: {
 
         <div>
           <div className="mb-2 flex items-center justify-between">
-            <p className="text-sm font-medium">Formes à travailler</p>
+            <p className="text-sm font-medium">Formes</p>
             <div className="flex gap-1.5">
               <Button
                 type="button"
@@ -469,7 +477,7 @@ function TrainSetup(props: {
         </div>
 
         <div>
-          <p className="mb-2 text-sm font-medium">Nombre de questions</p>
+          <p className="mb-2 text-sm font-medium">Questions</p>
           <div className="flex gap-2">
             {[5, 10, 15, 20].map((n) => (
               <Button
@@ -766,13 +774,14 @@ function Tables(props: {
             <Button
               type="button"
               variant={hideAnswers ? "default" : "outline"}
-              size="sm"
+              size="icon"
               onClick={() => setHideAnswers(!hideAnswers)}
-              className="h-10 shrink-0 rounded-xl"
-              title="Mode auto-test : les formes sont masquées, clique pour révéler"
+              className="h-10 w-10 shrink-0 rounded-xl"
+              title="Auto-test : formes masquées, clique pour révéler"
+              aria-label="Mode auto-test"
+              aria-pressed={hideAnswers}
             >
-              {hideAnswers ? <EyeOff className="mr-1.5 h-4 w-4" aria-hidden /> : <Eye className="mr-1.5 h-4 w-4" aria-hidden />}
-              Auto-test
+              {hideAnswers ? <EyeOff className="h-4 w-4" aria-hidden /> : <Eye className="h-4 w-4" aria-hidden />}
             </Button>
           </div>
           <div className="flex flex-wrap gap-1.5">
@@ -799,21 +808,21 @@ function Tables(props: {
           {verbs.length === 0 ? (
             <p className="py-6 text-center text-sm text-muted-foreground">Aucun verbe ne correspond.</p>
           ) : (
-            <div className="flex flex-wrap gap-1.5">
+            <div className="flex flex-wrap gap-1">
               {verbs.map((v) => (
                 <button
                   key={v.id}
                   type="button"
                   onClick={() => setSelectedVerb(v)}
+                  title={v.meaningFr.split(";")[0]}
                   className={cn(
-                    "rounded-lg border px-2.5 py-1.5 text-sm transition-all",
+                    "font-jp rounded-lg border px-2 py-1 text-sm transition-all",
                     selectedVerb?.id === v.id
                       ? "border-primary bg-primary/10 ring-1 ring-primary/30"
                       : "bg-card hover:border-primary/40"
                   )}
                 >
-                  <span className="font-jp">{v.word}</span>
-                  <span className="ml-1.5 text-xs text-muted-foreground">{v.meaningFr.split(";")[0]}</span>
+                  {v.word}
                 </button>
               ))}
             </div>
@@ -838,55 +847,74 @@ function Tables(props: {
               <AudioButton text={selectedVerb.word} size="icon-lg" />
             </div>
 
-            <div className="divide-y divide-border rounded-xl border">
-              {CONJ_FORMS.map((f) => {
-                const a = verbForms[f.key];
-                const key = `${selectedVerb.id}:${f.key}`;
-                const st = conjStat(selectedVerb, f.key);
-                const hidden = hideAnswers && !revealedRows.has(key);
-                return (
-                  <div key={f.key} className="flex items-center gap-3 px-4 py-2.5">
-                    <div className="w-40 shrink-0">
-                      <p className="text-sm font-medium">{f.label}</p>
-                      <p className="font-jp text-[11px] text-muted-foreground">{f.hint}</p>
-                    </div>
-                    <div className="min-w-0 flex-1">
-                      {hidden ? (
-                        <button
-                          type="button"
-                          onClick={() => toggleRow(key)}
-                          className="w-full rounded-md border border-dashed border-border px-3 py-1.5 text-left text-xs text-muted-foreground hover:border-primary/40"
-                        >
-                          Cliquer pour révéler
-                        </button>
-                      ) : (
-                        <>
-                          <p className="font-jp text-lg leading-tight">{a.kanji}</p>
-                          {a.kana !== a.kanji && (
-                            <p className="font-jp text-xs text-muted-foreground">{a.kana}</p>
+            <div className="overflow-hidden rounded-xl border">
+              <table className="w-full text-left">
+                <thead>
+                  <tr className="border-b bg-secondary/50">
+                    <th scope="col" className="px-4 py-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                      Forme
+                    </th>
+                    <th scope="col" className="px-4 py-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                      Réponse
+                    </th>
+                    <th scope="col" className="px-4 py-2">
+                      <span className="sr-only">Statut et audio</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-border">
+                  {CONJ_FORMS.map((f) => {
+                    const a = verbForms[f.key];
+                    const key = `${selectedVerb.id}:${f.key}`;
+                    const st = conjStat(selectedVerb, f.key);
+                    const hidden = hideAnswers && !revealedRows.has(key);
+                    return (
+                      <tr key={f.key}>
+                        <td className="w-36 px-4 py-2 align-top sm:w-44">
+                          <p className="text-sm font-medium">{f.label}</p>
+                          <p className="font-jp text-[11px] text-muted-foreground">{f.hint}</p>
+                        </td>
+                        <td className="px-4 py-2">
+                          {hidden ? (
+                            <button
+                              type="button"
+                              onClick={() => toggleRow(key)}
+                              className="w-full rounded-md border border-dashed border-border px-3 py-1.5 text-left text-xs text-muted-foreground hover:border-primary/40"
+                            >
+                              Cliquer pour révéler
+                            </button>
+                          ) : (
+                            <>
+                              <p className="font-jp text-lg leading-tight">{a.kanji}</p>
+                              {a.kana !== a.kanji && (
+                                <p className="font-jp text-xs text-muted-foreground">{a.kana}</p>
+                              )}
+                            </>
                           )}
-                        </>
-                      )}
-                    </div>
-                    <div className="flex shrink-0 items-center gap-2">
-                      {st && (
-                        <span
-                          className={cn(
-                            "rounded-full px-2 py-0.5 text-[10px] font-semibold",
-                            st.intervalDays >= MASTERED_DAYS
-                              ? "bg-matcha/15 text-matcha"
-                              : "bg-gold/15 text-[#8a6d1d]"
-                          )}
-                          title="État SRS de cette forme"
-                        >
-                          {st.intervalDays >= MASTERED_DAYS ? "maîtrisé" : `${Math.max(0, Math.round(st.intervalDays))} j`}
-                        </span>
-                      )}
-                      <AudioButton text={a.kanji} />
-                    </div>
-                  </div>
-                );
-              })}
+                        </td>
+                        <td className="px-4 py-2">
+                          <div className="flex items-center justify-end gap-2">
+                            {st && (
+                              <span
+                                className={cn(
+                                  "rounded-full px-2 py-0.5 text-[10px] font-semibold",
+                                  st.intervalDays >= MASTERED_DAYS
+                                    ? "bg-matcha/15 text-matcha"
+                                    : "bg-gold/15 text-[#8a6d1d]"
+                                )}
+                                title="État SRS de cette forme"
+                              >
+                                {st.intervalDays >= MASTERED_DAYS ? "maîtrisé" : `${Math.max(0, Math.round(st.intervalDays))} j`}
+                              </span>
+                            )}
+                            <AudioButton text={a.kanji} />
+                          </div>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
             </div>
           </CardContent>
         </Card>
