@@ -132,23 +132,12 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
   /* ---------------- Configuration ---------------- */
   if (phase === "setup") {
     const pctDisplay = Math.round(mastery.pct * 100);
-    const needed = Math.max(0, Math.ceil(UNLOCK_PCT * words.length) - mastery.mastered);
     return (
       <div className="mx-auto w-full max-w-2xl space-y-6 px-4 pb-10 pt-6">
         <SectionTitle kanji="翻訳">Exercices de traduction</SectionTitle>
 
         <Card className="anim-fade-up">
           <CardContent className="space-y-5 p-6">
-            <div className="rounded-lg border bg-secondary/40 p-4 text-sm text-muted-foreground">
-              <p>
-                Traduis des phrases <span className="font-medium text-foreground">dans les deux sens</span> :
-                japonais → français, puis français → japonais. Les phrases sont tirées
-                <span className="font-medium text-foreground"> au hasard</span> dans tout le corpus.
-                La saisie japonaise se fait en romaji, converti automatiquement en kana (touche{" "}
-                <span className="font-jp font-semibold">あ</span>).
-              </p>
-            </div>
-
             <div>
               <p className="mb-2 text-sm font-medium">Difficulté des phrases</p>
               <div className="grid gap-2">
@@ -167,9 +156,6 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
                     <span className="font-semibold">Phrases faciles</span>
                     <span className="text-xs text-muted-foreground">{tierCounts[1]} disponibles</span>
                   </div>
-                  <p className="mt-1 text-xs text-muted-foreground">
-                    Courtes, grammaire N5 de base — idéales pour démarrer.
-                  </p>
                 </button>
 
                 <button
@@ -192,15 +178,9 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
                     </span>
                     <span className="text-xs text-muted-foreground">{tierCounts[2]} disponibles</span>
                   </div>
-                  {mastery.unlocked ? (
+                  {mastery.unlocked ? null : (
                     <p className="mt-1 text-xs text-muted-foreground">
-                      Vocabulaire et tournures un peu plus variés, toujours au programme N5.
-                    </p>
-                  ) : (
-                    <p className="mt-1 text-xs text-muted-foreground">
-                      Débloquées quand {Math.round(UNLOCK_PCT * 100)} % du vocabulaire est maîtrisé
-                      (intervalle de révision ≥ {MASTERED_DAYS} j) — actuellement {pctDisplay} %
-                      {needed > 0 && <> · encore {needed} mot{needed > 1 ? "s" : ""}</>}.
+                      Débloquées à {Math.round(UNLOCK_PCT * 100)} % de maîtrise — actuellement {pctDisplay} %
                     </p>
                   )}
                   {!mastery.unlocked && (
@@ -357,8 +337,7 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
                 <p className="text-lg md:text-xl">{w.exFr}</p>
               </div>
               <label htmlFor="ex-input" className="text-sm font-medium">
-                Traduis en japonais (romaji accepté, ex. <span className="font-jp">watashi</span> →{" "}
-                <span className="font-jp">わたし</span>) :
+                Traduis en japonais :
               </label>
             </>
           )}
@@ -437,17 +416,6 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
                 )}
               </div>
 
-              {w.exJa && item.direction === "j2f" && (
-                <div className="rounded-lg border bg-card/60 p-3">
-                  <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">Phrase japonaise</p>
-                  {w.exFurigana ? (
-                    <Ruby text={w.exFurigana} className="font-jp text-base" />
-                  ) : (
-                    <p className="font-jp text-base">{w.exJa}</p>
-                  )}
-                </div>
-              )}
-
               <div className="flex flex-wrap gap-2">
                 {status === "correct" ? (
                   <Button onClick={() => finishItem(true, item.direction)} className="rounded-full">
@@ -477,7 +445,7 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
         <div className="flex justify-center">
           <Button variant="ghost" size="sm" onClick={reveal} className="text-muted-foreground">
             <Eye className="mr-2 h-3.5 w-3.5" aria-hidden />
-            Voir la réponse (compté comme erreur)
+            Voir la réponse
           </Button>
         </div>
       )}

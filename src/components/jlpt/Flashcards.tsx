@@ -233,11 +233,6 @@ export function Flashcards({
               </div>
             )}
 
-            <p className="text-xs text-muted-foreground">
-              Ordre des nouvelles cartes : vocabulaire par thèmes (du plus général au plus spécial),
-              kanji N5 d&apos;abord puis N4, du plus simple au plus complexe.
-            </p>
-
             <div className="flex flex-col gap-2 sm:flex-row">
               <Button
                 onClick={() => buildQueue("normal")}
@@ -332,18 +327,11 @@ export function Flashcards({
                     {word.word}
                   </p>
                   <AudioButton text={word.word} size="icon-lg" />
-                  <p className="text-xs uppercase tracking-wide text-muted-foreground">
-                    Clique ou espace pour révéler
-                  </p>
                 </>
               ) : curKanji ? (
                 <>
                   <LevelBadge level={curKanji.level} />
                   <p className="font-jp text-center text-8xl font-semibold">{curKanji.character}</p>
-                  <p className="text-sm text-muted-foreground">{curKanji.strokes} traits</p>
-                  <p className="text-xs uppercase tracking-wide text-muted-foreground">
-                    Clique ou espace pour révéler
-                  </p>
                 </>
               ) : null}
             </CardContent>

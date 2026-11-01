@@ -378,19 +378,11 @@ function TrainSetup(props: {
   return (
     <Card className="anim-fade-up">
       <CardContent className="space-y-5 p-6">
-        <div className="rounded-lg border bg-secondary/40 p-4 text-sm text-muted-foreground">
-          <p>
-            {pool.length} verbes disponibles ({level === "all" ? "N5 + N4" : level}). Conjugue à toutes les
-            formes demandées : <span className="font-jp text-foreground">ます・ない・た・て</span>… La saisie
-            se fait en romaji converti automatiquement en kana. Chaque forme révisée suit la répétition
-            espacée (SM-2) — les formes échues reviennent en priorité.
+        {nDue > 0 && (
+          <p className="text-sm font-medium text-primary">
+            {nDue} forme{nDue > 1 ? "s" : ""} à réviser aujourd&apos;hui
           </p>
-          {nDue > 0 && (
-            <p className="mt-1.5 font-medium text-primary">
-              {nDue} forme{nDue > 1 ? "s" : ""} à réviser aujourd&apos;hui.
-            </p>
-          )}
-        </div>
+        )}
 
         <div>
           <p className="mb-2 text-sm font-medium">Niveau</p>
@@ -497,7 +489,7 @@ function TrainSetup(props: {
         {mastery.total > 0 && (
           <div>
             <div className="mb-1 flex items-center justify-between text-xs text-muted-foreground">
-              <span>Formes maîtrisées (intervalle ≥ {MASTERED_DAYS} j)</span>
+              <span>Maîtrisées</span>
               <span>
                 {mastery.mastered}/{mastery.total}
               </span>
@@ -687,7 +679,7 @@ function TrainSession(props: {
         <div className="flex justify-center">
           <Button variant="ghost" size="sm" onClick={reveal} className="text-muted-foreground">
             <Eye className="mr-2 h-3.5 w-3.5" aria-hidden />
-            Voir la réponse (compté comme erreur)
+            Voir la réponse
           </Button>
         </div>
       )}

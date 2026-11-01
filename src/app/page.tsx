@@ -107,9 +107,6 @@ export default function Home() {
               </span>
               <div>
                 <p className="font-jp text-lg font-bold leading-tight">日本語 N5</p>
-                <p className="text-[11px] leading-tight text-muted-foreground">
-                  Kanji N5 + N4 · Vocabulaire par thème · Révision SRS
-                </p>
               </div>
             </div>
             <p className="hidden font-jp text-sm text-muted-foreground sm:block" aria-hidden>
@@ -191,9 +188,9 @@ export default function Home() {
       </main>
 
       <footer className="mt-auto border-t border-border/80 bg-card/60">
-        <div className="mx-auto w-full max-w-3xl px-4 py-4 pb-[max(1rem,env(safe-area-inset-bottom))] text-center text-[11px] leading-relaxed text-muted-foreground">
+        <div className="mx-auto w-full max-w-3xl px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] text-center text-[10px] leading-relaxed text-muted-foreground/80">
           <p>
-            Vocabulaire : liste JLPT N5 + complément{" "}
+            Sources :{" "}
             <a
               href="https://github.com/evanclan/OpenJLPT"
               target="_blank"
@@ -202,7 +199,7 @@ export default function Home() {
             >
               OpenJLPT
             </a>{" "}
-            (CC BY-SA 4.0, listes tanos.co.uk) · Traductions FR :{" "}
+            (CC BY-SA) ·{" "}
             <a
               href="https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project"
               target="_blank"
@@ -220,7 +217,7 @@ export default function Home() {
             >
               KANJIDIC2
             </a>{" "}
-            (EDRDG) · Kanji N4 :{" "}
+            (EDRDG) ·{" "}
             <a
               href="https://kanjikana.com/fr/kanji/jlpt/n4/pages/1"
               target="_blank"
@@ -228,9 +225,9 @@ export default function Home() {
               className="underline decoration-dotted hover:text-foreground"
             >
               kanjikana.com
-            </a>
+            </a>{" "}
+            <span className="font-jp">· 頑張って !</span>
           </p>
-          <p className="mt-1">Répétition espacée SM-2 · Profil local unique · 頑張って !</p>
         </div>
       </footer>
     </div>

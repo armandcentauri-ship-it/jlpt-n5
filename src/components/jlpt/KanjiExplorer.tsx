@@ -57,10 +57,6 @@ export function KanjiExplorer() {
         </h2>
         <span className="text-xs text-muted-foreground">{filtered.length} kanji</span>
       </div>
-      <p className="-mt-2 text-xs text-muted-foreground">
-        Ordre pédagogique : les kanji <span className="font-medium text-foreground">N5 d&apos;abord</span>, du plus simple
-        (1ʳᵉ année d&apos;école primaire) au plus complexe, puis les kanji N4.
-      </p>
 
       <div className="flex flex-col gap-3">
         <div className="relative">
