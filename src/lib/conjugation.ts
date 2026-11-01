@@ -36,21 +36,25 @@ export interface ConjFormDef {
   key: FormKey;
   label: string;
   hint: string;
+  level: "N5" | "N4";
 }
 
 /** Les 10 formes travaillées (affirmatif + négatif quand applicable). */
 export const CONJ_FORMS: ConjFormDef[] = [
-  { key: "pres", label: "Présent neutre", hint: "forme du dictionnaire" },
-  { key: "pres_neg", label: "Présent neutre, négatif", hint: "〜ない" },
-  { key: "pol", label: "Présent poli", hint: "〜ます" },
-  { key: "pol_neg", label: "Présent poli, négatif", hint: "〜ません" },
-  { key: "past", label: "Passé neutre", hint: "〜た" },
-  { key: "past_neg", label: "Passé neutre, négatif", hint: "〜なかった" },
-  { key: "past_pol", label: "Passé poli", hint: "〜ました" },
-  { key: "past_pol_neg", label: "Passé poli, négatif", hint: "〜ませんでした" },
-  { key: "te", label: "Forme en -te", hint: "〜て" },
-  { key: "te_neg", label: "Forme en -te, négative", hint: "〜ないで" },
+  { key: "pres", label: "Présent neutre", hint: "forme du dictionnaire", level: "N5" },
+  { key: "pres_neg", label: "Présent neutre, négatif", hint: "〜ない", level: "N5" },
+  { key: "pol", label: "Présent poli", hint: "〜ます", level: "N5" },
+  { key: "pol_neg", label: "Présent poli, négatif", hint: "〜ません", level: "N5" },
+  { key: "past", label: "Passé neutre", hint: "〜た", level: "N5" },
+  { key: "past_neg", label: "Passé neutre, négatif", hint: "〜なかった", level: "N5" },
+  { key: "past_pol", label: "Passé poli", hint: "〜ました", level: "N5" },
+  { key: "past_pol_neg", label: "Passé poli, négatif", hint: "〜ませんでした", level: "N5" },
+  { key: "te", label: "Forme en -te", hint: "〜て", level: "N4" },
+  { key: "te_neg", label: "Forme en -te, négative", hint: "〜ないで", level: "N4" },
 ];
+
+/** Formes du programme N5 (la forme en 〜て et sa négative sont N4). */
+export const N5_FORM_KEYS: FormKey[] = CONJ_FORMS.filter((f) => f.level === "N5").map((f) => f.key);
 
 export const GROUP_LABELS: Record<ConjGroup, string> = {
   godan: "五段 godan · groupe 1",

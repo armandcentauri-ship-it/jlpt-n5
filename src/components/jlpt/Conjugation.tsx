@@ -30,6 +30,7 @@ import {
   FORM_KEYS,
   GROUP_LABELS,
   GROUP_SHORT,
+  N5_FORM_KEYS,
   verbFurigana,
   type ConjGroup,
   type FormKey,
@@ -75,7 +76,7 @@ export function Conjugation({ autoStart }: { autoStart?: boolean }) {
   const [phase, setPhase] = useState<Phase>("setup");
   const [level, setLevel] = useState<LevelFilter>("N5");
   const [group, setGroup] = useState<GroupFilter>("all");
-  const [forms, setForms] = useState<Set<FormKey>>(() => new Set(FORM_KEYS));
+  const [forms, setForms] = useState<Set<FormKey>>(() => new Set(N5_FORM_KEYS));
   const [size, setSize] = useState(10);
 
   const [queue, setQueue] = useState<ConjQuestion[]>([]);
@@ -439,7 +440,7 @@ function TrainSetup(props: {
                 variant="ghost"
                 size="sm"
                 className="h-7 px-2 text-xs text-muted-foreground"
-                onClick={() => setForms(new Set(["pres", "pol", "te"] as FormKey[]))}
+                onClick={() => setForms(new Set(["pres", "pol", "past"] as FormKey[]))}
               >
                 Bases
               </Button>
@@ -461,6 +462,11 @@ function TrainSetup(props: {
                 >
                   <span>
                     {f.label}
+                    {f.level === "N4" && (
+                      <span className="ml-1.5 inline-block rounded border border-gold/40 bg-gold/15 px-1 align-middle text-[10px] font-bold leading-4 text-[#8a6d1d]">
+                        N4
+                      </span>
+                    )}
                     <span className="ml-1.5 font-jp text-xs text-muted-foreground">{f.hint}</span>
                   </span>
                   <span
@@ -563,6 +569,11 @@ function TrainSession(props: {
           <div className="flex items-center justify-between">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
               {formDef.label}
+              {formDef.level === "N4" && (
+                <span className="rounded border border-gold/40 bg-gold/15 px-1 text-[10px] font-bold leading-4 text-[#8a6d1d]">
+                  N4
+                </span>
+              )}
               <span className="font-jp font-normal">{formDef.hint}</span>
             </span>
             <span className="flex items-center gap-2">
@@ -871,7 +882,14 @@ function Tables(props: {
                     return (
                       <tr key={f.key}>
                         <td className="w-36 px-4 py-2 align-top sm:w-44">
-                          <p className="text-sm font-medium">{f.label}</p>
+                          <p className="text-sm font-medium">
+                            {f.label}
+                            {f.level === "N4" && (
+                              <span className="ml-1.5 inline-block rounded border border-gold/40 bg-gold/15 px-1 align-middle text-[10px] font-bold leading-4 text-[#8a6d1d]">
+                                N4
+                              </span>
+                            )}
+                          </p>
                           <p className="font-jp text-[11px] text-muted-foreground">{f.hint}</p>
                         </td>
                         <td className="px-4 py-2">
