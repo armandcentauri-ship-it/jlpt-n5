@@ -19,7 +19,7 @@ BAN_PATTERNS = [
     ("obligation なければ", re.compile(r"(なければ|なくては|ないと|なきゃ)")),
     ("passif/potentiel られます", re.compile(r"られます")),
     ("causatif させます", re.compile(r"させます")),
-    ("cadeau てくれる/あげる/もらう", re.compile(r"(てくれ|でくれ|てあげ|であげ|てもら|でもら|ていただ|いただきます|くださ(?!い))")),
+    ("cadeau てくれる/あげる/もらう", re.compile(r"(てくれ|でくれ|てあげ|であげ|てもら|でもら|ていただ|くださ(?!い))")),
     ("てしまう/ておく", re.compile(r"(てしま|でしま|ちゃいました|ちゃった|ちゃう|ておき|でおき)")),
     ("たり", re.compile(r"たり")),
     ("cause から/ので", re.compile(r"(から、|ので|からです)")),
@@ -35,6 +35,13 @@ BAN_PATTERNS = [
 KANJI_RE = re.compile(r"[\u4e00-\u9fff\u3400-\u4dbf]")
 FUR_RE = re.compile(r"\{([^|{}]+)\|([^{}]+)\}")
 PUNCT = re.compile(r"[。、！？!?.,，…・〜\-‐–\s\u3000]")
+
+# Faux positifs avérés : mots N5 légitimes dont la lecture contient une sous-chaîne
+# bannie (なら/たら/たり). On les retire AVANT la recherche des patterns interdits,
+# pour permettre p. ex. 新しい(あたらしい), 働く(はたら), 習う(ならう), 二人(ふたり),
+# 必ず(かならず), 並ぶ/並べる(ならぶ/ならべ), さようなら — tout en gardant bannis
+# les vrais conditionnels なら (ex. 雨なら、) et たら (ex. 降ったら).
+FP_OK = re.compile(r"(あたらしい|あたらしく|はたら|かならず|さようなら|ならう|ならいま|ならべ|ならぶ|ふたり)")
 
 def kata_to_hira(s):
     out = []
@@ -85,7 +92,7 @@ def main(n):
         if len(body) > 18: errors.append(f"{tag} trop long ({len(body)}): {ja}")
         if not body: errors.append(f"{tag} vide")
         for name, pat in BAN_PATTERNS:
-            m = pat.search(ja) or pat.search(norm(ka))
+            m = pat.search(FP_OK.sub("", ja)) or pat.search(FP_OK.sub("", norm(ka)))
             if m: errors.append(f"{tag} interdit[{name}] match '{m.group(0)}': {ja}")
         # forme de but 〜に行きます : détection sur exJa uniquement (radical hiragana + に行きます),
         # pour ne pas flagger 学校に行きます / トイレに行きます (lieu en kanji/katakana)

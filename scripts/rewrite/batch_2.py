@@ -35,7 +35,7 @@ NEW = [
   {"wids": [266], "exJa": "雑誌を読みます。", "exKana": "ざっしをよみます。", "exFurigana": "{雑誌|ざっし}を{読|よ}みます。", "exFr": "Je lis un magazine."},
   {"wids": [267], "exJa": "コーヒーに砂糖を入れます。", "exKana": "コーヒーにさとうをいれます。", "exFurigana": "コーヒーに{砂糖|さとう}を{入|い}れます。", "exFr": "Je mets du sucre dans le café."},
   {"wids": [268], "exJa": "冬は寒いです。", "exKana": "ふゆはさむいです。", "exFurigana": "{冬|ふゆ}は{寒|さむ}いです。", "exFr": "En hiver, il fait froid."},
-  {"wids": [269, 404], "exJa": "では、さよう。", "exKana": "では、さよう。", "exFurigana": "では、さよう。", "exFr": "Alors, au revoir."},
+  {"wids": [269, 404], "exJa": "では、さようなら。", "exKana": "では、さようなら。", "exFurigana": "では、さようなら。", "exFr": "Alors, au revoir."},
   {"wids": [271], "exJa": "家族は三人います。", "exKana": "かぞくはさんにんいます。", "exFurigana": "{家族|かぞく}は{三人|さんにん}います。", "exFr": "Nous sommes trois dans ma famille."},
   {"wids": [272], "exJa": "公園を散歩します。", "exKana": "こうえんをさんぽします。", "exFurigana": "{公園|こうえん}を{散歩|さんぽ}します。", "exFr": "Je me promène dans le parc."},
   {"wids": [276], "exJa": "時間がありません。", "exKana": "じかんがありません。", "exFurigana": "{時間|じかん}がありません。", "exFr": "Je n'ai pas le temps."},

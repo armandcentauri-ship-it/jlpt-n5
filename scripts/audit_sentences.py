@@ -1,11 +1,19 @@
-"""Audit de difficulté des phrases 'simple' (mode Phrases) — détecte les phrases trop dures pour N5."""
+"""Audit de difficulté des phrases 'simple' (mode Phrases) — détecte les phrases trop dures pour N5.
+Aligné sur scripts/rewrite/SPEC.md : ています progressif, 好きです, 毎日/毎月/毎晩, あまり (court),
+destination + に行きます (大学に行きます) et les mots contenant なら/たら/たり (新しい, 習う,
+働く, 二人, 必ず, 並ぶ, さようなら) sont AUTORISÉS. 'mot N4' reste indicatif (le mot cible
+peut être N4 ; la phrase elle-même doit rester simple).
+"""
 import sqlite3, re, json, sys
 
 DB = 'db/custom.db'
 
+# faux positifs lexicalisés : mots N5 légitimes à retirer avant recherche (cf. check_batch.py)
+FP_OK = re.compile(r"(あたらしい|あたらしく|はたら|かならず|さようなら|ならう|ならいま|ならべ|ならぶ|ふたり)")
+
 patterns = {
-    "but ~ni kimasu/ikimasu": re.compile(r"(にきます|に来ます|にいきます|に行きます)"),
-    "potentiel/causatif/passif": re.compile(r"(られます|されます|させます|[えけげめねべ]ます|り得)"),
+    "but ~ni kimasu/ikimasu": re.compile(r"[きぎしちりぴびみひけげせてでめねべ]に(行きます|来ます|いきます|きます)"),
+    "potentiel/causatif/passif": re.compile(r"(られます|されます|させます|り得)"),
     "~tai": re.compile(r"(たいです|たいと|たかった)"),
     "~tari": re.compile(r"(たり|タリ)"),
     "nakereba/nakute wa": re.compile(r"(なければ|なくては|ないと)"),
@@ -13,17 +21,12 @@ patterns = {
     "tsumori/hazu": re.compile(r"(つもり|はず)"),
     "hou ga / yori": re.compile(r"(ほうが|の方が|より)"),
     "conditionnel tara/reba/nara": re.compile(r"(たら|れば|なら)"),
-    "mais/et (kedo/ga/shikashi)": re.compile(r"(けど|けれど|しかし|それから|だから|でも)"),
-    "~te iru": re.compile(r"(ています|でいます|ていました|ていますか|ている)"),
+    "mais/et (kedo/ga/shikashi)": re.compile(r"(けど|けれど|しかし|それから|だから)"),
     "te shimau/te oku": re.compile(r"(てしま|ちゃいました|ておき|ときます|でおき)"),
     "mora/ageru/kureru": re.compile(r"(てもら|であげ|てあげ|てくれ|ていただ|てや)"),
-    "zutsu/goto/mai-": re.compile(r"(ずつ|ごとに|毎[週日朝晩年月])"),
+    "zutsu/goto/mai-": re.compile(r"(ずつ|ごとに|毎週)"),
     "kara/node": re.compile(r"(から、|ので)"),
-    "suki/kirai ga": re.compile(r"(がすき|がきらい|が好き|が嫌い)"),
     "jouzu/heta ga": re.compile(r"(がじょうず|がへた|が上手|が下手)"),
-    "ichiban/takusan": re.compile(r"(いちばん|一番|たくさん|あまり)"),
-    "compteurs + mo": re.compile(r"([人つ枚本匹回冊台個冊]も)"),
-    "~mae/ato": re.compile(r"(前に|後で)"),
 }
 
 def audit(only_simple=True):
@@ -33,8 +36,9 @@ def audit(only_simple=True):
     stats, hard = {}, []
     for wid, word, reading, level, exJa, exKana, exFur, exFr, dif, tier in rows:
         reasons = []
+        ja_clean = FP_OK.sub("", exJa)
         for name, pat in patterns.items():
-            if pat.search(exJa):
+            if pat.search(ja_clean):
                 reasons.append(name)
                 stats[name] = stats.get(name, 0) + 1
         if len(re.findall(r"[てで]", exJa)) >= 3:
