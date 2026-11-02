@@ -12,6 +12,7 @@ import { applySm2, formatInterval } from "@/lib/srs";
 import { cleanKunyomi, splitOnyomi } from "@/lib/format";
 import type { Grade } from "@/lib/types";
 import type { TabId } from "./tabs";
+import { SETTING_KEYS, useLocalNumber } from "./settings";
 import { cn } from "@/lib/utils";
 
 type CardType = "word" | "kanji";
@@ -43,7 +44,8 @@ export function Flashcards({
 
   const [phase, setPhase] = useState<Phase>("setup");
   const [type, setType] = useState<CardType>(initialType);
-  const [size, setSize] = useState(15);
+  /* taille de session mémorisée (réglée aussi depuis le tableau de bord) */
+  const [size, setSize, sizeReady] = useLocalNumber(SETTING_KEYS.cardsSize, 15);
   const [queue, setQueue] = useState<QueueEntry[]>([]);
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
@@ -108,10 +110,11 @@ export function Flashcards({
     [allWords, allKanji, progressMap, size, type]
   );
 
-  /* Lancement direct depuis le tableau de bord (panneau vocabulaire ou kanji) */
+  /* Lancement direct depuis le tableau de bord (panneau vocabulaire ou kanji) —
+     attend le chargement des réglages pour appliquer la bonne taille de session */
   const started = useRef(false);
   useEffect(() => {
-    if (autoStart && !started.current) {
+    if (autoStart && sizeReady && !started.current) {
       started.current = true;
       buildQueue("normal", initialType);
     }
@@ -200,7 +203,7 @@ export function Flashcards({
             <div>
               <p className="mb-2 text-sm font-medium">Taille de la session</p>
               <div className="flex gap-2">
-                {[10, 15, 20, 30].map((n) => (
+                {[5, 10, 15, 20, 30].map((n) => (
                   <Button
                     key={n}
                     type="button"

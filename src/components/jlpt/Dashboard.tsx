@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useMemo } from "react";
-import { Check, Trash2 } from "lucide-react";
+import { Check, Moon, Trash2 } from "lucide-react";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { useToast } from "@/hooks/use-toast";
 import { progressKey, useAppState } from "./state";
+import { SETTING_KEYS, useLocalNumber } from "./settings";
 import type { TabId } from "./tabs";
 import { cn } from "@/lib/utils";
 
@@ -86,6 +87,10 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
   const { stats, words, kanji, progressMap } = useAppState();
   const { toast } = useToast();
 
+  /* nombre de cartes / phrases par session — mémorisé et partagé avec les écrans */
+  const [cardsSize, setCardsSize] = useLocalNumber(SETTING_KEYS.cardsSize, 15);
+  const [phrasesSize, setPhrasesSize] = useLocalNumber(SETTING_KEYS.phrasesSize, 10);
+
   /* alternance quotidienne : jour impair = vocabulaire + conjugaison, pair = kanji + phrases */
   const today = useMemo(() => {
     const now = new Date();
@@ -131,7 +136,7 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
               key={p.id}
               type="button"
               onClick={() => p.launch(go)}
-              aria-label={`${p.title}${done ? " — fait aujourd'hui" : ""}`}
+              aria-label={`${p.title}${done ? " — fait aujourd'hui" : inProgram ? "" : " — repos aujourd'hui"}`}
               className={cn(
                 "group relative flex min-h-[150px] flex-col justify-between overflow-hidden rounded-3xl p-5 text-left shadow-sm transition-all hover:scale-[1.02] hover:shadow-lg active:scale-[0.99] md:min-h-[180px] md:p-6",
                 inProgram ? cn(p.solidCls, "text-white") : p.tintCls
@@ -148,7 +153,7 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
                 {p.jp}
               </span>
 
-              {/* pastille fait / pas fait */}
+              {/* pastille fait / à faire / repos */}
               <span className="flex justify-end">
                 {done ? (
                   <span
@@ -159,11 +164,19 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
                   >
                     <Check className="h-5 w-5" strokeWidth={3} aria-hidden />
                   </span>
+                ) : inProgram ? (
+                  <span
+                    aria-hidden
+                    className="h-8 w-8 rounded-full border-[2.5px] border-white/70"
+                  />
                 ) : (
                   <span
                     aria-hidden
-                    className={cn("h-8 w-8 rounded-full border-[2.5px]", inProgram ? "border-white/70" : p.ringCls)}
-                  />
+                    title="Repos aujourd'hui — au programme un jour sur deux"
+                    className="flex h-8 w-8 items-center justify-center"
+                  >
+                    <Moon className={cn("h-5 w-5 opacity-50", p.checkCls)} strokeWidth={2.5} />
+                  </span>
                 )}
               </span>
 
@@ -172,6 +185,11 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
                   {p.jp}
                 </span>
                 <span className="mt-1 block text-base font-bold md:text-lg">{p.title}</span>
+                {!inProgram && !done && (
+                  <span className="mt-0.5 block text-[11px] font-semibold uppercase tracking-widest opacity-60">
+                    Repos aujourd&apos;hui
+                  </span>
+                )}
               </span>
             </button>
           );
@@ -195,6 +213,24 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
           mastered={prog.kanji.mastered}
           soft="bg-gold/40"
           solid="bg-gold"
+        />
+      </div>
+
+      {/* réglage des sessions — appliqué quand on lance une activité depuis les cartes */}
+      <div className="anim-fade-up mt-4 rounded-2xl border bg-card px-4 py-2" aria-label="Réglage des sessions">
+        <SizeRow
+          jp="暗記"
+          label="Cartes par session"
+          options={[5, 10, 15, 20, 30]}
+          value={cardsSize}
+          onChange={setCardsSize}
+        />
+        <SizeRow
+          jp="文章"
+          label="Phrases par session"
+          options={[5, 10, 15, 20]}
+          value={phrasesSize}
+          onChange={setPhrasesSize}
         />
       </div>
 
@@ -276,6 +312,53 @@ function MasteryBar({
       <span className="w-14 shrink-0 text-right text-xs font-medium tabular-nums text-muted-foreground">
         {mastered}/{total}
       </span>
+    </div>
+  );
+}
+
+/** Ligne de réglage : nombre d'éléments par session (puces de sélection compactes). */
+function SizeRow({
+  jp,
+  label,
+  options,
+  value,
+  onChange,
+}: {
+  jp: string;
+  label: string;
+  options: number[];
+  value: number;
+  onChange: (n: number) => void;
+}) {
+  return (
+    <div className="py-2 [&:not(:first-child)]:border-t [&:not(:first-child)]:border-border/60">
+      <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1.5 sm:flex-nowrap">
+        <div className="flex min-w-0 items-center gap-2.5">
+          <span className="font-jp w-8 shrink-0 text-sm font-semibold text-muted-foreground" aria-hidden>
+            {jp}
+          </span>
+          <span className="text-sm font-medium">{label}</span>
+        </div>
+        <div className="flex gap-1.5" role="radiogroup" aria-label={label}>
+        {options.map((n) => (
+          <button
+            key={n}
+            type="button"
+            role="radio"
+            aria-checked={value === n}
+            onClick={() => onChange(n)}
+            className={cn(
+              "h-7 w-9 rounded-full text-xs font-semibold tabular-nums transition-colors",
+              value === n
+                ? "bg-primary text-primary-foreground shadow-sm"
+                : "bg-secondary text-muted-foreground hover:text-foreground"
+            )}
+          >
+            {n}
+          </button>
+        ))}
+        </div>
+      </div>
     </div>
   );
 }

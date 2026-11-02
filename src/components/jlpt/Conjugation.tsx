@@ -7,14 +7,12 @@ import {
   CheckCircle2,
   Dices,
   Eye,
-  EyeOff,
   GraduationCap,
   Send,
   XCircle,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import { progressKey, useAppState, useReview } from "./state";
 import { SectionTitle, FilterChip, LevelBadge } from "./bits";
 import { AudioButton } from "./AudioButton";
@@ -28,7 +26,6 @@ import {
   conjugateVerb,
   CONJ_FORMS,
   FORM_KEYS,
-  GROUP_LABELS,
   GROUP_SHORT,
   N5_FORM_KEYS,
   verbFurigana,
@@ -218,43 +215,6 @@ export function Conjugation({ autoStart }: { autoStart?: boolean }) {
     });
   };
 
-  /* ================= TABLEAUX ================= */
-  const [search, setSearch] = useState("");
-  const [tLevel, setTLevel] = useState<LevelFilter>("N5");
-  const [tGroup, setTGroup] = useState<GroupFilter>("all");
-  const [selectedVerb, setSelectedVerb] = useState<VerbItem | null>(null);
-  const [hideAnswers, setHideAnswers] = useState(false);
-  const [revealedRows, setRevealedRows] = useState<Set<string>>(new Set());
-
-  const tPool = useMemo(() => {
-    const q = search.trim().toLowerCase();
-    return verbs
-      .filter((v) => (tLevel === "all" || v.level === tLevel) && inGroupFilter(v, tGroup))
-      .filter(
-        (v) =>
-          !q ||
-          v.word.toLowerCase().includes(q) ||
-          v.reading.includes(q) ||
-          v.meaningFr.toLowerCase().includes(q)
-      );
-  }, [verbs, tLevel, tGroup, search]);
-
-  const verbForms = useMemo(
-    () => (selectedVerb ? conjugateVerb(selectedVerb) : null),
-    [selectedVerb]
-  );
-
-  /* un verbe est toujours sélectionné en mode Tableaux → la table de synthèse est visible d'emblée */
-  useEffect(() => {
-    if (mode === "tables" && (!selectedVerb || !tPool.some((v) => v.id === selectedVerb.id))) {
-      setSelectedVerb(tPool[0] ?? null);
-      setRevealedRows(new Set());
-    }
-  }, [mode, tPool, selectedVerb]);
-
-  const conjStat = (verb: VerbItem, form: FormKey) =>
-    progressMap.get(progressKey("conj", `${verb.id}:${form}`));
-
   /* ---------------- rendu ---------------- */
   return (
     <div className="mx-auto w-full max-w-2xl space-y-6 px-4 pb-10 pt-6">
@@ -328,37 +288,7 @@ export function Conjugation({ autoStart }: { autoStart?: boolean }) {
           />
         )
       ) : (
-        <Tables
-          verbs={tPool}
-          total={verbs.length}
-          search={search}
-          setSearch={setSearch}
-          tLevel={tLevel}
-          setTLevel={setTLevel}
-          tGroup={tGroup}
-          setTGroup={setTGroup}
-          selectedVerb={selectedVerb}
-          setSelectedVerb={(v) => {
-            setSelectedVerb(v);
-            setRevealedRows(new Set());
-          }}
-          hideAnswers={hideAnswers}
-          setHideAnswers={(b) => {
-            setHideAnswers(b);
-            setRevealedRows(new Set());
-          }}
-          revealedRows={revealedRows}
-          toggleRow={(k) =>
-            setRevealedRows((prev) => {
-              const n = new Set(prev);
-              if (n.has(k)) n.delete(k);
-              else n.add(k);
-              return n;
-            })
-          }
-          verbForms={verbForms}
-          conjStat={conjStat}
-        />
+        <Tables />
       )}
     </div>
   );
@@ -747,196 +677,238 @@ function TrainDone(props: {
   );
 }
 
-function Tables(props: {
-  verbs: VerbItem[];
-  total: number;
-  search: string;
-  setSearch: (s: string) => void;
-  tLevel: LevelFilter;
-  setTLevel: (l: LevelFilter) => void;
-  tGroup: GroupFilter;
-  setTGroup: (g: GroupFilter) => void;
-  selectedVerb: VerbItem | null;
-  setSelectedVerb: (v: VerbItem) => void;
-  hideAnswers: boolean;
-  setHideAnswers: (b: boolean) => void;
-  revealedRows: Set<string>;
-  toggleRow: (k: string) => void;
-  verbForms: Record<FormKey, { kanji: string; kana: string; alts?: string[] }> | null;
-  conjStat: (v: VerbItem, f: FormKey) => { intervalDays: number } | undefined;
-}) {
-  const {
-    verbs, total, search, setSearch, tLevel, setTLevel, tGroup, setTGroup,
-    selectedVerb, setSelectedVerb, hideAnswers, setHideAnswers, revealedRows, toggleRow, verbForms, conjStat,
-  } = props;
 
+/* ================= TABLEAUX GLOBAUX ================= */
+
+/** Un verbe d'exemple par groupe — conjugué par le même moteur que l'entraînement. */
+const GROUP_EXAMPLES: {
+  head: string;
+  sub: string;
+  verb: Pick<VerbItem, "word" | "reading" | "group" | "isSpecialIku" | "isSpecialAru">;
+}[] = [
+  {
+    head: "Groupe 1",
+    sub: "五段 · 書く",
+    verb: { word: "書く", reading: "かく", group: "godan", isSpecialIku: false, isSpecialAru: false },
+  },
+  {
+    head: "Groupe 2",
+    sub: "一段 · 食べる",
+    verb: { word: "食べる", reading: "たべる", group: "ichidan", isSpecialIku: false, isSpecialAru: false },
+  },
+  {
+    head: "Groupe 3",
+    sub: "する · 勉強する",
+    verb: { word: "勉強する", reading: "べんきょうする", group: "suru", isSpecialIku: false, isSpecialAru: false },
+  },
+  {
+    head: "Groupe 3",
+    sub: "irrégulier · 来る",
+    verb: { word: "来る", reading: "くる", group: "kuru", isSpecialIku: false, isSpecialAru: false },
+  },
+];
+
+/** Rappel : formation de la forme en -ta (passé neutre) selon la terminaison. */
+interface TaExample {
+  vFuri: string;
+  taFuri: string;
+}
+const TA_RULES: { term: string; ta: string; ex: TaExample[]; note?: string }[] = [
+  {
+    term: "五段 · う つ る",
+    ta: "った",
+    ex: [
+      { vFuri: "{買|か}う", taFuri: "{買|か}った" },
+      { vFuri: "{待|ま}つ", taFuri: "{待|ま}った" },
+      { vFuri: "{売|う}る", taFuri: "{売|う}った" },
+    ],
+  },
+  {
+    term: "五段 · む ぶ ぬ",
+    ta: "んだ",
+    ex: [
+      { vFuri: "{飲|の}む", taFuri: "{飲|の}んだ" },
+      { vFuri: "{遊|あそ}ぶ", taFuri: "{遊|あそ}んだ" },
+      { vFuri: "{死|し}ぬ", taFuri: "{死|し}んだ" },
+    ],
+  },
+  {
+    term: "五段 · く",
+    ta: "いた",
+    ex: [{ vFuri: "{書|か}く", taFuri: "{書|か}いた" }],
+    note: "exception : 行く → 行った",
+  },
+  {
+    term: "五段 · ぐ",
+    ta: "いだ",
+    ex: [{ vFuri: "{泳|およ}ぐ", taFuri: "{泳|およ}いだ" }],
+  },
+  {
+    term: "五段 · す",
+    ta: "した",
+    ex: [{ vFuri: "{話|はな}す", taFuri: "{話|はな}した" }],
+  },
+  {
+    term: "一段 · る",
+    ta: "た",
+    ex: [
+      { vFuri: "{食|た}べる", taFuri: "{食|た}べた" },
+      { vFuri: "{見|み}る", taFuri: "{見|み}た" },
+    ],
+  },
+  {
+    term: "Groupe 3",
+    ta: "した・きた",
+    ex: [
+      { vFuri: "{勉強|べんきょう}する", taFuri: "{勉強|べんきょう}した" },
+      { vFuri: "{来|き}る", taFuri: "{来|き}た" },
+    ],
+  },
+];
+
+function Tables() {
   return (
-    <div className="space-y-4">
+    <div className="space-y-5">
+      {/* Tableau 1 — les trois groupes de verbes */}
       <Card className="anim-fade-up">
-        <CardContent className="space-y-4 p-5">
-          <div className="flex items-center gap-2">
-            <Input
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              placeholder={`Rechercher parmi ${total} verbes ( kanji, kana, sens… )`}
-              aria-label="Rechercher un verbe"
-              className="h-10"
-            />
-            <Button
-              type="button"
-              variant={hideAnswers ? "default" : "outline"}
-              size="icon"
-              onClick={() => setHideAnswers(!hideAnswers)}
-              className="h-10 w-10 shrink-0 rounded-xl"
-              title="Auto-test : formes masquées, clique pour révéler"
-              aria-label="Mode auto-test"
-              aria-pressed={hideAnswers}
-            >
-              {hideAnswers ? <EyeOff className="h-4 w-4" aria-hidden /> : <Eye className="h-4 w-4" aria-hidden />}
-            </Button>
+        <CardContent className="p-5 md:p-6">
+          <h3 className="text-base font-bold">
+            <span className="font-jp mr-2 text-primary">活用</span>
+            Les trois groupes de verbes
+          </h3>
+          <p className="mt-1 text-xs text-muted-foreground">
+            Un verbe d&apos;exemple par groupe · les formes 〜て sont N4
+          </p>
+          <div className="custom-scroll mt-4 overflow-x-auto">
+            <table className="w-full min-w-[560px] text-left">
+              <thead>
+                <tr className="border-b bg-secondary/50">
+                  <th
+                    scope="col"
+                    className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground"
+                  >
+                    Forme
+                  </th>
+                  {GROUP_EXAMPLES.map((g) => (
+                    <th key={g.sub} scope="col" className="px-3 py-2">
+                      <p className="text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
+                        {g.head}
+                      </p>
+                      <p className="font-jp text-sm font-bold text-foreground">{g.sub}</p>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-border">
+                {CONJ_FORMS.map((f) => (
+                  <tr key={f.key}>
+                    <td className="w-32 px-3 py-2 align-top sm:w-40">
+                      <p className="text-sm font-medium">
+                        {f.label}
+                        {f.level === "N4" && (
+                          <span className="ml-1.5 inline-block rounded border border-gold/40 bg-gold/15 px-1 align-middle text-[10px] font-bold leading-4 text-[#8a6d1d]">
+                            N4
+                          </span>
+                        )}
+                      </p>
+                      <p className="font-jp text-[11px] text-muted-foreground">{f.hint}</p>
+                    </td>
+                    {GROUP_EXAMPLES.map((g) => {
+                      const a = conjugateVerb(g.verb)[f.key];
+                      return (
+                        <td key={g.sub} className="px-3 py-2">
+                          <div className="flex items-center gap-1.5">
+                            <div className="min-w-0">
+                              <p className="font-jp text-base leading-tight">{a.kanji}</p>
+                              {a.kana !== a.kanji && (
+                                <p className="font-jp text-[11px] text-muted-foreground">{a.kana}</p>
+                              )}
+                            </div>
+                            <AudioButton text={a.kanji} className="h-7 w-7" />
+                          </div>
+                        </td>
+                      );
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
-          <div className="flex flex-wrap gap-1.5">
-            {(["N5", "N4", "all"] as LevelFilter[]).map((l) => (
-              <FilterChip key={l} active={tLevel === l} onClick={() => setTLevel(l)}>
-                {l === "all" ? "Tous" : l}
-              </FilterChip>
-            ))}
-            <span className="mx-1 w-px bg-border" aria-hidden />
-            <FilterChip active={tGroup === "all"} onClick={() => setTGroup("all")}>
-              Tous
-            </FilterChip>
-            <FilterChip active={tGroup === "godan"} onClick={() => setTGroup("godan")}>
-              <span className="font-jp">五段</span>
-            </FilterChip>
-            <FilterChip active={tGroup === "ichidan"} onClick={() => setTGroup("ichidan")}>
-              <span className="font-jp">一段</span>
-            </FilterChip>
-            <FilterChip active={tGroup === "irregular"} onClick={() => setTGroup("irregular")}>
-              Irrég.
-            </FilterChip>
-          </div>
-
-          {verbs.length === 0 ? (
-            <p className="py-6 text-center text-sm text-muted-foreground">Aucun verbe ne correspond.</p>
-          ) : (
-            <div className="flex flex-wrap gap-1">
-              {verbs.map((v) => (
-                <button
-                  key={v.id}
-                  type="button"
-                  onClick={() => setSelectedVerb(v)}
-                  title={v.meaningFr.split(";")[0]}
-                  className={cn(
-                    "font-jp rounded-lg border px-2 py-1 text-sm transition-all",
-                    selectedVerb?.id === v.id
-                      ? "border-primary bg-primary/10 ring-1 ring-primary/30"
-                      : "bg-card hover:border-primary/40"
-                  )}
-                >
-                  {v.word}
-                </button>
-              ))}
-            </div>
-          )}
         </CardContent>
       </Card>
 
-      {selectedVerb && verbForms && (
-        <Card className="anim-fade-up">
-          <CardContent className="space-y-3 p-6">
-            <div className="flex items-start justify-between gap-3">
-              <div>
-                <Ruby
-                  text={verbFurigana(selectedVerb.word, selectedVerb.reading)}
-                  className="font-jp text-3xl"
-                />
-                <p className="mt-1 text-sm text-muted-foreground">
-                  <span className="font-jp">[{selectedVerb.reading}]</span> · {selectedVerb.meaningFr}
-                </p>
-                <p className="mt-1 text-xs text-muted-foreground">{GROUP_LABELS[selectedVerb.group]}</p>
-              </div>
-              <AudioButton text={selectedVerb.word} size="icon-lg" />
-            </div>
-
-            <div className="overflow-hidden rounded-xl border">
-              <table className="w-full text-left">
-                <thead>
-                  <tr className="border-b bg-secondary/50">
-                    <th scope="col" className="px-4 py-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                      Forme
-                    </th>
-                    <th scope="col" className="px-4 py-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                      Réponse
-                    </th>
-                    <th scope="col" className="px-4 py-2">
-                      <span className="sr-only">Statut et audio</span>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-border">
-                  {CONJ_FORMS.map((f) => {
-                    const a = verbForms[f.key];
-                    const key = `${selectedVerb.id}:${f.key}`;
-                    const st = conjStat(selectedVerb, f.key);
-                    const hidden = hideAnswers && !revealedRows.has(key);
-                    return (
-                      <tr key={f.key}>
-                        <td className="w-36 px-4 py-2 align-top sm:w-44">
-                          <p className="text-sm font-medium">
-                            {f.label}
-                            {f.level === "N4" && (
-                              <span className="ml-1.5 inline-block rounded border border-gold/40 bg-gold/15 px-1 align-middle text-[10px] font-bold leading-4 text-[#8a6d1d]">
-                                N4
-                              </span>
-                            )}
+      {/* Tableau 2 — rappel : comment former la forme en -ta */}
+      <Card className="anim-fade-up">
+        <CardContent className="p-5 md:p-6">
+          <h3 className="text-base font-bold">
+            <span className="font-jp mr-2 text-primary">過去</span>
+            La forme en -ta (passé neutre)
+          </h3>
+          <p className="mt-1 text-xs text-muted-foreground">
+            Comment le verbe change selon sa terminaison
+          </p>
+          <div className="custom-scroll mt-4 overflow-x-auto">
+            <table className="w-full min-w-[440px] text-left">
+              <thead>
+                <tr className="border-b bg-secondary/50">
+                  <th
+                    scope="col"
+                    className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground"
+                  >
+                    Terminaison
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground"
+                  >
+                    Devient
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground"
+                  >
+                    Exemples
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-border">
+                {TA_RULES.map((r) => (
+                  <tr key={r.term}>
+                    <td className="w-28 px-3 py-2.5 align-top">
+                      <span className="font-jp text-sm font-semibold">{r.term}</span>
+                    </td>
+                    <td className="w-24 px-3 py-2.5 align-top">
+                      <span className="font-jp inline-block rounded-md bg-primary/10 px-2 py-0.5 text-sm font-bold text-primary">
+                        {r.ta}
+                      </span>
+                      {r.note && (
+                        <p className="mt-1 text-[11px] font-medium text-[#8a6d1d]">{r.note}</p>
+                      )}
+                    </td>
+                    <td className="px-3 py-2.5">
+                      <div className="space-y-1">
+                        {r.ex.map((e) => (
+                          <p key={e.vFuri} className="font-jp text-sm">
+                            <Ruby text={e.vFuri} /> <span className="text-muted-foreground">→</span>{" "}
+                            <Ruby text={e.taFuri} className="font-semibold" />
                           </p>
-                          <p className="font-jp text-[11px] text-muted-foreground">{f.hint}</p>
-                        </td>
-                        <td className="px-4 py-2">
-                          {hidden ? (
-                            <button
-                              type="button"
-                              onClick={() => toggleRow(key)}
-                              className="w-full rounded-md border border-dashed border-border px-3 py-1.5 text-left text-xs text-muted-foreground hover:border-primary/40"
-                            >
-                              Cliquer pour révéler
-                            </button>
-                          ) : (
-                            <>
-                              <p className="font-jp text-lg leading-tight">{a.kanji}</p>
-                              {a.kana !== a.kanji && (
-                                <p className="font-jp text-xs text-muted-foreground">{a.kana}</p>
-                              )}
-                            </>
-                          )}
-                        </td>
-                        <td className="px-4 py-2">
-                          <div className="flex items-center justify-end gap-2">
-                            {st && (
-                              <span
-                                className={cn(
-                                  "rounded-full px-2 py-0.5 text-[10px] font-semibold",
-                                  st.intervalDays >= MASTERED_DAYS
-                                    ? "bg-matcha/15 text-matcha"
-                                    : "bg-gold/15 text-[#8a6d1d]"
-                                )}
-                                title="État SRS de cette forme"
-                              >
-                                {st.intervalDays >= MASTERED_DAYS ? "maîtrisé" : `${Math.max(0, Math.round(st.intervalDays))} j`}
-                              </span>
-                            )}
-                            <AudioButton text={a.kanji} />
-                          </div>
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
-          </CardContent>
-        </Card>
-      )}
+                        ))}
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-4 rounded-lg bg-secondary/50 p-3 text-xs leading-relaxed text-muted-foreground">
+            La forme en <span className="font-jp font-semibold text-foreground">-te</span> suit
+            exactement la même logique : <span className="font-jp">った → って</span> ·{" "}
+            <span className="font-jp">んだ → んで</span> · <span className="font-jp">いた → いて</span> ·{" "}
+            <span className="font-jp">いだ → いで</span> · <span className="font-jp">した → して</span> ·{" "}
+            <span className="font-jp">た → て</span> (et <span className="font-jp">行く → 行って</span>).
+          </p>
+        </CardContent>
+      </Card>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ArrowRight, CheckCircle2, Eye, Lock, Send, XCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -13,6 +13,7 @@ import { KanaInput } from "./KanaInput";
 import { checkAnswer } from "@/lib/grade";
 import { finalizeKana } from "@/lib/romaji";
 import type { WordItem } from "@/lib/types";
+import { SETTING_KEYS, useLocalNumber } from "./settings";
 import { cn } from "@/lib/utils";
 
 type Direction = "j2f" | "f2j";
@@ -32,7 +33,8 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
   const { submit } = useReview();
   const { toast } = useToast();
 
-  const [size, setSize] = useState(10);
+  /* nombre de phrases mémorisé (réglé aussi depuis le tableau de bord) */
+  const [size, setSize, sizeReady] = useLocalNumber(SETTING_KEYS.phrasesSize, 10);
   const [tier, setTier] = useState<1 | 2>(1);
 
   /* maîtrise du vocabulaire → déblocage du niveau 2 */
@@ -58,18 +60,8 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
     return c;
   }, [eligible]);
 
-  /* file initiale quand l'exercice est lancé directement depuis le tableau de bord */
-  const initialEntries = useMemo(() => {
-    if (!autoStart) return [];
-    const pool = eligible.filter((w) => w.exTier === tier);
-    return [...pool]
-      .sort(() => Math.random() - 0.5)
-      .slice(0, size)
-      .map((word, i) => ({ word, direction: (i % 2 === 0 ? "j2f" : "f2j") as Direction }));
-  }, []);
-
-  const [phase, setPhase] = useState<Phase>(initialEntries.length ? "session" : "setup");
-  const [queue, setQueue] = useState<ExItem[]>(initialEntries);
+  const [phase, setPhase] = useState<Phase>("setup");
+  const [queue, setQueue] = useState<ExItem[]>([]);
   const [index, setIndex] = useState(0);
   const [input, setInput] = useState("");
   const [status, setStatus] = useState<Status>("answering");
@@ -98,6 +90,16 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
       });
     }
   }, [eligible, tier, size, toast]);
+
+  /* Lancement direct depuis le tableau de bord (panneau phrases) —
+     attend le chargement des réglages pour appliquer le bon nombre de phrases */
+  const started = useRef(false);
+  useEffect(() => {
+    if (autoStart && sizeReady && !started.current) {
+      started.current = true;
+      buildQueue();
+    }
+  });
 
   const finishItem = (wasCorrect: boolean, mode: Direction) => {
     submit("word", queue[index].word.id, wasCorrect ? 2 : 0, mode === "j2f" ? "ex_jp_fr" : "ex_fr_jp");
@@ -198,7 +200,7 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
             <div>
               <p className="mb-2 text-sm font-medium">Nombre de phrases</p>
               <div className="flex gap-2">
-                {[5, 10, 15].map((n) => (
+                {[5, 10, 15, 20].map((n) => (
                   <Button
                     key={n}
                     type="button"
