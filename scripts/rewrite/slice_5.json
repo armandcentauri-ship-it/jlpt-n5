@@ -1,0 +1,2135 @@
+[
+ {
+  "wids": [
+   857
+  ],
+  "words": [
+   {
+    "w": "最初",
+    "r": "さいしょ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "私は最初からその事は知っていた。",
+  "exFr": "Je savais cela dès le début."
+ },
+ {
+  "wids": [
+   858
+  ],
+  "words": [
+   {
+    "w": "探す",
+    "r": "さがす"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "私は貸間を探しているところです。",
+  "exFr": "Je suis en train de chercher une chambre à louer."
+ },
+ {
+  "wids": [
+   860
+  ],
+  "words": [
+   {
+    "w": "騒ぐ",
+    "r": "さわぐ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "どうかそんなに騒がないで下さい。",
+  "exFr": "S'il vous plaît, ne faites pas autant de bruit."
+ },
+ {
+  "wids": [
+   861
+  ],
+  "words": [
+   {
+    "w": "触る",
+    "r": "さわる"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "触らずそのままにしておきなさい。",
+  "exFr": "Ne touche pas, laisse tel quel."
+ },
+ {
+  "wids": [
+   862
+  ],
+  "words": [
+   {
+    "w": "産業",
+    "r": "さんぎょう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "日本は産業国である。",
+  "exFr": "Le Japon est un pays industriel."
+ },
+ {
+  "wids": [
+   864
+  ],
+  "words": [
+   {
+    "w": "試合",
+    "r": "しあい"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "その試合は何時に始まりますか。",
+  "exFr": "À quelle heure le match commence-t-il ?"
+ },
+ {
+  "wids": [
+   865
+  ],
+  "words": [
+   {
+    "w": "仕方",
+    "r": "しかた"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "あなたはチェスの仕方を知っていますか。",
+  "exFr": "Savez-vous jouer aux échecs ?"
+ },
+ {
+  "wids": [
+   867
+  ],
+  "words": [
+   {
+    "w": "事故",
+    "r": "じこ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "その事故について彼に質問した。",
+  "exFr": "Je lui ai posé des questions sur l'accident."
+ },
+ {
+  "wids": [
+   868
+  ],
+  "words": [
+   {
+    "w": "地震",
+    "r": "じしん"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "地震のときにはガスを止めなさい。",
+  "exFr": "En cas de séisme, coupez le gaz."
+ },
+ {
+  "wids": [
+   870
+  ],
+  "words": [
+   {
+    "w": "下着",
+    "r": "したぎ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "私は新しい下着が気に入っている。",
+  "exFr": "Je suis satisfait de mes nouveaux sous-vêtements."
+ },
+ {
+  "wids": [
+   871
+  ],
+  "words": [
+   {
+    "w": "支度",
+    "r": "したく"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "すぐに旅の支度をしなさい。",
+  "exFr": "Prépare-toi pour le voyage tout de suite."
+ },
+ {
+  "wids": [
+   872
+  ],
+  "words": [
+   {
+    "w": "失敗",
+    "r": "しっぱい"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "１度や２度の失敗はだれにでもある。",
+  "exFr": "Tout le monde échoue une ou deux fois."
+ },
+ {
+  "wids": [
+   873
+  ],
+  "words": [
+   {
+    "w": "辞典",
+    "r": "じてん"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "私はいつも辞典を３冊手元に置いています。",
+  "exFr": "J'ai toujours trois dictionnaires à portée de main."
+ },
+ {
+  "wids": [
+   874
+  ],
+  "words": [
+   {
+    "w": "品物",
+    "r": "しなもの"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "これらの品物は非売品です。",
+  "exFr": "Ces articles ne sont pas en vente."
+ },
+ {
+  "wids": [
+   875
+  ],
+  "words": [
+   {
+    "w": "市民",
+    "r": "しみん"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "私は千葉市民ですが、東京で勤めています。",
+  "exFr": "Je suis citoyen de Chiba, mais je travaille à Tokyo."
+ },
+ {
+  "wids": [
+   877
+  ],
+  "words": [
+   {
+    "w": "社長",
+    "r": "しゃちょう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "この会社の社長は誰ですか。",
+  "exFr": "Qui est le patron de cette entreprise ?"
+ },
+ {
+  "wids": [
+   879
+  ],
+  "words": [
+   {
+    "w": "習慣",
+    "r": "しゅうかん"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "その習慣は中国で始まった。",
+  "exFr": "Cette coutume a commencé en Chine."
+ },
+ {
+  "wids": [
+   880
+  ],
+  "words": [
+   {
+    "w": "住所",
+    "r": "じゅうしょ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "あなたの名前と住所を記入しなさい。",
+  "exFr": "Veuillez indiquer votre nom et votre adresse."
+ },
+ {
+  "wids": [
+   881
+  ],
+  "words": [
+   {
+    "w": "柔道",
+    "r": "じゅうどう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "柔道では力より技のほうが大切である。",
+  "exFr": "En judo, la technique est plus importante que la force."
+ },
+ {
+  "wids": [
+   882
+  ],
+  "words": [
+   {
+    "w": "十分",
+    "r": "じゅうぶん"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "私はこの本を買うのに十分なお金を持っている。",
+  "exFr": "J'ai assez d'argent pour acheter ce livre."
+ },
+ {
+  "wids": [
+   883
+  ],
+  "words": [
+   {
+    "w": "出席",
+    "r": "しゅっせき"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "出席できないんですか。どうして？",
+  "exFr": "Vous ne pouvez pas venir ? Pourquoi ?"
+ },
+ {
+  "wids": [
+   885
+  ],
+  "words": [
+   {
+    "w": "趣味",
+    "r": "しゅみ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "趣味については話しましたか？",
+  "exFr": "Avez-vous parlé de vos passe-temps ?"
+ },
+ {
+  "wids": [
+   886
+  ],
+  "words": [
+   {
+    "w": "準備",
+    "r": "じゅんび"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "準備ができるまでちょっと待ってくれ。",
+  "exFr": "Attends un peu que je sois prêt."
+ },
+ {
+  "wids": [
+   888
+  ],
+  "words": [
+   {
+    "w": "小説",
+    "r": "しょうせつ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "トムは小説を読んでいる。",
+  "exFr": "Tom lit un roman."
+ },
+ {
+  "wids": [
+   889
+  ],
+  "words": [
+   {
+    "w": "招待",
+    "r": "しょうたい"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "ご招待をありがとうございます。",
+  "exFr": "Merci pour votre invitation."
+ },
+ {
+  "wids": [
+   892
+  ],
+  "words": [
+   {
+    "w": "食事",
+    "r": "しょくじ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "食事は母に作ってもらっています。",
+  "exFr": "Ma mère me prépare les repas."
+ },
+ {
+  "wids": [
+   894
+  ],
+  "words": [
+   {
+    "w": "人口",
+    "r": "じんこう"
+   }
+  ],
+  "tiers": [
+   1
+  ],
+  "exJa": "インドの人口はどのくらいですか。",
+  "exFr": "Quelle est la population de l'Inde ?"
+ },
+ {
+  "wids": [
+   895
+  ],
+  "words": [
+   {
+    "w": "神社",
+    "r": "じんじゃ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "京都には多くの神社がある。",
+  "exFr": "Il y a beaucoup de sanctuaires à Kyoto."
+ },
+ {
+  "wids": [
+   896
+  ],
+  "words": [
+   {
+    "w": "親切",
+    "r": "しんせつ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "あなたの家族はきっと親切でしょう。",
+  "exFr": "Votre famille doit être très gentille."
+ },
+ {
+  "wids": [
+   898
+  ],
+  "words": [
+   {
+    "w": "水泳",
+    "r": "すいえい"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "水泳が私の楽しみの１つです。",
+  "exFr": "La natation est l'une de mes passions."
+ },
+ {
+  "wids": [
+   900
+  ],
+  "words": [
+   {
+    "w": "数学",
+    "r": "すうがく"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "私にはこの数学の問題はわからない。",
+  "exFr": "Ce problème de maths dépasse mes capacités."
+ },
+ {
+  "wids": [
+   904
+  ],
+  "words": [
+   {
+    "w": "滑る",
+    "r": "すべる"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "来年はうまく滑れるようになるでしょう。",
+  "exFr": "L'année prochaine, vous serez capable de bien skier."
+ },
+ {
+  "wids": [
+   905
+  ],
+  "words": [
+   {
+    "w": "済む",
+    "r": "すむ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "１０時ちょっと前に仕事が済んだ。",
+  "exFr": "Nous avons terminé le travail juste avant 10 heures."
+ },
+ {
+  "wids": [
+   908
+  ],
+  "words": [
+   {
+    "w": "生産",
+    "r": "せいさん"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "この工場はＣＤプレーヤーを生産している。",
+  "exFr": "Cette usine produit des lecteurs de CD."
+ },
+ {
+  "wids": [
+   910
+  ],
+  "words": [
+   {
+    "w": "西洋",
+    "r": "せいよう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "それらは西洋の風呂よりずっといいです。",
+  "exFr": "Ils sont bien meilleurs que les bains occidentaux."
+ },
+ {
+  "wids": [
+   911
+  ],
+  "words": [
+   {
+    "w": "世界",
+    "r": "せかい"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "愛の力は世界を動かす。",
+  "exFr": "L'amour fait tourner le monde."
+ },
+ {
+  "wids": [
+   912
+  ],
+  "words": [
+   {
+    "w": "説明",
+    "r": "せつめい"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "あなたはそれをどう説明しますか。",
+  "exFr": "Comment expliquez-vous cela ?"
+ },
+ {
+  "wids": [
+   913
+  ],
+  "words": [
+   {
+    "w": "背中",
+    "r": "せなか"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "このブラウスはボタンが背中にある。",
+  "exFr": "Ce chemisier a des boutons dans le dos."
+ },
+ {
+  "wids": [
+   914
+  ],
+  "words": [
+   {
+    "w": "ぜひ",
+    "r": "ぜひ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "ぜひパーティーにおいでください。",
+  "exFr": "Venez absolument à la fête."
+ },
+ {
+  "wids": [
+   918
+  ],
+  "words": [
+   {
+    "w": "そう",
+    "r": "そう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "まもなく雨が降りそうだ。",
+  "exFr": "Il va bientôt pleuvoir."
+ },
+ {
+  "wids": [
+   919
+  ],
+  "words": [
+   {
+    "w": "相談",
+    "r": "そうだん"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "あなたに相談したいことがあるの。",
+  "exFr": "J'ai quelque chose de important à vous dire."
+ },
+ {
+  "wids": [
+   921
+  ],
+  "words": [
+   {
+    "w": "祖父",
+    "r": "そふ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "祖父はステッキがないと歩けない。",
+  "exFr": "Mon grand-père ne peut pas marcher sans une canne."
+ },
+ {
+  "wids": [
+   922
+  ],
+  "words": [
+   {
+    "w": "祖母",
+    "r": "そぼ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "私は祖母が大好きです。",
+  "exFr": "J'adore beaucoup ma grand-mère."
+ },
+ {
+  "wids": [
+   923
+  ],
+  "words": [
+   {
+    "w": "退院",
+    "r": "たいいん"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "彼女は１時間前に退院しました。",
+  "exFr": "Elle est sortie de l'hôpital il y a une heure."
+ },
+ {
+  "wids": [
+   924
+  ],
+  "words": [
+   {
+    "w": "大事",
+    "r": "だいじ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "彼は私たちにとって大事な人だ。",
+  "exFr": "Il est précieux pour nous."
+ },
+ {
+  "wids": [
+   925
+  ],
+  "words": [
+   {
+    "w": "大体",
+    "r": "だいたい"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "それらはだいたい同じくらいの大きさだ。",
+  "exFr": "Ils sont à peu près de la même taille."
+ },
+ {
+  "wids": [
+   926
+  ],
+  "words": [
+   {
+    "w": "大分",
+    "r": "だいぶ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "だいぶ痛みがなくなりました。",
+  "exFr": "La douleur a presque complètement disparu."
+ },
+ {
+  "wids": [
+   927
+  ],
+  "words": [
+   {
+    "w": "台風",
+    "r": "たいふう"
+   }
+  ],
+  "tiers": [
+   1
+  ],
+  "exJa": "台風のため学校が休みになった。",
+  "exFr": "L'école était fermée à cause du typhon."
+ },
+ {
+  "wids": [
+   929
+  ],
+  "words": [
+   {
+    "w": "足す",
+    "r": "たす"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "６０にするためには１７に何を足せばよいの。",
+  "exFr": "Qu'est-ce qu'il faut ajouter à 17 pour obtenir 60?"
+ },
+ {
+  "wids": [
+   930
+  ],
+  "words": [
+   {
+    "w": "だめ",
+    "r": "だめ"
+   }
+  ],
+  "tiers": [
+   1
+  ],
+  "exJa": "もうだめだ。",
+  "exFr": "C'est fini."
+ },
+ {
+  "wids": [
+   932
+  ],
+  "words": [
+   {
+    "w": "暖房",
+    "r": "だんぼう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "お宅の暖房はどのようにしていますか。",
+  "exFr": "Comment faites-vous pour chauffer votre maison?"
+ },
+ {
+  "wids": [
+   933
+  ],
+  "words": [
+   {
+    "w": "注意",
+    "r": "ちゅうい"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "彼に遅れないように注意した。",
+  "exFr": "J'ai fait attention à ne pas être en retard pour lui."
+ },
+ {
+  "wids": [
+   934
+  ],
+  "words": [
+   {
+    "w": "注射",
+    "r": "ちゅうしゃ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "注射をしましょう。",
+  "exFr": "Je vais vous faire une injection."
+ },
+ {
+  "wids": [
+   935
+  ],
+  "words": [
+   {
+    "w": "地理",
+    "r": "ちり"
+   }
+  ],
+  "tiers": [
+   1
+  ],
+  "exJa": "私はこの町の地理をよく知っている。",
+  "exFr": "Je connais bien la géographie de cette ville."
+ },
+ {
+  "wids": [
+   937
+  ],
+  "words": [
+   {
+    "w": "付く",
+    "r": "つく"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "うちの車にはエアコンが付いている。",
+  "exFr": "Notre voiture est équipée de climatisation."
+ },
+ {
+  "wids": [
+   938
+  ],
+  "words": [
+   {
+    "w": "都合",
+    "r": "つごう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "何時がご都合よいでしょうか。",
+  "exFr": "Quelle heure vous conviendrait-il ?"
+ },
+ {
+  "wids": [
+   939
+  ],
+  "words": [
+   {
+    "w": "続く",
+    "r": "つづく"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "どれくらいこの寒い天気は続きますか。",
+  "exFr": "Ce temps froid va durer combien de temps ?"
+ },
+ {
+  "wids": [
+   940
+  ],
+  "words": [
+   {
+    "w": "包む",
+    "r": "つつむ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "プレゼント用に包んでもらえますか。",
+  "exFr": "Pourriez-vous l'emballer comme cadeau ?"
+ },
+ {
+  "wids": [
+   944,
+   1038
+  ],
+  "words": [
+   {
+    "w": "手袋",
+    "r": "てぶくろ"
+   },
+   {
+    "w": "両方",
+    "r": "りょうほう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "この手袋は両方がそろっていない。",
+  "exFr": "Ces gants ne forment pas une paire."
+ },
+ {
+  "wids": [
+   945
+  ],
+  "words": [
+   {
+    "w": "店員",
+    "r": "てんいん"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "店員はその荷物にラベルをつけた。",
+  "exFr": "Le vendeur a mis une étiquette sur cette valise."
+ },
+ {
+  "wids": [
+   946
+  ],
+  "words": [
+   {
+    "w": "電灯",
+    "r": "でんとう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "ルーシーは電灯のスイッチをつけた。",
+  "exFr": "Lucy a allumé l'interrupteur de la lumière."
+ },
+ {
+  "wids": [
+   947
+  ],
+  "words": [
+   {
+    "w": "電報",
+    "r": "でんぽう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "私は、彼女から電報を受け取った。",
+  "exFr": "J'ai reçu un télégramme d'elle."
+ },
+ {
+  "wids": [
+   948
+  ],
+  "words": [
+   {
+    "w": "道具",
+    "r": "どうぐ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "この道具はなんの役にもたたない。",
+  "exFr": "Cet outil est inutile."
+ },
+ {
+  "wids": [
+   949
+  ],
+  "words": [
+   {
+    "w": "遠く",
+    "r": "とおく"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "遠くにぼんやりした明かりが見えた。",
+  "exFr": "On a aperçu une lumière faible au loin."
+ },
+ {
+  "wids": [
+   950
+  ],
+  "words": [
+   {
+    "w": "通る",
+    "r": "とおる"
+   }
+  ],
+  "tiers": [
+   1
+  ],
+  "exJa": "私は毎日その教会の前を通る。",
+  "exFr": "Je passe devant cette église tous les jours."
+ },
+ {
+  "wids": [
+   951
+  ],
+  "words": [
+   {
+    "w": "特に",
+    "r": "とくに"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "私は音楽、特にロックが大好きだ。",
+  "exFr": "J'adore la musique, en particulier le rock."
+ },
+ {
+  "wids": [
+   952
+  ],
+  "words": [
+   {
+    "w": "特別",
+    "r": "とくべつ"
+   }
+  ],
+  "tiers": [
+   1
+  ],
+  "exJa": "特別料理がございますが。",
+  "exFr": "Nous avons un plat spécial pour vous."
+ },
+ {
+  "wids": [
+   953
+  ],
+  "words": [
+   {
+    "w": "途中",
+    "r": "とちゅう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "途中であきらめるな。",
+  "exFr": "N'abandonne pas en chemin."
+ },
+ {
+  "wids": [
+   957
+  ],
+  "words": [
+   {
+    "w": "治る",
+    "r": "なおる"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "２週間もすれば自然に治ります。",
+  "exFr": "En deux semaines, ça ira tout seul."
+ },
+ {
+  "wids": [
+   959
+  ],
+  "words": [
+   {
+    "w": "中々",
+    "r": "なかなか"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "試験中はなかなか大変だった。",
+  "exFr": "Les examens ont été très pénibles."
+ },
+ {
+  "wids": [
+   960
+  ],
+  "words": [
+   {
+    "w": "泣く",
+    "r": "なく"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "ビルは何時間も泣き続けた。",
+  "exFr": "Bill a pleuré pendant des heures."
+ },
+ {
+  "wids": [
+   961
+  ],
+  "words": [
+   {
+    "w": "鳴る",
+    "r": "なる"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "電話が鳴ったらただちに出なさい。",
+  "exFr": "Quand le téléphone sonne, tu dois répondre tout de suite."
+ },
+ {
+  "wids": [
+   962
+  ],
+  "words": [
+   {
+    "w": "苦い",
+    "r": "にがい"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "このコーヒーは苦い味がする。",
+  "exFr": "Ce café a un goût amer."
+ },
+ {
+  "wids": [
+   963
+  ],
+  "words": [
+   {
+    "w": "日記",
+    "r": "にっき"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "彼女はそのことを日記に書いた。",
+  "exFr": "Elle a écrit cela dans son journal intime."
+ },
+ {
+  "wids": [
+   964
+  ],
+  "words": [
+   {
+    "w": "入院",
+    "r": "にゅういん"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "入院しなければいけませんか。",
+  "exFr": "Dois-je être hospitalisé(e) ?"
+ },
+ {
+  "wids": [
+   965
+  ],
+  "words": [
+   {
+    "w": "入学",
+    "r": "にゅうがく"
+   }
+  ],
+  "tiers": [
+   1
+  ],
+  "exJa": "私はこの学校に２年前に入学した。",
+  "exFr": "Je suis entré(e) dans cette école il y a deux ans."
+ },
+ {
+  "wids": [
+   966
+  ],
+  "words": [
+   {
+    "w": "似る",
+    "r": "にる"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "私も似た話を聞いたことがある。",
+  "exFr": "J'ai aussi entendu une histoire similaire."
+ },
+ {
+  "wids": [
+   967
+  ],
+  "words": [
+   {
+    "w": "人形",
+    "r": "にんぎょう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "メアリーは私にアメリカの人形をくれた。",
+  "exFr": "Mary m'a donné une poupée américaine."
+ },
+ {
+  "wids": [
+   970
+  ],
+  "words": [
+   {
+    "w": "寝坊",
+    "r": "ねぼう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "彼はときどき寝坊する。",
+  "exFr": "Il fait parfois la grasse matinée."
+ },
+ {
+  "wids": [
+   971
+  ],
+  "words": [
+   {
+    "w": "眠い",
+    "r": "ねむい"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "テレビを見ているとすぐ眠くなる。",
+  "exFr": "Quand je regarde la télé, j'ai sommeil."
+ },
+ {
+  "wids": [
+   974
+  ],
+  "words": [
+   {
+    "w": "のど",
+    "r": "のど"
+   }
+  ],
+  "tiers": [
+   1
+  ],
+  "exJa": "のどがヒリヒリします。",
+  "exFr": "Ma gorge me brûle."
+ },
+ {
+  "wids": [
+   975
+  ],
+  "words": [
+   {
+    "w": "場合",
+    "r": "ばあい"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "システムが作動しない場合がある。",
+  "exFr": "Parfois, le système ne fonctionne pas."
+ },
+ {
+  "wids": [
+   976
+  ],
+  "words": [
+   {
+    "w": "拝見",
+    "r": "はいけん"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "パスポートを拝見できますか。",
+  "exFr": "Puis-je voir votre passport, s'il vous plaît?"
+ },
+ {
+  "wids": [
+   978
+  ],
+  "words": [
+   {
+    "w": "場所",
+    "r": "ばしょ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "このソファーは場所を取りすぎる。",
+  "exFr": "Ce canapé prend trop de place."
+ },
+ {
+  "wids": [
+   980
+  ],
+  "words": [
+   {
+    "w": "発音",
+    "r": "はつおん"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "あなたのお名前はどのように発音するのですか。",
+  "exFr": "Comment prononcez-vous votre nom?"
+ },
+ {
+  "wids": [
+   982
+  ],
+  "words": [
+   {
+    "w": "払う",
+    "r": "はらう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "ジャックはブラシで上着のほこりを払った。",
+  "exFr": "Jack a brossé la poussière de son pardessus."
+ },
+ {
+  "wids": [
+   983
+  ],
+  "words": [
+   {
+    "w": "番組",
+    "r": "ばんぐみ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "今晩どんな番組がありますか。",
+  "exFr": "Quels programmes y a-t-il ce soir?"
+ },
+ {
+  "wids": [
+   985
+  ],
+  "words": [
+   {
+    "w": "光る",
+    "r": "ひかる"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "上部前方で何かが光っている。",
+  "exFr": "Quelque chose brille en avant."
+ },
+ {
+  "wids": [
+   986
+  ],
+  "words": [
+   {
+    "w": "ひげ",
+    "r": "ひげ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "お父さんがバスルームでひげを剃っている。",
+  "exFr": "Mon père se rase dans la salle de bain."
+ },
+ {
+  "wids": [
+   987
+  ],
+  "words": [
+   {
+    "w": "必要",
+    "r": "ひつよう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "歯医者に行く必要はないですよ。",
+  "exFr": "Tu n'as pas besoin d'aller chez le dentiste."
+ },
+ {
+  "wids": [
+   989
+  ],
+  "words": [
+   {
+    "w": "ビル",
+    "r": "ビル"
+   }
+  ],
+  "tiers": [
+   1
+  ],
+  "exJa": "ビルが高い",
+  "exFr": "Le bâtiment est haut"
+ },
+ {
+  "wids": [
+   990
+  ],
+  "words": [
+   {
+    "w": "昼間",
+    "r": "ひるま"
+   }
+  ],
+  "tiers": [
+   1
+  ],
+  "exJa": "フクロウは昼間は目が見えない。",
+  "exFr": "Les chouettes ne peuvent pas voir pendant la journée."
+ },
+ {
+  "wids": [
+   991
+  ],
+  "words": [
+   {
+    "w": "拾う",
+    "r": "ひろう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "ホテルの前で私を車で拾ってください。",
+  "exFr": "Veuillez venir me chercher en voiture devant l'hôtel."
+ },
+ {
+  "wids": [
+   993
+  ],
+  "words": [
+   {
+    "w": "複雑",
+    "r": "ふくざつ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "どのぐらい複雑なのだろうか。",
+  "exFr": "À quel point est-ce complexe?"
+ },
+ {
+  "wids": [
+   994
+  ],
+  "words": [
+   {
+    "w": "復習",
+    "r": "ふくしゅう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "その課の復習をしましたか。",
+  "exFr": "Asi revu la leçon?"
+ },
+ {
+  "wids": [
+   995
+  ],
+  "words": [
+   {
+    "w": "部長",
+    "r": "ぶちょう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "社長は新しい部長を任命した。",
+  "exFr": "Le président a nommé un nouveau directeur."
+ },
+ {
+  "wids": [
+   996
+  ],
+  "words": [
+   {
+    "w": "普通",
+    "r": "ふつう"
+   }
+  ],
+  "tiers": [
+   1
+  ],
+  "exJa": "私はふつう自転車で通学します。",
+  "exFr": "J'habite généralement à vélo pour aller à l'école."
+ },
+ {
+  "wids": [
+   998
+  ],
+  "words": [
+   {
+    "w": "布団",
+    "r": "ふとん"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "布団をたたみなさい。",
+  "exFr": "Plie ton futon."
+ },
+ {
+  "wids": [
+   1000
+  ],
+  "words": [
+   {
+    "w": "踏む",
+    "r": "ふむ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "足を踏むつもりはなかったのです。",
+  "exFr": "Je ne voulais pas marcher sur votre pied."
+ },
+ {
+  "wids": [
+   1001
+  ],
+  "words": [
+   {
+    "w": "文化",
+    "r": "ぶんか"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "私はギリシャ文化について学んだ。",
+  "exFr": "J'ai appris la culture grecque."
+ },
+ {
+  "wids": [
+   1006
+  ],
+  "words": [
+   {
+    "w": "貿易",
+    "r": "ぼうえき"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "日本は貿易に頼っている。",
+  "exFr": "Le Japon dépend du commerce international."
+ },
+ {
+  "wids": [
+   1008
+  ],
+  "words": [
+   {
+    "w": "法律",
+    "r": "ほうりつ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "この法律はすべての人に適用される。",
+  "exFr": "Cette loi s'applique à tout le monde."
+ },
+ {
+  "wids": [
+   1010
+  ],
+  "words": [
+   {
+    "w": "翻訳",
+    "r": "ほんやく"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "彼女はそれを一語一語翻訳した。",
+  "exFr": "Elle l'a traduit mot à mot."
+ },
+ {
+  "wids": [
+   1013
+  ],
+  "words": [
+   {
+    "w": "周り",
+    "r": "まわり"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "周りを見渡しなさい。",
+  "exFr": "Regarde autour de toi."
+ },
+ {
+  "wids": [
+   1014
+  ],
+  "words": [
+   {
+    "w": "回る",
+    "r": "まわる"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "私たちは車の後ろに回って押した。",
+  "exFr": "Nous sommes passés derrière la voiture et nous l'avons poussée."
+ },
+ {
+  "wids": [
+   1015
+  ],
+  "words": [
+   {
+    "w": "漫画",
+    "r": "まんが"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "仕事中に漫画の本を読むのはやめること。",
+  "exFr": "Arrête de lire des bandes dessinées pendant le travail."
+ },
+ {
+  "wids": [
+   1018
+  ],
+  "words": [
+   {
+    "w": "無理",
+    "r": "むり"
+   }
+  ],
+  "tiers": [
+   1
+  ],
+  "exJa": "それは無理な注文だ。",
+  "exFr": "C'est une demande irréaliste."
+ },
+ {
+  "wids": [
+   1020
+  ],
+  "words": [
+   {
+    "w": "もし",
+    "r": "もし"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "もし電話がなったら出てくれますか。",
+  "exFr": "Si le téléphone sonne, tu peux répondre ?"
+ },
+ {
+  "wids": [
+   1021
+  ],
+  "words": [
+   {
+    "w": "戻る",
+    "r": "もどる"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "やってしまったことは元に戻らない。",
+  "exFr": "Ce qui est fait est fait."
+ },
+ {
+  "wids": [
+   1022
+  ],
+  "words": [
+   {
+    "w": "木綿",
+    "r": "もめん"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "このブラウスは木綿製です。",
+  "exFr": "Ce t-shirt est en coton."
+ },
+ {
+  "wids": [
+   1023
+  ],
+  "words": [
+   {
+    "w": "焼く",
+    "r": "やく"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "この夏はこんがり焼こうと思います。",
+  "exFr": "Je vais essayer de bien bronzer cet été."
+ },
+ {
+  "wids": [
+   1024
+  ],
+  "words": [
+   {
+    "w": "約束",
+    "r": "やくそく"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "約束したことを思い出して下さい。",
+  "exFr": "Rappelle-toi de ta promesse."
+ },
+ {
+  "wids": [
+   1025
+  ],
+  "words": [
+   {
+    "w": "止む",
+    "r": "やむ"
+   }
+  ],
+  "tiers": [
+   1
+  ],
+  "exJa": "雨がちょうど止んだ、出発しよう。",
+  "exFr": "La vient de s'arrêter, partons."
+ },
+ {
+  "wids": [
+   1027
+  ],
+  "words": [
+   {
+    "w": "輸入",
+    "r": "ゆにゅう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "これはドイツから輸入した車です。",
+  "exFr": "C'est une voiture importée d'Allemagne."
+ },
+ {
+  "wids": [
+   1028
+  ],
+  "words": [
+   {
+    "w": "指輪",
+    "r": "ゆびわ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "この指輪をある場所で買った。",
+  "exFr": "J'ai acheté cette bague à un certain endroit."
+ },
+ {
+  "wids": [
+   1029
+  ],
+  "words": [
+   {
+    "w": "用意",
+    "r": "ようい"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "その部屋はあなたが使えるよう用意ができています。",
+  "exFr": "La chambre est prête pour vous."
+ },
+ {
+  "wids": [
+   1030
+  ],
+  "words": [
+   {
+    "w": "用事",
+    "r": "ようじ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "悪いけどほかに用事があるの。",
+  "exFr": "Désolé, j'ai autre chose à faire."
+ },
+ {
+  "wids": [
+   1031
+  ],
+  "words": [
+   {
+    "w": "予習",
+    "r": "よしゅう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "予習を始めた方がいいですよ。",
+  "exFr": "Tu devrais commencer à préparer tes cours."
+ },
+ {
+  "wids": [
+   1032
+  ],
+  "words": [
+   {
+    "w": "予定",
+    "r": "よてい"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "私は６時にボブに会う予定だった。",
+  "exFr": "J'avais rendez-vous avec Bob à six heures."
+ },
+ {
+  "wids": [
+   1033
+  ],
+  "words": [
+   {
+    "w": "予約",
+    "r": "よやく"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "「ホテルの予約はしてありますか」「すみませんが、まだなんです」",
+  "exFr": "« Avez-vous réservé un hôtel ? » « Non, pas encore. »"
+ },
+ {
+  "wids": [
+   1034
+  ],
+  "words": [
+   {
+    "w": "寄る",
+    "r": "よる"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "ちょっと寄って行きませんか。",
+  "exFr": "Ne voulez-vous pas passer un moment ?"
+ },
+ {
+  "wids": [
+   1035
+  ],
+  "words": [
+   {
+    "w": "喜ぶ",
+    "r": "よろこぶ"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "喜んで質問に答えましょう。",
+  "exFr": "Je serais ravi de répondre à votre question."
+ },
+ {
+  "wids": [
+   1036
+  ],
+  "words": [
+   {
+    "w": "理由",
+    "r": "りゆう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "本学に入学したい理由は何ですか。",
+  "exFr": "Pourquoi voulez-vous entrer dans cette université ?"
+ },
+ {
+  "wids": [
+   1037
+  ],
+  "words": [
+   {
+    "w": "利用",
+    "r": "りよう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "学生は図書館の本を利用すべきだ。",
+  "exFr": "Les étudiants devraient utiliser les livres de la bibliothèque."
+ },
+ {
+  "wids": [
+   1039
+  ],
+  "words": [
+   {
+    "w": "旅館",
+    "r": "りょかん"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "あの旅館は家庭的だ。",
+  "exFr": "Cet hôtel a une ambiance familiale."
+ },
+ {
+  "wids": [
+   1041
+  ],
+  "words": [
+   {
+    "w": "冷房",
+    "r": "れいぼう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "冷房が効きすぎているのですが。",
+  "exFr": "La climatisation est trop forte."
+ },
+ {
+  "wids": [
+   1042
+  ],
+  "words": [
+   {
+    "w": "歴史",
+    "r": "れきし"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "私は地理より歴史が好きだ。",
+  "exFr": "Je préfère l'histoire à la géographie."
+ },
+ {
+  "wids": [
+   1043
+  ],
+  "words": [
+   {
+    "w": "レジ",
+    "r": "レジ"
+   }
+  ],
+  "tiers": [
+   1
+  ],
+  "exJa": "レジはどこですか。",
+  "exFr": "Où est la caisse ?"
+ },
+ {
+  "wids": [
+   1044
+  ],
+  "words": [
+   {
+    "w": "連絡",
+    "r": "れんらく"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "ここに来た時は、必ず連絡してね。",
+  "exFr": "Quand vous serez là, n'oubliez pas de m'appeler."
+ },
+ {
+  "wids": [
+   1048
+  ],
+  "words": [
+   {
+    "w": "上がる",
+    "r": "あがる"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "車のバッテリーが上がってるよ。",
+  "exFr": "La batterie de la voiture est morte."
+ },
+ {
+  "wids": [
+   1049
+  ],
+  "words": [
+   {
+    "w": "赤ん坊",
+    "r": "あかんぼう"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "うちの赤ん坊は口をきくようになってきました。",
+  "exFr": "Notre bébé commence à parler."
+ },
+ {
+  "wids": [
+   1050
+  ],
+  "words": [
+   {
+    "w": "アジア",
+    "r": "アジア"
+   }
+  ],
+  "tiers": [
+   2
+  ],
+  "exJa": "ヨーロッパはアジアより人口が少ない。",
+  "exFr": "L'Europe a une population plus faible que l'Asie."
+ },
+ {
+  "wids": [
+   1051
+  ],
+  "words": [
+   {
+    "w": "集まる",
+    "r": "あつまる"
+   }
+  ],
+  "tiers": [
+   1
+  ],
+  "exJa": "通りに人がたくさん集まっている。",
+  "exFr": "Il y a beaucoup de gens rassemblés dans la rue."
+ }
+]
