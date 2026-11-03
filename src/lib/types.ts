@@ -39,9 +39,19 @@ export interface WordItem {
   exTier: number; // 1 = phrase très facile, 2 = plus riche
 }
 
+export interface PhraseItem {
+  id: string; // "phr001"…
+  theme: string;
+  ja: string;
+  kana: string;
+  fr: string;
+  furigana: string; // notation {kanji|kana}
+  level: string; // "N5"
+}
+
 export interface ProgressItem {
   id: string;
-  itemType: "kanji" | "word" | "conj"; // conj = conjugaison (itemId = `${wordId}:${form}`)
+  itemType: "kanji" | "word" | "phrase" | "conj"; // conj = conjugaison (itemId = `${wordId}:${form}`)
   itemId: string;
   ease: number;
   intervalDays: number;
@@ -54,6 +64,7 @@ export interface ProgressItem {
 export interface ContentResponse {
   words: WordItem[];
   kanji: KanjiItem[];
+  phrases: PhraseItem[];
   progress: ProgressItem[];
   stats: {
     attempts: number;

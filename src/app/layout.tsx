@@ -1,19 +1,24 @@
 import type { Metadata, Viewport } from "next";
-import { Nunito, Zen_Kaku_Gothic_New } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
-const rounded = Nunito({
+/* Fonts auto-hébergées (subsets woff2 générés par scripts/build-fonts.sh) :
+   aucun téléchargement au build — déploiement fiable même sans réseau. */
+const rounded = localFont({
+  src: "./fonts/Nunito-Variable.woff2",
   variable: "--font-rounded",
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin", "latin-ext"],
+  weight: "400 700",
   display: "swap",
 });
 
-const jpFont = Zen_Kaku_Gothic_New({
+const jpFont = localFont({
+  src: [
+    { path: "./fonts/ZenKakuGothicNew-Regular.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/ZenKakuGothicNew-Medium.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/ZenKakuGothicNew-Bold.woff2", weight: "700", style: "normal" },
+  ],
   variable: "--font-jp",
-  weight: ["400", "500", "700"],
-  subsets: ["latin", "japanese"],
   display: "swap",
 });
 

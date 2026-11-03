@@ -1,11 +1,12 @@
 "use client";
 
 import React, { createContext, useCallback, useContext } from "react";
-import type { ContentResponse, ProgressItem, WordItem, KanjiItem } from "@/lib/types";
+import type { ContentResponse, ProgressItem, WordItem, KanjiItem, PhraseItem } from "@/lib/types";
 
 export interface AppState {
   words: WordItem[];
   kanji: KanjiItem[];
+  phrases: PhraseItem[];
   progressMap: Map<string, ProgressItem>; // clé `${itemType}:${itemId}`
   stats: ContentResponse["stats"];
   applyProgress: (p: ProgressItem) => void;
@@ -39,7 +40,7 @@ export function useReview() {
   const [pending, setPending] = React.useState(false);
 
   const submit = useCallback(
-    async (itemType: "kanji" | "word" | "conj", itemId: string, grade: number, mode: string) => {
+    async (itemType: "kanji" | "word" | "conj" | "phrase", itemId: string, grade: number, mode: string) => {
       bumpStats(grade, mode, itemType);
       try {
         setPending(true);

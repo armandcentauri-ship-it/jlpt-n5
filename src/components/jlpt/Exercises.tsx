@@ -21,7 +21,7 @@ type Phase = "setup" | "session" | "done";
 type Status = "answering" | "correct" | "close" | "wrong" | "revealed";
 
 interface ExItem {
-  word: WordItem;
+  word: WordItem & { isPhrase?: boolean };
   direction: Direction;
 }
 
@@ -29,7 +29,7 @@ const MASTERED_DAYS = 21; // cohérent avec le tableau de bord / vocabulaire
 const UNLOCK_PCT = 0.2; // niveau 2 débloqué à 20 % de vocabulaire maîtrisé
 
 export function Exercises({ autoStart }: { autoStart?: boolean }) {
-  const { words, progressMap } = useAppState();
+  const { words, phrases, progressMap } = useAppState();
   const { submit } = useReview();
   const { toast } = useToast();
 
@@ -48,11 +48,48 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
     return { mastered, pct, unlocked: pct >= UNLOCK_PCT };
   }, [words, progressMap]);
 
-  /* pool unique : toutes les phrases éligibles, tirage aléatoire */
-  const eligible = useMemo(
-    () => words.filter((w) => w.exJa && w.exFr && w.exKana && w.exDif === "simple"),
-    [words]
-  );
+  /* phrases autonomes (table Phrase) converties au format d'exercice */
+  const phraseItems = useMemo(() => {
+    const norm = (s: string) => s.replace(/[。、！？\s\u3000]/g, "");
+    const seen = new Set<string>();
+    const out: (WordItem & { isPhrase?: boolean })[] = [];
+    for (const p of phrases) {
+      const key = norm(p.kana || p.ja);
+      if (!p.ja || !p.fr || seen.has(key)) continue;
+      seen.add(key);
+      out.push({
+        id: p.id,
+        wid: 0,
+        word: "",
+        reading: "",
+        romaji: "",
+        level: p.level,
+        pos: [],
+        meaningFr: "",
+        meaningEn: "",
+        theme: p.theme,
+        orderIdx: 0,
+        exJa: p.ja,
+        exKana: p.kana,
+        exFurigana: p.furigana,
+        exFr: p.fr,
+        exDif: "simple",
+        exTier: 1,
+        isPhrase: true,
+      });
+    }
+    return out;
+  }, [phrases]);
+
+  /* pool unique : exemples de mots (simples, sans doublon des phrases) + phrases autonomes */
+  const eligible = useMemo(() => {
+    const norm = (s: string) => s.replace(/[。、！？\s\u3000]/g, "");
+    const phraseKeys = new Set(phraseItems.map((p) => norm(p.exKana || p.exJa)));
+    const fromWords = words.filter(
+      (w) => w.exJa && w.exFr && w.exKana && w.exDif === "simple" && !phraseKeys.has(norm(w.exKana))
+    );
+    return [...fromWords, ...phraseItems];
+  }, [words, phraseItems]);
 
   const tierCounts = useMemo(() => {
     const c = { 1: 0, 2: 0 };
@@ -102,7 +139,12 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
   });
 
   const finishItem = (wasCorrect: boolean, mode: Direction) => {
-    submit("word", queue[index].word.id, wasCorrect ? 2 : 0, mode === "j2f" ? "ex_jp_fr" : "ex_fr_jp");
+    submit(
+      queue[index].word.isPhrase ? "phrase" : "word",
+      queue[index].word.id,
+      wasCorrect ? 2 : 0,
+      mode === "j2f" ? "ex_jp_fr" : "ex_fr_jp"
+    );
     setTally((t) => ({ correct: t.correct + (wasCorrect ? 1 : 0), total: t.total + 1 }));
     if (index + 1 >= queue.length) {
       setPhase("done");
@@ -322,10 +364,16 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
                   ) : (
                     <p className="font-jp text-xl md:text-2xl">{w.exJa}</p>
                   )}
-                  <p className="mt-2 text-xs text-muted-foreground">
-                    Mot clé : <span className="font-jp font-medium text-foreground">{w.word}</span>{" "}
-                    <span className="font-jp">[{w.reading}]</span>
-                  </p>
+                  {w.word ? (
+                    <p className="mt-2 text-xs text-muted-foreground">
+                      Mot clé : <span className="font-jp font-medium text-foreground">{w.word}</span>{" "}
+                      <span className="font-jp">[{w.reading}]</span>
+                    </p>
+                  ) : w.theme ? (
+                    <p className="mt-2 text-xs text-muted-foreground">
+                      Thème : <span className="font-medium text-foreground">{w.theme}</span>
+                    </p>
+                  ) : null}
                 </div>
                 <AudioButton text={w.exJa} />
               </div>

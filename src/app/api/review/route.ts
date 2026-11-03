@@ -18,7 +18,11 @@ export async function POST(req: NextRequest) {
       mode?: string;
     };
 
-    const itemType = body.itemType === "kanji" ? "kanji" : body.itemType === "conj" ? "conj" : "word";
+    const itemType =
+      body.itemType === "kanji" ? "kanji"
+      : body.itemType === "conj" ? "conj"
+      : body.itemType === "phrase" ? "phrase"
+      : "word";
     const mode = MODES.includes(body.mode as ReviewMode) ? (body.mode as ReviewMode) : "flashcard";
     const grade = Number(body.grade);
     const itemId = body.itemId;
@@ -39,6 +43,8 @@ export async function POST(req: NextRequest) {
       exists =
         (FORM_KEYS as string[]).includes(formKey) &&
         !!(await db.word.findUnique({ where: { id: wordId }, select: { id: true } }));
+    } else if (itemType === "phrase") {
+      exists = !!(await db.phrase.findUnique({ where: { id: itemId }, select: { id: true } }));
     } else {
       exists = !!(await db.word.findUnique({ where: { id: itemId }, select: { id: true } }));
     }

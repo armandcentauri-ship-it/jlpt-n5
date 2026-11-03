@@ -5,12 +5,13 @@ import type { ContentResponse, KanjiExample } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
-/** GET /api/content — tout le contenu (kanji, mots, progression, stats globales). */
+/** GET /api/content — tout le contenu (kanji, mots, phrases, progression, stats globales). */
 export async function GET() {
   try {
-    const [words, kanji, progress, logs] = await Promise.all([
+    const [words, kanji, phrases, progress, logs] = await Promise.all([
       db.word.findMany({ orderBy: { orderIdx: "asc" } }),
       db.kanji.findMany({ orderBy: { orderIdx: "asc" } }),
+      db.phrase.findMany({ orderBy: { orderIdx: "asc" } }),
       db.progress.findMany(),
       db.reviewLog.findMany({ select: { grade: true, createdAt: true, mode: true, itemType: true } }),
     ]);
@@ -41,7 +42,7 @@ export async function GET() {
       examples: parseList(k.examples) as unknown as KanjiExample[],
     }));
 
-    return NextResponse.json({ words: wordsOut, kanji: kanjiOut, progress, stats } satisfies ContentResponse);
+    return NextResponse.json({ words: wordsOut, kanji: kanjiOut, phrases, progress, stats } satisfies ContentResponse);
   } catch (err) {
     console.error("GET /api/content:", err);
     return NextResponse.json({ error: "Impossible de charger le contenu." }, { status: 500 });

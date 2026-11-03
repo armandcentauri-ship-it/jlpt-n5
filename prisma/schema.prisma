@@ -63,10 +63,23 @@ model Progress {
 // Journal des révisions / tentatives d'exercices
 model ReviewLog {
   id        String   @id @default(cuid())
-  itemType  String // "kanji" | "word"
+  itemType  String // "kanji" | "word" | "phrase" | "conj"
   itemId    String
-  mode      String // "flashcard" | "ex_jp_fr" | "ex_fr_jp"
+  mode      String // "flashcard" | "ex_jp_fr" | "ex_fr_jp" | "conj"
   grade     Int // 0 = encore, 1 = difficile, 2 = bien, 3 = facile
   createdAt DateTime @default(now())
   @@index([createdAt])
+}
+
+// Phrases d'entraînement autonomes (par thème, style Duolingo)
+model Phrase {
+  id        String   @id // id fixe "phr001"… (seed idempotent)
+  theme     String // thème FR (Présentation, Nourriture…)
+  ja        String
+  kana      String // lecture complète en kana
+  fr        String
+  furigana  String   @default("") // notation {kanji|kana}
+  level     String   @default("N5")
+  orderIdx  Int      @default(0)
+  createdAt DateTime @default(now())
 }

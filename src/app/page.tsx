@@ -87,7 +87,7 @@ export default function Home() {
   const appState: AppState | null = useMemo(
     () =>
       data
-        ? { words: data.words, kanji: data.kanji, progressMap, stats, applyProgress, bumpStats }
+        ? { words: data.words, kanji: data.kanji, phrases: data.phrases ?? [], progressMap, stats, applyProgress, bumpStats }
         : null,
     [data, progressMap, stats, applyProgress, bumpStats]
   );
