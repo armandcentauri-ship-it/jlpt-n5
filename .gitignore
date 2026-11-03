@@ -55,3 +55,4 @@ server.log
 # Résultats d'outils à la racine + bundles git locaux
 /tool-results/
 *.bundle
+/skills/
