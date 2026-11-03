@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  // "standalone" sert au serveur local (.next/standalone/server.js).
+  // Sur Vercel on le désactive : Vercel utilise son propre runtime Next.js.
+  ...(process.env.VERCEL ? {} : { output: "standalone" as const }),
   /* config options here */
   typescript: {
     ignoreBuildErrors: true,

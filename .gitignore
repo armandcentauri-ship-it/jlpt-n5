@@ -52,3 +52,6 @@ prompt
 server.log
 # Skills directory
 /skills/tool-results/
+# Résultats d'outils à la racine + bundles git locaux
+/tool-results/
+*.bundle
