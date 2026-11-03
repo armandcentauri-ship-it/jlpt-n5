@@ -20,6 +20,19 @@ function getJaVoice(): SpeechSynthesisVoice | null {
   return ja;
 }
 
+/** Prononciation japonaise programmable (bouton audio + lecture auto des réponses). */
+export function speakJa(text: string) {
+  if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
+  if (!text) return;
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = "ja-JP";
+  u.rate = 0.9;
+  const v = getJaVoice();
+  if (v) u.voice = v;
+  window.speechSynthesis.speak(u);
+}
+
 /** Bouton de prononciation japonaise (synthèse vocale du navigateur). */
 export function AudioButton({
   text,
@@ -51,16 +64,7 @@ export function AudioButton({
     };
   }, []);
 
-  const speak = () => {
-    if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
-    window.speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = "ja-JP";
-    u.rate = 0.9;
-    const v = getJaVoice();
-    if (v) u.voice = v;
-    window.speechSynthesis.speak(u);
-  };
+  const speak = () => speakJa(text);
 
   if (available === false) return null; // pas de voix japonaise : on masque
 

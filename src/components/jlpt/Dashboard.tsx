@@ -16,7 +16,7 @@ import {
 import { useToast } from "@/hooks/use-toast";
 import { progressKey, useAppState } from "./state";
 import { buildVerbList, N5_FORM_KEYS } from "@/lib/conjugation";
-import { SETTING_KEYS, useLocalNumber } from "./settings";
+import { SETTING_KEYS, useLocalBool, useLocalNumber } from "./settings";
 import type { TabId } from "./tabs";
 import { cn } from "@/lib/utils";
 
@@ -91,6 +91,8 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
   /* nombre de cartes / phrases par session — mémorisé et partagé avec les écrans */
   const [cardsSize, setCardsSize] = useLocalNumber(SETTING_KEYS.cardsSize, 15);
   const [phrasesSize, setPhrasesSize] = useLocalNumber(SETTING_KEYS.phrasesSize, 10);
+  /* lecture automatique de la réponse (flashcards, exercices, conjugaison) */
+  const [autoAudio, setAutoAudio] = useLocalBool(SETTING_KEYS.autoAudio, true);
 
   /* alternance quotidienne : jour impair = vocabulaire + conjugaison, pair = kanji + phrases */
   const today = useMemo(() => {
@@ -258,6 +260,12 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
           value={phrasesSize}
           onChange={setPhrasesSize}
         />
+        <BoolRow
+          jp="音"
+          label="Audio automatique des réponses"
+          value={autoAudio}
+          onChange={setAutoAudio}
+        />
       </div>
 
       {/* réinitialisation — discret */}
@@ -338,6 +346,54 @@ function MasteryBar({
       <span className="w-14 shrink-0 text-right text-xs font-medium tabular-nums text-muted-foreground">
         {mastered}/{total}
       </span>
+    </div>
+  );
+}
+
+/** Ligne de réglage binaire (Oui / Non). */
+function BoolRow({
+  jp,
+  label,
+  value,
+  onChange,
+}: {
+  jp: string;
+  label: string;
+  value: boolean;
+  onChange: (b: boolean) => void;
+}) {
+  return (
+    <div className="py-2 [&:not(:first-child)]:border-t [&:not(:first-child)]:border-border/60">
+      <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1.5 sm:flex-nowrap">
+        <div className="flex min-w-0 items-center gap-2.5">
+          <span className="font-jp w-8 shrink-0 text-sm font-semibold text-muted-foreground" aria-hidden>
+            {jp}
+          </span>
+          <span className="text-sm font-medium">{label}</span>
+        </div>
+        <div className="flex gap-1.5" role="radiogroup" aria-label={label}>
+          {([
+            { v: true, l: "Oui" },
+            { v: false, l: "Non" },
+          ] as const).map((o) => (
+            <button
+              key={o.l}
+              type="button"
+              role="radio"
+              aria-checked={value === o.v}
+              onClick={() => onChange(o.v)}
+              className={cn(
+                "h-7 rounded-full px-3 text-xs font-semibold transition-colors",
+                value === o.v
+                  ? "bg-primary text-primary-foreground shadow-sm"
+                  : "bg-secondary text-muted-foreground hover:text-foreground"
+              )}
+            >
+              {o.l}
+            </button>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

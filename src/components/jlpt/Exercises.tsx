@@ -7,13 +7,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { progressKey, useAppState, useReview } from "./state";
 import { SectionTitle } from "./bits";
 import { useToast } from "@/hooks/use-toast";
-import { AudioButton } from "./AudioButton";
+import { AudioButton, speakJa } from "./AudioButton";
 import { Ruby } from "./Ruby";
 import { KanaInput } from "./KanaInput";
 import { checkAnswer } from "@/lib/grade";
 import { finalizeKana } from "@/lib/romaji";
 import type { WordItem } from "@/lib/types";
-import { SETTING_KEYS, useLocalNumber } from "./settings";
+import { SETTING_KEYS, useLocalBool, useLocalNumber } from "./settings";
 import { cn } from "@/lib/utils";
 
 type Direction = "j2f" | "f2j";
@@ -32,6 +32,8 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
   const { words, phrases, progressMap } = useAppState();
   const { submit } = useReview();
   const { toast } = useToast();
+  /* lecture automatique de la phrase à la révélation de la réponse */
+  const [autoAudio] = useLocalBool(SETTING_KEYS.autoAudio, true);
 
   /* nombre de phrases mémorisé (réglé aussi depuis le tableau de bord) */
   const [size, setSize, sizeReady] = useLocalNumber(SETTING_KEYS.phrasesSize, 10);
@@ -164,6 +166,8 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
     const refs =
       item.direction === "j2f" ? [item.word.exFr] : [item.word.exKana || item.word.exJa, item.word.exJa];
     const { result } = checkAnswer(candidate, refs, item.direction === "j2f" ? "fr" : "jp");
+    /* audio auto : on prononce la phrase japonaise dès que la réponse est révélée */
+    if (autoAudio) speakJa(item.word.exJa);
     if (result === "correct") {
       setStatus("correct");
     } else {
@@ -171,7 +175,10 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
     }
   };
 
-  const reveal = () => setStatus("revealed");
+  const reveal = () => {
+    if (autoAudio && queue[index]) speakJa(queue[index].word.exJa);
+    setStatus("revealed");
+  };
 
   /* ---------------- Configuration ---------------- */
   if (phase === "setup") {

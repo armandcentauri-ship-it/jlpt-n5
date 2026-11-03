@@ -6,13 +6,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { progressKey, useAppState, useReview } from "./state";
 import { LevelBadge, SectionTitle } from "./bits";
-import { AudioButton } from "./AudioButton";
+import { AudioButton, speakJa } from "./AudioButton";
 import { Ruby } from "./Ruby";
 import { applySm2, formatInterval } from "@/lib/srs";
 import { cleanKunyomi, splitOnyomi } from "@/lib/format";
 import type { Grade } from "@/lib/types";
 import type { TabId } from "./tabs";
-import { SETTING_KEYS, useLocalNumber } from "./settings";
+import { SETTING_KEYS, useLocalBool, useLocalNumber } from "./settings";
 import { cn } from "@/lib/utils";
 
 type CardType = "word" | "kanji";
@@ -50,6 +50,8 @@ export function Flashcards({
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [tally, setTally] = useState<Record<Grade, number>>({ 0: 0, 1: 0, 2: 0, 3: 0 });
+  /* lecture automatique de la réponse (réglable depuis le tableau de bord) */
+  const [autoAudio] = useLocalBool(SETTING_KEYS.autoAudio, true);
 
   const items = type === "word" ? allWords : allKanji;
 
@@ -152,6 +154,20 @@ export function Flashcards({
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [phase, flipped, grade]);
+
+  /* audio auto : dès que la carte est retournée, on prononce la réponse (mot ou kanji) */
+  useEffect(() => {
+    if (!autoAudio || phase !== "session" || !flipped) return;
+    const e = queue[index];
+    if (!e) return;
+    if (e.type === "word") {
+      const w = allWords.find((x) => x.id === e.id);
+      if (w) speakJa(w.word);
+    } else {
+      const k = allKanji.find((x) => x.id === e.id);
+      if (k) speakJa(k.character);
+    }
+  }, [flipped, phase, index, queue, autoAudio, allWords, allKanji]);
 
   const preview = (g: Grade) => {
     const entry = queue[index];

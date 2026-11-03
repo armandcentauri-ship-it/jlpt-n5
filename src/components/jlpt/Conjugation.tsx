@@ -14,8 +14,9 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { progressKey, useAppState, useReview } from "./state";
+import { SETTING_KEYS, useLocalBool } from "./settings";
 import { SectionTitle, FilterChip, LevelBadge } from "./bits";
-import { AudioButton } from "./AudioButton";
+import { AudioButton, speakJa } from "./AudioButton";
 import { Ruby } from "./Ruby";
 import { KanaInput } from "./KanaInput";
 import { checkConj } from "@/lib/grade";
@@ -65,6 +66,8 @@ const inGroupFilter = (v: VerbItem, g: GroupFilter) =>
 
 export function Conjugation({ autoStart }: { autoStart?: boolean }) {
   const { words, progressMap } = useAppState();
+  /* lecture automatique de la forme conjuguée à la révélation de la réponse */
+  const [autoAudio] = useLocalBool(SETTING_KEYS.autoAudio, true);
   const { submit } = useReview();
 
   const verbs = useMemo(() => buildVerbList(words), [words]);
@@ -201,10 +204,19 @@ export function Conjugation({ autoStart }: { autoStart?: boolean }) {
     const f = conjugateVerb(q.verb)[q.form];
     /* finalise le « n » en attente du clavier kana */
     const { result } = checkConj(finalizeKana(input), conjRefs(f));
+    /* audio auto : on prononce la forme conjuguée dès que la réponse est révélée */
+    if (autoAudio) speakJa(f.kanji || f.kana);
     setStatus(result === "correct" ? "correct" : result === "close" ? "close" : "wrong");
   };
 
-  const reveal = () => setStatus("revealed");
+  const reveal = () => {
+    const q = queue[index];
+    if (autoAudio && q) {
+      const f = conjugateVerb(q.verb)[q.form];
+      speakJa(f.kanji || f.kana);
+    }
+    setStatus("revealed");
+  };
 
   const toggleForm = (key: FormKey) => {
     setForms((prev) => {
