@@ -1331,29 +1331,6 @@
   "exTier": 2
  },
  {
-  "wid": 57,
-  "word": "一日",
-  "reading": "いちにち",
-  "romaji": "ichinichi",
-  "level": "N5",
-  "pos": [
-   "n"
-  ],
-  "meaningFr": "une journée; le 1er du mois",
-  "meaningEn": "one day; first of month",
-  "jmdictId": "1576260",
-  "prio": 99,
-  "exJa": "一日で５００ドルつかってしまった。",
-  "exFurigana": "{一日|いちにち}で５００ドルつかってしまった。",
-  "exEn": "I've spent $500 a day.",
-  "exFr": "J'ai dépensé 500 dollars en une journée.",
-  "exKana": "いちにちで５００ドルつかってしまった。",
-  "exDif": "simple",
-  "theme": "temps",
-  "orderIdx": 440014,
-  "exTier": 2
- },
- {
   "wid": 58,
   "word": "いちばん",
   "reading": "いちばん",
@@ -1398,29 +1375,6 @@
   "exDif": "avance",
   "theme": "temps",
   "orderIdx": 420000,
-  "exTier": 2
- },
- {
-  "wid": 60,
-  "word": "五日",
-  "reading": "いつか",
-  "romaji": "itsuka",
-  "level": "N5",
-  "pos": [
-   "n"
-  ],
-  "meaningFr": "cinq jours; le cinq (dans le mois)",
-  "meaningEn": "five days; fifth day",
-  "jmdictId": "1268570",
-  "prio": 99,
-  "exJa": "１月５日から１月１５日までおねがいします。",
-  "exFurigana": "",
-  "exEn": "From the 5th to the 15th of January, please.",
-  "exFr": "Du 5 au 15 janvier, s'il vous plaît.",
-  "exKana": "いちがついつかからいちがつじゅうごにかおねがいします。",
-  "exDif": "simple",
-  "theme": "temps",
-  "orderIdx": 440015,
   "exTier": 2
  },
  {
@@ -5510,29 +5464,6 @@
   "exDif": "avance",
   "theme": "temps",
   "orderIdx": 440018,
-  "exTier": 2
- },
- {
-  "wid": 236,
-  "word": "九日",
-  "reading": "ここのか",
-  "romaji": "kokonoka",
-  "level": "N5",
-  "pos": [
-   "n"
-  ],
-  "meaningFr": "le neuvième jour du mois; neuf jours",
-  "meaningEn": "nine days; ninth day",
-  "jmdictId": "1243850",
-  "prio": 99,
-  "exJa": "スピーチコンテストは１１月９日に行われた。",
-  "exFurigana": "",
-  "exEn": "The speech contest took place on the ninth of November.",
-  "exFr": "Le concours de discours a eu lieu le 9 novembre.",
-  "exKana": "スピーチコンテストはじゅういちがつここのかにおこなわれた。",
-  "exDif": "avance",
-  "theme": "temps",
-  "orderIdx": 460003,
   "exTier": 2
  },
  {
@@ -9893,29 +9824,6 @@
   "exTier": 2
  },
  {
-  "wid": 423,
-  "word": "十日",
-  "reading": "とおか",
-  "romaji": "tooka",
-  "level": "N5",
-  "pos": [
-   "n"
-  ],
-  "meaningFr": "dix jours; le dix (du mois)",
-  "meaningEn": "ten days; the tenth day",
-  "jmdictId": "1335000",
-  "prio": 99,
-  "exJa": "ジャックは８月１０日に生まれた。",
-  "exFurigana": "",
-  "exEn": "Jack was born on August the tenth.",
-  "exFr": "Jack est né le 10 août.",
-  "exKana": "おとしをおきしてよろしいでしょうか。",
-  "exDif": "simple",
-  "theme": "temps",
-  "orderIdx": 440026,
-  "exTier": 2
- },
- {
   "wid": 424,
   "word": "時々",
   "reading": "ときどき",
@@ -10638,29 +10546,6 @@
   "exDif": "simple",
   "theme": "nombres",
   "orderIdx": 340010,
-  "exTier": 1
- },
- {
-  "wid": 455,
-  "word": "七日",
-  "reading": "なのか",
-  "romaji": "nanoka",
-  "level": "N5",
-  "pos": [
-   "n"
-  ],
-  "meaningFr": "le septième jour (du mois); sept jours",
-  "meaningEn": "seven days; the seventh day",
-  "jmdictId": "1579630",
-  "prio": 99,
-  "exJa": "一週間は七日です。",
-  "exFurigana": "{一週間|いっしゅうかん}は{七日|なのか}です。",
-  "exEn": "There are seven days in a week.",
-  "exFr": "Une semaine a sept jours.",
-  "exKana": "いっしゅうかんはなのかです。",
-  "exDif": "simple",
-  "theme": "temps",
-  "orderIdx": 460004,
   "exTier": 1
  },
  {
@@ -11693,29 +11578,6 @@
   "exTier": 2
  },
  {
-  "wid": 500,
-  "word": "二十日",
-  "reading": "はつか",
-  "romaji": "hatsuka",
-  "level": "N5",
-  "pos": [
-   "n"
-  ],
-  "meaningFr": "le vingt (du mois); vingt jours",
-  "meaningEn": "twenty days; twentieth",
-  "jmdictId": "1600850",
-  "prio": 99,
-  "exJa": "私は二十日までに帰るつもりです。",
-  "exFurigana": "{私|わたし}は{二十日|はつか}までに{帰|かえ}るつもりです。",
-  "exEn": "I expect to be back by the 20th.",
-  "exFr": "Je prévois de revenir avant le 20.",
-  "exKana": "わたしははつかまでにかえるつもりです。",
-  "exDif": "simple",
-  "theme": "temps",
-  "orderIdx": 460019,
-  "exTier": 1
- },
- {
   "wid": 501,
   "word": "花",
   "reading": "はな",
@@ -12715,29 +12577,6 @@
   "exDif": "simple",
   "theme": "base",
   "orderIdx": 40014,
-  "exTier": 2
- },
- {
-  "wid": 544,
-  "word": "二日",
-  "reading": "ふつか",
-  "romaji": "futsuka",
-  "level": "N5",
-  "pos": [
-   "n"
-  ],
-  "meaningFr": "deuxième jour du mois",
-  "meaningEn": "two days; second day of the month",
-  "jmdictId": "1462900",
-  "prio": 99,
-  "exJa": "それは１週間前、すなわち４月２日に行われた。",
-  "exFurigana": "",
-  "exEn": "It was due a week ago, namely on April second.",
-  "exFr": "C'était il y a une semaine, c'est-à-dire le 2 avril.",
-  "exKana": "それは１しゅうかんまえ、すなわちよつがつふつかにおこなわれた。",
-  "exDif": "avance",
-  "theme": "temps",
-  "orderIdx": 460006,
   "exTier": 2
  },
  {
@@ -13984,29 +13823,6 @@
   "exTier": 1
  },
  {
-  "wid": 598,
-  "word": "三日",
-  "reading": "みっか",
-  "romaji": "mikka",
-  "level": "N5",
-  "pos": [
-   "n"
-  ],
-  "meaningFr": "le 3; trois jours",
-  "meaningEn": "three days; third day of the month",
-  "jmdictId": "1301330",
-  "prio": 99,
-  "exJa": "１０月３日です。",
-  "exFurigana": "",
-  "exEn": "It's the third of October.",
-  "exFr": "Nous sommes le 3 octobre.",
-  "exKana": "１０がつみっかです。",
-  "exDif": "simple",
-  "theme": "temps",
-  "orderIdx": 440028,
-  "exTier": 1
- },
- {
   "wid": 599,
   "word": "三つ",
   "reading": "みっつ",
@@ -14170,29 +13986,6 @@
   "theme": "base",
   "orderIdx": 20015,
   "exTier": 1
- },
- {
-  "wid": 606,
-  "word": "六日",
-  "reading": "むいか",
-  "romaji": "muika",
-  "level": "N5",
-  "pos": [
-   "n"
-  ],
-  "meaningFr": "le six (du mois); six jours",
-  "meaningEn": "six days; sixth day of the month",
-  "jmdictId": "1561470",
-  "prio": 99,
-  "exJa": "４月５日か６日に会っていただけませんか。",
-  "exFurigana": "",
-  "exEn": "Would it be possible to set up a meeting with us on April 5 or 6?",
-  "exFr": "Pourriez-vous nous rencontrer le 5 ou 6 avril?",
-  "exKana": "４がついつかにあっていただけませんか。",
-  "exDif": "avance",
-  "theme": "temps",
-  "orderIdx": 440029,
-  "exTier": 2
  },
  {
   "wid": 607,
@@ -14918,29 +14711,6 @@
   "exTier": 1
  },
  {
-  "wid": 638,
-  "word": "八日",
-  "reading": "ようか",
-  "romaji": "youka",
-  "level": "N5",
-  "pos": [
-   "n"
-  ],
-  "meaningFr": "le 8 (jour du mois)",
-  "meaningEn": "eight days; eighth day of the month",
-  "jmdictId": "1476920",
-  "prio": 99,
-  "exJa": "学校は４月８日から始まります。",
-  "exFurigana": "",
-  "exEn": "School begins on April 8.",
-  "exFr": "L'école commence le 8 avril.",
-  "exKana": "がっこうは４がつようかからはじまります。",
-  "exDif": "simple",
-  "theme": "temps",
-  "orderIdx": 440030,
-  "exTier": 1
- },
- {
   "wid": 639,
   "word": "洋服",
   "reading": "ようふく",
@@ -15007,29 +14777,6 @@
   "exDif": "simple",
   "theme": "lieux",
   "orderIdx": 840006,
-  "exTier": 2
- },
- {
-  "wid": 642,
-  "word": "四日",
-  "reading": "よっか",
-  "romaji": "yokka",
-  "level": "N5",
-  "pos": [
-   "n"
-  ],
-  "meaningFr": "quatrième jour du mois; quatre jours (durée)",
-  "meaningEn": "four days; fouth day of the month",
-  "jmdictId": "1307320",
-  "prio": 99,
-  "exJa": "長くても４日しか待てませんよ。",
-  "exFurigana": "",
-  "exEn": "I can wait four days at the longest.",
-  "exFr": "Je ne peux attendre que quatre jours au maximum.",
-  "exKana": "ながくてもよっかしかまてませんよ。",
-  "exDif": "avance",
-  "theme": "temps",
-  "orderIdx": 440031,
   "exTier": 2
  },
  {

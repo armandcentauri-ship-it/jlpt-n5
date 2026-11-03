@@ -34,7 +34,7 @@ turso db show jlpt-n5 --url             # → TURSO_DATABASE_URL  (libsql://…)
 turso db tokens create jlpt-n5          # → TURSO_AUTH_TOKEN    (eyJ…)
 ```
 
-Copie le contenu de la base (1054 mots, 251 kanji, ta progression) :
+Copie le contenu de la base (1043 mots, 251 kanji, ta progression) :
 
 ```bash
 npm install
