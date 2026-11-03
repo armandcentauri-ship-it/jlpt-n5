@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { useToast } from "@/hooks/use-toast";
 import { progressKey, useAppState } from "./state";
+import { buildVerbList, N5_FORM_KEYS } from "@/lib/conjugation";
 import { SETTING_KEYS, useLocalNumber } from "./settings";
 import type { TabId } from "./tabs";
 import { cn } from "@/lib/utils";
@@ -84,7 +85,7 @@ const PANELS: PanelDef[] = [
 ];
 
 export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardType?: "word" | "kanji") => void }) {
-  const { stats, words, kanji, progressMap } = useAppState();
+  const { stats, words, kanji, phrases, progressMap } = useAppState();
   const { toast } = useToast();
 
   /* nombre de cartes / phrases par session — mémorisé et partagé avec les écrans */
@@ -101,7 +102,7 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
 
   /* progression globale : maîtrise = intervalle SRS ≥ 21 j (cohérent avec le reste de l'app) */
   const prog = useMemo(() => {
-    const calc = (items: { id: string }[], type: "word" | "kanji") => {
+    const calc = (items: { id: string }[], type: string) => {
       let seen = 0;
       let mastered = 0;
       for (const it of items) {
@@ -113,8 +114,17 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
       }
       return { total: items.length, seen, mastered };
     };
-    return { vocab: calc(words, "word"), kanji: calc(kanji, "kanji") };
-  }, [words, kanji, progressMap]);
+    /* conjugaison : paires (verbe N5 × forme N5) — même périmètre que le panneau par défaut */
+    const conjPairs = buildVerbList(words)
+      .filter((v) => v.level === "N5")
+      .flatMap((v) => N5_FORM_KEYS.map((f) => ({ id: `${v.id}:${f}` })));
+    return {
+      vocab: calc(words, "word"),
+      kanji: calc(kanji, "kanji"),
+      phrases: calc(phrases, "phrase"),
+      conj: calc(conjPairs, "conj"),
+    };
+  }, [words, kanji, phrases, progressMap]);
 
   const reset = async () => {
     try {
@@ -196,10 +206,10 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
         })}
       </div>
 
-      {/* progression globale — graphique, sans texte superflu */}
+      {/* progression globale — libellés français, couleur = tuile correspondante */}
       <div className="anim-fade-up mt-6 space-y-2.5" aria-label="Progression globale">
         <MasteryBar
-          jp="単語"
+          label="Vocabulaire"
           total={prog.vocab.total}
           seen={prog.vocab.seen}
           mastered={prog.vocab.mastered}
@@ -207,12 +217,28 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
           solid="bg-matcha"
         />
         <MasteryBar
-          jp="漢字"
+          label="Kanji"
           total={prog.kanji.total}
           seen={prog.kanji.seen}
           mastered={prog.kanji.mastered}
           soft="bg-gold/40"
           solid="bg-gold"
+        />
+        <MasteryBar
+          label="Phrases"
+          total={prog.phrases.total}
+          seen={prog.phrases.seen}
+          mastered={prog.phrases.mastered}
+          soft="bg-primary/25"
+          solid="bg-primary"
+        />
+        <MasteryBar
+          label="Conjugaison"
+          total={prog.conj.total}
+          seen={prog.conj.seen}
+          mastered={prog.conj.mastered}
+          soft="bg-fuji/25"
+          solid="bg-fuji"
         />
       </div>
 
@@ -270,14 +296,14 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
 
 /** Barre de progression bicolore : couche claire = vu, couche pleine = maîtrisé. */
 function MasteryBar({
-  jp,
+  label,
   total,
   seen,
   mastered,
   soft,
   solid,
 }: {
-  jp: string;
+  label: string;
   total: number;
   seen: number;
   mastered: number;
@@ -288,8 +314,8 @@ function MasteryBar({
   const pctMastered = total ? (mastered / total) * 100 : 0;
   return (
     <div className="flex items-center gap-3">
-      <span className="font-jp w-9 shrink-0 text-base font-semibold text-muted-foreground" aria-hidden>
-        {jp}
+      <span className="w-24 shrink-0 truncate text-sm font-semibold text-muted-foreground" aria-hidden>
+        {label}
       </span>
       <div
         className="relative h-3 flex-1 overflow-hidden rounded-full bg-secondary"
