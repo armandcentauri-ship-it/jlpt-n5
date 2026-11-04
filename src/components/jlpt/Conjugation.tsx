@@ -14,7 +14,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { progressKey, useAppState, useReview } from "./state";
-import { SETTING_KEYS, useLocalBool } from "./settings";
+import { SETTING_KEYS, useLocalBool, useLocalNumber } from "./settings";
 import { SectionTitle, FilterChip, LevelBadge } from "./bits";
 import { AudioButton, speakJa } from "./AudioButton";
 import { Ruby } from "./Ruby";
@@ -77,7 +77,8 @@ export function Conjugation({ autoStart }: { autoStart?: boolean }) {
   const [level, setLevel] = useState<LevelFilter>("N5");
   const [group, setGroup] = useState<GroupFilter>("all");
   const [forms, setForms] = useState<Set<FormKey>>(() => new Set(N5_FORM_KEYS));
-  const [size, setSize] = useState(10);
+  /* nombre de questions par session, mémorisé et partagé avec le tableau de bord */
+  const [size, setSize, sizeReady] = useLocalNumber(SETTING_KEYS.verbsSize, 10);
 
   const [queue, setQueue] = useState<ConjQuestion[]>([]);
   const [index, setIndex] = useState(0);
@@ -174,10 +175,11 @@ export function Conjugation({ autoStart }: { autoStart?: boolean }) {
     setMode("train");
   };
 
-  /* Lancement direct depuis le tableau de bord (panneau conjugaison) */
+  /* Lancement direct depuis le tableau de bord (panneau conjugaison) —
+     attend le chargement des réglages pour appliquer la bonne taille de session */
   const started = useRef(false);
   useEffect(() => {
-    if (autoStart && !started.current) {
+    if (autoStart && sizeReady && !started.current) {
       started.current = true;
       buildQueue();
     }
@@ -427,7 +429,7 @@ function TrainSetup(props: {
         <div>
           <p className="mb-2 text-sm font-medium">Questions</p>
           <div className="flex gap-2">
-            {[5, 10, 15, 20].map((n) => (
+            {[5, 10, 15, 20, 30].map((n) => (
               <Button
                 key={n}
                 type="button"

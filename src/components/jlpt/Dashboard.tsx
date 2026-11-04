@@ -88,9 +88,10 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
   const { stats, words, kanji, phrases, progressMap } = useAppState();
   const { toast } = useToast();
 
-  /* nombre de cartes / phrases par session — mémorisé et partagé avec les écrans */
+  /* nombre de cartes / phrases / verbes par session — mémorisé et partagé avec les écrans */
   const [cardsSize, setCardsSize] = useLocalNumber(SETTING_KEYS.cardsSize, 15);
   const [phrasesSize, setPhrasesSize] = useLocalNumber(SETTING_KEYS.phrasesSize, 10);
+  const [verbsSize, setVerbsSize] = useLocalNumber(SETTING_KEYS.verbsSize, 10);
   /* lecture automatique de la réponse (flashcards, exercices, conjugaison) */
   const [autoAudio, setAutoAudio] = useLocalBool(SETTING_KEYS.autoAudio, true);
 
@@ -259,6 +260,13 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
           options={[5, 10, 15, 20]}
           value={phrasesSize}
           onChange={setPhrasesSize}
+        />
+        <SizeRow
+          jp="動詞"
+          label="Verbes par session"
+          options={[5, 10, 15, 20, 30]}
+          value={verbsSize}
+          onChange={setVerbsSize}
         />
         <BoolRow
           jp="音"

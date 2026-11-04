@@ -62,7 +62,8 @@ export function useLocalBool(key: string, initial: boolean): [boolean, (b: boole
 
 /** Clés des réglages de session. */
 export const SETTING_KEYS = {
-  cardsSize: "jlpt.cardsSize", // vocabulaire + kanji
+  cardsSize: "jlpt.cardsSize", // flashcards : vocabulaire + kanji
   phrasesSize: "jlpt.phrasesSize", // exercices de phrases
+  verbsSize: "jlpt.verbsSize", // conjugaison : questions par session
   autoAudio: "jlpt.autoAudio", // lecture automatique de la réponse
 } as const;
