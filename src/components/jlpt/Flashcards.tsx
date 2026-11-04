@@ -21,6 +21,8 @@ type Phase = "setup" | "session" | "done";
 interface QueueEntry {
   id: string;
   type: CardType;
+  /* carte ratée qui revient dans la file jusqu'à réussite (mode Anki) */
+  relearn?: boolean;
 }
 
 const GRADES: { grade: Grade; label: string; key: string; cls: string }[] = [
@@ -47,6 +49,7 @@ export function Flashcards({
   /* taille de session mémorisée (réglée aussi depuis le tableau de bord) */
   const [size, setSize, sizeReady] = useLocalNumber(SETTING_KEYS.cardsSize, 15);
   const [queue, setQueue] = useState<QueueEntry[]>([]);
+  const [baseTotal, setBaseTotal] = useState(0); // cartes uniques de la session (hors rattrapage)
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [tally, setTally] = useState<Record<Grade, number>>({ 0: 0, 1: 0, 2: 0, 3: 0 });
@@ -104,6 +107,7 @@ export function Flashcards({
         });
       }
       setQueue(entries);
+      setBaseTotal(entries.length);
       setIndex(0);
       setFlipped(false);
       setTally({ 0: 0, 1: 0, 2: 0, 3: 0 });
@@ -126,8 +130,21 @@ export function Flashcards({
     (g: Grade) => {
       const entry = queue[index];
       if (!entry) return;
-      submit(entry.type, entry.id, g, "flashcard");
-      setTally((t) => ({ ...t, [g]: t[g] + 1 }));
+      const fail = g === 0 || g === 1; // Encore ou Difficile → la carte revient (mode Anki)
+      /* la note SRS est enregistrée à la première passe ; pendant le rattrapage,
+         seul un nouvel échec est enregistré — la réussite finale ne compte pas */
+      if (!entry.relearn || fail) submit(entry.type, entry.id, g, "flashcard");
+      if (!entry.relearn) setTally((t) => ({ ...t, [g]: t[g] + 1 }));
+
+      if (fail) {
+        /* réinsertion ~3 cartes plus tard : la session continue jusqu'à la réussite */
+        const q = [...queue];
+        q.splice(Math.min(index + 3, q.length), 0, { ...entry, relearn: true });
+        setQueue(q);
+        setIndex(index + 1);
+        setFlipped(false);
+        return;
+      }
       if (index + 1 >= queue.length) {
         setPhase("done");
       } else {
@@ -271,7 +288,7 @@ export function Flashcards({
 
   /* ---------------- Écran de fin ---------------- */
   if (phase === "done") {
-    const total = queue.length;
+    const total = baseTotal;
     const good = tally[2] + tally[3];
     return (
       <div className="mx-auto w-full max-w-2xl space-y-6 px-4 pb-10 pt-6">
@@ -501,7 +518,9 @@ export function Flashcards({
               className={cn("h-14 flex-col gap-0.5 rounded-xl", g.cls)}
             >
               <span className="text-sm font-semibold">{g.label}</span>
-              <span className="text-[10px] opacity-70">{preview(g.grade)}</span>
+              <span className="text-[10px] opacity-70">
+                {entry.relearn ? (g.grade <= 1 ? "revient" : "terminé") : preview(g.grade)}
+              </span>
             </Button>
           ))}
         </div>
