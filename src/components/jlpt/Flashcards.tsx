@@ -93,7 +93,9 @@ export function Flashcards({
         entries = shuffled.map((it) => ({ id: it.id, type: t }));
       } else {
         const dueTake = dueList.slice(0, size);
-        const freshTake = freshList.slice(0, Math.max(0, Math.min(10, size - dueTake.length)));
+        /* on complète jusqu'à `size` avec de nouvelles cartes — aucun plafond supplémentaire :
+           « Cartes par session » = nombre total réel de cartes dans la session */
+        const freshTake = freshList.slice(0, Math.max(0, size - dueTake.length));
         entries = [
           ...dueTake.map((it) => ({ id: it.id, type: t as CardType })),
           ...freshTake.map((it) => ({ id: it.id, type: t as CardType })),
