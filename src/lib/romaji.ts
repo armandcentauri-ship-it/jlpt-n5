@@ -127,6 +127,12 @@ export function toKana(input: string, opts?: { finalize?: boolean }): string {
         (after !== "" && after !== "y" && CONSONANTS.includes(after)) ||
         (!/[a-z]/.test(after) && after !== "");
       if (stopsN) {
+        /* « nn » en fin de saisie : le n en attente fusionne avec le ん déjà
+           posé (habitude IME « kann » + Entrée → かん, pas かんん) */
+        if (after === "" && finalize && out.endsWith("ん")) {
+          i += 1;
+          continue;
+        }
         out += "ん";
         i += after === "'" ? 2 : 1;
         continue;
