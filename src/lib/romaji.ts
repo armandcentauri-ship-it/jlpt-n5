@@ -56,7 +56,9 @@ const PUNCT: Record<string, string> = {
 };
 
 const VOWELS = "aiueo";
-const CONSONANTS = "kstcpgzdbhfvjqrwy";
+/* consonnes susceptibles de suivre « n » (→ ん) ou de se doubler (→ っ).
+   « l » et « x » volontairement exclus : préfixes des petits kana (ltu, xtu…) */
+const CONSONANTS = "kstcpgzdbhfmvjqrwy";
 
 /** Convertit une chaîne (romaji + kana mixés) en hiragana.
  *  Par défaut, un « n » isolé en fin de chaîne reste EN ATTENTE (comme un vrai
