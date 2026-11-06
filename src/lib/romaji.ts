@@ -115,14 +115,16 @@ export function toKana(input: string, opts?: { finalize?: boolean }): string {
     // 4) n / nn / n' → ん (n suivi d'une consonne, d'un autre n, d'une
     //    ponctuation/espace, d'une apostrophe, ou en fin de saisie si finalize ;
     //    n suivi d'une voyelle → syllabe BASIC : "kana" → かな ;
-    //    n isolé en fin de chaîne (pas finalize) → laissé en attente : "かn")
+    //    n suivi de « y » → en attente, car ny + voyelle forme にゃ/にゅ/にょ
+    //    (« nyu » → にゅ) ; n isolé en fin de chaîne (pas finalize) → laissé
+    //    en attente : « かn »)
     if (chL === "n") {
       const after = (input[i + 1] ?? "").toLowerCase();
       const stopsN =
         after === "'" ||
         after === "n" ||
         (after === "" && finalize) ||
-        (after !== "" && CONSONANTS.includes(after)) ||
+        (after !== "" && after !== "y" && CONSONANTS.includes(after)) ||
         (!/[a-z]/.test(after) && after !== "");
       if (stopsN) {
         out += "ん";
