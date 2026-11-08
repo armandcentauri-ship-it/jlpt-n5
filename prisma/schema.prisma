@@ -83,3 +83,12 @@ model Phrase {
   orderIdx  Int      @default(0)
   createdAt DateTime @default(now())
 }
+
+// Abonnements aux notifications push web (rappel quotidien, un par navigateur)
+model PushSubscription {
+  id        String   @id @default(cuid())
+  endpoint  String   @unique // URL fournie par le service de push du navigateur
+  p256dh    String // clé publique ECDH du client
+  auth      String // secret d'authentification du client
+  createdAt DateTime @default(now())
+}

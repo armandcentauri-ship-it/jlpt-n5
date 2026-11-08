@@ -17,6 +17,7 @@ import { useToast } from "@/hooks/use-toast";
 import { progressKey, useAppState } from "./state";
 import { buildVerbList, N5_FORM_KEYS } from "@/lib/conjugation";
 import { SETTING_KEYS, useLocalBool, useLocalNumber } from "./settings";
+import { PushSetting } from "./PushSetting";
 import type { TabId } from "./tabs";
 import { cn } from "@/lib/utils";
 
@@ -274,6 +275,7 @@ export function Dashboard({ go }: { go: (tab: TabId, autoStart?: boolean, cardTy
           value={autoAudio}
           onChange={setAutoAudio}
         />
+        <PushSetting />
       </div>
 
       {/* réinitialisation — discret */}
