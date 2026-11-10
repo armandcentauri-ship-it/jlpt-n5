@@ -15,11 +15,13 @@ export interface SrsState {
 const DAY = 1;
 const MIN = 10 / 1440; // 10 minutes
 
-/** Applique l'algorithme SM-2 adapté (grades Anki : encore/hard/good/easy). */
+/** Applique l'algorithme SM-2 adapté (grades Anki : encore/hard/good/easy).
+ *  mode "conj" (conjugaison) : 2 bonnes réponses suffisent pour maîtriser une forme. */
 export function applySm2(
   prev: { ease: number; intervalDays: number; reps: number; lapses: number } | null | undefined,
   grade: Grade,
-  now: Date = new Date()
+  now: Date = new Date(),
+  mode?: string
 ): SrsState {
   const ease = prev?.ease ?? 2.5;
   const interval = prev?.intervalDays ?? 0;
@@ -44,7 +46,12 @@ export function applySm2(
       newReps = reps + 1;
       break;
     case 2: // Bien
-      newInterval = reps === 0 ? DAY : reps === 1 ? 3 * DAY : interval * ease;
+      if (mode === "conj") {
+        // conjugaison : 1ʳᵉ bonne réponse → révision demain, 2ᵉ → maîtrisé (21 j)
+        newInterval = reps === 0 ? DAY : Math.max(interval * ease, 21 * DAY);
+      } else {
+        newInterval = reps === 0 ? DAY : reps === 1 ? 3 * DAY : interval * ease;
+      }
       newReps = reps + 1;
       break;
     case 3: // Facile

@@ -155,11 +155,16 @@ export function Conjugation({ autoStart }: { autoStart?: boolean }) {
     if (q.length < maxN) {
       const sv = shuffle(pool);
       const sf = shuffle(selected);
-      for (let i = 0; q.length < maxN && i < maxN * 8; i++) {
-        const verb = sv[i % sv.length];
-        const form = sf[(i + Math.floor(i / Math.max(1, sf.length))) % sf.length];
-        const k = `${verb.id}:${form}`;
-        if (!seen.has(k)) {
+      /* deux passes : d'abord les formes non maîtrisées (une forme réussie 2 fois
+         est maîtrisée et n'a plus besoin d'entraînement), puis tout le reste */
+      for (const onlyNew of [true, false]) {
+        for (let i = 0; q.length < maxN && i < maxN * 8; i++) {
+          const verb = sv[i % sv.length];
+          const form = sf[(i + Math.floor(i / Math.max(1, sf.length))) % sf.length];
+          const k = `${verb.id}:${form}`;
+          if (seen.has(k)) continue;
+          const p = progressMap.get(progressKey("conj", k));
+          if (onlyNew && p && p.intervalDays >= MASTERED_DAYS) continue;
           seen.add(k);
           q.push({ verb, form });
         }
