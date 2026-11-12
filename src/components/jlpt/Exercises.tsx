@@ -107,7 +107,15 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
   const [tally, setTally] = useState({ correct: 0, total: 0 });
 
   const buildQueue = useCallback(() => {
-    const pool = eligible.filter((w) => w.exTier === tier);
+    /* les phrases maîtrisées (2 bonnes réponses) ne reviennent plus dans les sessions */
+    const pool = eligible.filter(
+      (w) =>
+        w.exTier === tier &&
+        !(
+          w.isPhrase &&
+          (progressMap.get(progressKey("phrase", w.id))?.intervalDays ?? 0) >= MASTERED_DAYS
+        )
+    );
     const picked = [...pool].sort(() => Math.random() - 0.5).slice(0, size);
     const entries: ExItem[] = picked.map((word, i) => ({
       word,
@@ -128,7 +136,7 @@ export function Exercises({ autoStart }: { autoStart?: boolean }) {
             : "Aucune phrase de ce niveau ne correspond à ce filtre pour le moment.",
       });
     }
-  }, [eligible, tier, size, toast]);
+  }, [eligible, tier, size, toast, progressMap]);
 
   /* Lancement direct depuis le tableau de bord (panneau phrases) —
      attend le chargement des réglages pour appliquer le bon nombre de phrases */

@@ -57,7 +57,7 @@ export async function POST(req: NextRequest) {
     });
 
     const now = new Date();
-    const next = applySm2(prev, grade as Grade, now, mode);
+    const next = applySm2(prev, grade as Grade, now, mode, itemType);
 
     const saved = await db.progress.upsert({
       where: { itemType_itemId: { itemType, itemId } },
